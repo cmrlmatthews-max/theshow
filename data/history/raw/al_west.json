@@ -1,0 +1,877 @@
+{
+ "teams": [
+  {
+   "franchise": "ATH",
+   "name": "Philadelphia Athletics",
+   "abbr": "PHA",
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "AL",
+   "start": 1901,
+   "end": 1954,
+   "homes": [
+    {
+     "park": "columbia-park",
+     "start": 1901,
+     "end": 1908
+    },
+    {
+     "park": "shibe-park",
+     "start": 1909,
+     "end": 1954
+    }
+   ],
+   "fate": "Sold and moved to Kansas City for 1955.",
+   "note": "Charter American League club.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Athletics_(baseball)"
+   ]
+  },
+  {
+   "franchise": "ATH",
+   "name": "Kansas City Athletics",
+   "abbr": "KCA",
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "AL",
+   "start": 1955,
+   "end": 1967,
+   "homes": [
+    {
+     "park": "municipal-stadium-kansas-city",
+     "start": 1955,
+     "end": 1967
+    }
+   ],
+   "fate": "Moved to Oakland for 1968.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Athletics_(baseball)"
+   ]
+  },
+  {
+   "franchise": "ATH",
+   "name": "Oakland Athletics",
+   "abbr": "OAK",
+   "city": "Oakland",
+   "state": "California",
+   "country": "USA",
+   "league": "AL",
+   "start": 1968,
+   "end": 2024,
+   "homes": [
+    {
+     "park": "oakland-coliseum",
+     "start": 1968,
+     "end": 2024
+    }
+   ],
+   "fate": "Left Oakland after 2024 and became the Athletics in West Sacramento.",
+   "note": "Official name was Oakland A's 1972-80. In April 1996 six home games were played at Cashman Field, Las Vegas.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Athletics_(baseball)",
+    "https://en.wikipedia.org/wiki/Oakland_Coliseum"
+   ]
+  },
+  {
+   "franchise": "ATH",
+   "name": "Athletics",
+   "abbr": "ATH",
+   "city": "West Sacramento",
+   "state": "California",
+   "country": "USA",
+   "league": "AL",
+   "start": 2025,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "ATH",
+     "start": 2025,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active; temporary home pending a Las Vegas ballpark.",
+   "note": "Plays at Sutter Health Park; Las Vegas relocation approved for 2028.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Athletics_(baseball)"
+   ]
+  },
+  {
+   "franchise": "HOU",
+   "name": "Houston Colt .45s",
+   "abbr": "HOU",
+   "city": "Houston",
+   "state": "Texas",
+   "country": "USA",
+   "league": "NL",
+   "start": 1962,
+   "end": 1964,
+   "homes": [
+    {
+     "park": "colt-stadium",
+     "start": 1962,
+     "end": 1964
+    }
+   ],
+   "fate": "Renamed Houston Astros for 1965.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Houston_Astros"
+   ]
+  },
+  {
+   "franchise": "HOU",
+   "name": "Houston Astros",
+   "abbr": "HOU",
+   "city": "Houston",
+   "state": "Texas",
+   "country": "USA",
+   "league": "NL",
+   "start": 1965,
+   "end": 2012,
+   "homes": [
+    {
+     "park": "astrodome",
+     "start": 1965,
+     "end": 1999
+    },
+    {
+     "park": "HOU",
+     "start": 2000,
+     "end": 2012
+    }
+   ],
+   "fate": "Moved to the American League for 2013.",
+   "note": "Moved from the Astrodome to Enron Field (now Daikin Park) in 2000.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Houston_Astros"
+   ]
+  },
+  {
+   "franchise": "HOU",
+   "name": "Houston Astros",
+   "abbr": "HOU",
+   "city": "Houston",
+   "state": "Texas",
+   "country": "USA",
+   "league": "AL",
+   "start": 2013,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "HOU",
+     "start": 2013,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active in the AL West.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Houston_Astros"
+   ]
+  },
+  {
+   "franchise": "LAA",
+   "name": "Los Angeles Angels",
+   "abbr": "LAA",
+   "city": "Los Angeles",
+   "state": "California",
+   "country": "USA",
+   "league": "AL",
+   "start": 1961,
+   "end": 1964,
+   "homes": [
+    {
+     "park": "wrigley-field-los-angeles",
+     "start": 1961,
+     "end": 1961
+    },
+    {
+     "park": "LAD",
+     "start": 1962,
+     "end": 1964
+    }
+   ],
+   "fate": "Renamed California Angels for 1965.",
+   "note": "Original expansion club; shared Dodger Stadium with the Dodgers from 1962.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Angels"
+   ]
+  },
+  {
+   "franchise": "LAA",
+   "name": "California Angels",
+   "abbr": "CAL",
+   "city": "Anaheim",
+   "state": "California",
+   "country": "USA",
+   "league": "AL",
+   "start": 1965,
+   "end": 1996,
+   "homes": [
+    {
+     "park": "LAD",
+     "start": 1965,
+     "end": 1965
+    },
+    {
+     "park": "LAA",
+     "start": 1966,
+     "end": 1996
+    }
+   ],
+   "fate": "Renamed Anaheim Angels for 1997.",
+   "note": "Played 1965 in Los Angeles at Dodger Stadium; moved to Anaheim in 1966.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Angels"
+   ]
+  },
+  {
+   "franchise": "LAA",
+   "name": "Anaheim Angels",
+   "abbr": "ANA",
+   "city": "Anaheim",
+   "state": "California",
+   "country": "USA",
+   "league": "AL",
+   "start": 1997,
+   "end": 2004,
+   "homes": [
+    {
+     "park": "LAA",
+     "start": 1997,
+     "end": 2004
+    }
+   ],
+   "fate": "Renamed Los Angeles Angels of Anaheim for 2005.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Angels"
+   ]
+  },
+  {
+   "franchise": "LAA",
+   "name": "Los Angeles Angels of Anaheim",
+   "abbr": "LAA",
+   "city": "Anaheim",
+   "state": "California",
+   "country": "USA",
+   "league": "AL",
+   "start": 2005,
+   "end": 2015,
+   "homes": [
+    {
+     "park": "LAA",
+     "start": 2005,
+     "end": 2015
+    }
+   ],
+   "fate": "Renamed Los Angeles Angels for 2016.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Angels"
+   ]
+  },
+  {
+   "franchise": "LAA",
+   "name": "Los Angeles Angels",
+   "abbr": "LAA",
+   "city": "Anaheim",
+   "state": "California",
+   "country": "USA",
+   "league": "AL",
+   "start": 2016,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "LAA",
+     "start": 2016,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active in Anaheim.",
+   "note": "Plays in Anaheim despite the Los Angeles name.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Angels"
+   ]
+  },
+  {
+   "franchise": "SEA",
+   "name": "Seattle Mariners",
+   "abbr": "SEA",
+   "city": "Seattle",
+   "state": "Washington",
+   "country": "USA",
+   "league": "AL",
+   "start": 1977,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "kingdome",
+     "start": 1977,
+     "end": 1999
+    },
+    {
+     "park": "SEA",
+     "start": 1999,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Moved from the Kingdome to Safeco Field (now T-Mobile Park) midway through 1999.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Seattle_Mariners"
+   ]
+  },
+  {
+   "franchise": "TEX",
+   "name": "Washington Senators",
+   "abbr": "WSA",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "AL",
+   "start": 1961,
+   "end": 1971,
+   "homes": [
+    {
+     "park": "griffith-stadium",
+     "start": 1961,
+     "end": 1961
+    },
+    {
+     "park": "robert-f-kennedy-memorial-stadium",
+     "start": 1962,
+     "end": 1971
+    }
+   ],
+   "fate": "Moved to Arlington, Texas, and became the Rangers for 1972.",
+   "note": "Expansion club; the original Senators had become the Minnesota Twins in 1961.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Texas_Rangers_(baseball)",
+    "https://en.wikipedia.org/wiki/Griffith_Stadium"
+   ]
+  },
+  {
+   "franchise": "TEX",
+   "name": "Texas Rangers",
+   "abbr": "TEX",
+   "city": "Arlington",
+   "state": "Texas",
+   "country": "USA",
+   "league": "AL",
+   "start": 1972,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "arlington-stadium",
+     "start": 1972,
+     "end": 1993
+    },
+    {
+     "park": "globe-life-park-in-arlington",
+     "start": 1994,
+     "end": 2019
+    },
+    {
+     "park": "TEX",
+     "start": 2020,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Played in Arlington Stadium, then The Ballpark in Arlington (Globe Life Park), then Globe Life Field.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Texas_Rangers_(baseball)"
+   ]
+  }
+ ],
+ "parks": [
+  {
+   "id": "columbia-park",
+   "name": "Columbia Park",
+   "aka": [
+    "Columbia Avenue Grounds",
+    "Columbia Park II"
+   ],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9806,
+   "lon": -75.1815,
+   "coord_approx": true,
+   "opened": 1901,
+   "closed": 1908,
+   "status": "Demolished; housing was built on the site after its 1913 sale.",
+   "capacity": 13600,
+   "dimensions_ft": {
+    "lf": 340,
+    "lcf": null,
+    "cf": 396,
+    "rcf": null,
+    "rf": 280
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted two games of the 1905 World Series.",
+    "A 1907 game against Detroit ended 9-9 after 17 innings."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Columbia_Park"
+   ]
+  },
+  {
+   "id": "shibe-park",
+   "name": "Shibe Park",
+   "aka": [
+    "Connie Mack Stadium"
+   ],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9961,
+   "lon": -75.165,
+   "coord_approx": false,
+   "opened": 1909,
+   "closed": 1970,
+   "status": "Demolished in 1976; a church sanctuary now stands on the site.",
+   "capacity": 33608,
+   "dimensions_ft": {
+    "lf": 334,
+    "lcf": 387,
+    "cf": 410,
+    "rcf": 390,
+    "rf": 329
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": 34
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "William Steele & Sons",
+   "notable": [
+    "First major-league park built of steel and concrete.",
+    "Hosted the first American League night game in 1939."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shibe_Park"
+   ]
+  },
+  {
+   "id": "municipal-stadium-kansas-city",
+   "name": "Municipal Stadium",
+   "aka": [
+    "Muehlebach Field",
+    "Ruppert Stadium",
+    "Blues Stadium"
+   ],
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 39.0836,
+   "lon": -94.5604,
+   "coord_approx": true,
+   "opened": 1923,
+   "closed": 1972,
+   "status": "Demolished in 1976; a garden and housing now occupy the site.",
+   "capacity": 35561,
+   "dimensions_ft": {
+    "lf": 369,
+    "lcf": 408,
+    "cf": 421,
+    "rcf": 382,
+    "rf": 338
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted the 1960 All-Star Game's first game.",
+    "Royals played their last game there on October 4, 1972."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Municipal_Stadium_(Kansas_City)",
+    "https://en.wikipedia.org/wiki/Muehlebach_Field"
+   ]
+  },
+  {
+   "id": "oakland-coliseum",
+   "name": "Oakland Coliseum",
+   "aka": [
+    "Oakland-Alameda County Coliseum",
+    "Network Associates Coliseum",
+    "McAfee Coliseum",
+    "O.co Coliseum",
+    "RingCentral Coliseum"
+   ],
+   "city": "Oakland",
+   "state": "California",
+   "country": "USA",
+   "lat": 37.7517,
+   "lon": -122.2006,
+   "coord_approx": false,
+   "opened": 1966,
+   "closed": 2024,
+   "status": "Still standing; used for soccer, cricket and events after the Athletics left.",
+   "capacity": 46847,
+   "dimensions_ft": {
+    "lf": 330,
+    "lcf": 388,
+    "cf": 400,
+    "rcf": 388,
+    "rf": 330
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Skidmore, Owings & Merrill",
+   "notable": [
+    "Catfish Hunter and Dallas Braden each threw a perfect game here.",
+    "Last U.S. stadium shared by baseball and football teams."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Oakland_Coliseum"
+   ]
+  },
+  {
+   "id": "colt-stadium",
+   "name": "Colt Stadium",
+   "aka": [
+    "Colt .45 Stadium"
+   ],
+   "city": "Houston",
+   "state": "Texas",
+   "country": "USA",
+   "lat": 29.6883,
+   "lon": -95.4086,
+   "coord_approx": false,
+   "opened": 1962,
+   "closed": 1964,
+   "status": "Demolished; NRG Center and a power station cover the site.",
+   "capacity": 33000,
+   "dimensions_ft": {
+    "lf": 360,
+    "lcf": 395,
+    "cf": 420,
+    "rcf": 395,
+    "rf": 360
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Temporary home of the Colt .45s while the Astrodome was built.",
+    "Monsanto tested its ChemGrass synthetic turf here."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Colt_Stadium"
+   ]
+  },
+  {
+   "id": "astrodome",
+   "name": "Astrodome",
+   "aka": [
+    "Houston Astrodome",
+    "Harris County Domed Stadium",
+    "Reliant Astrodome",
+    "NRG Astrodome"
+   ],
+   "city": "Houston",
+   "state": "Texas",
+   "country": "USA",
+   "lat": 29.685,
+   "lon": -95.4078,
+   "coord_approx": false,
+   "opened": 1965,
+   "closed": 1999,
+   "status": "Still stands closed to the public, used for storage by Reliant Park.",
+   "capacity": 54816,
+   "dimensions_ft": {
+    "lf": 325,
+    "lcf": 375,
+    "cf": 400,
+    "rcf": 375,
+    "rf": 325
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "AstroTurf",
+   "roof": "fixed",
+   "architect": "Hermon Lloyd & W. B. Morgan; Wilson, Morris, Crain & Anderson",
+   "notable": [
+    "World's first multi-purpose domed sports stadium.",
+    "First major venue to install artificial turf in 1966."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Astrodome"
+   ]
+  },
+  {
+   "id": "wrigley-field-los-angeles",
+   "name": "Wrigley Field",
+   "aka": [
+    "Wrigley Field (Los Angeles)"
+   ],
+   "city": "Los Angeles",
+   "state": "California",
+   "country": "USA",
+   "lat": 34.0075,
+   "lon": -118.2661,
+   "coord_approx": false,
+   "opened": 1925,
+   "closed": 1961,
+   "status": "Demolished; a mental health center, parking and a Little League field occupy the site.",
+   "capacity": 22000,
+   "dimensions_ft": {
+    "lf": 340,
+    "lcf": 345,
+    "cf": 412,
+    "rcf": 345,
+    "rf": 339
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Zachary Taylor Davis",
+   "notable": [
+    "The 1961 Angels hit a record 248 home runs here.",
+    "Hosted the first NFL Pro Bowl in 1939."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wrigley_Field_(Los_Angeles)"
+   ]
+  },
+  {
+   "id": "kingdome",
+   "name": "Kingdome",
+   "aka": [],
+   "city": "Seattle",
+   "state": "Washington",
+   "country": "USA",
+   "lat": 47.5953,
+   "lon": -122.3314,
+   "coord_approx": false,
+   "opened": 1976,
+   "closed": 1999,
+   "status": "Imploded in 2000; Lumen Field now stands on the site.",
+   "capacity": 59166,
+   "dimensions_ft": {
+    "lf": 316,
+    "lcf": 357,
+    "cf": 410,
+    "rcf": 357,
+    "rf": 316
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": 12,
+    "rf": 23
+   },
+   "surface": "AstroTurf",
+   "roof": "fixed",
+   "architect": "Naramore, Skilling & Praeger",
+   "notable": [
+    "Imploded in 2000, a record for the largest building demolished that way.",
+    "Hosted Edgar Martinez's walk-off double in the 1995 ALDS."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kingdome"
+   ]
+  },
+  {
+   "id": "griffith-stadium",
+   "name": "Griffith Stadium",
+   "aka": [
+    "National Park",
+    "American League Park",
+    "Clark Griffith Stadium"
+   ],
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "lat": 38.9175,
+   "lon": -77.0203,
+   "coord_approx": false,
+   "opened": 1911,
+   "closed": 1961,
+   "status": "Demolished in 1965; Howard University Hospital stands on the site.",
+   "capacity": 27550,
+   "dimensions_ft": {
+    "lf": 388,
+    "lcf": null,
+    "cf": 421,
+    "rcf": null,
+    "rf": 320
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": 30
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Osborn Engineering",
+   "notable": [
+    "Hosted World Series games in 1924, 1925 and 1933.",
+    "Washington Redskins played there from 1937 through 1960."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Griffith_Stadium"
+   ]
+  },
+  {
+   "id": "robert-f-kennedy-memorial-stadium",
+   "name": "Robert F. Kennedy Memorial Stadium",
+   "aka": [
+    "D.C. Stadium",
+    "District of Columbia Stadium",
+    "RFK Stadium"
+   ],
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "lat": 38.89,
+   "lon": -76.9719,
+   "coord_approx": false,
+   "opened": 1961,
+   "closed": 2007,
+   "status": "Closed in 2019 and demolished 2023 to 2026; a new stadium is planned.",
+   "capacity": 45016,
+   "dimensions_ft": {
+    "lf": 335,
+    "lcf": 380,
+    "cf": 410,
+    "rcf": 380,
+    "rf": 335
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "George Dahl",
+   "notable": [
+    "Early cookie-cutter stadium built for both baseball and football.",
+    "Renamed for Robert F. Kennedy in 1969."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Robert_F._Kennedy_Memorial_Stadium"
+   ]
+  },
+  {
+   "id": "arlington-stadium",
+   "name": "Arlington Stadium",
+   "aka": [
+    "Turnpike Stadium"
+   ],
+   "city": "Arlington",
+   "state": "Texas",
+   "country": "USA",
+   "lat": 32.7564,
+   "lon": -97.0847,
+   "coord_approx": false,
+   "opened": 1965,
+   "closed": 1993,
+   "status": "Demolished; parking and the National Medal of Honor Museum cover the site.",
+   "capacity": 43521,
+   "dimensions_ft": {
+    "lf": 330,
+    "lcf": 380,
+    "cf": 400,
+    "rcf": 380,
+    "rf": 330
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Preston M. Geren Architects & Engineers",
+   "notable": [
+    "First major-league park to sell nachos, from 1974.",
+    "Mike Witt of the Angels pitched a perfect game here in 1984."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arlington_Stadium"
+   ]
+  },
+  {
+   "id": "globe-life-park-in-arlington",
+   "name": "Globe Life Park in Arlington",
+   "aka": [
+    "The Ballpark in Arlington",
+    "Ameriquest Field in Arlington",
+    "Rangers Ballpark in Arlington",
+    "Choctaw Stadium"
+   ],
+   "city": "Arlington",
+   "state": "Texas",
+   "country": "USA",
+   "lat": 32.7514,
+   "lon": -97.0828,
+   "coord_approx": false,
+   "opened": 1994,
+   "closed": 2019,
+   "status": "Still stands as Choctaw Stadium, used for soccer and football.",
+   "capacity": 49115,
+   "dimensions_ft": {
+    "lf": 332,
+    "lcf": 390,
+    "cf": 400,
+    "rcf": 377,
+    "rf": 325
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "David M. Schwarz Architectural Services; HKS (architect of record)",
+   "notable": [
+    "Kenny Rogers pitched a perfect game here in 1994.",
+    "Hosted the 1995 All-Star Game and World Series games in 2010 and 2011."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Choctaw_Stadium"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,825 @@
+{
+ "teams": [
+  {
+   "franchise": "CWS",
+   "name": "Chicago White Stockings",
+   "abbr": "CHW",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "AL",
+   "start": 1901,
+   "end": 1903,
+   "homes": [
+    {
+     "park": "south-side-park",
+     "start": 1901,
+     "end": 1903
+    }
+   ],
+   "fate": "Name shortened to Chicago White Sox for 1904.",
+   "note": "Charter AL club; won the first AL pennant in 1900 as a minor-league member.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chicago_White_Sox",
+    "https://en.wikipedia.org/wiki/South_Side_Park"
+   ]
+  },
+  {
+   "franchise": "CWS",
+   "name": "Chicago White Sox",
+   "abbr": "CHW",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "AL",
+   "start": 1904,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "south-side-park",
+     "start": 1904,
+     "end": 1910
+    },
+    {
+     "park": "comiskey-park",
+     "start": 1910,
+     "end": 1990
+    },
+    {
+     "park": "CWS",
+     "start": 1991,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active in Chicago.",
+   "note": "Moved from South Side Park to Comiskey Park in July 1910.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chicago_White_Sox",
+    "https://en.wikipedia.org/wiki/Comiskey_Park"
+   ]
+  },
+  {
+   "franchise": "CLE",
+   "name": "Cleveland Blues",
+   "abbr": "CLE",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "AL",
+   "start": 1901,
+   "end": 1901,
+   "homes": [
+    {
+     "park": "league-park",
+     "start": 1901,
+     "end": 1901
+    }
+   ],
+   "fate": "Renamed Cleveland Bronchos for 1902.",
+   "note": "Often called Bluebirds or Blues because of blue uniforms.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cleveland_Guardians",
+    "https://en.wikipedia.org/wiki/League_Park"
+   ]
+  },
+  {
+   "franchise": "CLE",
+   "name": "Cleveland Bronchos",
+   "abbr": "CLE",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "AL",
+   "start": 1902,
+   "end": 1902,
+   "homes": [
+    {
+     "park": "league-park",
+     "start": 1902,
+     "end": 1902
+    }
+   ],
+   "fate": "Renamed Cleveland Naps for 1903.",
+   "note": "The Bronchos name never caught on locally.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cleveland_Guardians"
+   ]
+  },
+  {
+   "franchise": "CLE",
+   "name": "Cleveland Naps",
+   "abbr": "CLE",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "AL",
+   "start": 1903,
+   "end": 1914,
+   "homes": [
+    {
+     "park": "league-park",
+     "start": 1903,
+     "end": 1914
+    }
+   ],
+   "fate": "Renamed Cleveland Indians for 1915 after Nap Lajoie left.",
+   "note": "Named for player-manager Nap Lajoie.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cleveland_Guardians"
+   ]
+  },
+  {
+   "franchise": "CLE",
+   "name": "Cleveland Indians",
+   "abbr": "CLE",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "AL",
+   "start": 1915,
+   "end": 2021,
+   "homes": [
+    {
+     "park": "league-park",
+     "start": 1915,
+     "end": 1946
+    },
+    {
+     "park": "cleveland-stadium",
+     "start": 1947,
+     "end": 1993
+    },
+    {
+     "park": "CLE",
+     "start": 1994,
+     "end": 2021
+    }
+   ],
+   "fate": "Renamed Cleveland Guardians for 2022.",
+   "note": "Played part of 1932-46 at Cleveland Stadium; full-time there from 1947.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cleveland_Guardians",
+    "https://en.wikipedia.org/wiki/Cleveland_Stadium"
+   ]
+  },
+  {
+   "franchise": "CLE",
+   "name": "Cleveland Guardians",
+   "abbr": "CLE",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "AL",
+   "start": 2022,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "CLE",
+     "start": 2022,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active in Cleveland.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cleveland_Guardians"
+   ]
+  },
+  {
+   "franchise": "DET",
+   "name": "Detroit Tigers",
+   "abbr": "DET",
+   "city": "Detroit",
+   "state": "Michigan",
+   "country": "USA",
+   "league": "AL",
+   "start": 1901,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "bennett-park",
+     "start": 1901,
+     "end": 1911
+    },
+    {
+     "park": "tiger-stadium-detroit",
+     "start": 1912,
+     "end": 1999
+    },
+    {
+     "park": "DET",
+     "start": 2000,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active in Detroit.",
+   "note": "Charter AL club. Navin Field (1912) was built on the Bennett Park site.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Detroit_Tigers",
+    "https://en.wikipedia.org/wiki/Tiger_Stadium_(Detroit)"
+   ]
+  },
+  {
+   "franchise": "KC",
+   "name": "Kansas City Royals",
+   "abbr": "KC",
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "AL",
+   "start": 1969,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "municipal-stadium-kansas-city-missouri",
+     "start": 1969,
+     "end": 1972
+    },
+    {
+     "park": "KC",
+     "start": 1973,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active in Kansas City.",
+   "note": "Expansion club of 1969.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kansas_City_Royals",
+    "https://en.wikipedia.org/wiki/Kansas_City_Municipal_Stadium"
+   ]
+  },
+  {
+   "franchise": "MIN",
+   "name": "Washington Senators",
+   "abbr": "WSA",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "AL",
+   "start": 1901,
+   "end": 1960,
+   "homes": [
+    {
+     "park": "american-league-park",
+     "start": 1901,
+     "end": 1903
+    },
+    {
+     "park": "boundary-field",
+     "start": 1904,
+     "end": 1910
+    },
+    {
+     "park": "griffith-stadium",
+     "start": 1911,
+     "end": 1960
+    }
+   ],
+   "fate": "Moved to Minnesota and became the Twins for 1961.",
+   "note": "Also officially styled Washington Nationals around 1905-55 per Wikipedia; treated here as one stint.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Minnesota_Twins",
+    "https://en.wikipedia.org/wiki/Griffith_Stadium"
+   ]
+  },
+  {
+   "franchise": "MIN",
+   "name": "Minnesota Twins",
+   "abbr": "MIN",
+   "city": "Bloomington",
+   "state": "Minnesota",
+   "country": "USA",
+   "league": "AL",
+   "start": 1961,
+   "end": 1981,
+   "homes": [
+    {
+     "park": "metropolitan-stadium",
+     "start": 1961,
+     "end": 1981
+    }
+   ],
+   "fate": "Moved indoors to the Metrodome in Minneapolis for 1982.",
+   "note": "Played at Metropolitan Stadium in suburban Bloomington.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Minnesota_Twins",
+    "https://en.wikipedia.org/wiki/Metropolitan_Stadium"
+   ]
+  },
+  {
+   "franchise": "MIN",
+   "name": "Minnesota Twins",
+   "abbr": "MIN",
+   "city": "Minneapolis",
+   "state": "Minnesota",
+   "country": "USA",
+   "league": "AL",
+   "start": 1982,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "hubert-h-humphrey-metrodome",
+     "start": 1982,
+     "end": 2009
+    },
+    {
+     "park": "MIN",
+     "start": 2010,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active in Minneapolis.",
+   "note": "Same club name; city changed from Bloomington to Minneapolis.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Minnesota_Twins",
+    "https://en.wikipedia.org/wiki/Hubert_H._Humphrey_Metrodome"
+   ]
+  }
+ ],
+ "parks": [
+  {
+   "id": "south-side-park",
+   "name": "South Side Park",
+   "aka": [
+    "South Side Park III"
+   ],
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "lat": 41.8244,
+   "lon": -87.6328,
+   "coord_approx": false,
+   "opened": 1900,
+   "closed": 1910,
+   "status": "Burned in 1940 and demolished. Wentworth Gardens public housing now occupies the site.",
+   "capacity": 15000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "White Sox home from 1901 until June 1910; the Sox won the 1906 World Series here.",
+    "Hosted the Chicago American Giants and the 1913 Negro league postseason series.",
+    "Burned in December 1940 and was not rebuilt."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/South_Side_Park"
+   ]
+  },
+  {
+   "id": "comiskey-park",
+   "name": "Comiskey Park",
+   "aka": [
+    "Old Comiskey Park"
+   ],
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "lat": 41.8317,
+   "lon": -87.6342,
+   "coord_approx": false,
+   "opened": 1910,
+   "closed": 1990,
+   "status": "Demolished in 1991. A parking lot for Rate Field covers the site.",
+   "capacity": 52000,
+   "dimensions_ft": {
+    "lf": 347,
+    "lcf": 382,
+    "cf": 409,
+    "rcf": 382,
+    "rf": 347
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Zachary Taylor Davis",
+   "notable": [
+    "Hosted four World Series and three All-Star Games.",
+    "Joe Louis beat James Braddock here in 1937 for the heavyweight title.",
+    "Disco Demolition Night in 1979 ended in a field invasion and forfeit."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Comiskey_Park"
+   ]
+  },
+  {
+   "id": "league-park",
+   "name": "League Park",
+   "aka": [
+    "Dunn Field"
+   ],
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.5114,
+   "lon": -81.6442,
+   "coord_approx": false,
+   "opened": 1891,
+   "closed": 1946,
+   "status": "Site is now a public park; the restored ticket house holds a baseball museum.",
+   "capacity": 22500,
+   "dimensions_ft": {
+    "lf": 375,
+    "lcf": 415,
+    "cf": 420,
+    "rcf": 340,
+    "rf": 290
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": 40
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Osborn Engineering",
+   "notable": [
+    "Game 5 of the 1920 World Series had the first Series grand slam and an unassisted triple play.",
+    "Babe Ruth hit his 500th home run here in 1929.",
+    "Short right-field line was backed by a 40-foot wall."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/League_Park"
+   ]
+  },
+  {
+   "id": "cleveland-stadium",
+   "name": "Cleveland Stadium",
+   "aka": [
+    "Cleveland Municipal Stadium",
+    "Lakefront Stadium"
+   ],
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.5067,
+   "lon": -81.6972,
+   "coord_approx": false,
+   "opened": 1931,
+   "closed": 1993,
+   "status": "Demolished 1996-97. Cleveland Browns Stadium (now Huntington Bank Field) stands on the site.",
+   "capacity": 74438,
+   "dimensions_ft": {
+    "lf": 322,
+    "lcf": 385,
+    "cf": 400,
+    "rcf": 385,
+    "rf": 322
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Walker & Weeks",
+   "notable": [
+    "Indians drew a record 2.6 million fans here in 1948.",
+    "Len Barker pitched a perfect game here in 1981.",
+    "Used part-time by the Indians from 1932 and full-time from 1947."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cleveland_Stadium"
+   ]
+  },
+  {
+   "id": "bennett-park",
+   "name": "Bennett Park",
+   "aka": [],
+   "city": "Detroit",
+   "state": "Michigan",
+   "country": "USA",
+   "lat": 42.3319,
+   "lon": -83.0689,
+   "coord_approx": true,
+   "opened": 1896,
+   "closed": 1911,
+   "status": "Replaced by Navin Field on the same site; that site is now the Corner Ballpark.",
+   "capacity": 14000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Ty Cobb's Tigers won three straight pennants here from 1907 to 1909.",
+    "Spectators watched from rooftops beyond left field, paying owners but not the club.",
+    "Rebuilt as Navin Field between the 1911 and 1912 seasons."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bennett_Park_(Detroit)"
+   ]
+  },
+  {
+   "id": "tiger-stadium-detroit",
+   "name": "Tiger Stadium",
+   "aka": [
+    "Navin Field",
+    "Briggs Stadium"
+   ],
+   "city": "Detroit",
+   "state": "Michigan",
+   "country": "USA",
+   "lat": 42.3319,
+   "lon": -83.0689,
+   "coord_approx": false,
+   "opened": 1912,
+   "closed": 1999,
+   "status": "Demolished 2008-09. The field was preserved as the Corner Ballpark youth field.",
+   "capacity": 58000,
+   "dimensions_ft": {
+    "lf": 340,
+    "lcf": 365,
+    "cf": 440,
+    "rcf": 370,
+    "rf": 325
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Osborn Engineering",
+   "notable": [
+    "Babe Ruth hit a 1921 homer estimated at up to 575 feet.",
+    "Lou Gehrig ended his 2,130-game streak here in 1939.",
+    "Hosted the 1941, 1951 and 1971 All-Star Games."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tiger_Stadium_(Detroit)"
+   ]
+  },
+  {
+   "id": "municipal-stadium-kansas-city-missouri",
+   "name": "Municipal Stadium",
+   "aka": [
+    "Muehlebach Field",
+    "Ruppert Stadium",
+    "Blues Stadium"
+   ],
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 39.0839,
+   "lon": -94.5517,
+   "coord_approx": true,
+   "opened": 1923,
+   "closed": 1972,
+   "status": "Demolished in 1976. A garden and housing redevelopment occupy the site.",
+   "capacity": 35561,
+   "dimensions_ft": {
+    "lf": 369,
+    "lcf": 408,
+    "cf": 421,
+    "rcf": 382,
+    "rf": 338
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Royals played here 1969 to 1972 before moving to Kauffman Stadium.",
+    "Hosted the longest NFL game ever, a 1971 Dolphins-Chiefs playoff.",
+    "Opened in 1923 as Muehlebach Field."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kansas_City_Municipal_Stadium"
+   ]
+  },
+  {
+   "id": "american-league-park",
+   "name": "American League Park",
+   "aka": [
+    "American League Park I"
+   ],
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "lat": 38.9017,
+   "lon": -76.9867,
+   "coord_approx": false,
+   "opened": 1901,
+   "closed": 1903,
+   "status": "No baseball field remains. The site is a residential area northeast of downtown.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": 290,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "First home of the AL Washington Senators, 1901 to 1903.",
+    "Wooden grandstands were moved to Boundary Field in 1904.",
+    "Built on land that previously belonged to a brick company."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/American_League_Park"
+   ]
+  },
+  {
+   "id": "boundary-field",
+   "name": "Boundary Field",
+   "aka": [
+    "American League Park II",
+    "National Park"
+   ],
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "lat": 38.9175,
+   "lon": -77.0203,
+   "coord_approx": true,
+   "opened": 1892,
+   "closed": 1910,
+   "status": "Burned in 1911 and was rebuilt as Griffith Stadium. Howard University Hospital now occupies the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "President Taft threw the first pitch of the 1910 season here.",
+    "The Congressional Baseball Game began here in 1909.",
+    "Wooden stands burned in March 1911."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boundary_Field"
+   ]
+  },
+  {
+   "id": "griffith-stadium",
+   "name": "Griffith Stadium",
+   "aka": [
+    "National Park"
+   ],
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "lat": 38.9175,
+   "lon": -77.0203,
+   "coord_approx": false,
+   "opened": 1911,
+   "closed": 1961,
+   "status": "Demolished in 1965. Howard University Hospital stands on the site.",
+   "capacity": 32000,
+   "dimensions_ft": {
+    "lf": 388,
+    "lcf": 360,
+    "cf": 421,
+    "rcf": 373,
+    "rf": 320
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": 30
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Osborn Engineering",
+   "notable": [
+    "Mickey Mantle's 1953 homer here popularized the term tape measure home run.",
+    "Hosted the 1940 NFL title game, a 73-0 Bears win.",
+    "Home to the Senators 1911-1960."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Griffith_Stadium"
+   ]
+  },
+  {
+   "id": "metropolitan-stadium",
+   "name": "Metropolitan Stadium",
+   "aka": [
+    "The Met"
+   ],
+   "city": "Bloomington",
+   "state": "Minnesota",
+   "country": "USA",
+   "lat": 44.8544,
+   "lon": -93.2419,
+   "coord_approx": false,
+   "opened": 1956,
+   "closed": 1981,
+   "status": "Demolished in 1985. The Mall of America stands on the site.",
+   "capacity": 45921,
+   "dimensions_ft": {
+    "lf": 343,
+    "lcf": 365,
+    "cf": 402,
+    "rcf": 370,
+    "rf": 330
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": 8,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Osborn Engineering",
+   "notable": [
+    "Hosted the 1965 All-Star Game and World Series.",
+    "Harmon Killebrew hit a 520-foot homer here in 1967.",
+    "Also hosted the Vikings, including the 1969 NFL title game."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Metropolitan_Stadium"
+   ]
+  },
+  {
+   "id": "hubert-h-humphrey-metrodome",
+   "name": "Hubert H. Humphrey Metrodome",
+   "aka": [
+    "Metrodome",
+    "The Dome"
+   ],
+   "city": "Minneapolis",
+   "state": "Minnesota",
+   "country": "USA",
+   "lat": 44.9739,
+   "lon": -93.2581,
+   "coord_approx": false,
+   "opened": 1982,
+   "closed": 2009,
+   "status": "Demolished in 2014. U.S. Bank Stadium now stands on the site.",
+   "capacity": 46564,
+   "dimensions_ft": {
+    "lf": 343,
+    "lcf": 385,
+    "cf": 408,
+    "rcf": 367,
+    "rf": 327
+   },
+   "wall_ft": {
+    "lf": 7,
+    "cf": 7,
+    "rf": 23
+   },
+   "surface": "Artificial turf",
+   "roof": "fixed",
+   "architect": "Skidmore, Owings & Merrill",
+   "notable": [
+    "Twins won the 1987 and 1991 World Series here.",
+    "Its fabric roof collapsed under snow in December 2010.",
+    "Hosted a Super Bowl, an All-Star Game and Final Fours."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hubert_H._Humphrey_Metrodome"
+   ]
+  }
+ ]
+}

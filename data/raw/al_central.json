@@ -1,0 +1,219 @@
+[
+  {
+    "id": "CWS",
+    "team": "Chicago White Sox",
+    "league": "AL",
+    "division": "Central",
+    "stadium": "Rate Field",
+    "former_names": ["Comiskey Park II (1991–2003)", "U.S. Cellular Field (2003–2016)", "Guaranteed Rate Field (2017–2024)"],
+    "city": "Chicago",
+    "state": "Illinois",
+    "country": "USA",
+    "lat": 41.8300,
+    "lon": -87.6339,
+    "opened": 1991,
+    "capacity": 40615,
+    "surface": "Kentucky bluegrass",
+    "roof": "open",
+    "architect": "HOK Sport (now Populous)",
+    "cost": "$137 million",
+    "dimensions_ft": {"lf": 330, "lcf": 375, "cf": 400, "rcf": 375, "rf": 335},
+    "wall_ft": {"lf": 8, "cf": 8, "rf": 8},
+    "team_founded": 1901,
+    "franchise_history": [
+      {"years": "1894", "name": "Sioux City Cornhuskers", "city": "Sioux City"},
+      {"years": "1895–1899", "name": "St. Paul Saints", "city": "St. Paul"},
+      {"years": "1900–1903", "name": "Chicago White Stockings", "city": "Chicago"},
+      {"years": "1904–present", "name": "Chicago White Sox", "city": "Chicago"}
+    ],
+    "previous_stadium": "Comiskey Park (1910–1990)",
+    "world_series_titles": [1906, 1917, 2005],
+    "pennants": 7,
+    "colors": ["#27251F", "#C4CED4"],
+    "notable": [
+      "Opened in 1991 as Comiskey Park, the first major sporting facility built in Chicago since 1929.",
+      "Hosted the 2005 World Series and the 2003 All-Star Game.",
+      "Mark Buehrle threw the franchise's first perfect game here in July 2009.",
+      "Renovations in 2001–2007 removed 6,600 upper-deck seats to address fan complaints."
+    ],
+    "note": "Lease runs through the 2029 season. A proposed new ballpark at The 78 in the South Loop was under discussion; it was not approved in the latest source found.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rate_Field",
+      "https://en.wikipedia.org/wiki/Chicago_White_Sox",
+      "https://www.mlb.com/news/white-sox-proposed-ballpark-update"
+    ]
+  },
+  {
+    "id": "CLE",
+    "team": "Cleveland Guardians",
+    "league": "AL",
+    "division": "Central",
+    "stadium": "Progressive Field",
+    "former_names": ["Jacobs Field (1994–2007)"],
+    "city": "Cleveland",
+    "state": "Ohio",
+    "country": "USA",
+    "lat": 41.4958,
+    "lon": -81.6853,
+    "opened": 1994,
+    "capacity": 34820,
+    "surface": "Kentucky bluegrass",
+    "roof": "open",
+    "architect": "Populous (formerly HOK Sport)",
+    "cost": "$175 million",
+    "dimensions_ft": {"lf": 325, "lcf": 370, "cf": 400, "rcf": 375, "rf": 325},
+    "wall_ft": {"lf": 19, "cf": 9, "rf": 9},
+    "team_founded": 1901,
+    "franchise_history": [
+      {"years": "1896–1899", "name": "Columbus Buckeyes/Senators", "city": "Columbus"},
+      {"years": "1899", "name": "Grand Rapids Prodigals", "city": "Grand Rapids"},
+      {"years": "1900", "name": "Cleveland Lake Shores", "city": "Cleveland"},
+      {"years": "1901", "name": "Cleveland Bluebirds", "city": "Cleveland"},
+      {"years": "1902", "name": "Cleveland Broncos", "city": "Cleveland"},
+      {"years": "1903–1914", "name": "Cleveland Naps", "city": "Cleveland"},
+      {"years": "1915–2021", "name": "Cleveland Indians", "city": "Cleveland"},
+      {"years": "2022–present", "name": "Cleveland Guardians", "city": "Cleveland"}
+    ],
+    "previous_stadium": "Cleveland Stadium (1932–1933, 1937–1993)",
+    "world_series_titles": [1920, 1948],
+    "pennants": 6,
+    "colors": ["#0C2340", "#E31937"],
+    "notable": [
+      "Its record attendance is 45,274, set in an October 1997 Division Series Game 5.",
+      "The team sold out 455 consecutive regular-season games between 1995 and 2001.",
+      "Hosted World Series games in 1995, 1997 and 2016, plus the 1997 All-Star Game.",
+      "Lit by 19 light towers that some have compared to oversized toothbrushes."
+    ],
+    "note": "",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Progressive_Field",
+      "https://en.wikipedia.org/wiki/Cleveland_Guardians"
+    ]
+  },
+  {
+    "id": "DET",
+    "team": "Detroit Tigers",
+    "league": "AL",
+    "division": "Central",
+    "stadium": "Comerica Park",
+    "former_names": [],
+    "city": "Detroit",
+    "state": "Michigan",
+    "country": "USA",
+    "lat": 42.3392,
+    "lon": -83.0486,
+    "opened": 2000,
+    "capacity": 41083,
+    "surface": "Kentucky bluegrass",
+    "roof": "open",
+    "architect": "Populous (then HOK Sport), with SHG and Rockwell Group",
+    "cost": "$300 million",
+    "dimensions_ft": {"lf": 342, "lcf": 370, "cf": 412, "rcf": 365, "rf": 330},
+    "wall_ft": {"lf": null, "cf": 7, "rf": 7},
+    "team_founded": 1901,
+    "franchise_history": [
+      {"years": "1901–present", "name": "Detroit Tigers", "city": "Detroit"}
+    ],
+    "previous_stadium": "Tiger Stadium (1912–1999)",
+    "world_series_titles": [1935, 1945, 1968, 1984],
+    "pennants": 11,
+    "colors": ["#0C2340", "#FA4616"],
+    "notable": [
+      "Built in a retro-classic style, with an outfield fountain, a Ferris wheel and a carousel.",
+      "Hosted the 2005 All-Star Game and the 2006 and 2012 World Series.",
+      "Two no-hitters have been thrown here, both by Tigers pitchers, including Justin Verlander's in 2007.",
+      "The left-field video display, added for 2024, is MLB's second largest at 15,688 square feet."
+    ],
+    "note": "Planned rename to Fifth Third Park before the 2027 season, after Fifth Third Bank acquired Comerica Bank.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Comerica_Park",
+      "https://en.wikipedia.org/wiki/Detroit_Tigers"
+    ]
+  },
+  {
+    "id": "KC",
+    "team": "Kansas City Royals",
+    "league": "AL",
+    "division": "Central",
+    "stadium": "Kauffman Stadium",
+    "former_names": ["Royals Stadium (1973–1993)"],
+    "city": "Kansas City",
+    "state": "Missouri",
+    "country": "USA",
+    "lat": 39.0514,
+    "lon": -94.4806,
+    "opened": 1973,
+    "capacity": 37903,
+    "surface": "Kentucky bluegrass / perennial ryegrass",
+    "roof": "open",
+    "architect": "Kivett and Myers",
+    "cost": "$70 million",
+    "dimensions_ft": {"lf": 330, "lcf": 379, "cf": 410, "rcf": 379, "rf": 330},
+    "wall_ft": {"lf": null, "cf": null, "rf": null},
+    "team_founded": 1969,
+    "franchise_history": [
+      {"years": "1969–present", "name": "Kansas City Royals", "city": "Kansas City"}
+    ],
+    "previous_stadium": "Municipal Stadium (1969–1972)",
+    "world_series_titles": [1985, 2015],
+    "pennants": 4,
+    "colors": ["#004687", "#BD9B60"],
+    "notable": [
+      "Opened April 10, 1973, with a 12–1 win over the Texas Rangers.",
+      "Nolan Ryan threw the first of his seven no-hitters here in 1973, three walks short of a perfect game.",
+      "Hosted the 1973 and 2012 All-Star Games and World Series games in 1980, 1985, 2014 and 2015.",
+      "The fountain behind right field is described as the largest privately funded fountain in the world."
+    ],
+    "note": "In April 2026 the Royals and Hallmark Cards announced a new downtown ballpark at Crown Center, targeted to open for the 2030 season.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kauffman_Stadium",
+      "https://en.wikipedia.org/wiki/Kansas_City_Royals",
+      "https://www.mlb.com/news/featured/kauffman-stadium-guide-capacity-seating-chart-parking-and-more",
+      "https://www.ky3.com/2026/10/14/royals-share-additional-downtown-stadium-details-special-reveal/"
+    ]
+  },
+  {
+    "id": "MIN",
+    "team": "Minnesota Twins",
+    "league": "AL",
+    "division": "Central",
+    "stadium": "Target Field",
+    "former_names": [],
+    "city": "Minneapolis",
+    "state": "Minnesota",
+    "country": "USA",
+    "lat": 44.9817,
+    "lon": -93.2783,
+    "opened": 2010,
+    "capacity": 38544,
+    "surface": "Kentucky bluegrass",
+    "roof": "open",
+    "architect": "Populous (formerly HOK Sport)",
+    "cost": "$555 million",
+    "dimensions_ft": {"lf": 339, "lcf": 377, "cf": 411, "rcf": 367, "rf": 328},
+    "wall_ft": {"lf": null, "cf": null, "rf": null},
+    "team_founded": 1901,
+    "franchise_history": [
+      {"years": "1894–1900", "name": "Kansas City Blues", "city": "Kansas City"},
+      {"years": "1901–1904", "name": "Washington Senators", "city": "Washington, D.C."},
+      {"years": "1905–1955", "name": "Washington Nationals", "city": "Washington, D.C."},
+      {"years": "1956–1960", "name": "Washington Senators", "city": "Washington, D.C."},
+      {"years": "1961–present", "name": "Minnesota Twins", "city": "Minneapolis–St. Paul"}
+    ],
+    "previous_stadium": "Hubert H. Humphrey Metrodome (1982–2009)",
+    "world_series_titles": [1924, 1987, 1991],
+    "pennants": 6,
+    "colors": ["#002B5C", "#D31145"],
+    "notable": [
+      "Hosted the 2014 MLB All-Star Game.",
+      "ESPN The Magazine ranked it the top baseball stadium experience in North America in 2010.",
+      "Recertified LEED Gold in 2017, the first sports site in the nation to earn that level.",
+      "A center-field sign called Minnie and Paul lights up after home runs and Twins wins."
+    ],
+    "note": "",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Target_Field",
+      "https://en.wikipedia.org/wiki/Minnesota_Twins"
+    ]
+  }
+]

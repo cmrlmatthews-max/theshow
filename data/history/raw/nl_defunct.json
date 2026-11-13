@@ -1,0 +1,1765 @@
+{
+ "teams": [
+  {
+   "franchise": "hartford-dark-blues",
+   "name": "Hartford Dark Blues",
+   "abbr": "HAR",
+   "city": "Hartford",
+   "state": "Connecticut",
+   "country": "USA",
+   "league": "NL",
+   "start": 1876,
+   "end": 1876,
+   "homes": [
+    {
+     "park": "hartford-ball-club-grounds",
+     "start": 1876,
+     "end": 1876
+    }
+   ],
+   "fate": "Moved to Brooklyn for 1877 and played as the Brooklyn Hartfords.",
+   "note": "Charter NL member owned by league president Morgan Bulkeley; finished third.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hartford_Dark_Blues"
+   ]
+  },
+  {
+   "franchise": "hartford-dark-blues",
+   "name": "Brooklyn Hartfords",
+   "abbr": "HAR",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1877,
+   "end": 1877,
+   "homes": [
+    {
+     "park": "union-grounds",
+     "start": 1877,
+     "end": 1877
+    }
+   ],
+   "fate": "Disbanded after 1877; Providence took its NL place.",
+   "note": "Nominally Hartford but played all home games in Brooklyn.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hartford_Dark_Blues"
+   ]
+  },
+  {
+   "franchise": "louisville-grays",
+   "name": "Louisville Grays",
+   "abbr": "LOU",
+   "city": "Louisville",
+   "state": "Kentucky",
+   "country": "USA",
+   "league": "NL",
+   "start": 1876,
+   "end": 1877,
+   "homes": [
+    {
+     "park": "louisville-baseball-park",
+     "start": 1876,
+     "end": 1877
+    }
+   ],
+   "fate": "Folded after the 1877 gambling scandal; four players received lifetime bans.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Louisville_Grays"
+   ]
+  },
+  {
+   "franchise": "new-york-mutuals",
+   "name": "New York Mutuals",
+   "abbr": "MUT",
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1876,
+   "end": 1876,
+   "homes": [
+    {
+     "park": "union-grounds",
+     "start": 1876,
+     "end": 1876
+    }
+   ],
+   "fate": "Expelled from the NL after refusing to finish its western road trip.",
+   "note": "Played home games in Brooklyn at Union Grounds.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_York_Mutuals"
+   ]
+  },
+  {
+   "franchise": "philadelphia-athletics-1860",
+   "name": "Philadelphia Athletics",
+   "abbr": "ATH",
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "NL",
+   "start": 1876,
+   "end": 1876,
+   "homes": [
+    {
+     "park": "jefferson-street-grounds",
+     "start": 1876,
+     "end": 1876
+    }
+   ],
+   "fate": "Expelled from the NL after refusing a western road trip.",
+   "note": "Finished seventh at 14-45; the NL shrank to six clubs for 1877.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Philadelphia_Athletics_(1860%E2%80%931876)"
+   ]
+  },
+  {
+   "franchise": "st-louis-brown-stockings",
+   "name": "St. Louis Brown Stockings",
+   "abbr": "STL",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "NL",
+   "start": 1876,
+   "end": 1877,
+   "homes": [
+    {
+     "park": "sportsmans-park",
+     "start": 1876,
+     "end": 1877
+    }
+   ],
+   "fate": "Folded after 1877, hurt by the Louisville scandal and finances.",
+   "note": "Wikipedia page for the club could not be fetched; fate from Louisville Grays page.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Louisville_Grays",
+    "https://en.wikipedia.org/wiki/Sportsman%27s_Park"
+   ]
+  },
+  {
+   "franchise": "cincinnati-reds-1876",
+   "name": "Cincinnati Reds",
+   "abbr": "CIN",
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NL",
+   "start": 1876,
+   "end": 1879,
+   "homes": [
+    {
+     "park": "avenue-grounds",
+     "start": 1876,
+     "end": 1879
+    }
+   ],
+   "fate": "Dropped from the NL after 1879; a new club replaced it for 1880.",
+   "note": "Distinct from the modern Reds, who began in the American Association in 1882.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cincinnati_Reds_(1876%E2%80%931879)"
+   ]
+  },
+  {
+   "franchise": "cincinnati-stars-1880",
+   "name": "Cincinnati Stars",
+   "abbr": "CIN",
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NL",
+   "start": 1880,
+   "end": 1880,
+   "homes": [
+    {
+     "park": "bank-street-grounds",
+     "start": 1880,
+     "end": 1880
+    }
+   ],
+   "fate": "Expelled after 1880 for refusing to ban Sunday games and beer.",
+   "note": "Baseball-Reference joins this club with the 1876-79 Reds; Wikipedia treats it as a new club.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cincinnati_Stars",
+    "https://en.wikipedia.org/wiki/Bank_Street_Grounds"
+   ]
+  },
+  {
+   "franchise": "indianapolis-blues-1878",
+   "name": "Indianapolis Blues",
+   "abbr": "IND",
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "league": "NL",
+   "start": 1878,
+   "end": 1878,
+   "homes": [
+    {
+     "park": "south-street-park",
+     "start": 1878,
+     "end": 1878
+    }
+   ],
+   "fate": "Folded after one NL season.",
+   "note": "Finished fifth at 24-36.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indianapolis_Blues",
+    "https://en.wikipedia.org/wiki/South_Street_Park"
+   ]
+  },
+  {
+   "franchise": "milwaukee-grays-1878",
+   "name": "Milwaukee Grays",
+   "abbr": "MLW",
+   "city": "Milwaukee",
+   "state": "Wisconsin",
+   "country": "USA",
+   "league": "NL",
+   "start": 1878,
+   "end": 1878,
+   "homes": [
+    {
+     "park": "eclipse-park-milwaukee",
+     "start": 1878,
+     "end": 1878
+    }
+   ],
+   "fate": "Folded after one NL season.",
+   "note": "Went 15-45 and finished last.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Milwaukee_Grays"
+   ]
+  },
+  {
+   "franchise": "providence-grays",
+   "name": "Providence Grays",
+   "abbr": "PRO",
+   "city": "Providence",
+   "state": "Rhode Island",
+   "country": "USA",
+   "league": "NL",
+   "start": 1878,
+   "end": 1885,
+   "homes": [
+    {
+     "park": "messer-street-grounds",
+     "start": 1878,
+     "end": 1885
+    }
+   ],
+   "fate": "Disbanded after 1885; the NL sold its players and franchise rights.",
+   "note": "Won NL pennants in 1879 and 1884.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Messer_Street_Grounds"
+   ]
+  },
+  {
+   "franchise": "buffalo-bisons-1879",
+   "name": "Buffalo Bisons",
+   "abbr": "BUF",
+   "city": "Buffalo",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1879,
+   "end": 1885,
+   "homes": [
+    {
+     "park": "riverside-park-stadium",
+     "start": 1879,
+     "end": 1883
+    },
+    {
+     "park": "olympic-park-buffalo",
+     "start": 1884,
+     "end": 1885
+    }
+   ],
+   "fate": "Left the NL after 1885 and joined the International League.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Buffalo_Bisons_(NL)"
+   ]
+  },
+  {
+   "franchise": "cleveland-blues-1879",
+   "name": "Cleveland Blues",
+   "abbr": "CLV",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NL",
+   "start": 1879,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "kennard-street-park",
+     "start": 1879,
+     "end": 1884
+    }
+   ],
+   "fate": "Dropped from the NL after 1884.",
+   "note": "Not the same club as the later Spiders.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_League_Park"
+   ]
+  },
+  {
+   "franchise": "syracuse-stars-1879",
+   "name": "Syracuse Stars",
+   "abbr": "SYR",
+   "city": "Syracuse",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1879,
+   "end": 1879,
+   "homes": [
+    {
+     "park": "newell-park",
+     "start": 1879,
+     "end": 1879
+    }
+   ],
+   "fate": "Folded on September 10, 1879, before finishing the schedule.",
+   "note": "Went 22-48.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Syracuse_Stars_(NL)",
+    "https://en.wikipedia.org/wiki/Newell_Park"
+   ]
+  },
+  {
+   "franchise": "troy-trojans",
+   "name": "Troy Trojans",
+   "abbr": "TRO",
+   "city": "Troy",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1879,
+   "end": 1881,
+   "homes": [
+    {
+     "park": "putnam-grounds-troy",
+     "start": 1879,
+     "end": 1879
+    },
+    {
+     "park": "haymakers-grounds",
+     "start": 1880,
+     "end": 1881
+    }
+   ],
+   "fate": "Moved across the river to West Troy for 1882.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Troy_Trojans_(National_League)"
+   ]
+  },
+  {
+   "franchise": "troy-trojans",
+   "name": "Troy Trojans",
+   "abbr": "TRO",
+   "city": "Watervliet",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1882,
+   "end": 1882,
+   "homes": [
+    {
+     "park": "troy-ball-clubs-grounds",
+     "start": 1882,
+     "end": 1882
+    }
+   ],
+   "fate": "Expelled from the NL late in 1882 with Worcester; New York replaced them.",
+   "note": "Played in West Troy, now Watervliet; listed under the Troy name.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Troy_Trojans_(National_League)",
+    "https://en.wikipedia.org/wiki/Troy_Ball_Clubs_Grounds"
+   ]
+  },
+  {
+   "franchise": "worcester-ruby-legs",
+   "name": "Worcester Ruby Legs",
+   "abbr": "WOR",
+   "city": "Worcester",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "NL",
+   "start": 1880,
+   "end": 1882,
+   "homes": [
+    {
+     "park": "worcester-driving-park-grounds",
+     "start": 1880,
+     "end": 1882
+    }
+   ],
+   "fate": "Resigned from the NL in December 1882; Philadelphia took its spot.",
+   "note": "Wikipedia uses the name Worcester Worcesters; Ruby Legs is a common nickname.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Worcester_Worcesters"
+   ]
+  },
+  {
+   "franchise": "detroit-wolverines",
+   "name": "Detroit Wolverines",
+   "abbr": "DTN",
+   "city": "Detroit",
+   "state": "Michigan",
+   "country": "USA",
+   "league": "NL",
+   "start": 1881,
+   "end": 1888,
+   "homes": [
+    {
+     "park": "recreation-park-detroit",
+     "start": 1881,
+     "end": 1888
+    }
+   ],
+   "fate": "Disbanded after 1888; the Cleveland Spiders took the league spot.",
+   "note": "Won the 1887 NL pennant and the World Series.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Detroit_Wolverines"
+   ]
+  },
+  {
+   "franchise": "st-louis-maroons",
+   "name": "St. Louis Maroons",
+   "abbr": "SLM",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "NL",
+   "start": 1885,
+   "end": 1886,
+   "homes": [
+    {
+     "park": "union-grounds-st-louis",
+     "start": 1885,
+     "end": 1886
+    }
+   ],
+   "fate": "Sold and moved to Indianapolis for 1887 as the Hoosiers.",
+   "note": "Followed a 1884 Union Association season in the same park.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis_Maroons",
+    "https://en.wikipedia.org/wiki/Union_Grounds_(St._Louis)"
+   ]
+  },
+  {
+   "franchise": "st-louis-maroons",
+   "name": "Indianapolis Hoosiers",
+   "abbr": "IND",
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "league": "NL",
+   "start": 1887,
+   "end": 1889,
+   "homes": [
+    {
+     "park": "tinker-park",
+     "start": 1887,
+     "end": 1889
+    }
+   ],
+   "fate": "Folded after 1889.",
+   "note": "Weekday games at Tinker Park; Sunday games were played outside city limits.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis_Maroons",
+    "https://en.wikipedia.org/wiki/Athletic_Park_(Indianapolis)"
+   ]
+  },
+  {
+   "franchise": "kansas-city-cowboys-1886",
+   "name": "Kansas City Cowboys",
+   "abbr": "KCC",
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "NL",
+   "start": 1886,
+   "end": 1886,
+   "homes": [
+    {
+     "park": "association-park-kansas-city",
+     "start": 1886,
+     "end": 1886
+    }
+   ],
+   "fate": "Folded in February 1887 after selling its players to the league; Pittsburgh replaced it.",
+   "note": "Went 30-91; the NL admitted it on a trial basis.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kansas_City_Cowboys_(National_League)",
+    "https://en.wikipedia.org/wiki/Association_Park"
+   ]
+  },
+  {
+   "franchise": "washington-nationals-1886",
+   "name": "Washington Nationals",
+   "abbr": "WNL",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "NL",
+   "start": 1886,
+   "end": 1889,
+   "homes": [
+    {
+     "park": "swampoodle-grounds",
+     "start": 1886,
+     "end": 1889
+    }
+   ],
+   "fate": "Dissolved after 1889.",
+   "note": "Went 163-337 over four seasons with six managers.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Washington_Nationals_(1886%E2%80%931889)",
+    "https://en.wikipedia.org/wiki/Swampoodle_Grounds"
+   ]
+  },
+  {
+   "franchise": "cleveland-spiders",
+   "name": "Cleveland Spiders",
+   "abbr": "CLV",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NL",
+   "start": 1889,
+   "end": 1899,
+   "homes": [
+    {
+     "park": "national-league-park",
+     "start": 1889,
+     "end": 1890
+    },
+    {
+     "park": "league-park",
+     "start": 1891,
+     "end": 1899
+    }
+   ],
+   "fate": "Contracted after 1899 once its owners moved the best players to St. Louis.",
+   "note": "Joined the NL from the American Association (1887-88); 1899 team went 20-134.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cleveland_Spiders"
+   ]
+  },
+  {
+   "franchise": "louisville-colonels",
+   "name": "Louisville Colonels",
+   "abbr": "LOU",
+   "city": "Louisville",
+   "state": "Kentucky",
+   "country": "USA",
+   "league": "NL",
+   "start": 1892,
+   "end": 1899,
+   "homes": [
+    {
+     "park": "eclipse-park-i-louisville",
+     "start": 1892,
+     "end": 1892
+    },
+    {
+     "park": "eclipse-park-ii-louisville",
+     "start": 1893,
+     "end": 1899
+    }
+   ],
+   "fate": "Contracted after 1899; owner Barney Dreyfuss took stars to Pittsburgh.",
+   "note": "Joined the NL from the American Association; Eclipse Park I partly burned in 1892.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Louisville_Colonels",
+    "https://en.wikipedia.org/wiki/Eclipse_Park"
+   ]
+  },
+  {
+   "franchise": "baltimore-orioles",
+   "name": "Baltimore Orioles",
+   "abbr": "BLN",
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "league": "NL",
+   "start": 1892,
+   "end": 1899,
+   "homes": [
+    {
+     "park": "union-park-baltimore",
+     "start": 1892,
+     "end": 1899
+    }
+   ],
+   "fate": "Contracted after 1899; most stars went to Brooklyn.",
+   "note": "Joined the NL from the American Association; not the ancestor of the current Orioles.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baltimore_Orioles_(1882%E2%80%931899)",
+    "https://en.wikipedia.org/wiki/Union_Park_(Baltimore)"
+   ]
+  },
+  {
+   "franchise": "washington-senators-1891",
+   "name": "Washington Senators",
+   "abbr": "WSN",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "NL",
+   "start": 1892,
+   "end": 1899,
+   "homes": [
+    {
+     "park": "boundary-field",
+     "start": 1892,
+     "end": 1899
+    }
+   ],
+   "fate": "Contracted after 1899 when the NL cut from twelve clubs to eight.",
+   "note": "Played 1891 in the American Association as the Statesmen; never had a winning season.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Washington_Senators_(1891%E2%80%931899)",
+    "https://en.wikipedia.org/wiki/Boundary_Field"
+   ]
+  }
+ ],
+ "parks": [
+  {
+   "id": "hartford-ball-club-grounds",
+   "name": "Hartford Ball Club Grounds",
+   "aka": [
+    "Hartford Base Ball Grounds"
+   ],
+   "city": "Hartford",
+   "state": "Connecticut",
+   "country": "USA",
+   "lat": 41.7575,
+   "lon": -72.6693,
+   "coord_approx": false,
+   "opened": 1874,
+   "closed": 1876,
+   "status": "Site is a lawn near the Church of the Good Shepherd, with granite base markers added in 2013.",
+   "capacity": 10000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Hartford Dark Blues from 1874 through 1876, two seasons in the NA and one in the NL.",
+    "Hartford played its 1877 home games in Brooklyn, not here."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hartford_Ball_Club_Grounds"
+   ]
+  },
+  {
+   "id": "union-grounds",
+   "name": "Union Grounds",
+   "aka": [
+    "Union Grounds (Brooklyn)"
+   ],
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.701,
+   "lon": -73.956,
+   "coord_approx": true,
+   "opened": 1862,
+   "closed": 1878,
+   "status": "Demolished in 1883. Heyward Street, a school and the Marcy Avenue Armory now cover the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": 350
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "First baseball park fully enclosed by a fence, which allowed admission to be charged.",
+    "Home to the New York Mutuals through 1876 and the Hartford club's 1877 home games.",
+    "An unusual pagoda stood in center field."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Grounds"
+   ]
+  },
+  {
+   "id": "louisville-baseball-park",
+   "name": "Louisville Baseball Park",
+   "aka": [
+    "League Park"
+   ],
+   "city": "Louisville",
+   "state": "Kentucky",
+   "country": "USA",
+   "lat": 38.2278,
+   "lon": -85.7633,
+   "coord_approx": false,
+   "opened": 1876,
+   "closed": 1877,
+   "status": "The block became the St. James Court residential neighborhood.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Louisville Grays in 1876 and 1877, the club's only two seasons.",
+    "The same block later held the Southern Exposition from 1883 to 1887."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Louisville_Baseball_Park",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Louisville,_Kentucky"
+   ]
+  },
+  {
+   "id": "jefferson-street-grounds",
+   "name": "Jefferson Street Grounds",
+   "aka": [],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9781,
+   "lon": -75.1764,
+   "coord_approx": false,
+   "opened": 1864,
+   "closed": 1890,
+   "status": "A school and the Athletic Recreation Center with ball fields occupy the block.",
+   "capacity": 15000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted the first National League game on April 22, 1876, Boston over Athletic, 6-5.",
+    "Home of the Philadelphia Athletics of 1876, who were expelled after refusing a western trip."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jefferson_Street_Grounds"
+   ]
+  },
+  {
+   "id": "sportsmans-park",
+   "name": "Sportsman's Park",
+   "aka": [
+    "Grand Avenue Park",
+    "Grand Avenue Ball Grounds"
+   ],
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 38.6581,
+   "lon": -90.22,
+   "coord_approx": false,
+   "opened": 1867,
+   "closed": 1966,
+   "status": "Grandstand razed in 1966; the Herbert Hoover Boys and Girls Club and a field occupy the site.",
+   "capacity": 34023,
+   "dimensions_ft": {
+    "lf": 351,
+    "lcf": 379,
+    "cf": 422,
+    "rcf": 354,
+    "rf": 310
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Osborn Engineering Company",
+   "notable": [
+    "Early version, the Grand Avenue Ball Grounds, hosted the St. Louis Brown Stockings in 1875-77.",
+    "Cardinals and Browns shared the later park, which hosted the 1926 and 1964 World Series."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sportsman%27s_Park"
+   ]
+  },
+  {
+   "id": "avenue-grounds",
+   "name": "Avenue Grounds",
+   "aka": [],
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 39.1431,
+   "lon": -84.5464,
+   "coord_approx": false,
+   "opened": 1875,
+   "closed": 1879,
+   "status": "Railroad yards cover the approximate site.",
+   "capacity": 3000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted what is described as the first Ladies' Day in major league history, in 1876.",
+    "Home of the Cincinnati Reds from 1876 through 1879."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Avenue_Grounds"
+   ]
+  },
+  {
+   "id": "bank-street-grounds",
+   "name": "Bank Street Grounds",
+   "aka": [
+    "Union Athletic Park"
+   ],
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 39.1075,
+   "lon": -84.5385,
+   "coord_approx": true,
+   "opened": 1880,
+   "closed": 1884,
+   "status": "A parking lot for SORTA and CSX Transportation occupies the area.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1880 Cincinnati Stars, expelled from the NL for Sunday games and beer sales.",
+    "Later hosted the American Association Reds in 1882-83 and the Union Association Outlaw Reds in 1884."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bank_Street_Grounds"
+   ]
+  },
+  {
+   "id": "south-street-park",
+   "name": "South Street Park",
+   "aka": [
+    "National Park",
+    "Indianapolis Base Ball Park"
+   ],
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "lat": 39.7622,
+   "lon": -86.1539,
+   "coord_approx": false,
+   "opened": 1876,
+   "closed": 1878,
+   "status": "A parking lot for Gainbridge Fieldhouse covers the block.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1878 Indianapolis Blues, a one-season National League club.",
+    "Hosted some Chicago White Stockings games in 1878 as a neutral site."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/South_Street_Park"
+   ]
+  },
+  {
+   "id": "eclipse-park-milwaukee",
+   "name": "Eclipse Park (Milwaukee)",
+   "aka": [],
+   "city": "Milwaukee",
+   "state": "Wisconsin",
+   "country": "USA",
+   "lat": 43.0367,
+   "lon": -87.925,
+   "coord_approx": false,
+   "opened": 1878,
+   "closed": 1878,
+   "status": "Interstate 43 and the Marquette Interchange cover the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1878 Milwaukee Grays, who finished last at 15-45 and folded.",
+    "Like later Borchert Field, its site now sits under a highway."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Eclipse_Park_(Milwaukee)"
+   ]
+  },
+  {
+   "id": "messer-street-grounds",
+   "name": "Messer Street Grounds",
+   "aka": [],
+   "city": "Providence",
+   "state": "Rhode Island",
+   "country": "USA",
+   "lat": 41.8132,
+   "lon": -71.4371,
+   "coord_approx": false,
+   "opened": 1878,
+   "closed": 1885,
+   "status": "Demolished in 1887; houses were built on the land.",
+   "capacity": 6000,
+   "dimensions_ft": {
+    "lf": 281,
+    "lcf": 356,
+    "cf": 318,
+    "rcf": 356,
+    "rf": 431
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Providence installed the first professional backstop here in 1878.",
+    "Fans could watch from a building roof beyond the left field fence for 25 cents."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Messer_Street_Grounds"
+   ]
+  },
+  {
+   "id": "riverside-park-stadium",
+   "name": "Riverside Park",
+   "aka": [],
+   "city": "Buffalo",
+   "state": "New York",
+   "country": "USA",
+   "lat": 42.9067,
+   "lon": -78.8928,
+   "coord_approx": false,
+   "opened": 1878,
+   "closed": 1883,
+   "status": "Part of the residential Prospect Hill neighborhood.",
+   "capacity": 5000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "First ballpark of the major league Bisons, used 1879-83.",
+    "Named for the river but sat several blocks from it; demolished by its owner for redevelopment."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Riverside_Park_(stadium)"
+   ]
+  },
+  {
+   "id": "olympic-park-buffalo",
+   "name": "Olympic Park (Buffalo)",
+   "aka": [
+    "Olympic Park I"
+   ],
+   "city": "Buffalo",
+   "state": "New York",
+   "country": "USA",
+   "lat": 42.9056,
+   "lon": -78.8811,
+   "coord_approx": false,
+   "opened": 1884,
+   "closed": 1885,
+   "status": "A residential area including the Richmond-Summer Recreation Center occupies the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the NL Bisons in 1884 and 1885, then International League clubs through 1888.",
+    "Built on the former Riverside Park site; its stands were later moved to a second Olympic Park."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Olympic_Park_(Buffalo)"
+   ]
+  },
+  {
+   "id": "kennard-street-park",
+   "name": "Kennard Street Park",
+   "aka": [
+    "National League Park (I)",
+    "Kennard Street Ball Park"
+   ],
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.5008,
+   "lon": -81.6539,
+   "coord_approx": true,
+   "opened": 1879,
+   "closed": 1884,
+   "status": "Commercial buildings now cover the site near East 46th Street and Carnegie Avenue.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Cleveland Blues throughout their NL run, 1879-84.",
+    "Later renamed National League Park; Cleveland's second NL Park was a few blocks northwest."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_League_Park",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Cleveland"
+   ]
+  },
+  {
+   "id": "national-league-park",
+   "name": "National League Park",
+   "aka": [
+    "National League Park (II)",
+    "Association Park"
+   ],
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.5065,
+   "lon": -81.668,
+   "coord_approx": true,
+   "opened": 1887,
+   "closed": 1890,
+   "status": "Commercial buildings now cover the site between Payne and Euclid Avenues.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Cleveland Spiders in the AA (1887-88) and NL (1889-90).",
+    "Newspapers called it Association Park early on, then League Park or National League Park."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_League_Park",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Cleveland"
+   ]
+  },
+  {
+   "id": "league-park",
+   "name": "League Park",
+   "aka": [
+    "Dunn Field"
+   ],
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.5114,
+   "lon": -81.6442,
+   "coord_approx": false,
+   "opened": 1891,
+   "closed": 1946,
+   "status": "A public park; the ticket house is a museum and the field is still used locally.",
+   "capacity": 22500,
+   "dimensions_ft": {
+    "lf": 385,
+    "lcf": null,
+    "cf": 460,
+    "rcf": null,
+    "rf": 290
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Opened May 1, 1891, with Cy Young pitching the first game, a Spiders win over Cincinnati.",
+    "The 1899 Spiders went 20-134 and played 112 of 154 games on the road."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/League_Park"
+   ]
+  },
+  {
+   "id": "haymakers-grounds",
+   "name": "Haymakers' Grounds",
+   "aka": [
+    "Vail Lot"
+   ],
+   "city": "Troy",
+   "state": "New York",
+   "country": "USA",
+   "lat": 42.76,
+   "lon": -73.6808,
+   "coord_approx": false,
+   "opened": 1866,
+   "closed": 1881,
+   "status": "A monument in Knickerbacker Park marks the vicinity of the grounds.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Also called the Vail Lot after an early settler family.",
+    "Home of the Troy Trojans in 1880 and 1881 and the Troy Haymakers in 1871-72."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haymakers%27_Grounds"
+   ]
+  },
+  {
+   "id": "putnam-grounds-troy",
+   "name": "Putnam Grounds (Troy)",
+   "aka": [],
+   "city": "Troy",
+   "state": "New York",
+   "country": "USA",
+   "lat": 42.7284,
+   "lon": -73.6918,
+   "coord_approx": true,
+   "opened": 1879,
+   "closed": 1879,
+   "status": "Exact site not recorded in sources consulted; city-center coordinates used.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Treated as the home of the 1879 Troy Trojans in their first NL season.",
+    "Troy moved to the Haymakers' Grounds for 1880."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Putnam_Grounds",
+    "https://en.wikipedia.org/wiki/Troy_Trojans_(National_League)"
+   ]
+  },
+  {
+   "id": "troy-ball-clubs-grounds",
+   "name": "Troy Ball Clubs Grounds",
+   "aka": [
+    "West Troy Grounds"
+   ],
+   "city": "Watervliet",
+   "state": "New York",
+   "country": "USA",
+   "lat": 42.7322,
+   "lon": -73.7114,
+   "coord_approx": false,
+   "opened": 1882,
+   "closed": 1882,
+   "status": "Vacant fields on 1903 maps; the later use of the site is not recorded in sources consulted.",
+   "capacity": 800,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Built in 1882 for $5,000 on a former wheat field in West Troy.",
+    "Home of the Troy Trojans' final NL season; later minor league clubs used it into the 1890s."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Troy_Ball_Clubs_Grounds"
+   ]
+  },
+  {
+   "id": "newell-park",
+   "name": "Newell Park",
+   "aka": [
+    "Star Park I"
+   ],
+   "city": "Syracuse",
+   "state": "New York",
+   "country": "USA",
+   "lat": 43.035,
+   "lon": -76.1483,
+   "coord_approx": false,
+   "opened": 1878,
+   "closed": 1879,
+   "status": "Former ballfield at East Raynor Street and South Salina Street; present use not stated.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1879 Syracuse Stars, who folded on September 10 with a 22-48 record.",
+    "Historians also call it Star Park I."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Newell_Park"
+   ]
+  },
+  {
+   "id": "worcester-driving-park-grounds",
+   "name": "Worcester Driving Park Grounds",
+   "aka": [
+    "Worcester Agricultural County Fairgrounds"
+   ],
+   "city": "Worcester",
+   "state": "Massachusetts",
+   "country": "USA",
+   "lat": 42.269,
+   "lon": -71.8165,
+   "coord_approx": true,
+   "opened": 1872,
+   "closed": 1882,
+   "status": "Streets, homes and businesses cover it; a granite post marks the perfect game on the old Becker campus.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Lee Richmond threw the first major league perfect game here on June 12, 1880.",
+    "On September 25, 1882, one admission covered two games against Providence."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Worcester_Driving_Park_Grounds",
+    "https://en.wikipedia.org/wiki/Worcester_Worcesters"
+   ]
+  },
+  {
+   "id": "recreation-park-detroit",
+   "name": "Recreation Park (Detroit)",
+   "aka": [],
+   "city": "Detroit",
+   "state": "Michigan",
+   "country": "USA",
+   "lat": 42.3514,
+   "lon": -83.055,
+   "coord_approx": false,
+   "opened": 1879,
+   "closed": 1888,
+   "status": "Harper Hospital buildings stand on the site, with a historical marker in former left field.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted Detroit's first major league game on May 2, 1881.",
+    "The Wolverines won the 1887 NL pennant and World Series here."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Recreation_Park_(Detroit)"
+   ]
+  },
+  {
+   "id": "union-grounds-st-louis",
+   "name": "Union Grounds (St. Louis)",
+   "aka": [
+    "Lucas Park",
+    "Union Base Ball Park"
+   ],
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 38.6435,
+   "lon": -90.2125,
+   "coord_approx": true,
+   "opened": 1884,
+   "closed": 1886,
+   "status": "Cleared for the National Geospatial-Intelligence Agency West Campus.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Often called Lucas Park after Maroons founder Henry Lucas.",
+    "Home of the Maroons in the Union Association (1884) and NL (1885-86)."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Grounds_(St._Louis)",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_St._Louis"
+   ]
+  },
+  {
+   "id": "tinker-park",
+   "name": "Tinker Park",
+   "aka": [
+    "Athletic Park",
+    "Seventh Street Park"
+   ],
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "lat": 39.7885,
+   "lon": -86.1637,
+   "coord_approx": true,
+   "opened": 1884,
+   "closed": 1889,
+   "status": "Methodist Hospital of Indianapolis occupies the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": 286,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": 261
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Also known as Athletic Park and Seventh Street Park; home of the 1887-89 Hoosiers.",
+    "Blue laws forced Sunday games to grounds outside city limits."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Athletic_Park_(Indianapolis)"
+   ]
+  },
+  {
+   "id": "association-park-kansas-city",
+   "name": "Association Park (Kansas City)",
+   "aka": [
+    "League Park"
+   ],
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 39.1061,
+   "lon": -94.5658,
+   "coord_approx": false,
+   "opened": 1886,
+   "closed": 1888,
+   "status": "The Al-Taqwa Islamic Center occupies the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Originally League Park; built on a former pond and nicknamed The Hole for poor drainage.",
+    "Home of the 1886 NL Cowboys, then Western League and AA seasons through 1888."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Association_Park"
+   ]
+  },
+  {
+   "id": "swampoodle-grounds",
+   "name": "Swampoodle Grounds",
+   "aka": [
+    "Capitol Park II"
+   ],
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "lat": 38.8985,
+   "lon": -77.009,
+   "coord_approx": true,
+   "opened": 1886,
+   "closed": 1889,
+   "status": "Part of the area was absorbed into Union Station and the old Main Post Office.",
+   "capacity": 6000,
+   "dimensions_ft": {
+    "lf": 253,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": 264
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Named for the Swampoodle neighborhood; fans could see the Capitol dome from the stands.",
+    "Home of the Washington Nationals for their four NL seasons, 1886-89."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Swampoodle_Grounds"
+   ]
+  },
+  {
+   "id": "boundary-field",
+   "name": "Boundary Field",
+   "aka": [
+    "National Park",
+    "American League Park II"
+   ],
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "lat": 38.9175,
+   "lon": -77.0203,
+   "coord_approx": false,
+   "opened": 1891,
+   "closed": 1910,
+   "status": "Howard University Hospital occupies the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home to the Washington Senators in the AA and NL from 1891 to 1899.",
+    "The wooden stands burned in 1911 and Griffith Stadium replaced them."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boundary_Field"
+   ]
+  },
+  {
+   "id": "eclipse-park-i-louisville",
+   "name": "Eclipse Park I",
+   "aka": [
+    "Eclipse Park (Louisville)"
+   ],
+   "city": "Louisville",
+   "state": "Kentucky",
+   "country": "USA",
+   "lat": 38.244,
+   "lon": -85.795,
+   "coord_approx": true,
+   "opened": 1874,
+   "closed": 1893,
+   "status": "Now Elliott Park, a public park with a ball diamond.",
+   "capacity": 5000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Fire in September 1892 destroyed part of it; the Colonels used the remains until May 1893.",
+    "Louisville lost 26 straight games here in 1889, then won its only pennant in 1890."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Eclipse_Park",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Louisville,_Kentucky"
+   ]
+  },
+  {
+   "id": "eclipse-park-ii-louisville",
+   "name": "Eclipse Park II",
+   "aka": [],
+   "city": "Louisville",
+   "state": "Kentucky",
+   "country": "USA",
+   "lat": 38.2425,
+   "lon": -85.795,
+   "coord_approx": true,
+   "opened": 1893,
+   "closed": 1899,
+   "status": "Commercial buildings stand at the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Honus Wagner made his major league debut here on July 19, 1897.",
+    "A fire on August 12, 1899, forced the Colonels to play their last month on the road."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Eclipse_Park",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Louisville,_Kentucky"
+   ]
+  },
+  {
+   "id": "union-park-baltimore",
+   "name": "Union Park (Baltimore)",
+   "aka": [],
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "lat": 39.3181,
+   "lon": -76.6128,
+   "coord_approx": false,
+   "opened": 1891,
+   "closed": 1899,
+   "status": "A residential area in Barclay; some buildings from 1890s photos still stand.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Dan Brouthers hit a 1894 home run over the center field fence that rolled to 23rd Street.",
+    "A fire on January 14, 1895, destroyed the grandstand; it was rebuilt."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Park_(Baltimore)"
+   ]
+  }
+ ]
+}

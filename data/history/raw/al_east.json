@@ -1,0 +1,861 @@
+{
+ "teams": [
+  {
+   "franchise": "BAL",
+   "name": "Milwaukee Brewers",
+   "abbr": "MLA",
+   "city": "Milwaukee",
+   "state": "Wisconsin",
+   "country": "USA",
+   "league": "AL",
+   "start": 1901,
+   "end": 1901,
+   "homes": [
+    {
+     "park": "lloyd-street-grounds",
+     "start": 1901,
+     "end": 1901
+    }
+   ],
+   "fate": "Moved to St. Louis and became the Browns for 1902.",
+   "note": "One season in Milwaukee; finished last at 48-89.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lloyd_Street_Grounds",
+    "https://en.wikipedia.org/wiki/Baltimore_Orioles"
+   ]
+  },
+  {
+   "franchise": "BAL",
+   "name": "St. Louis Browns",
+   "abbr": "SLB",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "AL",
+   "start": 1902,
+   "end": 1953,
+   "homes": [
+    {
+     "park": "sportsmans-park",
+     "start": 1902,
+     "end": 1953
+    }
+   ],
+   "fate": "Sold and moved to Baltimore as the Orioles for 1954.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sportsman%27s_Park",
+    "https://en.wikipedia.org/wiki/Baltimore_Orioles"
+   ]
+  },
+  {
+   "franchise": "BAL",
+   "name": "Baltimore Orioles",
+   "abbr": "BAL",
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "league": "AL",
+   "start": 1954,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "memorial-stadium-baltimore",
+     "start": 1954,
+     "end": 1991
+    },
+    {
+     "park": "BAL",
+     "start": 1992,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baltimore_Orioles",
+    "https://en.wikipedia.org/wiki/Baltimore_Stadium"
+   ]
+  },
+  {
+   "franchise": "BOS",
+   "name": "Boston Americans",
+   "abbr": "BOS",
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "AL",
+   "start": 1901,
+   "end": 1907,
+   "homes": [
+    {
+     "park": "huntington-avenue-grounds",
+     "start": 1901,
+     "end": 1907
+    }
+   ],
+   "fate": "Renamed Boston Red Sox for 1908.",
+   "note": "Sometimes called the Pilgrims informally.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+    "https://en.wikipedia.org/wiki/Huntington_Avenue_Grounds"
+   ]
+  },
+  {
+   "franchise": "BOS",
+   "name": "Boston Red Sox",
+   "abbr": "BOS",
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "AL",
+   "start": 1908,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "huntington-avenue-grounds",
+     "start": 1908,
+     "end": 1911
+    },
+    {
+     "park": "BOS",
+     "start": 1912,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+    "https://en.wikipedia.org/wiki/Huntington_Avenue_Grounds"
+   ]
+  },
+  {
+   "franchise": "NYY",
+   "name": "Baltimore Orioles",
+   "abbr": "BLA",
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "league": "AL",
+   "start": 1901,
+   "end": 1902,
+   "homes": [
+    {
+     "park": "oriole-park-iv",
+     "start": 1901,
+     "end": 1902
+    }
+   ],
+   "fate": "Franchise forfeited after 1902; its rights moved to New York as the Highlanders.",
+   "note": "Unrelated to the current Baltimore Orioles; sources differ on how the franchise reached New York.",
+   "sources": [
+    "https://sabr.org/bioproj/park/american-league-park-baltimore/",
+    "https://en.wikipedia.org/wiki/Baltimore_Orioles_(1901%E2%80%931902)"
+   ]
+  },
+  {
+   "franchise": "NYY",
+   "name": "New York Highlanders",
+   "abbr": "NYY",
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "league": "AL",
+   "start": 1903,
+   "end": 1912,
+   "homes": [
+    {
+     "park": "hilltop-park",
+     "start": 1903,
+     "end": 1912
+    }
+   ],
+   "fate": "Renamed New York Yankees for 1913.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_York_Yankees",
+    "https://en.wikipedia.org/wiki/Hilltop_Park"
+   ]
+  },
+  {
+   "franchise": "NYY",
+   "name": "New York Yankees",
+   "abbr": "NYY",
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "league": "AL",
+   "start": 1913,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "polo-grounds",
+     "start": 1913,
+     "end": 1922
+    },
+    {
+     "park": "yankee-stadium-1923",
+     "start": 1923,
+     "end": 1973
+    },
+    {
+     "park": "shea-stadium",
+     "start": 1974,
+     "end": 1975
+    },
+    {
+     "park": "yankee-stadium-1923",
+     "start": 1976,
+     "end": 2008
+    },
+    {
+     "park": "NYY",
+     "start": 2009,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Shared the Polo Grounds with the Giants 1913-22; Shea Stadium 1974-75 during renovation.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_York_Yankees",
+    "https://en.wikipedia.org/wiki/Yankee_Stadium_(1923)",
+    "https://en.wikipedia.org/wiki/Shea_Stadium"
+   ]
+  },
+  {
+   "franchise": "TBR",
+   "name": "Tampa Bay Devil Rays",
+   "abbr": "TBD",
+   "city": "St. Petersburg",
+   "state": "Florida",
+   "country": "USA",
+   "league": "AL",
+   "start": 1998,
+   "end": 2007,
+   "homes": [
+    {
+     "park": "TBR",
+     "start": 1998,
+     "end": 2007
+    }
+   ],
+   "fate": "Renamed Tampa Bay Rays for 2008.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tampa_Bay_Rays"
+   ]
+  },
+  {
+   "franchise": "TBR",
+   "name": "Tampa Bay Rays",
+   "abbr": "TBR",
+   "city": "St. Petersburg",
+   "state": "Florida",
+   "country": "USA",
+   "league": "AL",
+   "start": 2008,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "TBR",
+     "start": 2008,
+     "end": 2024
+    },
+    {
+     "park": "george-m-steinbrenner-field",
+     "start": 2025,
+     "end": 2025
+    },
+    {
+     "park": "TBR",
+     "start": 2026,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Played all 2025 home games in Tampa after hurricane damage; returned to Tropicana Field April 2026.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+    "https://en.wikipedia.org/wiki/George_M._Steinbrenner_Field"
+   ]
+  },
+  {
+   "franchise": "TOR",
+   "name": "Toronto Blue Jays",
+   "abbr": "TOR",
+   "city": "Toronto",
+   "state": "Ontario",
+   "country": "Canada",
+   "league": "AL",
+   "start": 1977,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "exhibition-stadium",
+     "start": 1977,
+     "end": 1989
+    },
+    {
+     "park": "TOR",
+     "start": 1989,
+     "end": 2019
+    },
+    {
+     "park": "sahlen-field",
+     "start": 2020,
+     "end": 2021
+    },
+    {
+     "park": "td-ballpark",
+     "start": 2021,
+     "end": 2021
+    },
+    {
+     "park": "TOR",
+     "start": 2021,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Temporary homes: Buffalo in 2020; Dunedin Apr-May 2021, Buffalo Jun-Jul 2021; back at Rogers Centre July 30, 2021.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Toronto_Blue_Jays",
+    "https://en.wikipedia.org/wiki/Sahlen_Field",
+    "https://en.wikipedia.org/wiki/TD_Ballpark"
+   ]
+  }
+ ],
+ "parks": [
+  {
+   "id": "lloyd-street-grounds",
+   "name": "Lloyd Street Grounds",
+   "aka": [],
+   "city": "Milwaukee",
+   "state": "Wisconsin",
+   "country": "USA",
+   "lat": 43.0589,
+   "lon": -87.9339,
+   "coord_approx": false,
+   "opened": 1895,
+   "closed": 1901,
+   "status": "Demolished in 1904; the site is now a residential neighborhood.",
+   "capacity": 10000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1901 Milwaukee Brewers, the American League's first Milwaukee club, who finished last.",
+    "Home plate sat near Lloyd Street, so the field faced due north.",
+    "The Brewers' first major league game there was played on May 3, 1901."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lloyd_Street_Grounds"
+   ]
+  },
+  {
+   "id": "sportsmans-park",
+   "name": "Sportsman's Park",
+   "aka": [
+    "Busch Stadium"
+   ],
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 38.658,
+   "lon": -90.22,
+   "coord_approx": false,
+   "opened": 1902,
+   "closed": 1966,
+   "status": "Demolished in 1966; a Boys & Girls Club stands on the site.",
+   "capacity": 34023,
+   "dimensions_ft": {
+    "lf": 351,
+    "lcf": 379,
+    "cf": 422,
+    "rcf": 354,
+    "rf": 310
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Osborn Engineering Company",
+   "notable": [
+    "Shared by the Browns and Cardinals, who both played there from 1920 until the Browns left after 1953.",
+    "Hosted the 1926 World Series and All-Star Games in 1940, 1948 and 1957.",
+    "Renamed Busch Stadium in 1953 after the Cardinals' owner bought it."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sportsman%27s_Park"
+   ]
+  },
+  {
+   "id": "memorial-stadium-baltimore",
+   "name": "Memorial Stadium",
+   "aka": [
+    "Baltimore Memorial Stadium",
+    "Municipal Stadium"
+   ],
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "lat": 39.3295,
+   "lon": -76.6015,
+   "coord_approx": false,
+   "opened": 1950,
+   "closed": 1997,
+   "status": "Demolished starting in 2001; a youth sports field and senior apartments stand there.",
+   "capacity": 54017,
+   "dimensions_ft": {
+    "lf": 309,
+    "lcf": 378,
+    "cf": 405,
+    "rcf": 378,
+    "rf": 309
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Orioles for 1954 through 1991, and the Colts and Ravens in football.",
+    "A small plane crashed into the upper deck after a December 1976 playoff game.",
+    "Inner fences added after 1958 shrank the deep outfield dimensions."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baltimore_Stadium",
+    "https://sabr.org/bioproj/park/memorial-stadium-baltimore",
+    "https://www.hmdb.org/m.asp?m=104270"
+   ]
+  },
+  {
+   "id": "huntington-avenue-grounds",
+   "name": "Huntington Avenue Grounds",
+   "aka": [
+    "Huntington Avenue American League Baseball Grounds"
+   ],
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "lat": 42.3389,
+   "lon": -71.0889,
+   "coord_approx": false,
+   "opened": 1901,
+   "closed": 1911,
+   "status": "Demolished in 1912; Northeastern University's Cabot Center stands on the site.",
+   "capacity": 11500,
+   "dimensions_ft": {
+    "lf": 350,
+    "lcf": 440,
+    "cf": 530,
+    "rcf": null,
+    "rf": 280
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted the first modern World Series game in 1903.",
+    "Cy Young pitched the first modern perfect game there on May 5, 1904.",
+    "Built on a former circus lot; a tool shed stood in play in deep center."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Huntington_Avenue_Grounds"
+   ]
+  },
+  {
+   "id": "oriole-park-iv",
+   "name": "American League Park (Baltimore)",
+   "aka": [
+    "Oriole Park (IV)",
+    "Oriole Park",
+    "American League Park"
+   ],
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "lat": 39.3228,
+   "lon": -76.6103,
+   "coord_approx": true,
+   "opened": 1901,
+   "closed": 1902,
+   "status": "Gone; a McDonald's and row houses stand near the site.",
+   "capacity": 7000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Opened April 26, 1901, with the Orioles beating Boston 10-6 behind Joe McGinnity.",
+    "Located at Greenmount Avenue and 29th Street; the minor-league Orioles used the site afterward.",
+    "Final 1902 home game drew only 138 paid fans."
+   ],
+   "sources": [
+    "https://sabr.org/bioproj/park/american-league-park-baltimore/",
+    "https://en.wikipedia.org/wiki/Oriole_Park"
+   ]
+  },
+  {
+   "id": "hilltop-park",
+   "name": "Hilltop Park",
+   "aka": [
+    "American League Park"
+   ],
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.8406,
+   "lon": -73.9422,
+   "coord_approx": false,
+   "opened": 1903,
+   "closed": 1912,
+   "status": "Demolished; NewYork-Presbyterian/Columbia medical center stands there and a plaque marks home plate.",
+   "capacity": 16000,
+   "dimensions_ft": {
+    "lf": 365,
+    "lcf": null,
+    "cf": 420,
+    "rcf": null,
+    "rf": 385
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Highlanders for 1903 through 1912, on the heights of Washington Heights.",
+    "Jack Chesbro's wild pitch there on the last day cost the Highlanders the 1904 pennant.",
+    "The Giants borrowed it in 1911 after a fire destroyed the Polo Grounds."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hilltop_Park"
+   ]
+  },
+  {
+   "id": "polo-grounds",
+   "name": "Polo Grounds",
+   "aka": [
+    "Polo Grounds IV",
+    "The Bathtub"
+   ],
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.8317,
+   "lon": -73.9372,
+   "coord_approx": false,
+   "opened": 1890,
+   "closed": 1963,
+   "status": "Demolished in 1964; the Polo Grounds Towers public housing complex stands on the site.",
+   "capacity": 56000,
+   "dimensions_ft": {
+    "lf": 279,
+    "lcf": 450,
+    "cf": 483,
+    "rcf": 449,
+    "rf": 258
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Henry B. Herts",
+   "notable": [
+    "Yankees tenants from 1913 through 1922, then Giants and 1962-63 Mets.",
+    "Horseshoe shape and a 483-foot center field earned it a bathtub nickname.",
+    "Site of Bobby Thomson's 1951 pennant-winning home run."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Polo_Grounds"
+   ]
+  },
+  {
+   "id": "yankee-stadium-1923",
+   "name": "Yankee Stadium (1923)",
+   "aka": [
+    "The House That Ruth Built"
+   ],
+   "city": "Bronx",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.8269,
+   "lon": -73.9281,
+   "coord_approx": false,
+   "opened": 1923,
+   "closed": 2008,
+   "status": "Demolished 2009-2010; Heritage Field public park now occupies the site.",
+   "capacity": 82000,
+   "dimensions_ft": {
+    "lf": 318,
+    "lcf": 399,
+    "cf": 408,
+    "rcf": 385,
+    "rf": 314
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Osborn Engineering",
+   "notable": [
+    "Opened April 18, 1923, with Babe Ruth hitting the first home run.",
+    "Host of Don Larsen's 1956 World Series perfect game.",
+    "Renovated in 1974-75; the Yankees played at Shea Stadium in the interim."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yankee_Stadium_(1923)"
+   ]
+  },
+  {
+   "id": "shea-stadium",
+   "name": "Shea Stadium",
+   "aka": [
+    "William A. Shea Municipal Stadium"
+   ],
+   "city": "Queens",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.7556,
+   "lon": -73.8481,
+   "coord_approx": false,
+   "opened": 1964,
+   "closed": 2008,
+   "status": "Demolished after 2008; part of the Citi Field parking lot covers the site.",
+   "capacity": 57405,
+   "dimensions_ft": {
+    "lf": 338,
+    "lcf": 371,
+    "cf": 410,
+    "rcf": 371,
+    "rf": 338
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Praeger-Kavanagh-Waterbury",
+   "notable": [
+    "Yankees shared it with the Mets in 1974 and 1975 during Yankee Stadium's renovation.",
+    "The Mets won the 1969 and 1986 World Series there.",
+    "The Beatles drew a record 55,600 fans in 1965."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shea_Stadium"
+   ]
+  },
+  {
+   "id": "george-m-steinbrenner-field",
+   "name": "George M. Steinbrenner Field",
+   "aka": [
+    "Legends Field"
+   ],
+   "city": "Tampa",
+   "state": "Florida",
+   "country": "USA",
+   "lat": 27.9803,
+   "lon": -82.5067,
+   "coord_approx": false,
+   "opened": 1996,
+   "closed": null,
+   "status": "Still in use as the Yankees' spring home and Tampa Tarpons' ballpark.",
+   "capacity": 11026,
+   "dimensions_ft": {
+    "lf": 318,
+    "lcf": 399,
+    "cf": 408,
+    "rcf": 385,
+    "rf": 314
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Lescher & Mahoney",
+   "notable": [
+    "Rays' temporary home for all of 2025 after Hurricane Milton damaged Tropicana Field.",
+    "Its dimensions copy those of both Yankee Stadiums.",
+    "Kameron Misner hit a walk-off homer on March 28, 2025, its first regular-season MLB home run."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/George_M._Steinbrenner_Field"
+   ]
+  },
+  {
+   "id": "exhibition-stadium",
+   "name": "Exhibition Stadium",
+   "aka": [
+    "CNE Stadium"
+   ],
+   "city": "Toronto",
+   "state": "Ontario",
+   "country": "Canada",
+   "lat": 43.6319,
+   "lon": -79.4178,
+   "coord_approx": false,
+   "opened": 1959,
+   "closed": 1989,
+   "status": "Demolished in 1999; BMO Field and a parking lot occupy the site.",
+   "capacity": 43737,
+   "dimensions_ft": {
+    "lf": 330,
+    "lcf": 375,
+    "cf": 400,
+    "rcf": 375,
+    "rf": 330
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Artificial turf",
+   "roof": "open",
+   "architect": "Bill Sanford (1976 renovation)",
+   "notable": [
+    "Blue Jays home from 1977 through 1989, when the club moved to SkyDome.",
+    "The 1977 home opener was played in snow on a covered field.",
+    "The 1985 ALCS Game 7 was played here, won by Kansas City."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Exhibition_Stadium"
+   ]
+  },
+  {
+   "id": "sahlen-field",
+   "name": "Sahlen Field",
+   "aka": [
+    "Pilot Field",
+    "North AmeriCare Park",
+    "Dunn Tire Park",
+    "Coca-Cola Field"
+   ],
+   "city": "Buffalo",
+   "state": "New York",
+   "country": "USA",
+   "lat": 42.8813,
+   "lon": -78.8743,
+   "coord_approx": false,
+   "opened": 1988,
+   "closed": null,
+   "status": "Still in use as the home of the Triple-A Buffalo Bisons.",
+   "capacity": 16600,
+   "dimensions_ft": {
+    "lf": 325,
+    "lcf": 371,
+    "cf": 404,
+    "rcf": 367,
+    "rf": 325
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "HOK Sport",
+   "notable": [
+    "Blue Jays' temporary home for the 2020 season and part of 2021.",
+    "Opened in 1988 as the first modern retro-style ballpark.",
+    "Blue Jays played their first game there on August 11, 2020."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sahlen_Field"
+   ]
+  },
+  {
+   "id": "td-ballpark",
+   "name": "TD Ballpark",
+   "aka": [
+    "Dunedin Stadium",
+    "Knology Park",
+    "Florida Auto Exchange Stadium"
+   ],
+   "city": "Dunedin",
+   "state": "Florida",
+   "country": "USA",
+   "lat": 28.0036,
+   "lon": -82.7864,
+   "coord_approx": false,
+   "opened": 1990,
+   "closed": null,
+   "status": "Still in use as the Blue Jays' spring training home.",
+   "capacity": 8500,
+   "dimensions_ft": {
+    "lf": 333,
+    "lcf": 380,
+    "cf": 400,
+    "rcf": 363,
+    "rf": 336
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Johnston Dana Associates",
+   "notable": [
+    "Blue Jays hosted 21 regular-season home games here in April and May 2021.",
+    "Spring home of the Blue Jays since their first season in 1977.",
+    "A $102 million renovation reopened it in February 2020."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/TD_Ballpark"
+   ]
+  }
+ ]
+}

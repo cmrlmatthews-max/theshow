@@ -1,0 +1,947 @@
+{
+ "teams": [
+  {
+   "franchise": "LAD",
+   "name": "Brooklyn Atlantics",
+   "abbr": "BRO",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "AA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "washington-park-i",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Renamed Brooklyn Grays for 1885.",
+   "note": "Franchise began 1883 in the minor Interstate League; first major-league season was 1884.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"
+   ]
+  },
+  {
+   "franchise": "LAD",
+   "name": "Brooklyn Grays",
+   "abbr": "BRO",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "AA",
+   "start": 1885,
+   "end": 1887,
+   "homes": [
+    {
+     "park": "washington-park-i",
+     "start": 1885,
+     "end": 1887
+    }
+   ],
+   "fate": "Renamed Brooklyn Bridegrooms for 1888.",
+   "note": "Some Sunday home games were played at Ridgewood Park in Queens.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"
+   ]
+  },
+  {
+   "franchise": "LAD",
+   "name": "Brooklyn Bridegrooms",
+   "abbr": "BRO",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "AA",
+   "start": 1888,
+   "end": 1889,
+   "homes": [
+    {
+     "park": "washington-park-i",
+     "start": 1888,
+     "end": 1889
+    }
+   ],
+   "fate": "Left the American Association for the National League in 1890.",
+   "note": "A May 1889 fire at Washington Park briefly displaced the club.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"
+   ]
+  },
+  {
+   "franchise": "LAD",
+   "name": "Brooklyn Bridegrooms",
+   "abbr": "BRO",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1890,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "washington-park-i",
+     "start": 1890,
+     "end": 1890
+    }
+   ],
+   "fate": "Kept the name, became Brooklyn Grooms for 1891.",
+   "note": "Won the NL pennant in its first season in the league.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"
+   ]
+  },
+  {
+   "franchise": "LAD",
+   "name": "Brooklyn Grooms",
+   "abbr": "BRO",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1891,
+   "end": 1895,
+   "homes": [
+    {
+     "park": "eastern-park",
+     "start": 1891,
+     "end": 1895
+    }
+   ],
+   "fate": "Renamed Brooklyn Bridegrooms for 1896.",
+   "note": "Moved to Eastern Park after absorbing the Players' League Brooklyn club.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"
+   ]
+  },
+  {
+   "franchise": "LAD",
+   "name": "Brooklyn Bridegrooms",
+   "abbr": "BRO",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1896,
+   "end": 1898,
+   "homes": [
+    {
+     "park": "eastern-park",
+     "start": 1896,
+     "end": 1897
+    },
+    {
+     "park": "washington-park-ii",
+     "start": 1898,
+     "end": 1898
+    }
+   ],
+   "fate": "Renamed Brooklyn Superbas for 1899.",
+   "note": "Returned to a rebuilt Washington Park (II) in 1898.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"
+   ]
+  },
+  {
+   "franchise": "LAD",
+   "name": "Brooklyn Superbas",
+   "abbr": "BRO",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1899,
+   "end": 1910,
+   "homes": [
+    {
+     "park": "washington-park-ii",
+     "start": 1899,
+     "end": 1910
+    }
+   ],
+   "fate": "Renamed Brooklyn Dodgers (Trolley Dodgers) for 1911.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"
+   ]
+  },
+  {
+   "franchise": "LAD",
+   "name": "Brooklyn Trolley Dodgers",
+   "abbr": "BRO",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1911,
+   "end": 1912,
+   "homes": [
+    {
+     "park": "washington-park-ii",
+     "start": 1911,
+     "end": 1912
+    }
+   ],
+   "fate": "Moved to Ebbets Field for 1913 as Brooklyn Dodgers.",
+   "note": "Nickname Dodgers was informal until officially adopted in 1932; several names overlapped in press.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"
+   ]
+  },
+  {
+   "franchise": "LAD",
+   "name": "Brooklyn Dodgers",
+   "abbr": "BRO",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1913,
+   "end": 1913,
+   "homes": [
+    {
+     "park": "ebbets-field",
+     "start": 1913,
+     "end": 1913
+    }
+   ],
+   "fate": "Renamed Brooklyn Robins for 1914.",
+   "note": "Ebbets Field opened April 1913.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"
+   ]
+  },
+  {
+   "franchise": "LAD",
+   "name": "Brooklyn Robins",
+   "abbr": "BRO",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1914,
+   "end": 1931,
+   "homes": [
+    {
+     "park": "ebbets-field",
+     "start": 1914,
+     "end": 1931
+    }
+   ],
+   "fate": "Renamed Brooklyn Dodgers for 1932.",
+   "note": "Named for manager Wilbert Robinson.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"
+   ]
+  },
+  {
+   "franchise": "LAD",
+   "name": "Brooklyn Dodgers",
+   "abbr": "BRO",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1932,
+   "end": 1957,
+   "homes": [
+    {
+     "park": "ebbets-field",
+     "start": 1932,
+     "end": 1957
+    }
+   ],
+   "fate": "Moved to Los Angeles after the 1957 season.",
+   "note": "Won the 1955 World Series, the only Brooklyn title.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"
+   ]
+  },
+  {
+   "franchise": "LAD",
+   "name": "Los Angeles Dodgers",
+   "abbr": "LAD",
+   "city": "Los Angeles",
+   "state": "California",
+   "country": "USA",
+   "league": "NL",
+   "start": 1958,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "los-angeles-memorial-coliseum",
+     "start": 1958,
+     "end": 1961
+    },
+    {
+     "park": "LAD",
+     "start": 1962,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Played at the Coliseum for four seasons before Dodger Stadium opened in 1962.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"
+   ]
+  },
+  {
+   "franchise": "SF",
+   "name": "New York Gothams",
+   "abbr": "NYG",
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1883,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "polo-grounds-i",
+     "start": 1883,
+     "end": 1884
+    }
+   ],
+   "fate": "Renamed New York Giants for 1885.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/San_Francisco_Giants"
+   ]
+  },
+  {
+   "franchise": "SF",
+   "name": "New York Giants",
+   "abbr": "NYG",
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1885,
+   "end": 1957,
+   "homes": [
+    {
+     "park": "polo-grounds-i",
+     "start": 1885,
+     "end": 1888
+    },
+    {
+     "park": "polo-grounds-ii",
+     "start": 1889,
+     "end": 1890
+    },
+    {
+     "park": "polo-grounds",
+     "start": 1891,
+     "end": 1957
+    }
+   ],
+   "fate": "Moved to San Francisco after the 1957 season.",
+   "note": "Briefly used Oakland Park and St. George Grounds in 1889, and Hilltop Park in 1911 after a fire.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/San_Francisco_Giants",
+    "https://en.wikipedia.org/wiki/Polo_Grounds"
+   ]
+  },
+  {
+   "franchise": "SF",
+   "name": "San Francisco Giants",
+   "abbr": "SFG",
+   "city": "San Francisco",
+   "state": "California",
+   "country": "USA",
+   "league": "NL",
+   "start": 1958,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "seals-stadium",
+     "start": 1958,
+     "end": 1959
+    },
+    {
+     "park": "candlestick-park",
+     "start": 1960,
+     "end": 1999
+    },
+    {
+     "park": "SF",
+     "start": 2000,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Seals Stadium was a temporary home while Candlestick Park was built.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/San_Francisco_Giants"
+   ]
+  },
+  {
+   "franchise": "SD",
+   "name": "San Diego Padres",
+   "abbr": "SDP",
+   "city": "San Diego",
+   "state": "California",
+   "country": "USA",
+   "league": "NL",
+   "start": 1969,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "san-diego-stadium",
+     "start": 1969,
+     "end": 2003
+    },
+    {
+     "park": "SD",
+     "start": 2004,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Stadium was named Jack Murphy and later Qualcomm Stadium during their tenure.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/San_Diego_Padres",
+    "https://en.wikipedia.org/wiki/San_Diego_Stadium"
+   ]
+  },
+  {
+   "franchise": "COL",
+   "name": "Colorado Rockies",
+   "abbr": "COL",
+   "city": "Denver",
+   "state": "Colorado",
+   "country": "USA",
+   "league": "NL",
+   "start": 1993,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "mile-high-stadium",
+     "start": 1993,
+     "end": 1994
+    },
+    {
+     "park": "COL",
+     "start": 1995,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Set MLB attendance records at Mile High Stadium before Coors Field opened.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Colorado_Rockies",
+    "https://en.wikipedia.org/wiki/Mile_High_Stadium"
+   ]
+  },
+  {
+   "franchise": "ARI",
+   "name": "Arizona Diamondbacks",
+   "abbr": "ARI",
+   "city": "Phoenix",
+   "state": "Arizona",
+   "country": "USA",
+   "league": "NL",
+   "start": 1998,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "ARI",
+     "start": 1998,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Home park opened as Bank One Ballpark, now Chase Field.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arizona_Diamondbacks"
+   ]
+  }
+ ],
+ "parks": [
+  {
+   "id": "washington-park-i",
+   "name": "Washington Park (I)",
+   "aka": [
+    "Washington Park"
+   ],
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.674,
+   "lon": -73.9857,
+   "coord_approx": false,
+   "opened": 1883,
+   "closed": 1890,
+   "status": "The reconstructed Old Stone House, once part of the park, stands in Washington Park, Brooklyn.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted ice baseball games in 1884.",
+    "The Old Stone House sheltered team equipment during the May 1889 fire.",
+    "Nearby streetcar lines inspired the Trolley Dodgers nickname."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Washington_Park_(baseball)"
+   ]
+  },
+  {
+   "id": "eastern-park",
+   "name": "Eastern Park",
+   "aka": [],
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.67,
+   "lon": -73.9028,
+   "coord_approx": false,
+   "opened": 1890,
+   "closed": 1897,
+   "status": "Commercial and light industrial buildings, including a scrap yard, occupy the Brownsville site.",
+   "capacity": 12000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home to Brooklyn's NL club 1891-97 and the 1890 Players' League Ward's Wonders.",
+    "Hard to reach, it was considered a failure as a home.",
+    "The Trolley Dodgers nickname first arose here."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Eastern_Park"
+   ]
+  },
+  {
+   "id": "washington-park-ii",
+   "name": "Washington Park (II)",
+   "aka": [
+    "Washington Park"
+   ],
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.675,
+   "lon": -73.9861,
+   "coord_approx": false,
+   "opened": 1898,
+   "closed": 1915,
+   "status": "Part of the left-center wall survives inside a Con Edison yard on Third Avenue.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": 335,
+    "lcf": 500,
+    "cf": 445,
+    "rcf": null,
+    "rf": 215
+   },
+   "wall_ft": {
+    "lf": 12,
+    "cf": 12,
+    "rf": 42
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Opened April 30, 1898 before about 15,000 fans.",
+    "Rebuilt in steel and concrete in 1914 by the Federal League Tip-Tops.",
+    "Fumes from the nearby Gowanus Canal gave it a famous odor."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Washington_Park_(baseball)"
+   ]
+  },
+  {
+   "id": "ebbets-field",
+   "name": "Ebbets Field",
+   "aka": [],
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.665,
+   "lon": -73.9581,
+   "coord_approx": false,
+   "opened": 1913,
+   "closed": 1957,
+   "status": "Ebbets Field Apartments, opened in 1962, occupy the site.",
+   "capacity": 32000,
+   "dimensions_ft": {
+    "lf": 348,
+    "lcf": 351,
+    "cf": 399,
+    "rcf": 344,
+    "rf": 297
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Clarence Randall Van Buskirk",
+   "notable": [
+    "Hosted the first Brooklyn night game on June 15, 1938 before 38,748 fans.",
+    "Staged the 1949 All-Star Game.",
+    "Home of Brooklyn's only World Series title, 1955."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ebbets_Field"
+   ]
+  },
+  {
+   "id": "los-angeles-memorial-coliseum",
+   "name": "Los Angeles Memorial Coliseum",
+   "aka": [
+    "LA Coliseum"
+   ],
+   "city": "Los Angeles",
+   "state": "California",
+   "country": "USA",
+   "lat": 34.0142,
+   "lon": -118.2879,
+   "coord_approx": false,
+   "opened": 1923,
+   "closed": 1961,
+   "status": "The Coliseum still stands, used for USC football and slated for the 2028 Olympics.",
+   "capacity": 93000,
+   "dimensions_ft": {
+    "lf": 251,
+    "lcf": null,
+    "cf": 417,
+    "rcf": null,
+    "rf": 300
+   },
+   "wall_ft": {
+    "lf": 42,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "John and Donald Parkinson",
+   "notable": [
+    "A 42-foot screen guarded the 251-foot left-field line, producing cheap home runs.",
+    "Game 5 of the 1959 World Series drew 92,706 fans.",
+    "Dodgers played here 1958-61 before Dodger Stadium opened."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Los_Angeles_Memorial_Coliseum"
+   ]
+  },
+  {
+   "id": "polo-grounds-i",
+   "name": "Polo Grounds (I)",
+   "aka": [
+    "Polo Grounds I"
+   ],
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.7981,
+   "lon": -73.9506,
+   "coord_approx": false,
+   "opened": 1880,
+   "closed": 1888,
+   "status": "Streets and buildings north of Central Park cover the site after demolition in 1889.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Stood at 110th-112th Streets north of Central Park.",
+    "Home to the Gothams and Giants 1883-88 and the Metropolitans.",
+    "Torn down in 1889 when 111th Street was cut through."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Polo_Grounds"
+   ]
+  },
+  {
+   "id": "polo-grounds-ii",
+   "name": "Polo Grounds (II)",
+   "aka": [
+    "Manhattan Field",
+    "Polo Grounds II"
+   ],
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.8303,
+   "lon": -73.9378,
+   "coord_approx": true,
+   "opened": 1889,
+   "closed": 1890,
+   "status": "Site paved over as a parking lot in 1948; structures were razed earlier.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Located at 155th Street and Eighth Avenue beside Coogan's Hollow.",
+    "Giants called it home 1889-90 while the Players' League used the neighboring park.",
+    "Later used by the Manhattan Athletic Club."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Polo_Grounds"
+   ]
+  },
+  {
+   "id": "polo-grounds",
+   "name": "Polo Grounds",
+   "aka": [
+    "Polo Grounds III",
+    "Polo Grounds IV",
+    "Brotherhood Park",
+    "Coogan's Hollow"
+   ],
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.8317,
+   "lon": -73.9372,
+   "coord_approx": false,
+   "opened": 1890,
+   "closed": 1963,
+   "status": "Polo Grounds Towers public housing, opened 1968, covers the site; only a stairway remains.",
+   "capacity": 55000,
+   "dimensions_ft": {
+    "lf": 279,
+    "lcf": null,
+    "cf": 483,
+    "rcf": null,
+    "rf": 258
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Bathtub-shaped park with a 483-foot center field.",
+    "Yankees sublet it 1913-22; the Mets played here 1962-63.",
+    "Willie Mays made his 1954 World Series catch here."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Polo_Grounds"
+   ]
+  },
+  {
+   "id": "seals-stadium",
+   "name": "Seals Stadium",
+   "aka": [],
+   "city": "San Francisco",
+   "state": "California",
+   "country": "USA",
+   "lat": 37.7667,
+   "lon": -122.4092,
+   "coord_approx": false,
+   "opened": 1931,
+   "closed": 1959,
+   "status": "A shopping center now occupies the Mission District site.",
+   "capacity": 22900,
+   "dimensions_ft": {
+    "lf": 361,
+    "lcf": 364,
+    "cf": 400,
+    "rcf": null,
+    "rf": 348
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted the first West Coast major-league game, April 15, 1958.",
+    "Home of the Pacific Coast League Seals before the Giants arrived.",
+    "Giants used it 1958-59 while Candlestick Park was built."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Seals_Stadium"
+   ]
+  },
+  {
+   "id": "candlestick-park",
+   "name": "Candlestick Park",
+   "aka": [
+    "3Com Park",
+    "Monster Park"
+   ],
+   "city": "San Francisco",
+   "state": "California",
+   "country": "USA",
+   "lat": 37.7136,
+   "lon": -122.3861,
+   "coord_approx": false,
+   "opened": 1960,
+   "closed": 1999,
+   "status": "Demolished in 2015; the Bayview Hunters Point site is being redeveloped.",
+   "capacity": 62000,
+   "dimensions_ft": {
+    "lf": 335,
+    "lcf": 365,
+    "cf": 400,
+    "rcf": 365,
+    "rf": 328
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "John Bolles",
+   "notable": [
+    "Notorious for cold, strong winds off the bay.",
+    "Game 3 of the 1989 World Series was postponed by the Loma Prieta earthquake.",
+    "Used artificial turf from 1970 to 1978."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Candlestick_Park"
+   ]
+  },
+  {
+   "id": "mile-high-stadium",
+   "name": "Mile High Stadium",
+   "aka": [
+    "Bears Stadium",
+    "Denver Mile High Stadium"
+   ],
+   "city": "Denver",
+   "state": "Colorado",
+   "country": "USA",
+   "lat": 39.7461,
+   "lon": -105.0217,
+   "coord_approx": false,
+   "opened": 1948,
+   "closed": 1994,
+   "status": "The site is a parking lot for the Broncos' stadium, marked by a home plate plaque.",
+   "capacity": 76037,
+   "dimensions_ft": {
+    "lf": 333,
+    "lcf": 366,
+    "cf": 423,
+    "rcf": 400,
+    "rf": 370
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Stanley E. Morse",
+   "notable": [
+    "Rockies set MLB attendance records here in 1993.",
+    "Movable east stands slid on water bearings to switch between football and baseball.",
+    "Built on a former landfill."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mile_High_Stadium",
+    "https://www.baseball-reference.com/bullpen/Mile_High_Stadium"
+   ]
+  },
+  {
+   "id": "san-diego-stadium",
+   "name": "San Diego Stadium",
+   "aka": [
+    "Jack Murphy Stadium",
+    "Qualcomm Stadium",
+    "SDCCU Stadium",
+    "The Murph"
+   ],
+   "city": "San Diego",
+   "state": "California",
+   "country": "USA",
+   "lat": 32.7831,
+   "lon": -117.1194,
+   "coord_approx": false,
+   "opened": 1967,
+   "closed": 2003,
+   "status": "Demolished by 2021; SDSU's Snapdragon Stadium and campus expansion now occupy the site.",
+   "capacity": 67544,
+   "dimensions_ft": {
+    "lf": 330,
+    "lcf": 375,
+    "cf": 420,
+    "rcf": 375,
+    "rf": 330
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Frank L. Hope and Associates",
+   "notable": [
+    "Hosted the World Series in 1984 and 1998.",
+    "Tony Gwynn's final game was played here in 2001.",
+    "Was the first octorad stadium, a square-circle design."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/San_Diego_Stadium"
+   ]
+  }
+ ]
+}

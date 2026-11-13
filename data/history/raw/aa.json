@@ -1,0 +1,1668 @@
+{
+ "teams": [
+  {
+   "franchise": "philadelphia-athletics-aa",
+   "name": "Philadelphia Athletics",
+   "abbr": "PHA",
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "AA",
+   "start": 1882,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "oakdale-park",
+     "start": 1882,
+     "end": 1882
+    },
+    {
+     "park": "jefferson-street-grounds",
+     "start": 1883,
+     "end": 1890
+    }
+   ],
+   "fate": "Expelled from the American Association after 1890; a new Athletics club replaced them.",
+   "note": "Charter AA member; not related to the later Connie Mack Athletics.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Philadelphia_Athletics_(AA)"
+   ]
+  },
+  {
+   "franchise": "philadelphia-athletics-1890-1891",
+   "name": "Philadelphia Athletics",
+   "abbr": "PHA",
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "AA",
+   "start": 1891,
+   "end": 1891,
+   "homes": [
+    {
+     "park": "forepaugh-park",
+     "start": 1891,
+     "end": 1891
+    }
+   ],
+   "fate": "Ceased operations after the AA collapsed and took a buyout.",
+   "note": "Formerly the Players' League club (Quakers) of 1890; took the Athletics name in the AA.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Philadelphia_Athletics_(1890%E2%80%931891)",
+    "https://en.wikipedia.org/wiki/Forepaugh_Park"
+   ]
+  },
+  {
+   "franchise": "louisville-colonels",
+   "name": "Louisville Eclipse",
+   "abbr": "LOU",
+   "city": "Louisville",
+   "state": "Kentucky",
+   "country": "USA",
+   "league": "AA",
+   "start": 1882,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "eclipse-park",
+     "start": 1882,
+     "end": 1884
+    }
+   ],
+   "fate": "Renamed Louisville Colonels for 1885.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Louisville_Colonels",
+    "https://en.wikipedia.org/wiki/Eclipse_Park"
+   ]
+  },
+  {
+   "franchise": "louisville-colonels",
+   "name": "Louisville Colonels",
+   "abbr": "LOU",
+   "city": "Louisville",
+   "state": "Kentucky",
+   "country": "USA",
+   "league": "AA",
+   "start": 1885,
+   "end": 1891,
+   "homes": [
+    {
+     "park": "eclipse-park",
+     "start": 1885,
+     "end": 1891
+    }
+   ],
+   "fate": "Joined the National League for 1892.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Louisville_Colonels",
+    "https://en.wikipedia.org/wiki/Eclipse_Park"
+   ]
+  },
+  {
+   "franchise": "baltimore-orioles-1882",
+   "name": "Baltimore Orioles",
+   "abbr": "BLO",
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "league": "AA",
+   "start": 1882,
+   "end": 1891,
+   "homes": [
+    {
+     "park": "newington-park",
+     "start": 1882,
+     "end": 1882
+    },
+    {
+     "park": "oriole-park-i",
+     "start": 1883,
+     "end": 1888
+    },
+    {
+     "park": "oriole-park-ii",
+     "start": 1889,
+     "end": 1890
+    },
+    {
+     "park": "union-park-baltimore",
+     "start": 1891,
+     "end": 1891
+    }
+   ],
+   "fate": "Joined the National League for 1892.",
+   "note": "Played 1890 in the minor Atlantic Association, rejoining the AA in August 1890 after Brooklyn Gladiators folded.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baltimore_Orioles_(1882%E2%80%931899)",
+    "https://www.baseball-reference.com/bullpen/Baltimore_Orioles_(AA)"
+   ]
+  },
+  {
+   "franchise": "new-york-metropolitans",
+   "name": "New York Metropolitans",
+   "abbr": "NYP",
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "league": "AA",
+   "start": 1883,
+   "end": 1887,
+   "homes": [
+    {
+     "park": "polo-grounds-i",
+     "start": 1883,
+     "end": 1883
+    },
+    {
+     "park": "metropolitan-park-manhattan",
+     "start": 1884,
+     "end": 1884
+    },
+    {
+     "park": "polo-grounds-i",
+     "start": 1885,
+     "end": 1885
+    },
+    {
+     "park": "st-george-cricket-grounds",
+     "start": 1886,
+     "end": 1887
+    }
+   ],
+   "fate": "Folded after 1887; Brooklyn bought its assets and stars.",
+   "note": "Opened 1884 at Metropolitan Park, then mostly played at the Polo Grounds; won the 1884 AA pennant.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_York_Metropolitans",
+    "https://sabr.org/bioproj/park/metropolitan-park-new-york/"
+   ]
+  },
+  {
+   "franchise": "columbus-buckeyes",
+   "name": "Columbus Buckeyes",
+   "abbr": "COL",
+   "city": "Columbus",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "AA",
+   "start": 1883,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "recreation-park-i-columbus",
+     "start": 1883,
+     "end": 1884
+    }
+   ],
+   "fate": "Left the American Association after 1884; later fate not recorded.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Columbus_Buckeyes_(AA)",
+    "https://baseballdatahub.com/ballparks/col01"
+   ]
+  },
+  {
+   "franchise": "columbus-solons",
+   "name": "Columbus Solons",
+   "abbr": "COL",
+   "city": "Columbus",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "AA",
+   "start": 1889,
+   "end": 1891,
+   "homes": [
+    {
+     "park": "recreation-park-ii-columbus",
+     "start": 1889,
+     "end": 1891
+    }
+   ],
+   "fate": "Folded after the 1891 season when the AA dissolved.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Columbus_Solons",
+    "https://baseballdatahub.com/ballparks/col02"
+   ]
+  },
+  {
+   "franchise": "indianapolis-hoosiers-aa",
+   "name": "Indianapolis Hoosiers",
+   "abbr": "IND",
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "league": "AA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "tinker-park",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Dropped from the AA after one season; finished 29-78.",
+   "note": "Also called the Indianapolis Blues.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indianapolis_Hoosiers_(AA)",
+    "https://en.wikipedia.org/wiki/Seventh_Street_Park"
+   ]
+  },
+  {
+   "franchise": "toledo-blue-stockings",
+   "name": "Toledo Blue Stockings",
+   "abbr": "TOL",
+   "city": "Toledo",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "AA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "league-park-toledo",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Left the AA after 1884; played minor league ball in 1885, then disbanded.",
+   "note": "Included catcher Moses Fleetwood Walker.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Toledo_Blue_Stockings",
+    "https://baseballdatahub.com/ballparks/tol01"
+   ]
+  },
+  {
+   "franchise": "toledo-maumees",
+   "name": "Toledo Maumees",
+   "abbr": "TOL",
+   "city": "Toledo",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "AA",
+   "start": 1890,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "speranza-park",
+     "start": 1890,
+     "end": 1890
+    }
+   ],
+   "fate": "Folded after 1890.",
+   "note": "Also called the Black Pirates in 1889.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Toledo_Maumees",
+    "https://en.wikipedia.org/wiki/Speranza_Park"
+   ]
+  },
+  {
+   "franchise": "richmond-virginians-aa",
+   "name": "Richmond Virginians",
+   "abbr": "VIR",
+   "city": "Richmond",
+   "state": "Virginia",
+   "country": "USA",
+   "league": "AA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "allen-pasture",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Dropped when the AA shrank to eight clubs; played 1885 in the Eastern League.",
+   "note": "Joined in August 1884 replacing the Washington club; went 12-30.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Richmond_Virginians_(1884)",
+    "https://en.wikipedia.org/wiki/Allen_Pasture"
+   ]
+  },
+  {
+   "franchise": "washington-nationals-aa",
+   "name": "Washington Nationals",
+   "abbr": "WAS",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "AA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "athletic-park-washington",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Folded in August 1884; Richmond took its AA place.",
+   "note": "Also called the Statesmen; finished 12-51.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Washington_Nationals_(American_Association)",
+    "https://en.wikipedia.org/wiki/Athletic_Park_(Washington)"
+   ]
+  },
+  {
+   "franchise": "washington-statesmen",
+   "name": "Washington Statesmen",
+   "abbr": "WAS",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "AA",
+   "start": 1891,
+   "end": 1891,
+   "homes": [
+    {
+     "park": "boundary-field",
+     "start": 1891,
+     "end": 1891
+    }
+   ],
+   "fate": "Joined the National League for 1892 as the Senators.",
+   "note": "Also called the Senators and Nationals.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Washington_Statesmen",
+    "https://en.wikipedia.org/wiki/Boundary_Field"
+   ]
+  },
+  {
+   "franchise": "cleveland-spiders",
+   "name": "Cleveland Blues",
+   "abbr": "CLV",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "AA",
+   "start": 1887,
+   "end": 1888,
+   "homes": [
+    {
+     "park": "national-league-park-ii",
+     "start": 1887,
+     "end": 1888
+    }
+   ],
+   "fate": "Moved to the National League for 1889 as the Spiders.",
+   "note": "Also called the Forest Citys; sources disagree on Blues versus Spiders usage.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cleveland_Spiders",
+    "https://en.wikipedia.org/wiki/National_League_Park"
+   ]
+  },
+  {
+   "franchise": "kansas-city-cowboys-aa",
+   "name": "Kansas City Cowboys",
+   "abbr": "KCC",
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "AA",
+   "start": 1888,
+   "end": 1889,
+   "homes": [
+    {
+     "park": "association-park-1886",
+     "start": 1888,
+     "end": 1888
+    },
+    {
+     "park": "exposition-park-kansas-city",
+     "start": 1889,
+     "end": 1889
+    }
+   ],
+   "fate": "Left the AA after 1889; later fate not recorded.",
+   "note": "Third and last club to use the Cowboys name; finished last in 1888.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kansas_City_Cowboys_(AA)",
+    "https://en.wikipedia.org/wiki/Association_Park"
+   ]
+  },
+  {
+   "franchise": "rochester-broncos",
+   "name": "Rochester Broncos",
+   "abbr": "ROC",
+   "city": "Rochester",
+   "state": "New York",
+   "country": "USA",
+   "league": "AA",
+   "start": 1890,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "culver-field",
+     "start": 1890,
+     "end": 1890
+    }
+   ],
+   "fate": "Left the AA after 1890; played 1891 in the Eastern Association.",
+   "note": "Also known as the Hop Bitters.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rochester_Broncos",
+    "https://en.wikipedia.org/wiki/Culver_Field"
+   ]
+  },
+  {
+   "franchise": "syracuse-stars-aa",
+   "name": "Syracuse Stars",
+   "abbr": "SYR",
+   "city": "Syracuse",
+   "state": "New York",
+   "country": "USA",
+   "league": "AA",
+   "start": 1890,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "star-park-ii-syracuse",
+     "start": 1890,
+     "end": 1890
+    }
+   ],
+   "fate": "Folded after 1890.",
+   "note": "Unrelated to the 1879 National League Syracuse Stars.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Syracuse_Stars_(AA)",
+    "https://en.wikipedia.org/wiki/Star_Park"
+   ]
+  },
+  {
+   "franchise": "brooklyn-gladiators",
+   "name": "Brooklyn Gladiators",
+   "abbr": "BKG",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "AA",
+   "start": 1890,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "ridgewood-park-baseball-ground",
+     "start": 1890,
+     "end": 1890
+    }
+   ],
+   "fate": "Folded August 27, 1890 at 26-73; Baltimore replaced them.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Brooklyn_Gladiators",
+    "https://en.wikipedia.org/wiki/Ridgewood_Park_(baseball_ground)"
+   ]
+  },
+  {
+   "franchise": "boston-reds",
+   "name": "Boston Reds",
+   "abbr": "BRD",
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "AA",
+   "start": 1891,
+   "end": 1891,
+   "homes": [
+    {
+     "park": "congress-street-grounds",
+     "start": 1891,
+     "end": 1891
+    }
+   ],
+   "fate": "Folded after 1891; owners took a buyout when the AA merged into the NL.",
+   "note": "Won the 1891 pennant; same club as the Players' League Boston Reds of 1890.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boston_Reds_(1890%E2%80%931891)",
+    "https://en.wikipedia.org/wiki/Congress_Street_Grounds"
+   ]
+  },
+  {
+   "franchise": "milwaukee-brewers-1891",
+   "name": "Milwaukee Brewers",
+   "abbr": "MLW",
+   "city": "Milwaukee",
+   "state": "Wisconsin",
+   "country": "USA",
+   "league": "AA",
+   "start": 1891,
+   "end": 1891,
+   "homes": [
+    {
+     "park": "borchert-field",
+     "start": 1891,
+     "end": 1891
+    }
+   ],
+   "fate": "Returned to the minors in 1892 in the Western League; disbanded in July 1892.",
+   "note": "Joined the AA in August 1891 from the Western Association, replacing Cincinnati.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Milwaukee_Brewers_(1891)"
+   ]
+  },
+  {
+   "franchise": "cincinnati-kellys-killers",
+   "name": "Cincinnati Kelly's Killers",
+   "abbr": "CKK",
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "AA",
+   "start": 1891,
+   "end": 1891,
+   "homes": [
+    {
+     "park": "east-end-park-cincinnati",
+     "start": 1891,
+     "end": 1891
+    }
+   ],
+   "fate": "Suspended in August 1891 and folded; Milwaukee finished the schedule.",
+   "note": "Newspapers often called them the Cincinnati Reds.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cincinnati_Kelly%27s_Killers",
+    "https://en.wikipedia.org/wiki/East_End_Park_(Cincinnati)"
+   ]
+  }
+ ],
+ "parks": [
+  {
+   "id": "oakdale-park",
+   "name": "Oakdale Park",
+   "aka": [],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9925,
+   "lon": -75.1503,
+   "coord_approx": false,
+   "opened": 1882,
+   "closed": 1882,
+   "status": "Torn down shortly after 1883; the site was redeveloped.",
+   "capacity": 1500,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Philadelphia Athletics played 39 home games here in the American Association's first season, 1882.",
+    "The club left for Jefferson Street Grounds in 1883."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Oakdale_Park"
+   ]
+  },
+  {
+   "id": "jefferson-street-grounds",
+   "name": "Jefferson Street Grounds",
+   "aka": [
+    "Athletic Park"
+   ],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9781,
+   "lon": -75.1764,
+   "coord_approx": false,
+   "opened": 1864,
+   "closed": 1890,
+   "status": "A public school, recreation center and ball fields now occupy the site.",
+   "capacity": 15000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted the National League's first game on April 22, 1876, a 6-5 Boston win over Athletic.",
+    "Toledo's Moses Fleetwood Walker caught here in a May 1884 game against the Athletics.",
+    "Served as the Athletics' home for all of 1883-1890 before their AA expulsion."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jefferson_Street_Grounds"
+   ]
+  },
+  {
+   "id": "forepaugh-park",
+   "name": "Forepaugh Park",
+   "aka": [],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9886,
+   "lon": -75.1544,
+   "coord_approx": false,
+   "opened": 1890,
+   "closed": 1891,
+   "status": "Sold for development and covered with houses by 1895.",
+   "capacity": 5000,
+   "dimensions_ft": {
+    "lf": 345,
+    "lcf": null,
+    "cf": 450,
+    "rcf": null,
+    "rf": 380
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Drew a record 17,812 on April 30, 1890, when the Athletics hosted the Boston Reds.",
+    "Hosted the Players' League Athletics in 1890 and the American Association Athletics in 1891.",
+    "Circus promoters staged shows here, including one with the skeleton of Jumbo the elephant in 1886."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Forepaugh_Park"
+   ]
+  },
+  {
+   "id": "eclipse-park",
+   "name": "Eclipse Park",
+   "aka": [
+    "Eclipse Park I"
+   ],
+   "city": "Louisville",
+   "state": "Kentucky",
+   "country": "USA",
+   "lat": 38.2516,
+   "lon": -85.7989,
+   "coord_approx": false,
+   "opened": 1874,
+   "closed": 1893,
+   "status": "Burned in 1892; a second Eclipse Park was built nearby.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": 360,
+    "lcf": 432,
+    "cf": 452,
+    "rcf": 368,
+    "rf": 320
+   },
+   "wall_ft": {
+    "lf": 12,
+    "cf": 12,
+    "rf": 12
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Louisville Eclipse (1882-84) and Colonels (1885-91) during the American Association years.",
+    "A fire on September 27, 1892 destroyed it; the 1893 season began in what remained.",
+    "First of three Eclipse Parks, named for the original Eclipse club."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Eclipse_Park",
+    "https://baseballdatahub.com/ballparks/lou02"
+   ]
+  },
+  {
+   "id": "newington-park",
+   "name": "Newington Park",
+   "aka": [],
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "lat": 39.3072,
+   "lon": -76.6408,
+   "coord_approx": false,
+   "opened": 1872,
+   "closed": 1882,
+   "status": "Replaced by houses and a church.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the National Association's Lord Baltimore club from 1872 to 1874.",
+    "Hosted the Baltimore Orioles' first American Association season, 1882."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Newington_Park",
+    "https://baseballdatahub.com/ballparks/bal02"
+   ]
+  },
+  {
+   "id": "oriole-park-i",
+   "name": "Oriole Park I",
+   "aka": [
+    "Huntingdon Avenue Grounds",
+    "American Association Park"
+   ],
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "lat": 39.3177,
+   "lon": -76.6109,
+   "coord_approx": false,
+   "opened": 1883,
+   "closed": 1888,
+   "status": "Closed after 1888; later Oriole Parks stood on nearby blocks.",
+   "capacity": 5000,
+   "dimensions_ft": {
+    "lf": 310,
+    "lcf": null,
+    "cf": 470,
+    "rcf": null,
+    "rf": 310
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "First of several Baltimore ballparks named Oriole Park, used by the Orioles from 1883 to 1888.",
+    "Sat near present-day East 25th and Barclay Streets."
+   ],
+   "sources": [
+    "https://baseballdatahub.com/ballparks/bal03",
+    "https://deadballbaseball.com/2013/12/the-six-different-ballparks-known-as-oriole-park/"
+   ]
+  },
+  {
+   "id": "oriole-park-ii",
+   "name": "Oriole Park II",
+   "aka": [],
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "lat": 39.3229,
+   "lon": -76.61,
+   "coord_approx": false,
+   "opened": 1889,
+   "closed": 1891,
+   "status": "Closed in 1891 when the Orioles moved to Union Park.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Orioles from 1889 until early May 1891.",
+    "Located at Greenmount Avenue and East 29th Street in Waverly."
+   ],
+   "sources": [
+    "https://baseballdatahub.com/ballparks/bal06",
+    "https://en.wikipedia.org/wiki/Oriole_Park"
+   ]
+  },
+  {
+   "id": "union-park-baltimore",
+   "name": "Union Park",
+   "aka": [
+    "Oriole Park III"
+   ],
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "lat": 39.3181,
+   "lon": -76.6128,
+   "coord_approx": false,
+   "opened": 1891,
+   "closed": 1899,
+   "status": "The site is now a residential neighborhood in Barclay.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Opened May 11, 1891 with an 8-4 Orioles win over the St. Louis Browns.",
+    "Dan Brouthers's 1894 homer reportedly rolled onto 23rd Street, later joked to be a 1,300-foot shot.",
+    "A January 1895 fire burned the grandstand, which was rebuilt."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Park_(Baltimore)"
+   ]
+  },
+  {
+   "id": "polo-grounds-i",
+   "name": "Polo Grounds I",
+   "aka": [],
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.8003,
+   "lon": -73.9511,
+   "coord_approx": true,
+   "opened": 1879,
+   "closed": 1888,
+   "status": "Demolished in 1889; the Giants moved to a new Polo Grounds.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Used from 1880 by the Metropolitans, the first professional club to play there.",
+    "In 1883 the lot was split into fields for the Giants and Metropolitans; the Mets' field proved poor.",
+    "Hosted the 1884 World Series between the Metropolitans and Providence."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Polo_Grounds"
+   ]
+  },
+  {
+   "id": "metropolitan-park-manhattan",
+   "name": "Metropolitan Park",
+   "aka": [],
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.7945,
+   "lon": -73.9355,
+   "coord_approx": true,
+   "opened": 1884,
+   "closed": 1884,
+   "status": "1199 Plaza, a residential complex, stands on the site.",
+   "capacity": 5000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Built on landfill in East Harlem; players and writers nicknamed it The Dump.",
+    "The Metropolitans opened here May 13, 1884, then moved back to the Polo Grounds.",
+    "The Mets won 26 of 33 home games here in 1884."
+   ],
+   "sources": [
+    "https://sabr.org/bioproj/park/metropolitan-park-new-york/",
+    "https://en.wikipedia.org/wiki/Metropolitan_Park_(Manhattan)"
+   ]
+  },
+  {
+   "id": "st-george-cricket-grounds",
+   "name": "St. George Cricket Grounds",
+   "aka": [
+    "St. George Grounds"
+   ],
+   "city": "Staten Island",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.6442,
+   "lon": -74.0753,
+   "coord_approx": false,
+   "opened": 1886,
+   "closed": 1889,
+   "status": "The Empire Outlets shopping center stands on the site.",
+   "capacity": 5100,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Metropolitans in 1886-87, nicknamed Mutrie's Dump after manager Jim Mutrie.",
+    "The Giants played here in spring 1889 while the Polo Grounds was closed.",
+    "Fans could see the Statue of Liberty under construction."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._George_Cricket_Grounds"
+   ]
+  },
+  {
+   "id": "recreation-park-i-columbus",
+   "name": "Recreation Park I",
+   "aka": [],
+   "city": "Columbus",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 39.9574,
+   "lon": -82.9803,
+   "coord_approx": false,
+   "opened": 1883,
+   "closed": 1884,
+   "status": "Interstate 70 ramps now cover the site.",
+   "capacity": 6500,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Columbus Buckeyes in 1883 and 1884.",
+    "The 1884 Buckeyes went 69-39 here."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Recreation_Park_(Columbus)",
+    "https://baseballdatahub.com/ballparks/col01"
+   ]
+  },
+  {
+   "id": "recreation-park-ii-columbus",
+   "name": "Recreation Park II",
+   "aka": [],
+   "city": "Columbus",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 39.9451,
+   "lon": -82.9893,
+   "coord_approx": false,
+   "opened": 1889,
+   "closed": 1891,
+   "status": "A vacant store lot and houses occupy the Schumacher Place site.",
+   "capacity": 6500,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": 400
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Columbus Solons in 1889-1891.",
+    "Ohio State played its first home football game here on November 1, 1890.",
+    "A historical marker for that game was placed on the site in 2006."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Recreation_Park_(Columbus)",
+    "https://baseballdatahub.com/ballparks/col02"
+   ]
+  },
+  {
+   "id": "tinker-park",
+   "name": "Tinker Park",
+   "aka": [
+    "Seventh Street Park",
+    "Athletic Park"
+   ],
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "lat": 39.7894,
+   "lon": -86.1623,
+   "coord_approx": false,
+   "opened": 1884,
+   "closed": 1889,
+   "status": "Methodist Hospital of Indianapolis now occupies the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": 286,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": 261
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Also called Seventh Street Park and Athletic Park; the 1884 Indianapolis club played here.",
+    "Blue laws pushed Sunday games to suburban grounds in later years.",
+    "Butler's football team hosted three games here in 1887."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Seventh_Street_Park",
+    "https://baseballdatahub.com/ballparks/ind02"
+   ]
+  },
+  {
+   "id": "league-park-toledo",
+   "name": "League Park",
+   "aka": [],
+   "city": "Toledo",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.6537,
+   "lon": -83.5455,
+   "coord_approx": false,
+   "opened": 1883,
+   "closed": 1884,
+   "status": "Not recorded in sources checked; it lay a few blocks northwest of Fifth Third Field.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1884 Toledo Blue Stockings, who featured Moses Fleetwood Walker.",
+    "Stood on a block bounded by Monroe, 15th, Jefferson and 13th."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/League_Park_(Toledo)",
+    "https://baseballdatahub.com/ballparks/tol01"
+   ]
+  },
+  {
+   "id": "speranza-park",
+   "name": "Speranza Park",
+   "aka": [],
+   "city": "Toledo",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.6689,
+   "lon": -83.5439,
+   "coord_approx": false,
+   "opened": 1888,
+   "closed": 1890,
+   "status": "Not recorded in sources checked.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Reportedly named after the club owner's yacht; speranza means hope in Italian.",
+    "The Maumees played their first home game May 1, 1890 and finished a few games over .500."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Speranza_Park"
+   ]
+  },
+  {
+   "id": "allen-pasture",
+   "name": "Allen Pasture",
+   "aka": [
+    "Virginia Base-Ball Park"
+   ],
+   "city": "Richmond",
+   "state": "Virginia",
+   "country": "USA",
+   "lat": 37.5539,
+   "lon": -77.458,
+   "coord_approx": false,
+   "opened": 1884,
+   "closed": 1884,
+   "status": "Not recorded in sources checked; it lay near the former Robert E. Lee monument.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1884 Richmond Virginians, the first major league club in the former Confederacy.",
+    "The Virginians lost their first game 14-0 to the Athletics on August 5, 1884."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Allen_Pasture",
+    "https://baseballdatahub.com/ballparks/ric02"
+   ]
+  },
+  {
+   "id": "athletic-park-washington",
+   "name": "Athletic Park",
+   "aka": [],
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "lat": 38.9148,
+   "lon": -77.0245,
+   "coord_approx": false,
+   "opened": 1883,
+   "closed": 1884,
+   "status": "The block is now residences and education buildings.",
+   "capacity": 6000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Natural grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1884 Washington Nationals of the American Association, who went 12-51.",
+    "Stood between S, T, 9th and 10th Streets NW, about a quarter mile from the later Griffith Stadium site."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Athletic_Park_(Washington)",
+    "https://baseballdatahub.com/ballparks/was04"
+   ]
+  },
+  {
+   "id": "boundary-field",
+   "name": "Boundary Field",
+   "aka": [],
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "lat": 38.9175,
+   "lon": -77.0203,
+   "coord_approx": false,
+   "opened": 1891,
+   "closed": 1911,
+   "status": "Howard University Hospital stands on the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1891 Washington club, later the National League Senators.",
+    "Fire destroyed the wooden stands on March 17, 1911, and Griffith Stadium replaced it.",
+    "President Taft threw the first pitch here in 1910."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boundary_Field"
+   ]
+  },
+  {
+   "id": "national-league-park-ii",
+   "name": "National League Park II",
+   "aka": [
+    "Association Park",
+    "American Association Park",
+    "League Park II"
+   ],
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.5038,
+   "lon": -81.6616,
+   "coord_approx": false,
+   "opened": 1887,
+   "closed": 1890,
+   "status": "Not recorded in sources checked; the area is now commercial.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": 410,
+    "lcf": null,
+    "cf": 420,
+    "rcf": null,
+    "rf": 419
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Called Association Park in 1887-88 and National League Park in 1889-90.",
+    "Bounded by Payne, Euclid, East 30th and East 40th (Case) Avenues.",
+    "Replaced by League Park for the Spiders in 1891."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_League_Park",
+    "https://baseballdatahub.com/ballparks/cle03"
+   ]
+  },
+  {
+   "id": "association-park-1886",
+   "name": "Association Park (1886)",
+   "aka": [
+    "League Park"
+   ],
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 39.1061,
+   "lon": -94.5658,
+   "coord_approx": false,
+   "opened": 1886,
+   "closed": 1888,
+   "status": "The Al-Taqwa Islamic Center now occupies the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Built on a former pond bed, which made it hot in summer; nicknamed The Hole.",
+    "The 1888 press ranked it among the worst baseball parks in the country.",
+    "Abandoned to developers after the 1888 season."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Association_Park"
+   ]
+  },
+  {
+   "id": "exposition-park-kansas-city",
+   "name": "Exposition Park",
+   "aka": [],
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 39.0956,
+   "lon": -94.5497,
+   "coord_approx": false,
+   "opened": 1888,
+   "closed": 1889,
+   "status": "Former ballpark; later uses not recorded in sources checked.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted the first Kansas-Missouri football game on October 31, 1891.",
+    "The Cubs and Cardinals played here October 15, 1892, their only meeting outside either home city until 2023."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Exposition_Park_(Kansas_City)"
+   ]
+  },
+  {
+   "id": "culver-field",
+   "name": "Culver Field",
+   "aka": [],
+   "city": "Rochester",
+   "state": "New York",
+   "country": "USA",
+   "lat": 43.155,
+   "lon": -77.5767,
+   "coord_approx": false,
+   "opened": 1886,
+   "closed": 1890,
+   "status": "A Gleason Works plant occupies the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "A fire destroyed the original park in October 1893; it was rebuilt for 1898.",
+    "Right-field bleachers collapsed in May 1906, injuring dozens."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Culver_Field"
+   ]
+  },
+  {
+   "id": "star-park-ii-syracuse",
+   "name": "Star Park II",
+   "aka": [
+    "Star Park"
+   ],
+   "city": "Syracuse",
+   "state": "New York",
+   "country": "USA",
+   "lat": 43.0395,
+   "lon": -76.1519,
+   "coord_approx": false,
+   "opened": 1885,
+   "closed": 1890,
+   "status": "The city later ran South Clinton Street through the property.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1890 Syracuse Stars of the American Association.",
+    "Stood in the block between Salina, Taylor, Oneida and Temple Streets, crossed by a railroad track."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Star_Park",
+    "https://baseballdatahub.com/ballparks/syr02"
+   ]
+  },
+  {
+   "id": "ridgewood-park-baseball-ground",
+   "name": "Ridgewood Park",
+   "aka": [
+    "Wallace's Ridgewood Park"
+   ],
+   "city": "Queens",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.6947,
+   "lon": -73.9053,
+   "coord_approx": false,
+   "opened": 1885,
+   "closed": 1890,
+   "status": "Replaced by industrial buildings in 1959.",
+   "capacity": 10000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Brooklyn used this Queens ground mainly for Sunday games to dodge Brooklyn's blue laws.",
+    "The Brooklyn Gladiators played their whole 1890 home schedule here.",
+    "The grandstand burned on September 19, 1917."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ridgewood_Park_(baseball_ground)"
+   ]
+  },
+  {
+   "id": "congress-street-grounds",
+   "name": "Congress Street Grounds",
+   "aka": [],
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "lat": 42.3514,
+   "lon": -71.0469,
+   "coord_approx": false,
+   "opened": 1890,
+   "closed": 1894,
+   "status": "Office buildings stand on the site.",
+   "capacity": 14000,
+   "dimensions_ft": {
+    "lf": 250,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Boston won the Players' League pennant in 1890 and the American Association pennant in 1891 here.",
+    "Bobby Lowe hit four home runs in one game here on May 30, 1894.",
+    "The Beaneaters used it in 1894 while the South End Grounds were rebuilt."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Congress_Street_Grounds"
+   ]
+  },
+  {
+   "id": "borchert-field",
+   "name": "Borchert Field",
+   "aka": [
+    "Athletic Park"
+   ],
+   "city": "Milwaukee",
+   "state": "Wisconsin",
+   "country": "USA",
+   "lat": 43.0739,
+   "lon": -87.9206,
+   "coord_approx": false,
+   "opened": 1888,
+   "closed": 1891,
+   "status": "Interstate 43 was built over the site in 1963.",
+   "capacity": 18000,
+   "dimensions_ft": {
+    "lf": 266,
+    "lcf": 435,
+    "cf": 395,
+    "rcf": 435,
+    "rf": 266
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Called Athletic Park in 1891, when the American Association Brewers played there.",
+    "The narrow block gave short foul lines and deep power alleys.",
+    "Permanent lights were added in 1935."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Borchert_Field",
+    "https://en.wikipedia.org/wiki/Milwaukee_Brewers_(1891)"
+   ]
+  },
+  {
+   "id": "east-end-park-cincinnati",
+   "name": "East End Park",
+   "aka": [
+    "Pendleton Park"
+   ],
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 39.1181,
+   "lon": -84.4467,
+   "coord_approx": false,
+   "opened": 1891,
+   "closed": 1891,
+   "status": "The Schmidt Recreation Complex, with softball fields, occupies the site.",
+   "capacity": 5000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of Kelly's Killers from April 25 to August 13, 1891.",
+    "Fans often arrived by steamboat; the park had Ohio River access.",
+    "Police arrested players during a Sunday game on May 24, 1891."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/East_End_Park_(Cincinnati)"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2550 @@
+{
+ "teams": [
+  {
+   "franchise": "baltimore-black-sox",
+   "name": "Baltimore Black Sox",
+   "abbr": "BBS",
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1933,
+   "end": 1933,
+   "homes": [
+    {
+     "park": "bugle-field",
+     "start": 1933,
+     "end": 1933
+    }
+   ],
+   "fate": "Folded; a different team used the Black Sox name in 1934.",
+   "note": "Wikipedia says this club played 1933-34; league lists treat 1934 as a separate Black Sox II.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baltimore_Black_Sox"
+   ]
+  },
+  {
+   "franchise": "columbus-blue-birds",
+   "name": "Columbus Blue Birds",
+   "abbr": "CBB",
+   "city": "Columbus",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1933,
+   "end": 1933,
+   "homes": [
+    {
+     "park": "red-bird-stadium",
+     "start": 1933,
+     "end": 1933
+    }
+   ],
+   "fate": "Disbanded mid-season and merged with the Akron Grays.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Columbus_Blue_Birds"
+   ]
+  },
+  {
+   "franchise": "akron-black-tyrites",
+   "name": "Akron Black Tyrites",
+   "abbr": "AKT",
+   "city": "Akron",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1933,
+   "end": 1933,
+   "homes": [
+    {
+     "park": "akron-unknown-grounds",
+     "start": 1933,
+     "end": 1933
+    }
+   ],
+   "fate": "Became the Cleveland Giants later in 1933.",
+   "note": "Name used briefly mid-season by the merged Akron Grays and Columbus club.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Akron_Black_Tyrites"
+   ]
+  },
+  {
+   "franchise": "cleveland-giants",
+   "name": "Cleveland Giants",
+   "abbr": "CLG",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1933,
+   "end": 1933,
+   "homes": [
+    {
+     "park": "luna-park-cleveland",
+     "start": 1933,
+     "end": 1933
+    }
+   ],
+   "fate": "Finished Columbus's 1933 schedule, then folded.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Columbus_Blue_Birds",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Cleveland"
+   ]
+  },
+  {
+   "franchise": "indianapolis-abcs",
+   "name": "Indianapolis ABCs",
+   "abbr": "ABC",
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1933,
+   "end": 1933,
+   "homes": [
+    {
+     "park": "bush-stadium",
+     "start": 1933,
+     "end": 1933
+    }
+   ],
+   "fate": "Moved to Detroit in April 1933 as the Detroit Stars.",
+   "note": "League lists show this club only briefly in 1933 before the move.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_major_Negro_league_baseball_teams",
+    "https://en.wikipedia.org/wiki/Negro_National_League_(1933%E2%80%931948)"
+   ]
+  },
+  {
+   "franchise": "detroit-stars",
+   "name": "Detroit Stars",
+   "abbr": "DS",
+   "city": "Detroit",
+   "state": "Michigan",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1933,
+   "end": 1933,
+   "homes": [
+    {
+     "park": "hamtramck-stadium",
+     "start": 1933,
+     "end": 1933
+    }
+   ],
+   "fate": "Dropped from the league after 1933.",
+   "note": "Formerly the Indianapolis ABCs; its Detroit-area home is recorded as Hamtramck.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Negro_National_League_(1933%E2%80%931948)",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Detroit"
+   ]
+  },
+  {
+   "franchise": "chicago-american-giants",
+   "name": "Cole's American Giants",
+   "abbr": "CAG",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1933,
+   "end": 1935,
+   "homes": [
+    {
+     "park": "south-side-park",
+     "start": 1933,
+     "end": 1935
+    }
+   ],
+   "fate": "Left the league; played independently in 1936, then joined the Negro American League.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chicago_American_Giants"
+   ]
+  },
+  {
+   "franchise": "nashville-elite-giants",
+   "name": "Nashville Elite Giants",
+   "abbr": "NEG",
+   "city": "Nashville",
+   "state": "Tennessee",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1933,
+   "end": 1934,
+   "homes": [
+    {
+     "park": "tom-wilson-park",
+     "start": 1933,
+     "end": 1934
+    }
+   ],
+   "fate": "Moved to Columbus, Ohio, for 1935.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baltimore_Elite_Giants"
+   ]
+  },
+  {
+   "franchise": "columbus-elite-giants",
+   "name": "Columbus Elite Giants",
+   "abbr": "CEG",
+   "city": "Columbus",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1935,
+   "end": 1935,
+   "homes": [
+    {
+     "park": "red-bird-stadium",
+     "start": 1935,
+     "end": 1935
+    }
+   ],
+   "fate": "Moved to Washington, D.C., for 1936.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baltimore_Elite_Giants"
+   ]
+  },
+  {
+   "franchise": "washington-elite-giants",
+   "name": "Washington Elite Giants",
+   "abbr": "WEG",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1936,
+   "end": 1937,
+   "homes": [
+    {
+     "park": "griffith-stadium",
+     "start": 1936,
+     "end": 1937
+    }
+   ],
+   "fate": "Moved to Baltimore for 1938.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baltimore_Elite_Giants"
+   ]
+  },
+  {
+   "franchise": "baltimore-elite-giants",
+   "name": "Baltimore Elite Giants",
+   "abbr": "BEG",
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1938,
+   "end": 1948,
+   "homes": [
+    {
+     "park": "bugle-field",
+     "start": 1938,
+     "end": 1948
+    }
+   ],
+   "fate": "Joined the Negro American League for 1949.",
+   "note": "Wikipedia also lists Oriole Park as a secondary home in 1938-44.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baltimore_Elite_Giants"
+   ]
+  },
+  {
+   "franchise": "pittsburgh-crawfords",
+   "name": "Pittsburgh Crawfords",
+   "abbr": "PC",
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1933,
+   "end": 1938,
+   "homes": [
+    {
+     "park": "greenlee-field",
+     "start": 1933,
+     "end": 1938
+    }
+   ],
+   "fate": "Moved to Toledo in the Negro American League for 1939.",
+   "note": "Charter league members owned by Gus Greenlee, who built Greenlee Field.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pittsburgh_Crawfords"
+   ]
+  },
+  {
+   "franchise": "homestead-grays",
+   "name": "Homestead Grays",
+   "abbr": "HG",
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1935,
+   "end": 1942,
+   "homes": [
+    {
+     "park": "forbes-field",
+     "start": 1935,
+     "end": 1942
+    }
+   ],
+   "fate": "Principal base shifted to Washington, D.C., from 1943.",
+   "note": "Also used Greenlee Field 1935-37 and Griffith Stadium from 1940; 1933 membership ended early and 1934 was independent.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Homestead_Grays"
+   ]
+  },
+  {
+   "franchise": "homestead-grays",
+   "name": "Homestead Grays",
+   "abbr": "HG",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1943,
+   "end": 1948,
+   "homes": [
+    {
+     "park": "griffith-stadium",
+     "start": 1943,
+     "end": 1948
+    }
+   ],
+   "fate": "Played as an independent after the league folded in 1948.",
+   "note": "Majority of home games in Washington; Forbes Field still used for Pittsburgh dates.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Homestead_Grays"
+   ]
+  },
+  {
+   "franchise": "bacharach-giants",
+   "name": "Philadelphia Bacharach Giants",
+   "abbr": "BCH",
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1934,
+   "end": 1934,
+   "homes": [
+    {
+     "park": "passon-field",
+     "start": 1934,
+     "end": 1934
+    }
+   ],
+   "fate": "Left the league and returned to independent play in 1935.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bacharach_Giants",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Philadelphia"
+   ]
+  },
+  {
+   "franchise": "philadelphia-stars",
+   "name": "Philadelphia Stars",
+   "abbr": "PHS",
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1934,
+   "end": 1948,
+   "homes": [
+    {
+     "park": "passon-field",
+     "start": 1934,
+     "end": 1935
+    },
+    {
+     "park": "44th-and-parkside",
+     "start": 1936,
+     "end": 1948
+    }
+   ],
+   "fate": "Joined the Negro American League for 1949.",
+   "note": "Played some games at Shibe Park; after 1947 used area parks such as Wilmington Park.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Philadelphia_Stars_(baseball)"
+   ]
+  },
+  {
+   "franchise": "cleveland-red-sox",
+   "name": "Cleveland Red Sox",
+   "abbr": "CRS",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1934,
+   "end": 1934,
+   "homes": [
+    {
+     "park": "league-park",
+     "start": 1934,
+     "end": 1934
+    }
+   ],
+   "fate": "Dropped from the league after 1934.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Cleveland",
+    "https://en.wikipedia.org/wiki/Negro_National_League_(1933%E2%80%931948)"
+   ]
+  },
+  {
+   "franchise": "baltimore-black-sox-ii",
+   "name": "Baltimore Black Sox",
+   "abbr": "BBS",
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1934,
+   "end": 1934,
+   "homes": [
+    {
+     "park": "bugle-field",
+     "start": 1934,
+     "end": 1934
+    }
+   ],
+   "fate": "Folded after one season in the league.",
+   "note": "A separate club using the Black Sox name after the original team disbanded.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baltimore_Black_Sox"
+   ]
+  },
+  {
+   "franchise": "newark-dodgers",
+   "name": "Newark Dodgers",
+   "abbr": "ND",
+   "city": "Newark",
+   "state": "New Jersey",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1934,
+   "end": 1935,
+   "homes": [
+    {
+     "park": "meadowbrook-oval",
+     "start": 1934,
+     "end": 1935
+    }
+   ],
+   "fate": "Merged with the Brooklyn Eagles to form the Newark Eagles.",
+   "note": "Wikipedia's Newark Eagles page names other parks (Bloomfield, Irvington); the Newark parks list gives Meadowbrook Oval.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Newark_Dodgers",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Newark,_New_Jersey"
+   ]
+  },
+  {
+   "franchise": "brooklyn-eagles",
+   "name": "Brooklyn Eagles",
+   "abbr": "BKE",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1935,
+   "end": 1935,
+   "homes": [
+    {
+     "park": "ebbets-field",
+     "start": 1935,
+     "end": 1935
+    }
+   ],
+   "fate": "Merged with the Newark Dodgers to form the Newark Eagles.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Newark_Eagles"
+   ]
+  },
+  {
+   "franchise": "newark-eagles",
+   "name": "Newark Eagles",
+   "abbr": "NE",
+   "city": "Newark",
+   "state": "New Jersey",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1936,
+   "end": 1948,
+   "homes": [
+    {
+     "park": "ruppert-stadium-newark",
+     "start": 1936,
+     "end": 1948
+    }
+   ],
+   "fate": "Joined the Negro American League and moved to Houston for 1949.",
+   "note": "Owned by Abe and Effa Manley.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Newark_Eagles"
+   ]
+  },
+  {
+   "franchise": "new-york-cubans",
+   "name": "New York Cubans",
+   "abbr": "NYC",
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1935,
+   "end": 1936,
+   "homes": [
+    {
+     "park": "hinchliffe-stadium",
+     "start": 1935,
+     "end": 1936
+    }
+   ],
+   "fate": "Dropped from the league after 1936; returned in 1939.",
+   "note": "Also played some home games at Dyckman Oval in Manhattan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_York_Cubans"
+   ]
+  },
+  {
+   "franchise": "new-york-cubans",
+   "name": "New York Cubans",
+   "abbr": "NYC",
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1939,
+   "end": 1948,
+   "homes": [
+    {
+     "park": "polo-grounds",
+     "start": 1939,
+     "end": 1948
+    }
+   ],
+   "fate": "Joined the Negro American League for 1949.",
+   "note": "Also used Yankee Stadium in 1941-46; won the 1947 Negro World Series.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_York_Cubans"
+   ]
+  },
+  {
+   "franchise": "new-york-black-yankees",
+   "name": "New York Black Yankees",
+   "abbr": "NYB",
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1936,
+   "end": 1948,
+   "homes": [
+    {
+     "park": "freeport-municipal-stadium",
+     "start": 1936,
+     "end": 1936
+    },
+    {
+     "park": "hinchliffe-stadium",
+     "start": 1937,
+     "end": 1939
+    },
+    {
+     "park": "yankee-stadium-1923",
+     "start": 1940,
+     "end": 1947
+    },
+    {
+     "park": "red-wing-stadium",
+     "start": 1948,
+     "end": 1948
+    }
+   ],
+   "fate": "Disbanded after the 1948 season.",
+   "note": "1936 and 1939 homes uncertain; the club played mostly in Rochester in 1948. Also used the Polo Grounds.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_York_Black_Yankees"
+   ]
+  },
+  {
+   "franchise": "washington-black-senators",
+   "name": "Washington Black Senators",
+   "abbr": "WBS",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1938,
+   "end": 1938,
+   "homes": [
+    {
+     "park": "griffith-stadium",
+     "start": 1938,
+     "end": 1938
+    }
+   ],
+   "fate": "Not in the league after 1938.",
+   "note": "Formed to fill the gap left when the Elite Giants moved to Baltimore.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Washington_Black_Senators"
+   ]
+  },
+  {
+   "franchise": "st-louis-stars",
+   "name": "Harrisburg-St. Louis Stars",
+   "abbr": "HSL",
+   "city": "Harrisburg",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "NNL2",
+   "start": 1943,
+   "end": 1943,
+   "homes": [
+    {
+     "park": "island-park-harrisburg",
+     "start": 1943,
+     "end": 1943
+    }
+   ],
+   "fate": "Left the league in July to barnstorm; disbanded after 1943.",
+   "note": "Played as the Bond Bombers for war bond fundraising after leaving the league.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis%E2%80%93New_Orleans_Stars"
+   ]
+  },
+  {
+   "franchise": "birmingham-black-barons",
+   "name": "Birmingham Black Barons",
+   "abbr": "BBB",
+   "city": "Birmingham",
+   "state": "Alabama",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1937,
+   "end": 1938,
+   "homes": [
+    {
+     "park": "rickwood-field",
+     "start": 1937,
+     "end": 1938
+    }
+   ],
+   "fate": "Did not play in the league in 1939.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Birmingham_Black_Barons"
+   ]
+  },
+  {
+   "franchise": "birmingham-black-barons",
+   "name": "Birmingham Black Barons",
+   "abbr": "BBB",
+   "city": "Birmingham",
+   "state": "Alabama",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1940,
+   "end": 1948,
+   "homes": [
+    {
+     "park": "rickwood-field",
+     "start": 1940,
+     "end": 1948
+    }
+   ],
+   "fate": "Remained in the league into the 1950s.",
+   "note": "Rejoined the league in 1940.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Birmingham_Black_Barons"
+   ]
+  },
+  {
+   "franchise": "chicago-american-giants",
+   "name": "Chicago American Giants",
+   "abbr": "CAG",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1937,
+   "end": 1948,
+   "homes": [
+    {
+     "park": "south-side-park",
+     "start": 1937,
+     "end": 1940
+    },
+    {
+     "park": "comiskey-park",
+     "start": 1941,
+     "end": 1948
+    }
+   ],
+   "fate": "Remained in the league into the 1950s.",
+   "note": "Left South Side Park after a December 1940 fire.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chicago_American_Giants"
+   ]
+  },
+  {
+   "franchise": "cincinnati-tigers",
+   "name": "Cincinnati Tigers",
+   "abbr": "CT",
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1937,
+   "end": 1937,
+   "homes": [
+    {
+     "park": "crosley-field",
+     "start": 1937,
+     "end": 1937
+    }
+   ],
+   "fate": "Folded after the 1937 season.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Cincinnati",
+    "https://en.wikipedia.org/wiki/Negro_American_League"
+   ]
+  },
+  {
+   "franchise": "detroit-stars",
+   "name": "Detroit Stars",
+   "abbr": "DS",
+   "city": "Detroit",
+   "state": "Michigan",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1937,
+   "end": 1937,
+   "homes": [
+    {
+     "park": "dequindre-park",
+     "start": 1937,
+     "end": 1937
+    }
+   ],
+   "fate": "Quit the league after one season.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Detroit",
+    "https://en.wikipedia.org/wiki/Negro_American_League"
+   ]
+  },
+  {
+   "franchise": "indianapolis-abcs",
+   "name": "Indianapolis Athletics",
+   "abbr": "IA",
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1937,
+   "end": 1937,
+   "homes": [
+    {
+     "park": "bush-stadium",
+     "start": 1937,
+     "end": 1937
+    }
+   ],
+   "fate": "Renamed Indianapolis ABCs for 1938.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bush_Stadium",
+    "https://en.wikipedia.org/wiki/Negro_American_League"
+   ]
+  },
+  {
+   "franchise": "indianapolis-abcs",
+   "name": "Indianapolis ABCs",
+   "abbr": "ABC",
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1938,
+   "end": 1938,
+   "homes": [
+    {
+     "park": "bush-stadium",
+     "start": 1938,
+     "end": 1938
+    }
+   ],
+   "fate": "Moved to St. Louis as the Stars for 1939.",
+   "note": "Finances forced a quick move.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis%E2%80%93New_Orleans_Stars"
+   ]
+  },
+  {
+   "franchise": "atlanta-black-crackers",
+   "name": "Atlanta Black Crackers",
+   "abbr": "ABC",
+   "city": "Atlanta",
+   "state": "Georgia",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1938,
+   "end": 1938,
+   "homes": [
+    {
+     "park": "ponce-de-leon-park",
+     "start": 1938,
+     "end": 1938
+    }
+   ],
+   "fate": "Moved to Indianapolis for 1939 as the ABCs.",
+   "note": "Won the second-half title; sometimes used college fields on Crackers game days.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Atlanta_Black_Crackers"
+   ]
+  },
+  {
+   "franchise": "indianapolis-abcs",
+   "name": "Indianapolis ABCs",
+   "abbr": "ABC",
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1939,
+   "end": 1939,
+   "homes": [
+    {
+     "park": "bush-stadium",
+     "start": 1939,
+     "end": 1939
+    }
+   ],
+   "fate": "Disbanded after the 1939 season.",
+   "note": "The fourth team to use the ABCs name; formerly the Atlanta Black Crackers.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Atlanta_Black_Crackers"
+   ]
+  },
+  {
+   "franchise": "kansas-city-monarchs",
+   "name": "Kansas City Monarchs",
+   "abbr": "KCM",
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1937,
+   "end": 1948,
+   "homes": [
+    {
+     "park": "municipal-stadium-kansas-city",
+     "start": 1937,
+     "end": 1948
+    }
+   ],
+   "fate": "Remained in the league into the 1960s.",
+   "note": "Charter league member; the park was named Ruppert Stadium then Blues Stadium.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kansas_City_Monarchs",
+    "https://en.wikipedia.org/wiki/Municipal_Stadium_(Kansas_City)"
+   ]
+  },
+  {
+   "franchise": "memphis-red-sox",
+   "name": "Memphis Red Sox",
+   "abbr": "MRS",
+   "city": "Memphis",
+   "state": "Tennessee",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1937,
+   "end": 1948,
+   "homes": [
+    {
+     "park": "martin-stadium-memphis",
+     "start": 1937,
+     "end": 1948
+    }
+   ],
+   "fate": "Remained in the league into the 1960s.",
+   "note": "Wikipedia infobox lists Russwood Park as home in 1945-47; Martin Stadium used throughout here.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Memphis_Red_Sox"
+   ]
+  },
+  {
+   "franchise": "st-louis-stars",
+   "name": "St. Louis Stars",
+   "abbr": "STL",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1937,
+   "end": 1937,
+   "homes": [
+    {
+     "park": "metropolitan-park-st-louis",
+     "start": 1937,
+     "end": 1937
+    }
+   ],
+   "fate": "Folded after the 1937 season.",
+   "note": "Finished 5-32 in the league's first year.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_St._Louis",
+    "https://en.wikipedia.org/wiki/Negro_American_League"
+   ]
+  },
+  {
+   "franchise": "st-louis-stars",
+   "name": "St. Louis Stars",
+   "abbr": "STL",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1939,
+   "end": 1939,
+   "homes": [
+    {
+     "park": "south-end-park-st-louis",
+     "start": 1939,
+     "end": 1939
+    }
+   ],
+   "fate": "Renamed St. Louis-New Orleans Stars for 1940.",
+   "note": "The former Indianapolis ABCs moved to St. Louis.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis%E2%80%93New_Orleans_Stars"
+   ]
+  },
+  {
+   "franchise": "st-louis-stars",
+   "name": "St. Louis-New Orleans Stars",
+   "abbr": "SNO",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1940,
+   "end": 1941,
+   "homes": [
+    {
+     "park": "south-end-park-st-louis",
+     "start": 1940,
+     "end": 1941
+    }
+   ],
+   "fate": "Did not play in 1942; players dispersed to other clubs.",
+   "note": "Split home games with New Orleans (Pelican Stadium).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis%E2%80%93New_Orleans_Stars"
+   ]
+  },
+  {
+   "franchise": "jacksonville-red-caps",
+   "name": "Jacksonville Red Caps",
+   "abbr": "JRC",
+   "city": "Jacksonville",
+   "state": "Florida",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1938,
+   "end": 1938,
+   "homes": [
+    {
+     "park": "durkee-field",
+     "start": 1938,
+     "end": 1938
+    }
+   ],
+   "fate": "Moved to Cleveland as the Bears for 1939.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jacksonville_Red_Caps"
+   ]
+  },
+  {
+   "franchise": "cleveland-bears",
+   "name": "Cleveland Bears",
+   "abbr": "CLB",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1939,
+   "end": 1940,
+   "homes": [
+    {
+     "park": "hardware-field",
+     "start": 1939,
+     "end": 1940
+    }
+   ],
+   "fate": "Returned to Jacksonville as the Red Caps for 1941.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cleveland_Bears",
+    "https://en.wikipedia.org/wiki/Jacksonville_Red_Caps"
+   ]
+  },
+  {
+   "franchise": "jacksonville-red-caps",
+   "name": "Jacksonville Red Caps",
+   "abbr": "JRC",
+   "city": "Jacksonville",
+   "state": "Florida",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1941,
+   "end": 1942,
+   "homes": [
+    {
+     "park": "durkee-field",
+     "start": 1941,
+     "end": 1942
+    }
+   ],
+   "fate": "Dropped out of the league in July 1942.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jacksonville_Red_Caps"
+   ]
+  },
+  {
+   "franchise": "toledo-crawfords",
+   "name": "Toledo Crawfords",
+   "abbr": "TC",
+   "city": "Toledo",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1939,
+   "end": 1939,
+   "homes": [
+    {
+     "park": "swayne-field",
+     "start": 1939,
+     "end": 1939
+    }
+   ],
+   "fate": "Renamed Toledo-Indianapolis Crawfords for 1940.",
+   "note": "Former Pittsburgh Crawfords franchise.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pittsburgh_Crawfords"
+   ]
+  },
+  {
+   "franchise": "toledo-crawfords",
+   "name": "Toledo-Indianapolis Crawfords",
+   "abbr": "TIC",
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1940,
+   "end": 1940,
+   "homes": [
+    {
+     "park": "bush-stadium",
+     "start": 1940,
+     "end": 1940
+    }
+   ],
+   "fate": "Folded after the 1940 season.",
+   "note": "Opened in Toledo at Swayne Field, then moved to Indianapolis mid-season.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pittsburgh_Crawfords",
+    "https://en.wikipedia.org/wiki/Indianapolis_Clowns"
+   ]
+  },
+  {
+   "franchise": "cleveland-buckeyes",
+   "name": "Cincinnati-Cleveland Buckeyes",
+   "abbr": "CCB",
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1942,
+   "end": 1942,
+   "homes": [
+    {
+     "park": "crosley-field",
+     "start": 1942,
+     "end": 1942
+    }
+   ],
+   "fate": "Moved to Cleveland and renamed Cleveland Buckeyes for 1943.",
+   "note": "Wikipedia's infobox also lists League Park for 1942; text gives Crosley Field.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cleveland_Buckeyes"
+   ]
+  },
+  {
+   "franchise": "cleveland-buckeyes",
+   "name": "Cleveland Buckeyes",
+   "abbr": "CLE",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1943,
+   "end": 1948,
+   "homes": [
+    {
+     "park": "league-park",
+     "start": 1943,
+     "end": 1948
+    }
+   ],
+   "fate": "Moved to Louisville for 1949.",
+   "note": "Won the 1945 Negro World Series.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cleveland_Buckeyes"
+   ]
+  },
+  {
+   "franchise": "indianapolis-clowns",
+   "name": "Cincinnati Clowns",
+   "abbr": "CC",
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1943,
+   "end": 1943,
+   "homes": [
+    {
+     "park": "crosley-field",
+     "start": 1943,
+     "end": 1943
+    }
+   ],
+   "fate": "Renamed Cincinnati-Indianapolis Clowns for 1944.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indianapolis_Clowns"
+   ]
+  },
+  {
+   "franchise": "indianapolis-clowns",
+   "name": "Cincinnati-Indianapolis Clowns",
+   "abbr": "CIC",
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1944,
+   "end": 1945,
+   "homes": [
+    {
+     "park": "crosley-field",
+     "start": 1944,
+     "end": 1945
+    }
+   ],
+   "fate": "Moved fully to Indianapolis and renamed Indianapolis Clowns for 1946.",
+   "note": "Split home games between Cincinnati and Indianapolis.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indianapolis_Clowns"
+   ]
+  },
+  {
+   "franchise": "indianapolis-clowns",
+   "name": "Indianapolis Clowns",
+   "abbr": "IC",
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "league": "NAL",
+   "start": 1946,
+   "end": 1948,
+   "homes": [
+    {
+     "park": "bush-stadium",
+     "start": 1946,
+     "end": 1948
+    }
+   ],
+   "fate": "Remained in the league through 1954 and kept barnstorming afterward.",
+   "note": "Wikipedia's infobox lists Crosley Field through 1947 and Victory Field from 1944.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indianapolis_Clowns"
+   ]
+  }
+ ],
+ "parks": [
+  {
+   "id": "griffith-stadium",
+   "name": "Griffith Stadium",
+   "aka": [],
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "lat": 38.9175,
+   "lon": -77.0203,
+   "coord_approx": false,
+   "opened": 1911,
+   "closed": 1961,
+   "status": "Demolished in 1965; Howard University Hospital now occupies the site.",
+   "capacity": 32000,
+   "dimensions_ft": {
+    "lf": 388,
+    "lcf": 360,
+    "cf": 421,
+    "rcf": 373,
+    "rf": 320
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": 30
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Osborn Engineering",
+   "notable": [
+    "Home of the Homestead Grays from 1940, plus the Washington Elite Giants and Black Senators.",
+    "Rebuilt in steel and concrete within months after a 1911 fire destroyed the wooden park."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Griffith_Stadium"
+   ]
+  },
+  {
+   "id": "forbes-field",
+   "name": "Forbes Field",
+   "aka": [],
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 40.4406,
+   "lon": -79.9959,
+   "coord_approx": true,
+   "opened": 1909,
+   "closed": 1970,
+   "status": "Demolished in 1971; University of Pittsburgh buildings stand on the site, with part of the outfield wall surviving.",
+   "capacity": 41000,
+   "dimensions_ft": {
+    "lf": 365,
+    "lcf": 406,
+    "cf": 457,
+    "rcf": 408,
+    "rf": 375
+   },
+   "wall_ft": {
+    "lf": 12,
+    "cf": 12,
+    "rf": 9.5
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Charles Wellford Leavitt Jr.",
+   "notable": [
+    "Pittsburgh Pirates home that the Homestead Grays also used for home games.",
+    "Opened as one of the first concrete-and-steel ballparks, built in about four months."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Forbes_Field"
+   ]
+  },
+  {
+   "id": "greenlee-field",
+   "name": "Greenlee Field",
+   "aka": [],
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 40.4406,
+   "lon": -79.9959,
+   "coord_approx": true,
+   "opened": 1932,
+   "closed": 1938,
+   "status": "Demolished after 1938; the Bedford Dwellings housing project now covers the site.",
+   "capacity": 7500,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Louis Arnett Stuart Bellinger",
+   "notable": [
+    "Built and owned by Crawfords owner Gus Greenlee, one of few Black-built major-level ballparks.",
+    "Satchel Paige pitched to Josh Gibson at the April 1932 opening."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Greenlee_Field"
+   ]
+  },
+  {
+   "id": "ruppert-stadium-newark",
+   "name": "Ruppert Stadium",
+   "aka": [
+    "Davids' Stadium",
+    "Bears Stadium"
+   ],
+   "city": "Newark",
+   "state": "New Jersey",
+   "country": "USA",
+   "lat": 40.7357,
+   "lon": -74.1724,
+   "coord_approx": true,
+   "opened": 1926,
+   "closed": 1948,
+   "status": "Demolished in 1967; a food products plant now occupies the site.",
+   "capacity": 19000,
+   "dimensions_ft": {
+    "lf": 305,
+    "lcf": 365,
+    "cf": 410,
+    "rcf": 365,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Newark Eagles from 1936 to 1948, shared with the Newark Bears of the International League.",
+    "Opened as Davids' Stadium, later Bears Stadium, before taking the Ruppert name in 1932."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ruppert_Stadium_(Newark)",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Newark,_New_Jersey"
+   ]
+  },
+  {
+   "id": "bugle-field",
+   "name": "Bugle Field",
+   "aka": [],
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "lat": 39.2904,
+   "lon": -76.6122,
+   "coord_approx": true,
+   "opened": 1910,
+   "closed": 1949,
+   "status": "Dismantled in 1949; Rockland Industries now has its headquarters and plant on the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": 332,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Primary home of the Baltimore Elite Giants from 1938; the Black Sox also played here.",
+    "Owned by the Washington Senators' owners; Joe Cambria renovated it and added lights in 1932."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bugle_Field"
+   ]
+  },
+  {
+   "id": "rickwood-field",
+   "name": "Rickwood Field",
+   "aka": [],
+   "city": "Birmingham",
+   "state": "Alabama",
+   "country": "USA",
+   "lat": 33.5022,
+   "lon": -86.8558,
+   "coord_approx": false,
+   "opened": 1910,
+   "closed": 1960,
+   "status": "Still standing as a preserved working ballpark and museum that hosts an annual game.",
+   "capacity": 10800,
+   "dimensions_ft": {
+    "lf": 325,
+    "lcf": 399,
+    "cf": 400,
+    "rcf": 370,
+    "rf": 332
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Southeastern Engineering Company",
+   "notable": [
+    "Oldest surviving professional ballpark in the United States.",
+    "Shared by the Birmingham Black Barons and the white Birmingham Barons."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rickwood_Field",
+    "https://en.wikipedia.org/wiki/Birmingham_Black_Barons"
+   ]
+  },
+  {
+   "id": "martin-stadium-memphis",
+   "name": "Martin Stadium",
+   "aka": [
+    "Lewis Park",
+    "Martin Park"
+   ],
+   "city": "Memphis",
+   "state": "Tennessee",
+   "country": "USA",
+   "lat": 35.1244,
+   "lon": -90.0467,
+   "coord_approx": false,
+   "opened": 1923,
+   "closed": 1960,
+   "status": "Sold in 1960 and demolished in 1961; a truck dealer occupies the site, which has a historical marker.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Built in 1923 by Red Sox owner Robert S. Lewis as Lewis Park.",
+    "Renamed Martin Stadium after the Martin brothers bought the team in 1927; expanded in 1947."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Martin_Stadium_(Memphis)",
+    "https://en.wikipedia.org/wiki/Memphis_Red_Sox"
+   ]
+  },
+  {
+   "id": "comiskey-park",
+   "name": "Comiskey Park",
+   "aka": [],
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "lat": 41.8317,
+   "lon": -87.6342,
+   "coord_approx": false,
+   "opened": 1910,
+   "closed": 1990,
+   "status": "Demolished in 1991; a parking lot for Rate Field marks the site with a home plate marker.",
+   "capacity": 52000,
+   "dimensions_ft": {
+    "lf": 347,
+    "lcf": 382,
+    "cf": 409,
+    "rcf": 382,
+    "rf": 347
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Zachary Taylor Davis",
+   "notable": [
+    "Most frequent host of the Negro leagues' East-West All-Star Game from 1933 to 1960.",
+    "The Chicago American Giants made it their home from 1941."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Comiskey_Park"
+   ]
+  },
+  {
+   "id": "south-side-park",
+   "name": "South Side Park",
+   "aka": [
+    "Schorling Park",
+    "Cole's Park",
+    "American Giants Park",
+    "39th Street Grounds"
+   ],
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "lat": 41.8244,
+   "lon": -87.6328,
+   "coord_approx": false,
+   "opened": 1900,
+   "closed": 1940,
+   "status": "Damaged by fire in 1940; the Wentworth Gardens housing project now stands on the site.",
+   "capacity": 15000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted games of the 1906 World Series between the White Sox and Cubs.",
+    "Home of the Chicago American Giants through 1940, when fire ended its use."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Schorling_Park"
+   ]
+  },
+  {
+   "id": "municipal-stadium-kansas-city",
+   "name": "Municipal Stadium (Kansas City)",
+   "aka": [
+    "Muehlebach Field",
+    "Ruppert Stadium",
+    "Blues Stadium"
+   ],
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 39.0997,
+   "lon": -94.5786,
+   "coord_approx": true,
+   "opened": 1923,
+   "closed": 1972,
+   "status": "Demolished in 1976; a garden and housing redevelopment now occupy the site, marked by a plaque.",
+   "capacity": 35561,
+   "dimensions_ft": {
+    "lf": 369,
+    "lcf": 408,
+    "cf": 421,
+    "rcf": 382,
+    "rf": 338
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Opened as Muehlebach Field, then Ruppert Stadium (1937-43) and Blues Stadium (1943-54) before taking the Municipal name.",
+    "Home of the Kansas City Monarchs and later the Athletics and Royals."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Municipal_Stadium_(Kansas_City)",
+    "https://en.wikipedia.org/wiki/Kansas_City_Monarchs"
+   ]
+  },
+  {
+   "id": "yankee-stadium-1923",
+   "name": "Yankee Stadium (1923)",
+   "aka": [],
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.8269,
+   "lon": -73.9281,
+   "coord_approx": false,
+   "opened": 1923,
+   "closed": 2008,
+   "status": "Demolished 2009-2010; Heritage Field, a public park, now occupies the site.",
+   "capacity": 67000,
+   "dimensions_ft": {
+    "lf": 301,
+    "lcf": 457,
+    "cf": 461,
+    "rcf": 407,
+    "rf": 296
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Osborn Engineering Corporation",
+   "notable": [
+    "Primary home of the New York Black Yankees from 1940 through 1947.",
+    "Also hosted New York Cubans games in the 1940s."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yankee_Stadium_(1923)"
+   ]
+  },
+  {
+   "id": "polo-grounds",
+   "name": "Polo Grounds",
+   "aka": [],
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.8317,
+   "lon": -73.9372,
+   "coord_approx": false,
+   "opened": 1911,
+   "closed": 1963,
+   "status": "Demolished in 1964; the Polo Grounds Towers public housing complex now stands there.",
+   "capacity": 55000,
+   "dimensions_ft": {
+    "lf": 279,
+    "lcf": 450,
+    "cf": 483,
+    "rcf": 449,
+    "rf": 258
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Henry B. Herts",
+   "notable": [
+    "Main home of the New York Cubans from 1939.",
+    "Its horseshoe shape gave very short foul lines and a deep center field."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Polo_Grounds",
+    "https://en.wikipedia.org/wiki/New_York_Cubans"
+   ]
+  },
+  {
+   "id": "ebbets-field",
+   "name": "Ebbets Field",
+   "aka": [],
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.665,
+   "lon": -73.9581,
+   "coord_approx": false,
+   "opened": 1913,
+   "closed": 1957,
+   "status": "Demolished starting 1960; the Ebbets Field Apartments opened on the site in 1962.",
+   "capacity": 35000,
+   "dimensions_ft": {
+    "lf": 348,
+    "lcf": 351,
+    "cf": 399,
+    "rcf": 344,
+    "rf": 297
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Clarence Randall Van Buskirk",
+   "notable": [
+    "Home of the 1935 Brooklyn Eagles of the Negro National League.",
+    "Hosted the Brooklyn Dodgers until they left for Los Angeles after 1957."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ebbets_Field",
+    "https://en.wikipedia.org/wiki/Newark_Dodgers"
+   ]
+  },
+  {
+   "id": "hinchliffe-stadium",
+   "name": "Hinchliffe Stadium",
+   "aka": [],
+   "city": "Paterson",
+   "state": "New Jersey",
+   "country": "USA",
+   "lat": 40.9183,
+   "lon": -74.1811,
+   "coord_approx": false,
+   "opened": 1932,
+   "closed": 1938,
+   "status": "Reopened in 2023 after renovation; a National Historic Landmark hosting minor-league baseball and soccer.",
+   "capacity": 10000,
+   "dimensions_ft": {
+    "lf": 320,
+    "lcf": null,
+    "cf": 461,
+    "rcf": null,
+    "rf": 327
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "Olmsted Brothers",
+   "notable": [
+    "Main home of the New York Cubans in 1935-36 and the Black Yankees in 1937-38.",
+    "Designated a National Historic Landmark in 2013."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hinchliffe_Stadium",
+    "https://en.wikipedia.org/wiki/New_York_Cubans"
+   ]
+  },
+  {
+   "id": "crosley-field",
+   "name": "Crosley Field",
+   "aka": [
+    "Redland Field"
+   ],
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 39.1167,
+   "lon": -84.5353,
+   "coord_approx": false,
+   "opened": 1912,
+   "closed": 1970,
+   "status": "Demolished starting 1972; commercial buildings and a street now cover the site.",
+   "capacity": 29401,
+   "dimensions_ft": {
+    "lf": 328,
+    "lcf": 380,
+    "cf": 387,
+    "rcf": 383,
+    "rf": 366
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Harry Hake Sr.",
+   "notable": [
+    "Hosted the Cincinnati Tigers (1937), Buckeyes (1942) and Clowns (1943-45) of the Negro American League.",
+    "In 1935 it became the first major-league park to host night games."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Crosley_Field",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Cincinnati"
+   ]
+  },
+  {
+   "id": "league-park",
+   "name": "League Park",
+   "aka": [],
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.5114,
+   "lon": -81.6442,
+   "coord_approx": false,
+   "opened": 1891,
+   "closed": 1950,
+   "status": "Restored as a community park with the 1910 ticket house serving as a baseball museum.",
+   "capacity": 22500,
+   "dimensions_ft": {
+    "lf": 375,
+    "lcf": 415,
+    "cf": 420,
+    "rcf": 340,
+    "rf": 290
+   },
+   "wall_ft": {
+    "lf": 5,
+    "cf": null,
+    "rf": 40
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Charles S. Schneider",
+   "notable": [
+    "Home of the Cleveland Buckeyes from 1942 to 1950 and the 1934 Cleveland Red Sox.",
+    "The Buckeyes won the 1945 Negro World Series."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/League_Park",
+    "https://en.wikipedia.org/wiki/Cleveland_Buckeyes"
+   ]
+  },
+  {
+   "id": "swayne-field",
+   "name": "Swayne Field",
+   "aka": [],
+   "city": "Toledo",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.6656,
+   "lon": -83.5708,
+   "coord_approx": false,
+   "opened": 1909,
+   "closed": 1940,
+   "status": "Demolished after 1955; the Swayne Field Shopping Center now stands there.",
+   "capacity": 14800,
+   "dimensions_ft": {
+    "lf": 360,
+    "lcf": null,
+    "cf": 425,
+    "rcf": null,
+    "rf": 327
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1939 Toledo Crawfords and the start of the 1940 Crawfords season.",
+    "Named for Noah H. Swayne Jr., who donated the land."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Swayne_Field",
+    "https://en.wikipedia.org/wiki/Pittsburgh_Crawfords"
+   ]
+  },
+  {
+   "id": "bush-stadium",
+   "name": "Bush Stadium",
+   "aka": [
+    "Perry Stadium",
+    "Victory Field",
+    "Owen J. Bush Stadium"
+   ],
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "lat": 39.7881,
+   "lon": -86.1886,
+   "coord_approx": false,
+   "opened": 1931,
+   "closed": 1962,
+   "status": "Converted into the Stadium Lofts apartments in 2013; the facade and light towers remain.",
+   "capacity": 15000,
+   "dimensions_ft": {
+    "lf": 335,
+    "lcf": 350,
+    "cf": 395,
+    "rcf": 350,
+    "rf": 335
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Pierre & Wright; Osborn Engineering",
+   "notable": [
+    "Hosted the Indianapolis ABCs, Athletics, Crawfords and, from 1944, the Clowns.",
+    "Ivy on its outfield walls inspired the ivy at Wrigley Field."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bush_Stadium",
+    "https://en.wikipedia.org/wiki/St._Louis%E2%80%93New_Orleans_Stars"
+   ]
+  },
+  {
+   "id": "ponce-de-leon-park",
+   "name": "Ponce de Leon Park",
+   "aka": [],
+   "city": "Atlanta",
+   "state": "Georgia",
+   "country": "USA",
+   "lat": 33.775,
+   "lon": -84.3652,
+   "coord_approx": false,
+   "opened": 1907,
+   "closed": 1938,
+   "status": "Demolished in 1966; the Midtown Place strip mall stands on the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1938 Atlanta Black Crackers, shared with the white Atlanta Crackers.",
+    "A magnolia tree in center field stayed in play until 1947."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ponce_de_Leon_Park",
+    "https://en.wikipedia.org/wiki/Atlanta_Black_Crackers"
+   ]
+  },
+  {
+   "id": "durkee-field",
+   "name": "Durkee Field",
+   "aka": [
+    "Barrs Field"
+   ],
+   "city": "Jacksonville",
+   "state": "Florida",
+   "country": "USA",
+   "lat": 30.3322,
+   "lon": -81.6557,
+   "coord_approx": true,
+   "opened": 1912,
+   "closed": 1942,
+   "status": "Still in use; National Register-listed and holding a small museum.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": 375,
+    "rcf": null,
+    "rf": 285
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Opened as Barrs Field and rebuilt in 1936-37 after a fire.",
+    "Home of the Jacksonville Red Caps in 1938 and 1941-42."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Durkee_Field",
+    "https://en.wikipedia.org/wiki/Jacksonville_Red_Caps"
+   ]
+  },
+  {
+   "id": "hardware-field",
+   "name": "Hardware Field",
+   "aka": [],
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.4993,
+   "lon": -81.6944,
+   "coord_approx": true,
+   "opened": 1931,
+   "closed": 1940,
+   "status": "Site at East 79th Street and Kinsman Road is now housing.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Cleveland Bears in 1939 and 1940.",
+    "Opening year not found; value shown is the first known Negro-league use (1931)."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cleveland_Bears",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Cleveland"
+   ]
+  },
+  {
+   "id": "red-bird-stadium",
+   "name": "Red Bird Stadium",
+   "aka": [
+    "Jets Stadium",
+    "Franklin County Stadium",
+    "Cooper Stadium"
+   ],
+   "city": "Columbus",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 39.9612,
+   "lon": -82.9988,
+   "coord_approx": true,
+   "opened": 1931,
+   "closed": 1935,
+   "status": "Later Cooper Stadium; closed in 2008 and left half-demolished and abandoned by 2021.",
+   "capacity": 15000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": 400,
+    "rcf": null,
+    "rf": 330
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1933 Columbus Blue Birds and the 1935 Columbus Elite Giants.",
+    "Built from the same blueprints as Red Wing Stadium in Rochester."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Red_Bird_Stadium",
+    "https://en.wikipedia.org/wiki/Columbus_Blue_Birds"
+   ]
+  },
+  {
+   "id": "tom-wilson-park",
+   "name": "Tom Wilson Park",
+   "aka": [],
+   "city": "Nashville",
+   "state": "Tennessee",
+   "country": "USA",
+   "lat": 36.1453,
+   "lon": -86.7644,
+   "coord_approx": false,
+   "opened": 1929,
+   "closed": 1934,
+   "status": "Demolished; the source does not say what occupies the site now.",
+   "capacity": 8000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Built by owner Thomas T. Wilson for the Nashville Elite Giants.",
+    "Stood in Trimble Bottom, then Nashville's largest Black community."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tom_Wilson_Park",
+    "https://en.wikipedia.org/wiki/Baltimore_Elite_Giants"
+   ]
+  },
+  {
+   "id": "red-wing-stadium",
+   "name": "Red Wing Stadium",
+   "aka": [
+    "Silver Stadium"
+   ],
+   "city": "Rochester",
+   "state": "New York",
+   "country": "USA",
+   "lat": 43.1566,
+   "lon": -77.6088,
+   "coord_approx": true,
+   "opened": 1929,
+   "closed": 1948,
+   "status": "Demolished in 1997-98; an industrial and office park now occupies the site.",
+   "capacity": 15000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": 420,
+    "rcf": null,
+    "rf": 315
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Site of the New York Black Yankees' final 1948 season.",
+    "Renamed Silver Stadium in 1968."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Red_Wing_Stadium",
+    "https://en.wikipedia.org/wiki/New_York_Black_Yankees"
+   ]
+  },
+  {
+   "id": "passon-field",
+   "name": "Passon Field",
+   "aka": [],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9526,
+   "lon": -75.1652,
+   "coord_approx": true,
+   "opened": 1932,
+   "closed": 1935,
+   "status": "Site at 48th and Spruce Streets is now a West Philadelphia High School football field.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Philadelphia Bacharach Giants about 1932-34 and the Stars in 1934-35.",
+    "Opening year not found; value shown is the first known Negro-league use."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Philadelphia",
+    "https://en.wikipedia.org/wiki/Philadelphia_Stars_(baseball)"
+   ]
+  },
+  {
+   "id": "44th-and-parkside",
+   "name": "44th and Parkside Ballpark",
+   "aka": [
+    "P.R.R. YMCA Athletic Field",
+    "Parkside Field"
+   ],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9775,
+   "lon": -75.2139,
+   "coord_approx": false,
+   "opened": 1903,
+   "closed": 1952,
+   "status": "Now Philadelphia Stars Negro League Memorial Park, with a statue, marker and mural.",
+   "capacity": 6000,
+   "dimensions_ft": {
+    "lf": 330,
+    "lcf": null,
+    "cf": 410,
+    "rcf": null,
+    "rf": 310
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Philadelphia Stars from 1936; the Stars lost the lease after 1947 by one account.",
+    "Hosted Game 4 of the 1945 Negro World Series."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/44th_and_Parkside_Ballpark",
+    "https://en.wikipedia.org/wiki/Philadelphia_Stars_(baseball)"
+   ]
+  },
+  {
+   "id": "meadowbrook-oval",
+   "name": "Meadowbrook Oval",
+   "aka": [
+    "Meadowbrook Field",
+    "Asylum Oval"
+   ],
+   "city": "Newark",
+   "state": "New Jersey",
+   "country": "USA",
+   "lat": 40.7357,
+   "lon": -74.1724,
+   "coord_approx": true,
+   "opened": 1934,
+   "closed": 1935,
+   "status": "Site on South Orange Avenue is now West Side High School.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Listed as the home of the Newark Dodgers in 1934-35.",
+    "Opening year not found; value shown is first known Negro-league use. Other sources name Sprague or Ollemar fields."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Newark,_New_Jersey"
+   ]
+  },
+  {
+   "id": "hamtramck-stadium",
+   "name": "Hamtramck Stadium",
+   "aka": [],
+   "city": "Hamtramck",
+   "state": "Michigan",
+   "country": "USA",
+   "lat": 42.3928,
+   "lon": -83.0497,
+   "coord_approx": true,
+   "opened": 1930,
+   "closed": 1933,
+   "status": "Current condition not verified; located near Dan Street in Hamtramck.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Detroit Stars in 1930-31 and listed for the 1933 Stars.",
+    "The 1933 Stars were the Indianapolis ABCs moved to Detroit in April."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Detroit",
+    "https://en.wikipedia.org/wiki/Detroit_Stars"
+   ]
+  },
+  {
+   "id": "dequindre-park",
+   "name": "Dequindre Park",
+   "aka": [],
+   "city": "Detroit",
+   "state": "Michigan",
+   "country": "USA",
+   "lat": 42.3314,
+   "lon": -83.0458,
+   "coord_approx": true,
+   "opened": 1937,
+   "closed": 1937,
+   "status": "Site on Dequindre Avenue south of Six Mile Road; current use not verified.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Listed as the home site of the 1937 Detroit Stars.",
+    "Park name not confirmed; only its location on Dequindre Avenue is recorded."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Detroit"
+   ]
+  },
+  {
+   "id": "metropolitan-park-st-louis",
+   "name": "Metropolitan Park",
+   "aka": [
+    "Giants Park II"
+   ],
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 38.627,
+   "lon": -90.1994,
+   "coord_approx": true,
+   "opened": 1920,
+   "closed": 1937,
+   "status": "Site near North Broadway and Clarence Avenue is now an industrial area.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Formerly Giants Park II; home of the St. Louis Giants in 1920-21.",
+    "Home of the 1937 St. Louis Stars of the Negro American League."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_St._Louis"
+   ]
+  },
+  {
+   "id": "south-end-park-st-louis",
+   "name": "South End Park",
+   "aka": [],
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 38.627,
+   "lon": -90.1994,
+   "coord_approx": true,
+   "opened": 1939,
+   "closed": 1941,
+   "status": "Location and current use not found.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the St. Louis Stars in 1939 and the St. Louis half of 1941.",
+    "Opening year not found; value shown is first known use."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis%E2%80%93New_Orleans_Stars"
+   ]
+  },
+  {
+   "id": "island-park-harrisburg",
+   "name": "Island Park",
+   "aka": [
+    "Island Stadium"
+   ],
+   "city": "Harrisburg",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 40.2732,
+   "lon": -76.8867,
+   "coord_approx": true,
+   "opened": 1943,
+   "closed": 1943,
+   "status": "Located on City Island in the Susquehanna River; current use not verified.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1943 Harrisburg-St. Louis Stars of the Negro National League.",
+    "Opening year not found; value shown is first known Negro-league use."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis%E2%80%93New_Orleans_Stars"
+   ]
+  },
+  {
+   "id": "luna-park-cleveland",
+   "name": "Luna Park (Luna Bowl)",
+   "aka": [
+    "Luna Bowl"
+   ],
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.4993,
+   "lon": -81.6944,
+   "coord_approx": true,
+   "opened": 1933,
+   "closed": 1933,
+   "status": "Site near East 110th Street and Woodland Avenue is now housing.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1933 Cleveland Giants of the Negro National League.",
+    "Opening year not found; value shown is the season of Negro-league use."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Cleveland"
+   ]
+  },
+  {
+   "id": "freeport-municipal-stadium",
+   "name": "Freeport Municipal Stadium",
+   "aka": [],
+   "city": "Freeport",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.6576,
+   "lon": -73.5832,
+   "coord_approx": true,
+   "opened": 1936,
+   "closed": 1936,
+   "status": "Current status not verified.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Listed as a 1936 home of the New York Black Yankees.",
+    "Details not found; opening year shown is the season of Negro-league use."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_York_Black_Yankees"
+   ]
+  },
+  {
+   "id": "akron-unknown-grounds",
+   "name": "Home grounds not recorded",
+   "aka": [],
+   "city": "Akron",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.0814,
+   "lon": -81.519,
+   "coord_approx": true,
+   "opened": 1933,
+   "closed": 1933,
+   "status": "Home grounds of the Akron club in 1933 are not recorded.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": null,
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "The 1933 Akron club used the Black Tyrites name briefly mid-season.",
+    "Opening year shown is only the season of use."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Akron_Black_Tyrites"
+   ]
+  }
+ ]
+}

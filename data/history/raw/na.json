@@ -1,0 +1,1252 @@
+{
+ "teams": [
+  {
+   "franchise": "philadelphia-athletics-na",
+   "name": "Philadelphia Athletics",
+   "abbr": "PHA",
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "NA",
+   "start": 1871,
+   "end": 1875,
+   "homes": [
+    {
+     "park": "jefferson-street-grounds",
+     "start": 1871,
+     "end": 1875
+    }
+   ],
+   "fate": "Joined the National League for 1876; expelled after that season.",
+   "note": "Won the 1871 pennant.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Philadelphia_Athletics_(1860–1876)"
+   ]
+  },
+  {
+   "franchise": "new-york-mutuals",
+   "name": "New York Mutuals",
+   "abbr": "NYU",
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "league": "NA",
+   "start": 1871,
+   "end": 1875,
+   "homes": [
+    {
+     "park": "union-grounds",
+     "start": 1871,
+     "end": 1875
+    }
+   ],
+   "fate": "Joined the National League for 1876; expelled after that season.",
+   "note": "Played in Williamsburg, Brooklyn.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_York_Mutuals"
+   ]
+  },
+  {
+   "franchise": "troy-haymakers",
+   "name": "Troy Haymakers",
+   "abbr": "TRO",
+   "city": "Troy",
+   "state": "New York",
+   "country": "USA",
+   "league": "NA",
+   "start": 1871,
+   "end": 1872,
+   "homes": [
+    {
+     "park": "haymakers-grounds",
+     "start": 1871,
+     "end": 1872
+    }
+   ],
+   "fate": "Disbanded mid-1872 with an empty treasury.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Troy_Haymakers"
+   ]
+  },
+  {
+   "franchise": "cleveland-forest-citys",
+   "name": "Cleveland Forest Citys",
+   "abbr": "CFC",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NA",
+   "start": 1871,
+   "end": 1872,
+   "homes": [
+    {
+     "park": "national-association-grounds",
+     "start": 1871,
+     "end": 1872
+    }
+   ],
+   "fate": "Folded after the 1872 season.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cleveland_Forest_Citys"
+   ]
+  },
+  {
+   "franchise": "fort-wayne-kekiongas",
+   "name": "Fort Wayne Kekiongas",
+   "abbr": "FWK",
+   "city": "Fort Wayne",
+   "state": "Indiana",
+   "country": "USA",
+   "league": "NA",
+   "start": 1871,
+   "end": 1871,
+   "homes": [
+    {
+     "park": "hamilton-field-fort-wayne",
+     "start": 1871,
+     "end": 1871
+    }
+   ],
+   "fate": "Collapsed in mid-1871 amid poor attendance and unpaid players.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fort_Wayne_Kekiongas"
+   ]
+  },
+  {
+   "franchise": "rockford-forest-citys",
+   "name": "Rockford Forest Citys",
+   "abbr": "ROK",
+   "city": "Rockford",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "NA",
+   "start": 1871,
+   "end": 1871,
+   "homes": [
+    {
+     "park": "agricultural-society-fair-grounds",
+     "start": 1871,
+     "end": 1871
+    }
+   ],
+   "fate": "Folded after its only season.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rockford_Forest_Citys"
+   ]
+  },
+  {
+   "franchise": "washington-olympics",
+   "name": "Washington Olympics",
+   "abbr": "WOL",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "NA",
+   "start": 1871,
+   "end": 1872,
+   "homes": [
+    {
+     "park": "olympics-grounds",
+     "start": 1871,
+     "end": 1872
+    }
+   ],
+   "fate": "Dropped out during 1872; the Nationals replaced them.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Washington_Olympics"
+   ]
+  },
+  {
+   "franchise": "brooklyn-atlantics",
+   "name": "Brooklyn Atlantics",
+   "abbr": "BRA",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "NA",
+   "start": 1872,
+   "end": 1875,
+   "homes": [
+    {
+     "park": "capitoline-grounds",
+     "start": 1872,
+     "end": 1872
+    },
+    {
+     "park": "union-grounds",
+     "start": 1873,
+     "end": 1875
+    }
+   ],
+   "fate": "Left the league after 1875 and played independently.",
+   "note": "1872 home inferred from the infobox; later seasons shared Union Grounds with the Mutuals.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Brooklyn_Atlantics"
+   ]
+  },
+  {
+   "franchise": "brooklyn-eckfords",
+   "name": "Brooklyn Eckfords",
+   "abbr": "BRE",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "NA",
+   "start": 1872,
+   "end": 1872,
+   "homes": [
+    {
+     "park": "union-grounds",
+     "start": 1872,
+     "end": 1872
+    }
+   ],
+   "fate": "Went out of business after the 1872 season.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Brooklyn_Eckfords"
+   ]
+  },
+  {
+   "franchise": "baltimore-canaries",
+   "name": "Baltimore Canaries",
+   "abbr": "BLC",
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "league": "NA",
+   "start": 1872,
+   "end": 1874,
+   "homes": [
+    {
+     "park": "newington-park",
+     "start": 1872,
+     "end": 1874
+    }
+   ],
+   "fate": "Folded after the 1874 season.",
+   "note": "Also known as the Lord Baltimores.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baltimore_Canaries"
+   ]
+  },
+  {
+   "franchise": "middletown-mansfields",
+   "name": "Middletown Mansfields",
+   "abbr": "MMF",
+   "city": "Middletown",
+   "state": "Connecticut",
+   "country": "USA",
+   "league": "NA",
+   "start": 1872,
+   "end": 1872,
+   "homes": [
+    {
+     "park": "mansfield-club-grounds",
+     "start": 1872,
+     "end": 1872
+    }
+   ],
+   "fate": "Closed its books in August 1872.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Middletown_Mansfields"
+   ]
+  },
+  {
+   "franchise": "washington-nationals-na",
+   "name": "Washington Nationals",
+   "abbr": "WNA",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "NA",
+   "start": 1872,
+   "end": 1872,
+   "homes": [
+    {
+     "park": "olympics-grounds",
+     "start": 1872,
+     "end": 1872
+    }
+   ],
+   "fate": "Lost all 11 games and went out of business.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Washington_Nationals_(National_Association)"
+   ]
+  },
+  {
+   "franchise": "washington-blue-legs",
+   "name": "Washington Blue Legs",
+   "abbr": "WBL",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "NA",
+   "start": 1873,
+   "end": 1873,
+   "homes": [
+    {
+     "park": "olympics-grounds",
+     "start": 1873,
+     "end": 1873
+    }
+   ],
+   "fate": "Disbanded after the 1873 season.",
+   "note": "Some sources count this as the 1873 Nationals; 1873 park is not documented, Olympics Grounds assumed.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/1873_Washington_Blue_Legs_season"
+   ]
+  },
+  {
+   "franchise": "baltimore-marylands",
+   "name": "Baltimore Marylands",
+   "abbr": "BMD",
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "league": "NA",
+   "start": 1873,
+   "end": 1873,
+   "homes": [
+    {
+     "park": "madison-avenue-grounds",
+     "start": 1873,
+     "end": 1873
+    }
+   ],
+   "fate": "Folded in July 1873 after six games.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baltimore_Marylands"
+   ]
+  },
+  {
+   "franchise": "elizabeth-resolutes",
+   "name": "Elizabeth Resolutes",
+   "abbr": "ELR",
+   "city": "Elizabeth",
+   "state": "New Jersey",
+   "country": "USA",
+   "league": "NA",
+   "start": 1873,
+   "end": 1873,
+   "homes": [
+    {
+     "park": "waverly-fairgrounds",
+     "start": 1873,
+     "end": 1873
+    }
+   ],
+   "fate": "Folded in 1873 after going 2-21.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Elizabeth_Resolutes"
+   ]
+  },
+  {
+   "franchise": "philadelphia-white-stockings",
+   "name": "Philadelphia White Stockings",
+   "abbr": "PWS",
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "NA",
+   "start": 1873,
+   "end": 1875,
+   "homes": [
+    {
+     "park": "jefferson-street-grounds",
+     "start": 1873,
+     "end": 1875
+    }
+   ],
+   "fate": "Folded after the 1875 season.",
+   "note": "Also called the Philadelphia Whites.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Philadelphia_White_Stockings"
+   ]
+  },
+  {
+   "franchise": "hartford-dark-blues",
+   "name": "Hartford Dark Blues",
+   "abbr": "HDB",
+   "city": "Hartford",
+   "state": "Connecticut",
+   "country": "USA",
+   "league": "NA",
+   "start": 1874,
+   "end": 1875,
+   "homes": [
+    {
+     "park": "hartford-ball-club-grounds",
+     "start": 1874,
+     "end": 1875
+    }
+   ],
+   "fate": "Joined the National League for 1876 under the same name.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hartford_Dark_Blues"
+   ]
+  },
+  {
+   "franchise": "philadelphia-centennials",
+   "name": "Philadelphia Centennials",
+   "abbr": "PCE",
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "NA",
+   "start": 1875,
+   "end": 1875,
+   "homes": [
+    {
+     "park": "centennial-grounds",
+     "start": 1875,
+     "end": 1875
+    }
+   ],
+   "fate": "Folded mid-1875 with a 2-12 record.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Philadelphia_Centennials"
+   ]
+  },
+  {
+   "franchise": "new-haven-elm-citys",
+   "name": "New Haven Elm Citys",
+   "abbr": "NHE",
+   "city": "New Haven",
+   "state": "Connecticut",
+   "country": "USA",
+   "league": "NA",
+   "start": 1875,
+   "end": 1875,
+   "homes": [
+    {
+     "park": "howard-avenue-grounds",
+     "start": 1875,
+     "end": 1875
+    }
+   ],
+   "fate": "Played one season, finishing 7-40.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_Haven_Elm_Citys"
+   ]
+  },
+  {
+   "franchise": "washington-nationals-na",
+   "name": "Washington Nationals",
+   "abbr": "WNA",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "NA",
+   "start": 1875,
+   "end": 1875,
+   "homes": [
+    {
+     "park": "olympics-grounds",
+     "start": 1875,
+     "end": 1875
+    }
+   ],
+   "fate": "Folded in July 1875 while in St. Louis.",
+   "note": "Also called the Washingtons; link to the 1872 club is uncertain; park per season page.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/1875_Washington_Nationals_season"
+   ]
+  },
+  {
+   "franchise": "st-louis-brown-stockings",
+   "name": "St. Louis Brown Stockings",
+   "abbr": "SLB",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "NA",
+   "start": 1875,
+   "end": 1875,
+   "homes": [
+    {
+     "park": "grand-avenue-park",
+     "start": 1875,
+     "end": 1875
+    }
+   ],
+   "fate": "Joined the National League for 1876 under the same name.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis_Brown_Stockings"
+   ]
+  },
+  {
+   "franchise": "st-louis-red-stockings",
+   "name": "St. Louis Red Stockings",
+   "abbr": "SLR",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "NA",
+   "start": 1875,
+   "end": 1875,
+   "homes": [
+    {
+     "park": "red-stocking-park",
+     "start": 1875,
+     "end": 1875
+    }
+   ],
+   "fate": "Quit mid-season after its last game on July 4, 1875.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis_Red_Stockings"
+   ]
+  },
+  {
+   "franchise": "keokuk-westerns",
+   "name": "Keokuk Westerns",
+   "abbr": "KEO",
+   "city": "Keokuk",
+   "state": "Iowa",
+   "country": "USA",
+   "league": "NA",
+   "start": 1875,
+   "end": 1875,
+   "homes": [
+    {
+     "park": "perry-park-keokuk",
+     "start": 1875,
+     "end": 1875
+    }
+   ],
+   "fate": "Dropped out in June 1875 and folded.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Keokuk_Westerns"
+   ]
+  }
+ ],
+ "parks": [
+  {
+   "id": "jefferson-street-grounds",
+   "name": "Jefferson Street Grounds",
+   "aka": [
+    "Athletic Grounds",
+    "Athletic Park",
+    "Olympic Ball Ground",
+    "Twenty-Fifth and Jefferson"
+   ],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9778,
+   "lon": -75.1786,
+   "coord_approx": false,
+   "opened": 1864,
+   "closed": 1890,
+   "status": "A public school and recreation center with ball fields now occupy the site.",
+   "capacity": 15000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted the first National League game on April 22, 1876, when Boston beat the Athletics 6-5.",
+    "A temporary viewing stand collapsed before a game in 1874, injuring many fans."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jefferson_Street_Grounds"
+   ]
+  },
+  {
+   "id": "union-grounds",
+   "name": "Union Grounds",
+   "aka": [
+    "Union Ball Grounds",
+    "Union Base Ball and Cricket Grounds"
+   ],
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.7005,
+   "lon": -73.9565,
+   "coord_approx": true,
+   "opened": 1862,
+   "closed": 1878,
+   "status": "Streets, a secondary school and an armory now cover the Williamsburg site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": 350
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "First baseball park fully enclosed by a fence, which let the owner charge admission.",
+    "Had a pagoda in center field and was flooded for ice skating in winter.",
+    "Last major league game there was July 26, 1878, Providence over Milwaukee."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Grounds"
+   ]
+  },
+  {
+   "id": "capitoline-grounds",
+   "name": "Capitoline Grounds",
+   "aka": [
+    "Capitoline Skating Lake and Base Ball Ground"
+   ],
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.6828,
+   "lon": -73.9486,
+   "coord_approx": false,
+   "opened": 1864,
+   "closed": 1872,
+   "status": "Demolished in 1880; streets and housing now cover the site in Bedford-Stuyvesant.",
+   "capacity": 5000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Brooklyn Atlantics ended the Cincinnati Red Stockings' 84-game winning streak here in 1870.",
+    "Fred Goldsmith demonstrated the curveball here in 1870."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Capitoline_Grounds"
+   ]
+  },
+  {
+   "id": "haymakers-grounds",
+   "name": "Haymakers' Grounds",
+   "aka": [
+    "Vail Lot",
+    "Vail's lot"
+   ],
+   "city": "Troy",
+   "state": "New York",
+   "country": "USA",
+   "lat": 42.76,
+   "lon": -73.6808,
+   "coord_approx": false,
+   "opened": 1860,
+   "closed": 1872,
+   "status": "Near Knickerbacker Park, where a monument marks Troy's brief major league history.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Troy Haymakers in 1871 and 1872, and later of the Troy Trojans in 1880-81.",
+    "A 1992 monument ceremony included an exhibition game played by 1882 rules."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haymakers%27_Grounds"
+   ]
+  },
+  {
+   "id": "national-association-grounds",
+   "name": "National Association Grounds",
+   "aka": [],
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.4964,
+   "lon": -81.6522,
+   "coord_approx": false,
+   "opened": 1871,
+   "closed": 1872,
+   "status": "Site at Central Avenue and East 55th Street; current use not documented in source.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Cleveland Forest Citys in 1871 and 1872, who won five of sixteen home games.",
+    "Hosted a short-lived Forest City club in the 1912 United States Baseball League."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/National_Association_Grounds"
+   ]
+  },
+  {
+   "id": "hamilton-field-fort-wayne",
+   "name": "Hamilton Field",
+   "aka": [
+    "Kekionga Base Ball Grounds",
+    "Kekionga Ball Grounds"
+   ],
+   "city": "Fort Wayne",
+   "state": "Indiana",
+   "country": "USA",
+   "lat": 41.0769,
+   "lon": -85.1579,
+   "coord_approx": false,
+   "opened": 1870,
+   "closed": 1871,
+   "status": "Site of the former Camp Allen on the St. Marys River, north of Camp Allen Park.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted the first National Association game on May 4, 1871, a 2-0 Kekiongas win over Cleveland.",
+    "Its covered grandstand, the Grand Dutchess, burned down on November 5, 1871."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hamilton_Field_(Fort_Wayne)"
+   ]
+  },
+  {
+   "id": "agricultural-society-fair-grounds",
+   "name": "Agricultural Society Fair Grounds",
+   "aka": [
+    "Rockford Fair Grounds"
+   ],
+   "city": "Rockford",
+   "state": "Illinois",
+   "country": "USA",
+   "lat": 42.268,
+   "lon": -89.112,
+   "coord_approx": true,
+   "opened": 1866,
+   "closed": 1871,
+   "status": "Most of the site survives as Fairgrounds Park on Rockford's west side.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Rockford Forest Citys played only six home games here in their lone 1871 season.",
+    "Trees intruded on foul ground and third base sat uphill from the rest of the diamond."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fairgrounds_Park_(Rockford,_Illinois)"
+   ]
+  },
+  {
+   "id": "olympics-grounds",
+   "name": "Olympics Grounds",
+   "aka": [
+    "Olympic Grounds",
+    "Olympic's Grounds"
+   ],
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "lat": 38.914,
+   "lon": -77.0375,
+   "coord_approx": true,
+   "opened": 1871,
+   "closed": 1875,
+   "status": "Block between 16th and 17th Streets NW at S Street, now mixed residential and commercial.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Named for the Olympic club; home to Washington's National Association clubs from 1871 to 1875.",
+    "The club's earlier home, the White Lot, was also called Olympic Grounds."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Olympics_Grounds"
+   ]
+  },
+  {
+   "id": "newington-park",
+   "name": "Newington Park",
+   "aka": [],
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "lat": 39.3072,
+   "lon": -76.6408,
+   "coord_approx": false,
+   "opened": 1872,
+   "closed": 1882,
+   "status": "Homes and a church now stand on the former Pennsylvania Avenue site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Baltimore Canaries played here from 1872 to 1874, and the Orioles used it until 1882.",
+    "No photographs of the grounds are known to survive."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Newington_Park"
+   ]
+  },
+  {
+   "id": "madison-avenue-grounds",
+   "name": "Madison Avenue Grounds",
+   "aka": [
+    "Monumental Park"
+   ],
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "lat": 39.3105,
+   "lon": -76.6245,
+   "coord_approx": true,
+   "opened": 1860,
+   "closed": 1873,
+   "status": "Eutaw Street now cuts through the former grounds in West Baltimore.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Baltimore's first enclosed ballpark, built by the Waverly Club.",
+    "Cincinnati beat the local Marylands 47-7 there in 1869."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Madison_Avenue_Grounds"
+   ]
+  },
+  {
+   "id": "mansfield-club-grounds",
+   "name": "Mansfield Club Grounds",
+   "aka": [
+    "Mansfield Park",
+    "Fort Hill Grounds"
+   ],
+   "city": "Middletown",
+   "state": "Connecticut",
+   "country": "USA",
+   "lat": 41.5623,
+   "lon": -72.6506,
+   "coord_approx": true,
+   "opened": 1872,
+   "closed": 1872,
+   "status": "A residential development now occupies the hilltop site.",
+   "capacity": 800,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Named for Civil War general Joseph K. Mansfield, as was the team.",
+    "Brickworks owner Dewitt Clinton Sage donated the land in 1871."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mansfield_Club_Grounds"
+   ]
+  },
+  {
+   "id": "waverly-fairgrounds",
+   "name": "Waverly Fairgrounds",
+   "aka": [
+    "Waverly Fair Grounds",
+    "Waverly Park"
+   ],
+   "city": "Elizabeth",
+   "state": "New Jersey",
+   "country": "USA",
+   "lat": 40.7052,
+   "lon": -74.2025,
+   "coord_approx": true,
+   "opened": 1867,
+   "closed": 1873,
+   "status": "Site is now split between Weequahic Park in Newark and a cemetery in Elizabeth.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Elizabeth Resolutes lost all seven of their home National Association games here in 1873.",
+    "Hosted the New Jersey State Fair from 1867 to 1898."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Waverly_Fairgrounds"
+   ]
+  },
+  {
+   "id": "hartford-ball-club-grounds",
+   "name": "Hartford Ball Club Grounds",
+   "aka": [
+    "Hartford Base Ball Grounds"
+   ],
+   "city": "Hartford",
+   "state": "Connecticut",
+   "country": "USA",
+   "lat": 41.7575,
+   "lon": -72.6693,
+   "coord_approx": false,
+   "opened": 1874,
+   "closed": 1876,
+   "status": "A lawn across from the Church of the Good Shepherd; a plaque once marked the site.",
+   "capacity": 10000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Hartford Dark Blues from 1874 to 1876.",
+    "A 2008 memorial plaque was stolen in 2009 and recovered in 2017."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hartford_Ball_Club_Grounds"
+   ]
+  },
+  {
+   "id": "centennial-grounds",
+   "name": "Centennial Grounds",
+   "aka": [
+    "Centennial Park"
+   ],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9927,
+   "lon": -75.1938,
+   "coord_approx": true,
+   "opened": 1875,
+   "closed": 1875,
+   "status": "Shared a block with the later Recreation Park; present use not documented in source.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the short-lived 1875 Philadelphia Centennials.",
+    "The Athletics played one home game there in 1875."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Centennial_Grounds"
+   ]
+  },
+  {
+   "id": "howard-avenue-grounds",
+   "name": "Howard Avenue Grounds",
+   "aka": [],
+   "city": "New Haven",
+   "state": "Connecticut",
+   "country": "USA",
+   "lat": 41.3083,
+   "lon": -72.9279,
+   "coord_approx": true,
+   "opened": 1875,
+   "closed": 1875,
+   "status": "Sold to developers by 1888; residences now cover the lot.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Normal home field of the New Haven Elm Citys in their 1875 season.",
+    "Hartford hosted an 1877 National League game here."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Howard_Avenue_Grounds"
+   ]
+  },
+  {
+   "id": "grand-avenue-park",
+   "name": "Grand Avenue Park",
+   "aka": [
+    "Grand Avenue Ball Grounds",
+    "Sportsman's Park (I)"
+   ],
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 38.658,
+   "lon": -90.22,
+   "coord_approx": false,
+   "opened": 1867,
+   "closed": 1892,
+   "status": "Site at Grand and Dodier later became Sportsman's Park, then a Boys and Girls Club.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the St. Louis Brown Stockings from 1875 to 1877.",
+    "August Solari acquired the tract in 1866 and began staging games there in 1867."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sportsman%27s_Park",
+    "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_St._Louis"
+   ]
+  },
+  {
+   "id": "red-stocking-park",
+   "name": "Red Stocking Park",
+   "aka": [
+    "Compton Avenue Park",
+    "Compton Park",
+    "Red Stockings Park"
+   ],
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 38.632,
+   "lon": -90.23,
+   "coord_approx": true,
+   "opened": 1874,
+   "closed": 1875,
+   "status": "A transit agency repair facility occupies the site beneath the Compton Avenue viaduct.",
+   "capacity": 1000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the 1875 St. Louis Red Stockings, who quit mid-season.",
+    "Six people were arrested for cutting holes in the fence to watch games."
+   ],
+   "sources": [
+    "https://sabr.org/bioproj/park/red-stockings-park-st-louis/",
+    "https://en.wikipedia.org/wiki/St._Louis_Red_Stockings"
+   ]
+  },
+  {
+   "id": "perry-park-keokuk",
+   "name": "Perry Park",
+   "aka": [
+    "Walte's Pasture"
+   ],
+   "city": "Keokuk",
+   "state": "Iowa",
+   "country": "USA",
+   "lat": 40.4134,
+   "lon": -91.3886,
+   "coord_approx": false,
+   "opened": 1875,
+   "closed": 1875,
+   "status": "Park is closed; present use of the site is not documented in sources.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Used only in 1875, when the Keokuk Westerns went 1-12.",
+    "Westerns played their first home game there on May 4, 1875, against Chicago."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Perry_Park_(Iowa)",
+    "https://baseballdatahub.com/ballparks/keo01.html"
+   ]
+  }
+ ]
+}

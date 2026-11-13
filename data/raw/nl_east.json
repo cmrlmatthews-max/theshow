@@ -1,0 +1,218 @@
+[
+  {
+    "id": "ATL",
+    "team": "Atlanta Braves",
+    "league": "NL",
+    "division": "East",
+    "stadium": "Truist Park",
+    "former_names": ["SunTrust Park (2017–2020)"],
+    "city": "Atlanta",
+    "state": "Georgia",
+    "country": "USA",
+    "lat": 33.8900,
+    "lon": -84.4681,
+    "opened": 2017,
+    "capacity": 41108,
+    "surface": "Hybrid Bermuda overseeded with perennial ryegrass",
+    "roof": "open",
+    "architect": "Populous",
+    "cost": "$622 million",
+    "dimensions_ft": {"lf": 335, "lcf": 385, "cf": 400, "rcf": 375, "rf": 325},
+    "wall_ft": {"lf": null, "cf": null, "rf": null},
+    "team_founded": 1876,
+    "franchise_history": [
+      {"years": "1871–1875", "name": "Boston Red Stockings", "city": "Boston"},
+      {"years": "1876–1882", "name": "Boston Red Caps", "city": "Boston"},
+      {"years": "1883–1906", "name": "Boston Beaneaters", "city": "Boston"},
+      {"years": "1907–1910", "name": "Boston Doves", "city": "Boston"},
+      {"years": "1911", "name": "Boston Rustlers", "city": "Boston"},
+      {"years": "1912–1935", "name": "Boston Braves", "city": "Boston"},
+      {"years": "1936–1940", "name": "Boston Bees", "city": "Boston"},
+      {"years": "1941–1952", "name": "Boston Braves", "city": "Boston"},
+      {"years": "1953–1965", "name": "Milwaukee Braves", "city": "Milwaukee"},
+      {"years": "1966–present", "name": "Atlanta Braves", "city": "Atlanta"}
+    ],
+    "previous_stadium": "Turner Field (1997–2016)",
+    "world_series_titles": [1914, 1957, 1995, 2021],
+    "pennants": 18,
+    "colors": ["#13274F", "#CE1141"],
+    "notable": [
+      "Opened in 2017 as SunTrust Park and was renamed in 2020 after the bank merger.",
+      "A metal canopy of about 108,000 square feet covers roughly 60 percent of the seats.",
+      "The ballpark sits alongside The Battery Atlanta mixed-use development.",
+      "The grass was changed to a hybrid Bermuda overseed with ryegrass before the 2023 season."
+    ],
+    "note": "",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Truist_Park",
+      "https://en.wikipedia.org/wiki/Atlanta_Braves",
+      "https://en.wikipedia.org/wiki/Turner_Field"
+    ]
+  },
+  {
+    "id": "MIA",
+    "team": "Miami Marlins",
+    "league": "NL",
+    "division": "East",
+    "stadium": "loanDepot park",
+    "former_names": ["Marlins Park (2012–2020)"],
+    "city": "Miami",
+    "state": "Florida",
+    "country": "USA",
+    "lat": 25.7781,
+    "lon": -80.2197,
+    "opened": 2012,
+    "capacity": 37442,
+    "surface": "Shaw Sports B1K artificial turf",
+    "roof": "retractable",
+    "architect": "Populous",
+    "cost": "$634 million",
+    "dimensions_ft": {"lf": 344, "lcf": 386, "cf": 400, "rcf": 387, "rf": 335},
+    "wall_ft": {"lf": null, "cf": null, "rf": null},
+    "team_founded": 1993,
+    "franchise_history": [
+      {"years": "1993–2011", "name": "Florida Marlins", "city": "Miami"},
+      {"years": "2012–present", "name": "Miami Marlins", "city": "Miami"}
+    ],
+    "previous_stadium": "Hard Rock Stadium, under earlier names Joe Robbie Stadium and Dolphin Stadium (1993–2011)",
+    "world_series_titles": [1997, 2003],
+    "pennants": 2,
+    "colors": ["#00A3E0", "#000000"],
+    "notable": [
+      "Opened in 2012 as Marlins Park and was renamed after a 2021 naming-rights deal.",
+      "A retractable roof covers the field.",
+      "The grass field was replaced with Shaw Sports B1K artificial turf beginning in 2020.",
+      "Outfield walls were lowered during a 2016 renovation."
+    ],
+    "note": "",
+    "sources": [
+      "https://en.wikipedia.org/wiki/LoanDepot_park",
+      "https://en.wikipedia.org/wiki/Miami_Marlins",
+      "https://en.wikipedia.org/wiki/Hard_Rock_Stadium"
+    ]
+  },
+  {
+    "id": "NYM",
+    "team": "New York Mets",
+    "league": "NL",
+    "division": "East",
+    "stadium": "Citi Field",
+    "former_names": [],
+    "city": "Queens, New York City",
+    "state": "New York",
+    "country": "USA",
+    "lat": 40.7569,
+    "lon": -73.8458,
+    "opened": 2009,
+    "capacity": 41922,
+    "surface": "Kentucky bluegrass",
+    "roof": "open",
+    "architect": "Populous (formerly HOK Sport)",
+    "cost": "$850 million",
+    "dimensions_ft": {"lf": 335, "lcf": 358, "cf": 408, "rcf": 375, "rf": 330},
+    "wall_ft": {"lf": null, "cf": 8, "rf": null},
+    "team_founded": 1962,
+    "franchise_history": [
+      {"years": "1962–present", "name": "New York Mets", "city": "New York"}
+    ],
+    "previous_stadium": "Shea Stadium (1964–2008)",
+    "world_series_titles": [1969, 1986],
+    "pennants": 5,
+    "colors": ["#002D72", "#FF5910"],
+    "notable": [
+      "Opened in 2009 next to the site where Shea Stadium once stood.",
+      "The center-field boundary in front of the Home Run Apple was lowered from 16 feet to 8 feet.",
+      "Funded with $615 million in public subsidies, according to the article text.",
+      "Sources disagree on cost: the article text gives $850 million and the infobox gives $900 million."
+    ],
+    "note": "",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Citi_Field",
+      "https://en.wikipedia.org/wiki/New_York_Mets",
+      "https://en.wikipedia.org/wiki/Shea_Stadium"
+    ]
+  },
+  {
+    "id": "PHI",
+    "team": "Philadelphia Phillies",
+    "league": "NL",
+    "division": "East",
+    "stadium": "Citizens Bank Park",
+    "former_names": [],
+    "city": "Philadelphia",
+    "state": "Pennsylvania",
+    "country": "USA",
+    "lat": 39.9058,
+    "lon": -75.1664,
+    "opened": 2004,
+    "capacity": 42901,
+    "surface": "Kentucky bluegrass",
+    "roof": "open",
+    "architect": "EwingCole and HOK Sport",
+    "cost": "$458 million",
+    "dimensions_ft": {"lf": 329, "lcf": 374, "cf": 401, "rcf": 369, "rf": 330},
+    "wall_ft": {"lf": null, "cf": null, "rf": null},
+    "team_founded": 1883,
+    "franchise_history": [
+      {"years": "1883–1889", "name": "Philadelphia Quakers", "city": "Philadelphia"},
+      {"years": "1890–present", "name": "Philadelphia Phillies", "city": "Philadelphia"}
+    ],
+    "previous_stadium": "Veterans Stadium (1971–2003)",
+    "world_series_titles": [1980, 2008],
+    "pennants": 8,
+    "colors": ["#E81828", "#002D72"],
+    "notable": [
+      "Opened April 3, 2004 in the South Philadelphia Sports Complex.",
+      "Monty's Angle, the left-center area, has distances of about 381 to 409 feet.",
+      "The left-field wall was moved back 5 feet after the 2005 season.",
+      "The stadium cost $458 million to build, about $781 million in 2025 dollars."
+    ],
+    "note": "",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Citizens_Bank_Park",
+      "https://en.wikipedia.org/wiki/Philadelphia_Phillies",
+      "https://en.wikipedia.org/wiki/Veterans_Stadium"
+    ]
+  },
+  {
+    "id": "WSH",
+    "team": "Washington Nationals",
+    "league": "NL",
+    "division": "East",
+    "stadium": "Nationals Park",
+    "former_names": ["Natitude Park (2012 promotional name)"],
+    "city": "Washington, D.C.",
+    "state": "District of Columbia",
+    "country": "USA",
+    "lat": 38.8728,
+    "lon": -77.0075,
+    "opened": 2008,
+    "capacity": 41373,
+    "surface": "Kentucky bluegrass",
+    "roof": "open",
+    "architect": "HOK Sport and Devrouax & Purnell Architects and Planners",
+    "cost": "$693 million",
+    "dimensions_ft": {"lf": 337, "lcf": 377, "cf": 402, "rcf": 370, "rf": 335},
+    "wall_ft": {"lf": null, "cf": null, "rf": null},
+    "team_founded": 1969,
+    "franchise_history": [
+      {"years": "1969–2004", "name": "Montreal Expos", "city": "Montreal"},
+      {"years": "2005–present", "name": "Washington Nationals", "city": "Washington"}
+    ],
+    "previous_stadium": "RFK Stadium (2005–2007)",
+    "world_series_titles": [2019],
+    "pennants": 1,
+    "colors": ["#AB0003", "#14225A"],
+    "notable": [
+      "Opened March 22, 2008 on the Anacostia River in D.C.'s Navy Yard neighborhood.",
+      "The stadium was not designed for a roof, and a 2013 proposal to add one was rejected.",
+      "Total cost reached $783.9 million once transportation, art and infrastructure work is included.",
+      "The Nationals left RFK Stadium after the 2007 season for this ballpark."
+    ],
+    "note": "",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nationals_Park",
+      "https://en.wikipedia.org/wiki/Washington_Nationals"
+    ]
+  }
+]

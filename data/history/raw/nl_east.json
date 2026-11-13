@@ -1,0 +1,1086 @@
+{
+ "teams": [
+  {
+   "franchise": "ATL",
+   "name": "Boston Red Stockings",
+   "abbr": "BRS",
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "NA",
+   "start": 1871,
+   "end": 1875,
+   "homes": [
+    {
+     "park": "south-end-grounds",
+     "start": 1871,
+     "end": 1875
+    }
+   ],
+   "fate": "Joined the new National League for 1876.",
+   "note": "Original Red Stockings, Harry Wright's club, won four of five National Association pennants.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boston_Braves",
+    "https://en.wikipedia.org/wiki/South_End_Grounds"
+   ]
+  },
+  {
+   "franchise": "ATL",
+   "name": "Boston Red Caps",
+   "abbr": "BSN",
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "NL",
+   "start": 1876,
+   "end": 1882,
+   "homes": [
+    {
+     "park": "south-end-grounds",
+     "start": 1876,
+     "end": 1882
+    }
+   ],
+   "fate": "Renamed Boston Beaneaters for 1883.",
+   "note": "Called Red Stockings or Red Caps in this era; Baseball-Reference uses Red Caps.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boston_Braves",
+    "https://en.wikipedia.org/wiki/South_End_Grounds"
+   ]
+  },
+  {
+   "franchise": "ATL",
+   "name": "Boston Beaneaters",
+   "abbr": "BSN",
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "NL",
+   "start": 1883,
+   "end": 1906,
+   "homes": [
+    {
+     "park": "south-end-grounds",
+     "start": 1883,
+     "end": 1906
+    }
+   ],
+   "fate": "Renamed Boston Doves for 1907.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boston_Braves",
+    "https://en.wikipedia.org/wiki/South_End_Grounds"
+   ]
+  },
+  {
+   "franchise": "ATL",
+   "name": "Boston Doves",
+   "abbr": "BSN",
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "NL",
+   "start": 1907,
+   "end": 1910,
+   "homes": [
+    {
+     "park": "south-end-grounds",
+     "start": 1907,
+     "end": 1910
+    }
+   ],
+   "fate": "Renamed Boston Rustlers for 1911.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boston_Braves",
+    "https://en.wikipedia.org/wiki/South_End_Grounds"
+   ]
+  },
+  {
+   "franchise": "ATL",
+   "name": "Boston Rustlers",
+   "abbr": "BSN",
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "NL",
+   "start": 1911,
+   "end": 1911,
+   "homes": [
+    {
+     "park": "south-end-grounds",
+     "start": 1911,
+     "end": 1911
+    }
+   ],
+   "fate": "Renamed Boston Braves for 1912.",
+   "note": "One-season name.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boston_Braves",
+    "https://en.wikipedia.org/wiki/South_End_Grounds"
+   ]
+  },
+  {
+   "franchise": "ATL",
+   "name": "Boston Braves",
+   "abbr": "BSN",
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "NL",
+   "start": 1912,
+   "end": 1935,
+   "homes": [
+    {
+     "park": "south-end-grounds",
+     "start": 1912,
+     "end": 1914
+    },
+    {
+     "park": "braves-field",
+     "start": 1915,
+     "end": 1935
+    }
+   ],
+   "fate": "Renamed Boston Bees for 1936.",
+   "note": "Used Fenway Park for the late 1914 stretch and the 1914 World Series before Braves Field opened in 1915.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boston_Braves",
+    "https://en.wikipedia.org/wiki/South_End_Grounds",
+    "https://en.wikipedia.org/wiki/Braves_Field"
+   ]
+  },
+  {
+   "franchise": "ATL",
+   "name": "Boston Bees",
+   "abbr": "BSN",
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "NL",
+   "start": 1936,
+   "end": 1940,
+   "homes": [
+    {
+     "park": "braves-field",
+     "start": 1936,
+     "end": 1940
+    }
+   ],
+   "fate": "Renamed Boston Braves again for 1941.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boston_Braves",
+    "https://en.wikipedia.org/wiki/South_End_Grounds",
+    "https://en.wikipedia.org/wiki/Braves_Field"
+   ]
+  },
+  {
+   "franchise": "ATL",
+   "name": "Boston Braves",
+   "abbr": "BSN",
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "NL",
+   "start": 1941,
+   "end": 1952,
+   "homes": [
+    {
+     "park": "braves-field",
+     "start": 1941,
+     "end": 1952
+    }
+   ],
+   "fate": "Moved to Milwaukee before the 1953 season.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boston_Braves",
+    "https://en.wikipedia.org/wiki/South_End_Grounds",
+    "https://en.wikipedia.org/wiki/Braves_Field"
+   ]
+  },
+  {
+   "franchise": "ATL",
+   "name": "Milwaukee Braves",
+   "abbr": "MLN",
+   "city": "Milwaukee",
+   "state": "Wisconsin",
+   "country": "USA",
+   "league": "NL",
+   "start": 1953,
+   "end": 1965,
+   "homes": [
+    {
+     "park": "milwaukee-county-stadium",
+     "start": 1953,
+     "end": 1965
+    }
+   ],
+   "fate": "Moved to Atlanta before the 1966 season.",
+   "note": "Won the 1957 World Series.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Milwaukee_Braves",
+    "https://en.wikipedia.org/wiki/Milwaukee_County_Stadium"
+   ]
+  },
+  {
+   "franchise": "ATL",
+   "name": "Atlanta Braves",
+   "abbr": "ATL",
+   "city": "Atlanta",
+   "state": "Georgia",
+   "country": "USA",
+   "league": "NL",
+   "start": 1966,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "atlanta-fulton-county-stadium",
+     "start": 1966,
+     "end": 1996
+    },
+    {
+     "park": "turner-field",
+     "start": 1997,
+     "end": 2016
+    },
+    {
+     "park": "ATL",
+     "start": 2017,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Moved from Turner Field to Truist Park in Cobb County for 2017.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Atlanta_Braves",
+    "https://en.wikipedia.org/wiki/Atlanta%E2%80%93Fulton_County_Stadium",
+    "https://en.wikipedia.org/wiki/Turner_Field"
+   ]
+  },
+  {
+   "franchise": "MIA",
+   "name": "Florida Marlins",
+   "abbr": "FLA",
+   "city": "Miami Gardens",
+   "state": "Florida",
+   "country": "USA",
+   "league": "NL",
+   "start": 1993,
+   "end": 2011,
+   "homes": [
+    {
+     "park": "hard-rock-stadium",
+     "start": 1993,
+     "end": 2011
+    }
+   ],
+   "fate": "Renamed Miami Marlins and moved into a new ballpark for 2012.",
+   "note": "Stadium was named Joe Robbie, Pro Player, Dolphins, Land Shark and Sun Life during this span.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Miami_Marlins",
+    "https://en.wikipedia.org/wiki/Hard_Rock_Stadium"
+   ]
+  },
+  {
+   "franchise": "MIA",
+   "name": "Miami Marlins",
+   "abbr": "MIA",
+   "city": "Miami",
+   "state": "Florida",
+   "country": "USA",
+   "league": "NL",
+   "start": 2012,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "MIA",
+     "start": 2012,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Ballpark opened as Marlins Park, renamed loanDepot park in 2021.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Miami_Marlins"
+   ]
+  },
+  {
+   "franchise": "NYM",
+   "name": "New York Mets",
+   "abbr": "NYM",
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "league": "NL",
+   "start": 1962,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "polo-grounds",
+     "start": 1962,
+     "end": 1963
+    },
+    {
+     "park": "shea-stadium",
+     "start": 1964,
+     "end": 2008
+    },
+    {
+     "park": "NYM",
+     "start": 2009,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Expansion club of 1962; spent two seasons at the Polo Grounds before Shea Stadium opened.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_York_Mets",
+    "https://en.wikipedia.org/wiki/Polo_Grounds",
+    "https://en.wikipedia.org/wiki/Shea_Stadium"
+   ]
+  },
+  {
+   "franchise": "PHI",
+   "name": "Philadelphia Quakers",
+   "abbr": "PHI",
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "NL",
+   "start": 1883,
+   "end": 1889,
+   "homes": [
+    {
+     "park": "recreation-park-philadelphia",
+     "start": 1883,
+     "end": 1886
+    },
+    {
+     "park": "baker-bowl",
+     "start": 1887,
+     "end": 1889
+    }
+   ],
+   "fate": "Became known as the Phillies from 1890.",
+   "note": "Quakers and Phillies were used interchangeably; Baseball-Reference treats 1883-89 as Quakers.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Philadelphia_Phillies",
+    "https://en.wikipedia.org/wiki/Recreation_Park_(Philadelphia)",
+    "https://en.wikipedia.org/wiki/Baker_Bowl"
+   ]
+  },
+  {
+   "franchise": "PHI",
+   "name": "Philadelphia Phillies",
+   "abbr": "PHI",
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "NL",
+   "start": 1890,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "baker-bowl",
+     "start": 1890,
+     "end": 1938
+    },
+    {
+     "park": "shibe-park",
+     "start": 1938,
+     "end": 1970
+    },
+    {
+     "park": "veterans-stadium",
+     "start": 1971,
+     "end": 2003
+    },
+    {
+     "park": "PHI",
+     "start": 2004,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Called Blue Jays informally from 1944 to 1949. Left Baker Bowl for Shibe Park midway through 1938.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Philadelphia_Phillies",
+    "https://en.wikipedia.org/wiki/Baker_Bowl",
+    "https://en.wikipedia.org/wiki/Shibe_Park",
+    "https://en.wikipedia.org/wiki/Veterans_Stadium"
+   ]
+  },
+  {
+   "franchise": "WSH",
+   "name": "Montreal Expos",
+   "abbr": "MON",
+   "city": "Montreal",
+   "state": "Quebec",
+   "country": "Canada",
+   "league": "NL",
+   "start": 1969,
+   "end": 2004,
+   "homes": [
+    {
+     "park": "jarry-park-stadium",
+     "start": 1969,
+     "end": 1976
+    },
+    {
+     "park": "olympic-stadium-montreal",
+     "start": 1977,
+     "end": 2004
+    }
+   ],
+   "fate": "Moved to Washington and became the Nationals for 2005.",
+   "note": "Played part of the 2003 and 2004 home schedules at Hiram Bithorn Stadium, San Juan, Puerto Rico.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Montreal_Expos",
+    "https://en.wikipedia.org/wiki/Jarry_Park_Stadium",
+    "https://en.wikipedia.org/wiki/Olympic_Stadium_(Montreal)"
+   ]
+  },
+  {
+   "franchise": "WSH",
+   "name": "Washington Nationals",
+   "abbr": "WSN",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "NL",
+   "start": 2005,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "robert-f-kennedy-memorial-stadium",
+     "start": 2005,
+     "end": 2007
+    },
+    {
+     "park": "WSH",
+     "start": 2008,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Played at RFK Stadium until Nationals Park opened in 2008.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Washington_Nationals",
+    "https://en.wikipedia.org/wiki/Robert_F._Kennedy_Memorial_Stadium"
+   ]
+  }
+ ],
+ "parks": [
+  {
+   "id": "south-end-grounds",
+   "name": "South End Grounds",
+   "aka": [
+    "Walpole Street Grounds"
+   ],
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "lat": 42.3375,
+   "lon": -71.0869,
+   "coord_approx": false,
+   "opened": 1871,
+   "closed": 1914,
+   "status": "Demolished. Northeastern University science complex and Ruggles station area occupy the site.",
+   "capacity": 11000,
+   "dimensions_ft": {
+    "lf": 250,
+    "lcf": 445,
+    "cf": 440,
+    "rcf": 440,
+    "rf": 255
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Rebuilt after the 1894 Roxbury fire destroyed the second park.",
+    "Cy Young made his last Boston home start here in 1911.",
+    "Short lines and deep center gave it almost no real left or right field."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/South_End_Grounds"
+   ]
+  },
+  {
+   "id": "braves-field",
+   "name": "Braves Field",
+   "aka": [],
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "lat": 42.3533,
+   "lon": -71.1192,
+   "coord_approx": false,
+   "opened": 1915,
+   "closed": 1952,
+   "status": "Partly survives as Boston University's Nickerson Field, with the right field pavilion still standing.",
+   "capacity": 46500,
+   "dimensions_ft": {
+    "lf": 337,
+    "lcf": 355,
+    "cf": 390,
+    "rcf": 355,
+    "rf": 320
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Osborn Engineering",
+   "notable": [
+    "Hosted a 26-inning 1-1 tie between Boston and Brooklyn in 1920.",
+    "Red Sox used it for the 1915 and 1916 World Series.",
+    "Fences were moved repeatedly, so dimensions varied widely over the years."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Braves_Field"
+   ]
+  },
+  {
+   "id": "milwaukee-county-stadium",
+   "name": "Milwaukee County Stadium",
+   "aka": [
+    "County Stadium"
+   ],
+   "city": "Milwaukee",
+   "state": "Wisconsin",
+   "country": "USA",
+   "lat": 43.03,
+   "lon": -87.9739,
+   "coord_approx": false,
+   "opened": 1953,
+   "closed": 2000,
+   "status": "Demolished in 2001. Parking for American Family Field and Helfaer Field cover the site.",
+   "capacity": 54187,
+   "dimensions_ft": {
+    "lf": 315,
+    "lcf": 382,
+    "cf": 402,
+    "rcf": 382,
+    "rf": 315
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Osborn Engineering",
+   "notable": [
+    "First American ballpark built with public funds.",
+    "Hank Aaron hit his 755th and final home run here in 1976.",
+    "Hosted the 1957 and 1958 World Series and two All-Star Games."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Milwaukee_County_Stadium"
+   ]
+  },
+  {
+   "id": "atlanta-fulton-county-stadium",
+   "name": "Atlanta-Fulton County Stadium",
+   "aka": [
+    "Atlanta Stadium",
+    "The Launching Pad"
+   ],
+   "city": "Atlanta",
+   "state": "Georgia",
+   "country": "USA",
+   "lat": 33.739,
+   "lon": -84.389,
+   "coord_approx": false,
+   "opened": 1965,
+   "closed": 1996,
+   "status": "Imploded in 1997. A parking lot marks the outline, with Aaron's 715th home run monument.",
+   "capacity": 53046,
+   "dimensions_ft": {
+    "lf": 330,
+    "lcf": 385,
+    "cf": 402,
+    "rcf": 385,
+    "rf": 330
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "FABRAP and Heery",
+   "notable": [
+    "Hank Aaron hit home run number 715 here on April 8, 1974.",
+    "Braves clinched the 1995 World Series here.",
+    "Hot, thin summer air earned it the Launching Pad nickname."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Atlanta%E2%80%93Fulton_County_Stadium"
+   ]
+  },
+  {
+   "id": "turner-field",
+   "name": "Turner Field",
+   "aka": [
+    "Centennial Olympic Stadium"
+   ],
+   "city": "Atlanta",
+   "state": "Georgia",
+   "country": "USA",
+   "lat": 33.7353,
+   "lon": -84.3894,
+   "coord_approx": false,
+   "opened": 1997,
+   "closed": 2016,
+   "status": "Reconfigured as Center Parc Stadium, a Georgia State University football venue.",
+   "capacity": 49586,
+   "dimensions_ft": {
+    "lf": 335,
+    "lcf": 380,
+    "cf": 400,
+    "rcf": 390,
+    "rf": 330
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Heery, Rosser, Williams-Russell and Johnson, Ellerbe Becket",
+   "notable": [
+    "Built as the Olympic stadium for 1996, then converted to baseball.",
+    "Hosted the 2000 All-Star Game and the first NL Wild Card Game in 2012.",
+    "Record crowd of 54,357 came on October 5, 2003."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Turner_Field"
+   ]
+  },
+  {
+   "id": "hard-rock-stadium",
+   "name": "Hard Rock Stadium",
+   "aka": [
+    "Joe Robbie Stadium",
+    "Pro Player Stadium",
+    "Dolphin Stadium",
+    "Land Shark Stadium",
+    "Sun Life Stadium"
+   ],
+   "city": "Miami Gardens",
+   "state": "Florida",
+   "country": "USA",
+   "lat": 25.9581,
+   "lon": -80.2389,
+   "coord_approx": false,
+   "opened": 1987,
+   "closed": 2011,
+   "status": "Still stands as the home of the Dolphins and Hurricanes; no longer used for MLB.",
+   "capacity": 47662,
+   "dimensions_ft": {
+    "lf": 330,
+    "lcf": 360,
+    "cf": 434,
+    "rcf": 361,
+    "rf": 345
+   },
+   "wall_ft": {
+    "lf": 33,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "HOK Sport",
+   "notable": [
+    "Marlins won the 1997 and 2003 World Series here.",
+    "Football-first design left poor baseball sightlines and brutal summer heat.",
+    "World Series Game 6 in 1997 drew a baseball record 67,498."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hard_Rock_Stadium",
+    "https://www.ballparksofbaseball.com/?p=264"
+   ]
+  },
+  {
+   "id": "polo-grounds",
+   "name": "Polo Grounds",
+   "aka": [
+    "Brotherhood Park"
+   ],
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.8317,
+   "lon": -73.9372,
+   "coord_approx": false,
+   "opened": 1890,
+   "closed": 1963,
+   "status": "Demolished in 1964. Polo Grounds Towers housing stands there; the Brush Stairway survives.",
+   "capacity": 56000,
+   "dimensions_ft": {
+    "lf": 279,
+    "lcf": 455,
+    "cf": 483,
+    "rcf": 449,
+    "rf": 257
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Henry B. Herts",
+   "notable": [
+    "Concrete-and-steel version reopened in 1911 after a fire.",
+    "Bobby Thomson hit the 1951 pennant-winning home run here.",
+    "Mets used it in 1962 and 1963 before Shea Stadium opened."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Polo_Grounds"
+   ]
+  },
+  {
+   "id": "shea-stadium",
+   "name": "Shea Stadium",
+   "aka": [
+    "William A. Shea Municipal Stadium"
+   ],
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.7556,
+   "lon": -73.8481,
+   "coord_approx": false,
+   "opened": 1964,
+   "closed": 2008,
+   "status": "Demolished in 2009. Its footprint is now part of Citi Field's parking lots.",
+   "capacity": 57405,
+   "dimensions_ft": {
+    "lf": 338,
+    "lcf": 371,
+    "cf": 410,
+    "rcf": 371,
+    "rf": 338
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Praeger-Kavanagh-Waterbury",
+   "notable": [
+    "Mets won the 1969 and 1986 World Series titles here.",
+    "Beatles played here in August 1965 before 55,600 fans.",
+    "In 1975 two baseball and two football teams shared it."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shea_Stadium"
+   ]
+  },
+  {
+   "id": "recreation-park-philadelphia",
+   "name": "Recreation Park",
+   "aka": [
+    "Recreation Base Ball Grounds"
+   ],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9809,
+   "lon": -75.1742,
+   "coord_approx": false,
+   "opened": 1860,
+   "closed": 1886,
+   "status": "Demolished around 1890. Urban housing and a corner mini market occupy the site.",
+   "capacity": 6500,
+   "dimensions_ft": {
+    "lf": 300,
+    "lcf": null,
+    "cf": 331,
+    "rcf": null,
+    "rf": 247
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Phillies played their first home game here on May 1, 1883.",
+    "Charlie Ferguson threw the club's first no-hitter here in 1885.",
+    "Served as a horse market in the late 1870s before baseball."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Recreation_Park_(Philadelphia)"
+   ]
+  },
+  {
+   "id": "baker-bowl",
+   "name": "Baker Bowl",
+   "aka": [
+    "Philadelphia Base Ball Grounds",
+    "National League Park",
+    "Huntingdon Street Grounds"
+   ],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9931,
+   "lon": -75.1558,
+   "coord_approx": false,
+   "opened": 1887,
+   "closed": 1938,
+   "status": "Demolished in 1950. A gas station and car wash now stand on the site.",
+   "capacity": 20000,
+   "dimensions_ft": {
+    "lf": 341,
+    "lcf": null,
+    "cf": 408,
+    "rcf": 300,
+    "rf": 280
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": 60
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "John D. Allen",
+   "notable": [
+    "Rebuilt in 1895 as the first major park of steel and brick.",
+    "A 1903 bleacher collapse killed twelve people.",
+    "Hosted the 1915 World Series, attended by President Wilson."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baker_Bowl"
+   ]
+  },
+  {
+   "id": "shibe-park",
+   "name": "Shibe Park",
+   "aka": [
+    "Connie Mack Stadium"
+   ],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9961,
+   "lon": -75.165,
+   "coord_approx": false,
+   "opened": 1909,
+   "closed": 1970,
+   "status": "Demolished in 1976. A church sanctuary now occupies the site.",
+   "capacity": 33608,
+   "dimensions_ft": {
+    "lf": 334,
+    "lcf": 387,
+    "cf": 410,
+    "rcf": 390,
+    "rf": 329
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": 34
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "William Steele & Sons",
+   "notable": [
+    "Baseball's first steel-and-concrete stadium.",
+    "Hosted the first AL night game in 1939.",
+    "Renamed Connie Mack Stadium in 1953; Phillies played here 1938 to 1970."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shibe_Park"
+   ]
+  },
+  {
+   "id": "veterans-stadium",
+   "name": "Veterans Stadium",
+   "aka": [
+    "The Vet"
+   ],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9067,
+   "lon": -75.1711,
+   "coord_approx": false,
+   "opened": 1971,
+   "closed": 2003,
+   "status": "Imploded in 2004. A parking lot with commemorative markers sits on the site.",
+   "capacity": 66744,
+   "dimensions_ft": {
+    "lf": 330,
+    "lcf": 371,
+    "cf": 408,
+    "rcf": 371,
+    "rf": 330
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Artificial turf",
+   "roof": "open",
+   "architect": "Hugh Stubbins & Associates",
+   "notable": [
+    "Phillies won their first World Series here in 1980.",
+    "Hosted baseball's latest finish, a 4:40 a.m. end in 1993.",
+    "AstroTurf earned it the Field of Seams nickname."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Veterans_Stadium"
+   ]
+  },
+  {
+   "id": "jarry-park-stadium",
+   "name": "Jarry Park Stadium",
+   "aka": [
+    "Parc Jarry",
+    "Stade Jarry"
+   ],
+   "city": "Montreal",
+   "state": "Quebec",
+   "country": "Canada",
+   "lat": 45.5328,
+   "lon": -73.6269,
+   "coord_approx": false,
+   "opened": 1960,
+   "closed": 1976,
+   "status": "Converted to a tennis venue, now Stade IGA, inside Jarry Park.",
+   "capacity": 28500,
+   "dimensions_ft": {
+    "lf": 340,
+    "lcf": 368,
+    "cf": 420,
+    "rcf": 368,
+    "rf": 340
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted the first MLB regular-season game in Canada on April 14, 1969.",
+    "Bill Stoneman threw the first big-league no-hitter outside the US here in 1972.",
+    "Willie Stargell once drove a ball into the pool beyond right field."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jarry_Park_Stadium"
+   ]
+  },
+  {
+   "id": "olympic-stadium-montreal",
+   "name": "Olympic Stadium",
+   "aka": [
+    "Stade Olympique",
+    "The Big O"
+   ],
+   "city": "Montreal",
+   "state": "Quebec",
+   "country": "Canada",
+   "lat": 45.5581,
+   "lon": -73.5519,
+   "coord_approx": false,
+   "opened": 1976,
+   "closed": 2004,
+   "status": "Still stands as an events venue; a new roof is under construction.",
+   "capacity": 60400,
+   "dimensions_ft": {
+    "lf": 325,
+    "lcf": 375,
+    "cf": 404,
+    "rcf": 375,
+    "rf": 325
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Artificial turf",
+   "roof": "fixed",
+   "architect": "Roger Taillibert",
+   "notable": [
+    "Built for the 1976 Olympics; the Expos moved in for 1977.",
+    "Hosted the 1982 All-Star Game before 59,057 fans.",
+    "The retractable roof was replaced by a fixed one in 1998."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Olympic_Stadium_(Montreal)"
+   ]
+  },
+  {
+   "id": "robert-f-kennedy-memorial-stadium",
+   "name": "Robert F. Kennedy Memorial Stadium",
+   "aka": [
+    "RFK Stadium",
+    "D.C. Stadium"
+   ],
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "lat": 38.89,
+   "lon": -76.9719,
+   "coord_approx": false,
+   "opened": 1961,
+   "closed": 2007,
+   "status": "Demolished through 2025-2026. Sports fields and a skate park occupy the campus.",
+   "capacity": 45596,
+   "dimensions_ft": {
+    "lf": 335,
+    "lcf": 380,
+    "cf": 410,
+    "rcf": 380,
+    "rf": 335
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "George Dahl",
+   "notable": [
+    "Early dual-purpose cookie-cutter stadium for baseball and football.",
+    "The Senators' last game here in 1971 ended in a forfeit.",
+    "Nationals played here from 2005 through 2007."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Robert_F._Kennedy_Memorial_Stadium"
+   ]
+  }
+ ]
+}

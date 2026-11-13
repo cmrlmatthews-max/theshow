@@ -1,0 +1,1835 @@
+{
+ "teams": [
+  {
+   "franchise": "altoona-mountain-citys",
+   "name": "Altoona Mountain Citys",
+   "abbr": "ALT",
+   "city": "Altoona",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "UA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "columbia-park-altoona",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Folded May 31, 1884; Kansas City took over its schedule.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Association",
+    "https://en.wikipedia.org/wiki/Columbia_Park_(Altoona)"
+   ]
+  },
+  {
+   "franchise": "baltimore-monumentals",
+   "name": "Baltimore Monumentals",
+   "abbr": "BLU",
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "league": "UA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "belair-lot",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Disbanded when the Union Association folded after 1884.",
+   "note": "Contemporary papers often called the club the Unions.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Association",
+    "https://en.wikipedia.org/wiki/Baltimore_Monumentals"
+   ]
+  },
+  {
+   "franchise": "boston-reds-ua",
+   "name": "Boston Reds",
+   "abbr": "BOS",
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "UA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "dartmouth-street-grounds",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Disbanded when the Union Association folded after 1884.",
+   "note": "Separate club from the 1890 Players' League and 1891 American Association Boston Reds.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Association",
+    "https://en.wikipedia.org/wiki/Dartmouth_Street_Grounds"
+   ]
+  },
+  {
+   "franchise": "chicago-browns",
+   "name": "Chicago Browns",
+   "abbr": "CPI",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "UA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "south-side-park-i",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Disbanded in Chicago in August 1884; the club resumed in Pittsburgh as the Stogies.",
+   "note": "Played home games May 2 to August 1 at South Side Park I.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Association",
+    "https://en.wikipedia.org/wiki/South_Side_Park"
+   ]
+  },
+  {
+   "franchise": "chicago-browns",
+   "name": "Pittsburgh Stogies",
+   "abbr": "CPI",
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "UA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "exposition-park",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Folded September 18, 1884; many players joined the Baltimore Monumentals.",
+   "note": "Same club as the Chicago Browns; moved mid-season.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Association",
+    "https://en.wikipedia.org/wiki/Exposition_Park_(Pittsburgh)"
+   ]
+  },
+  {
+   "franchise": "cincinnati-outlaw-reds",
+   "name": "Cincinnati Outlaw Reds",
+   "abbr": "COR",
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "UA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "bank-street-grounds",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Disbanded when the Union Association folded after 1884.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Association",
+    "https://en.wikipedia.org/wiki/Bank_Street_Grounds"
+   ]
+  },
+  {
+   "franchise": "kansas-city-cowboys-ua",
+   "name": "Kansas City Cowboys",
+   "abbr": "KCC",
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "UA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "athletic-park-kansas-city",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Disbanded when the Union Association folded after 1884.",
+   "note": "Formed June 7, 1884 to take over Altoona's games; separate from the 1886 NL Cowboys.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Association",
+    "https://en.wikipedia.org/wiki/Athletic_Park_(Kansas_City)"
+   ]
+  },
+  {
+   "franchise": "milwaukee-brewers-ua",
+   "name": "Milwaukee Brewers",
+   "abbr": "MIL",
+   "city": "Milwaukee",
+   "state": "Wisconsin",
+   "country": "USA",
+   "league": "UA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "wright-street-grounds",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Returned to the Northwestern League for 1885.",
+   "note": "Joined September 27, 1884 as a late replacement from the Northwestern League.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Association",
+    "https://en.wikipedia.org/wiki/Wright_Street_Grounds"
+   ]
+  },
+  {
+   "franchise": "philadelphia-keystones",
+   "name": "Philadelphia Keystones",
+   "abbr": "PHK",
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "UA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "keystone-park",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Folded after an August 7, 1884 game; Wilmington took over its schedule.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Association",
+    "https://en.wikipedia.org/wiki/Philadelphia_Keystones"
+   ]
+  },
+  {
+   "franchise": "st-louis-maroons",
+   "name": "St. Louis Maroons",
+   "abbr": "SLM",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "UA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "union-grounds-st-louis",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Won the pennant, then joined the National League for 1885.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Association",
+    "https://en.wikipedia.org/wiki/Union_Grounds_(St._Louis)"
+   ]
+  },
+  {
+   "franchise": "st-paul-saints-ua",
+   "name": "St. Paul Saints",
+   "abbr": "STP",
+   "city": "St. Paul",
+   "state": "Minnesota",
+   "country": "USA",
+   "league": "UA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "west-seventh-street-park",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Folded when the Union Association disbanded after 1884.",
+   "note": "Joined from the Northwestern League September 27; played only nine road games, no home games.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Association",
+    "https://en.wikipedia.org/wiki/St._Paul_Saints_(Union_Association)"
+   ]
+  },
+  {
+   "franchise": "washington-nationals-ua",
+   "name": "Washington Nationals",
+   "abbr": "WHS",
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "league": "UA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "capitol-grounds",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Folded when the Union Association disbanded after 1884.",
+   "note": "Separate from the American Association Washington Nationals of 1884.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Association",
+    "https://en.wikipedia.org/wiki/Washington_Nationals_(UA)",
+    "https://en.wikipedia.org/wiki/Capitol_Grounds"
+   ]
+  },
+  {
+   "franchise": "wilmington-quicksteps",
+   "name": "Wilmington Quicksteps",
+   "abbr": "WIL",
+   "city": "Wilmington",
+   "state": "Delaware",
+   "country": "USA",
+   "league": "UA",
+   "start": 1884,
+   "end": 1884,
+   "homes": [
+    {
+     "park": "union-street-park",
+     "start": 1884,
+     "end": 1884
+    }
+   ],
+   "fate": "Quit September 1884 after a 2-16 record; Milwaukee replaced it.",
+   "note": "Recruited from the Eastern League on August 18 to replace Philadelphia.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Association",
+    "https://en.wikipedia.org/wiki/Wilmington_Quicksteps"
+   ]
+  },
+  {
+   "franchise": "boston-reds",
+   "name": "Boston Reds",
+   "abbr": "BOS",
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "league": "PL",
+   "start": 1890,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "congress-street-grounds",
+     "start": 1890,
+     "end": 1890
+    }
+   ],
+   "fate": "Joined the American Association for 1891 and won that pennant.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Players%27_League",
+    "https://en.wikipedia.org/wiki/Congress_Street_Grounds"
+   ]
+  },
+  {
+   "franchise": "brooklyn-wards-wonders",
+   "name": "Brooklyn Ward's Wonders",
+   "abbr": "BWW",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "PL",
+   "start": 1890,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "eastern-park",
+     "start": 1890,
+     "end": 1890
+    }
+   ],
+   "fate": "Merged with the National League Brooklyn club for 1891.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Players%27_League",
+    "https://en.wikipedia.org/wiki/Eastern_Park"
+   ]
+  },
+  {
+   "franchise": "buffalo-bisons-pl",
+   "name": "Buffalo Bisons",
+   "abbr": "BUF",
+   "city": "Buffalo",
+   "state": "New York",
+   "country": "USA",
+   "league": "PL",
+   "start": 1890,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "olympic-park-buffalo",
+     "start": 1890,
+     "end": 1890
+    }
+   ],
+   "fate": "Folded when the Players' League collapsed after 1890.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Players%27_League",
+    "https://en.wikipedia.org/wiki/Olympic_Park_(Buffalo)"
+   ]
+  },
+  {
+   "franchise": "chicago-pirates",
+   "name": "Chicago Pirates",
+   "abbr": "CHI",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "PL",
+   "start": 1890,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "south-side-park-ii",
+     "start": 1890,
+     "end": 1890
+    }
+   ],
+   "fate": "Folded when the Players' League collapsed after 1890.",
+   "note": "Charles Comiskey played for this club.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Players%27_League",
+    "https://en.wikipedia.org/wiki/South_Side_Park"
+   ]
+  },
+  {
+   "franchise": "cleveland-infants",
+   "name": "Cleveland Infants",
+   "abbr": "CLE",
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "PL",
+   "start": 1890,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "brotherhood-park",
+     "start": 1890,
+     "end": 1890
+    }
+   ],
+   "fate": "Folded when the Players' League collapsed after 1890.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Players%27_League",
+    "https://en.wikipedia.org/wiki/Brotherhood_Park"
+   ]
+  },
+  {
+   "franchise": "new-york-giants-pl",
+   "name": "New York Giants",
+   "abbr": "NYI",
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "league": "PL",
+   "start": 1890,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "polo-grounds",
+     "start": 1890,
+     "end": 1890
+    }
+   ],
+   "fate": "Merged with the National League Giants for 1891.",
+   "note": "Played at Brotherhood Park, part of the Polo Grounds site.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Players%27_League",
+    "https://en.wikipedia.org/wiki/Polo_Grounds"
+   ]
+  },
+  {
+   "franchise": "philadelphia-athletics-pl",
+   "name": "Philadelphia Athletics",
+   "abbr": "PHQ",
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "PL",
+   "start": 1890,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "forepaugh-park",
+     "start": 1890,
+     "end": 1890
+    }
+   ],
+   "fate": "Folded when the Players' League collapsed after 1890.",
+   "note": "Sometimes called the Quakers; separate from the AA Athletics.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Players%27_League",
+    "https://en.wikipedia.org/wiki/Forepaugh_Park"
+   ]
+  },
+  {
+   "franchise": "pittsburgh-burghers",
+   "name": "Pittsburgh Burghers",
+   "abbr": "PBB",
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "PL",
+   "start": 1890,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "exposition-park",
+     "start": 1890,
+     "end": 1890
+    }
+   ],
+   "fate": "Merged with the National League Pittsburgh club for 1891.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Players%27_League",
+    "https://en.wikipedia.org/wiki/Exposition_Park_(Pittsburgh)"
+   ]
+  },
+  {
+   "franchise": "baltimore-terrapins",
+   "name": "Baltimore Terrapins",
+   "abbr": "BAL",
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "league": "FL",
+   "start": 1914,
+   "end": 1915,
+   "homes": [
+    {
+     "park": "terrapin-park",
+     "start": 1914,
+     "end": 1915
+    }
+   ],
+   "fate": "Folded after 1915; owners refused the buyout and sued organized baseball.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federal_League",
+    "https://en.wikipedia.org/wiki/Terrapin_Park"
+   ]
+  },
+  {
+   "franchise": "brooklyn-tip-tops",
+   "name": "Brooklyn Tip-Tops",
+   "abbr": "BTT",
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "league": "FL",
+   "start": 1914,
+   "end": 1915,
+   "homes": [
+    {
+     "park": "washington-park-baseball",
+     "start": 1914,
+     "end": 1915
+    }
+   ],
+   "fate": "Owners were bought out when the Federal League ended after 1915.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federal_League",
+    "https://en.wikipedia.org/wiki/Washington_Park_(baseball)"
+   ]
+  },
+  {
+   "franchise": "buffalo-blues",
+   "name": "Buffalo Buffeds",
+   "abbr": "BUF",
+   "city": "Buffalo",
+   "state": "New York",
+   "country": "USA",
+   "league": "FL",
+   "start": 1914,
+   "end": 1914,
+   "homes": [
+    {
+     "park": "international-fair-association-grounds",
+     "start": 1914,
+     "end": 1914
+    }
+   ],
+   "fate": "Renamed the Buffalo Blues for 1915.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federal_League",
+    "https://en.wikipedia.org/wiki/International_Fair_Association_Grounds"
+   ]
+  },
+  {
+   "franchise": "buffalo-blues",
+   "name": "Buffalo Blues",
+   "abbr": "BUF",
+   "city": "Buffalo",
+   "state": "New York",
+   "country": "USA",
+   "league": "FL",
+   "start": 1915,
+   "end": 1915,
+   "homes": [
+    {
+     "park": "international-fair-association-grounds",
+     "start": 1915,
+     "end": 1915
+    }
+   ],
+   "fate": "Owners were bought out when the Federal League ended after 1915.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federal_League",
+    "https://en.wikipedia.org/wiki/Buffalo_Blues"
+   ]
+  },
+  {
+   "franchise": "chicago-whales",
+   "name": "Chicago Chi-Feds",
+   "abbr": "CHI",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "FL",
+   "start": 1914,
+   "end": 1914,
+   "homes": [
+    {
+     "park": "CHC",
+     "start": 1914,
+     "end": 1914
+    }
+   ],
+   "fate": "Renamed the Chicago Whales for 1915.",
+   "note": "Also called Chicago Federals; played at Weeghman Park, later Wrigley Field.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federal_League",
+    "https://en.wikipedia.org/wiki/Chicago_Whales"
+   ]
+  },
+  {
+   "franchise": "chicago-whales",
+   "name": "Chicago Whales",
+   "abbr": "CHH",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "FL",
+   "start": 1915,
+   "end": 1915,
+   "homes": [
+    {
+     "park": "CHC",
+     "start": 1915,
+     "end": 1915
+    }
+   ],
+   "fate": "Owner Charles Weeghman bought the Cubs and merged the club into them.",
+   "note": "Won the 1915 Federal League pennant at Weeghman Park.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federal_League",
+    "https://en.wikipedia.org/wiki/Chicago_Whales"
+   ]
+  },
+  {
+   "franchise": "newark-peppers",
+   "name": "Indianapolis Hoosiers",
+   "abbr": "IND",
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "league": "FL",
+   "start": 1914,
+   "end": 1914,
+   "homes": [
+    {
+     "park": "federal-league-park",
+     "start": 1914,
+     "end": 1914
+    }
+   ],
+   "fate": "Moved to Newark for 1915 and became the Peppers.",
+   "note": "Won the 1914 Federal League pennant.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federal_League",
+    "https://en.wikipedia.org/wiki/Federal_League_Park"
+   ]
+  },
+  {
+   "franchise": "newark-peppers",
+   "name": "Newark Peppers",
+   "abbr": "NEW",
+   "city": "Newark",
+   "state": "New Jersey",
+   "country": "USA",
+   "league": "FL",
+   "start": 1915,
+   "end": 1915,
+   "homes": [
+    {
+     "park": "harrison-park-new-jersey",
+     "start": 1915,
+     "end": 1915
+    }
+   ],
+   "fate": "Owners were bought out when the Federal League ended after 1915.",
+   "note": "Played in nearby Harrison, New Jersey.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federal_League",
+    "https://en.wikipedia.org/wiki/Harrison_Park_(New_Jersey)"
+   ]
+  },
+  {
+   "franchise": "kansas-city-packers",
+   "name": "Kansas City Packers",
+   "abbr": "KCP",
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "FL",
+   "start": 1914,
+   "end": 1915,
+   "homes": [
+    {
+     "park": "gordon-and-koppel-field",
+     "start": 1914,
+     "end": 1915
+    }
+   ],
+   "fate": "Went bankrupt after 1915 and was taken over by the league office.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federal_League",
+    "https://en.wikipedia.org/wiki/Gordon_and_Koppel_Field"
+   ]
+  },
+  {
+   "franchise": "pittsburgh-rebels",
+   "name": "Pittsburgh Rebels",
+   "abbr": "PBS",
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "FL",
+   "start": 1914,
+   "end": 1915,
+   "homes": [
+    {
+     "park": "exposition-park",
+     "start": 1914,
+     "end": 1915
+    }
+   ],
+   "fate": "Owners were bought out when the Federal League ended after 1915.",
+   "note": "Began as the Stogies in the 1913 minor-league Federal League.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federal_League",
+    "https://en.wikipedia.org/wiki/Exposition_Park_(Pittsburgh)"
+   ]
+  },
+  {
+   "franchise": "st-louis-terriers",
+   "name": "St. Louis Terriers",
+   "abbr": "SLM",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "FL",
+   "start": 1914,
+   "end": 1915,
+   "homes": [
+    {
+     "park": "handlans-park",
+     "start": 1914,
+     "end": 1915
+    }
+   ],
+   "fate": "Owner Phil Ball bought the Browns and merged the club into them.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federal_League",
+    "https://en.wikipedia.org/wiki/Handlan%27s_Park"
+   ]
+  }
+ ],
+ "parks": [
+  {
+   "id": "columbia-park-altoona",
+   "name": "Columbia Park",
+   "aka": [
+    "Fourth Avenue Grounds"
+   ],
+   "city": "Altoona",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 40.4933,
+   "lon": -78.41,
+   "coord_approx": false,
+   "opened": 1884,
+   "closed": 1884,
+   "status": "Former ballfield near Fourth Avenue and Mill Run Road; no ballpark remains.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Altoona Mountain Citys during the Union Association's only season.",
+    "On May 27, 1884 it hosted a 13-inning game, the longest by innings in the league."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Columbia_Park_(Altoona)"
+   ]
+  },
+  {
+   "id": "belair-lot",
+   "name": "Belair Lot",
+   "aka": [
+    "Union Park",
+    "Union Association Grounds"
+   ],
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "lat": 39.2949,
+   "lon": -76.6035,
+   "coord_approx": false,
+   "opened": 1884,
+   "closed": 1884,
+   "status": "Site holds commercial buildings and vacant lots; the old market site is a grassy median.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Baltimore Monumentals in the Union Association in 1884.",
+    "A July 4, 1884 doubleheader drew a sellout crowd.",
+    "No photograph of the park is known to survive."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Belair_Lot",
+    "https://en.wikipedia.org/wiki/Baltimore_Monumentals"
+   ]
+  },
+  {
+   "id": "dartmouth-street-grounds",
+   "name": "Dartmouth Street Grounds",
+   "aka": [
+    "Union Athletic Grounds",
+    "Union Grounds"
+   ],
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "lat": 42.3478,
+   "lon": -71.0766,
+   "coord_approx": true,
+   "opened": 1884,
+   "closed": 1884,
+   "status": "Site is now occupied by the Copley Place complex.",
+   "capacity": 4575,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Union Association Boston Reds in 1884.",
+    "Dupee Shaw struck out 18 St. Louis Maroons there on July 19, 1884.",
+    "Railroad tracks, Dartmouth Street and Huntington Avenue bordered the grounds."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dartmouth_Street_Grounds"
+   ]
+  },
+  {
+   "id": "south-side-park-i",
+   "name": "South Side Park (I)",
+   "aka": [
+    "Union Base Ball Park",
+    "39th Street Grounds"
+   ],
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "lat": 41.8239,
+   "lon": -87.6258,
+   "coord_approx": true,
+   "opened": 1883,
+   "closed": 1884,
+   "status": "Block at 39th and Wabash left as disused ground after 1884; no ballpark remains.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Built in 1883; the Chicago Browns played 35 home games there in 1884.",
+    "A misfired fireworks shell at a July 1884 show killed a woman nearby.",
+    "No photographs or drawings are known."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/South_Side_Park"
+   ]
+  },
+  {
+   "id": "exposition-park",
+   "name": "Exposition Park",
+   "aka": [
+    "Expo Park"
+   ],
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 40.4469,
+   "lon": -80.0108,
+   "coord_approx": false,
+   "opened": 1882,
+   "closed": 1915,
+   "status": "Interstate 279 runs over part of the site; a historical marker commemorates the park.",
+   "capacity": 16000,
+   "dimensions_ft": {
+    "lf": 400,
+    "lcf": null,
+    "cf": 450,
+    "rcf": null,
+    "rf": 400
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Three successive parks stood here; the third hosted the first modern World Series game in 1903.",
+    "Allegheny River floods often covered the outfield."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Exposition_Park_(Pittsburgh)"
+   ]
+  },
+  {
+   "id": "bank-street-grounds",
+   "name": "Bank Street Grounds",
+   "aka": [
+    "Union Athletic Park"
+   ],
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 39.1211,
+   "lon": -84.5369,
+   "coord_approx": false,
+   "opened": 1880,
+   "closed": 1884,
+   "status": "Site is now used by the regional transit authority and CSX rail operations.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted three Cincinnati major league clubs between 1880 and 1884, including the Union Association Outlaw Reds.",
+    "Third base ran along Bank Street."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bank_Street_Grounds",
+    "https://baseballdatahub.com/ballparks/cin03.html"
+   ]
+  },
+  {
+   "id": "athletic-park-kansas-city",
+   "name": "Athletic Park",
+   "aka": [],
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 39.085,
+   "lon": -94.5939,
+   "coord_approx": false,
+   "opened": 1884,
+   "closed": 1884,
+   "status": "Site is occupied by commercial businesses near Southwest Boulevard and Summit Street.",
+   "capacity": 4000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Kansas City Cowboys after they took over Altoona's schedule in June 1884.",
+    "Located near Southwest Boulevard and Summit Street."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Athletic_Park_(Kansas_City)"
+   ]
+  },
+  {
+   "id": "wright-street-grounds",
+   "name": "Wright Street Grounds",
+   "aka": [],
+   "city": "Milwaukee",
+   "state": "Wisconsin",
+   "country": "USA",
+   "lat": 43.0647,
+   "lon": -87.9261,
+   "coord_approx": false,
+   "opened": 1884,
+   "closed": 1895,
+   "status": "Former ballpark site; current use not confirmed.",
+   "capacity": 5300,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Filled a city block bounded by Wright, Clarke, 11th and 12th Streets.",
+    "The Union Association Brewers played here from September 27 to October 12, 1884."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wright_Street_Grounds"
+   ]
+  },
+  {
+   "id": "keystone-park",
+   "name": "Keystone Park",
+   "aka": [],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9286,
+   "lon": -75.1694,
+   "coord_approx": false,
+   "opened": 1884,
+   "closed": 1884,
+   "status": "Former baseball ground on the old Forepaugh circus lot; no ballpark remains.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Philadelphia Keystones in 1884.",
+    "Sources disagree on whether it lay east or west of South Broad Street."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Keystone_Park"
+   ]
+  },
+  {
+   "id": "union-grounds-st-louis",
+   "name": "Union Grounds",
+   "aka": [
+    "Union Base Ball Park",
+    "Lucas Park"
+   ],
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 38.6464,
+   "lon": -90.2122,
+   "coord_approx": false,
+   "opened": 1884,
+   "closed": 1886,
+   "status": "Cleared in 2019 for a federal geospatial intelligence agency facility.",
+   "capacity": 10000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the St. Louis Maroons in the Union Association (1884) and National League (1885-86).",
+    "Henry Lucas created both the league and the club.",
+    "Stands were demolished in 1888."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Grounds_(St._Louis)"
+   ]
+  },
+  {
+   "id": "capitol-grounds",
+   "name": "Capitol Grounds",
+   "aka": [
+    "Capitol Park (I)"
+   ],
+   "city": "Washington",
+   "state": "District of Columbia",
+   "country": "USA",
+   "lat": 38.8929,
+   "lon": -77.005,
+   "coord_approx": true,
+   "opened": 1884,
+   "closed": 1884,
+   "status": "Russell Senate Office Building now stands on or near the site.",
+   "capacity": 6000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Union Association Washington Nationals in 1884.",
+    "Sources disagree whether it lay northeast or northwest of the Capitol."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Capitol_Grounds"
+   ]
+  },
+  {
+   "id": "union-street-park",
+   "name": "Union Street Park",
+   "aka": [],
+   "city": "Wilmington",
+   "state": "Delaware",
+   "country": "USA",
+   "lat": 39.7468,
+   "lon": -75.5747,
+   "coord_approx": false,
+   "opened": 1884,
+   "closed": 1884,
+   "status": "Former park site at Union and Front (now Lancaster Avenue) streets.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Wilmington Quicksteps in their 18-game Union Association run.",
+    "The Quicksteps drew only about 400 fans per game."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Street_Park",
+    "https://en.wikipedia.org/wiki/Wilmington_Quicksteps"
+   ]
+  },
+  {
+   "id": "west-seventh-street-park",
+   "name": "West Seventh Street Park",
+   "aka": [
+    "Fort Street Grounds",
+    "Fort Road Grounds"
+   ],
+   "city": "St. Paul",
+   "state": "Minnesota",
+   "country": "USA",
+   "lat": 44.9537,
+   "lon": -93.09,
+   "coord_approx": true,
+   "opened": 1884,
+   "closed": 1884,
+   "status": "Former ballpark site on West Seventh Street; exact location not confirmed.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Nominal home of the Union Association St. Paul club, which played no home games.",
+    "Also called Fort Street or Fort Road Grounds."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Seventh_Street_Park"
+   ]
+  },
+  {
+   "id": "congress-street-grounds",
+   "name": "Congress Street Grounds",
+   "aka": [],
+   "city": "Boston",
+   "state": "Massachusetts",
+   "country": "USA",
+   "lat": 42.3514,
+   "lon": -71.0469,
+   "coord_approx": false,
+   "opened": 1890,
+   "closed": 1894,
+   "status": "Several office buildings stand on the site; an alley marks the former outfield.",
+   "capacity": 14000,
+   "dimensions_ft": {
+    "lf": 250,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Boston won pennants here in 1890 (Players' League) and 1891 (American Association).",
+    "Bobby Lowe hit four home runs in one game here in 1894."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Congress_Street_Grounds"
+   ]
+  },
+  {
+   "id": "eastern-park",
+   "name": "Eastern Park",
+   "aka": [],
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.67,
+   "lon": -73.9028,
+   "coord_approx": false,
+   "opened": 1890,
+   "closed": 1897,
+   "status": "Commercial and light industrial tenants occupy the site, including a scrap yard.",
+   "capacity": 12000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Brooklyn's Players' League club played here in 1890; the NL Dodgers used it 1891-97.",
+    "The Trolley Dodgers nickname first arose here."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Eastern_Park"
+   ]
+  },
+  {
+   "id": "olympic-park-buffalo",
+   "name": "Olympic Park (II)",
+   "aka": [
+    "Buffalo Baseball Park",
+    "Olympic Park II"
+   ],
+   "city": "Buffalo",
+   "state": "New York",
+   "country": "USA",
+   "lat": 42.915,
+   "lon": -78.8619,
+   "coord_approx": false,
+   "opened": 1889,
+   "closed": 1890,
+   "status": "Later became Offermann Stadium; the site now holds the Buffalo Academy for Visual and Performing Arts.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Leased by the Players' League Buffalo Bisons in 1890.",
+    "Its stands later became Bison Stadium (1923) and Offermann Stadium (1935)."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Olympic_Park_(Buffalo)",
+    "https://en.wikipedia.org/wiki/Offermann_Stadium"
+   ]
+  },
+  {
+   "id": "brotherhood-park",
+   "name": "Brotherhood Park",
+   "aka": [],
+   "city": "Cleveland",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 41.4831,
+   "lon": -81.6492,
+   "coord_approx": false,
+   "opened": 1890,
+   "closed": 1890,
+   "status": "Sold to developers in the mid-1890s; no ballpark remains.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Cleveland Infants in 1890.",
+    "Right field was short, running up to the Nickel Plate railroad tracks.",
+    "Located at Willson Avenue and the Nickel Plate line."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Brotherhood_Park"
+   ]
+  },
+  {
+   "id": "polo-grounds",
+   "name": "Polo Grounds",
+   "aka": [
+    "Brotherhood Park",
+    "Polo Grounds III"
+   ],
+   "city": "New York",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.8303,
+   "lon": -73.9378,
+   "coord_approx": false,
+   "opened": 1890,
+   "closed": 1963,
+   "status": "Demolished in 1964; the Polo Grounds Towers public housing stands on the site.",
+   "capacity": 55000,
+   "dimensions_ft": {
+    "lf": 335,
+    "lcf": null,
+    "cf": 500,
+    "rcf": null,
+    "rf": 335
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "The Players' League Giants opened Brotherhood Park here in April 1890; the NL Giants moved in afterward.",
+    "A 1911 fire destroyed the wooden stands, which were rebuilt in steel and concrete."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Polo_Grounds"
+   ]
+  },
+  {
+   "id": "forepaugh-park",
+   "name": "Forepaugh Park",
+   "aka": [
+    "Brotherhood Park",
+    "Athletic Base Ball Grounds"
+   ],
+   "city": "Philadelphia",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 39.9886,
+   "lon": -75.1544,
+   "coord_approx": false,
+   "opened": 1890,
+   "closed": 1891,
+   "status": "Sold for housing development; residences were built in 1895.",
+   "capacity": 5000,
+   "dimensions_ft": {
+    "lf": 345,
+    "lcf": null,
+    "cf": 450,
+    "rcf": null,
+    "rf": 380
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Players' League Philadelphia Athletics in 1890; it was a popular bicycle velodrome.",
+    "The largest crowd, 17,812, came on April 30, 1890 against Boston."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Forepaugh_Park"
+   ]
+  },
+  {
+   "id": "south-side-park-ii",
+   "name": "South Side Park (II)",
+   "aka": [
+    "Brotherhood Park",
+    "White Stocking Park"
+   ],
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "lat": 41.8305,
+   "lon": -87.6323,
+   "coord_approx": true,
+   "opened": 1890,
+   "closed": 1893,
+   "status": "Footprint became the Comiskey Park site; the south end is now a parking lot.",
+   "capacity": 7000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Called Brotherhood Park in 1890, when the Chicago Pirates played here.",
+    "The NL Chicago club used it in 1891-93 before moving to West Side Park."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/South_Side_Park"
+   ]
+  },
+  {
+   "id": "terrapin-park",
+   "name": "Terrapin Park",
+   "aka": [
+    "Oriole Park (V)"
+   ],
+   "city": "Baltimore",
+   "state": "Maryland",
+   "country": "USA",
+   "lat": 39.3239,
+   "lon": -76.6111,
+   "coord_approx": false,
+   "opened": 1914,
+   "closed": 1915,
+   "status": "Destroyed by fire in July 1944.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": 290,
+    "lcf": null,
+    "cf": 412,
+    "rcf": null,
+    "rf": 313
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Built for the Federal League Baltimore Terrapins in 1914; later called Oriole Park (V).",
+    "A 1944 fire destroyed the mostly wooden park."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Terrapin_Park"
+   ]
+  },
+  {
+   "id": "washington-park-baseball",
+   "name": "Washington Park",
+   "aka": [
+    "Washington Park III"
+   ],
+   "city": "Brooklyn",
+   "state": "New York",
+   "country": "USA",
+   "lat": 40.674,
+   "lon": -73.9857,
+   "coord_approx": false,
+   "opened": 1883,
+   "closed": 1915,
+   "status": "Part of the left-center field wall still stands inside a Con Edison yard.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": 300,
+    "lcf": null,
+    "cf": 400,
+    "rcf": null,
+    "rf": 275
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "The Tip-Tops played in the 1914 steel-and-concrete rebuild of the park.",
+    "The Tip-Tops were the only major league club named for a bread loaf."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Washington_Park_(baseball)"
+   ]
+  },
+  {
+   "id": "international-fair-association-grounds",
+   "name": "International Fair Association Grounds",
+   "aka": [
+    "Federal League Park"
+   ],
+   "city": "Buffalo",
+   "state": "New York",
+   "country": "USA",
+   "lat": 42.911,
+   "lon": -78.848,
+   "coord_approx": true,
+   "opened": 1914,
+   "closed": 1915,
+   "status": "Site is now residential streets in the Hamlin Park neighborhood.",
+   "capacity": 20000,
+   "dimensions_ft": {
+    "lf": 354,
+    "lcf": null,
+    "cf": 400,
+    "rcf": null,
+    "rf": 312
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Buffalo Federal League club in 1914-15.",
+    "Built on part of a former fairgrounds with horse and bicycle tracks."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/International_Fair_Association_Grounds"
+   ]
+  },
+  {
+   "id": "federal-league-park",
+   "name": "Federal League Park",
+   "aka": [
+    "Federal Park",
+    "Kentucky Avenue Park"
+   ],
+   "city": "Indianapolis",
+   "state": "Indiana",
+   "country": "USA",
+   "lat": 39.761,
+   "lon": -86.1677,
+   "coord_approx": false,
+   "opened": 1914,
+   "closed": 1914,
+   "status": "Demolished in 1917; replaced by railroad freight yards near Victory Field.",
+   "capacity": 23000,
+   "dimensions_ft": {
+    "lf": 365,
+    "lcf": 421,
+    "cf": 428,
+    "rcf": 351,
+    "rf": 304
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Built in 1914 for the Federal League Indianapolis Hoosiers, who left for Newark after one season.",
+    "Stood on part of the former Greenlawn cemetery."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federal_League_Park"
+   ]
+  },
+  {
+   "id": "gordon-and-koppel-field",
+   "name": "Gordon and Koppel Field",
+   "aka": [
+    "Gordon & Koppel Stadium"
+   ],
+   "city": "Kansas City",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 39.0407,
+   "lon": -94.5694,
+   "coord_approx": false,
+   "opened": 1910,
+   "closed": 1915,
+   "status": "Now Kiely Park, a public park.",
+   "capacity": 12000,
+   "dimensions_ft": {
+    "lf": 270,
+    "lcf": 380,
+    "cf": 378,
+    "rcf": 403,
+    "rf": 350
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Kansas City Packers in 1914 and 1915.",
+    "Nearby Brush Creek flooding sometimes interrupted games."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gordon_and_Koppel_Field"
+   ]
+  },
+  {
+   "id": "harrison-park-new-jersey",
+   "name": "Harrison Park",
+   "aka": [
+    "Federal Baseball Park",
+    "Peppers Park"
+   ],
+   "city": "Harrison",
+   "state": "New Jersey",
+   "country": "USA",
+   "lat": 40.744,
+   "lon": -74.156,
+   "coord_approx": true,
+   "opened": 1915,
+   "closed": 1915,
+   "status": "A luxury apartment building and a Montessori school stand on the site.",
+   "capacity": 21000,
+   "dimensions_ft": {
+    "lf": 375,
+    "lcf": null,
+    "cf": 450,
+    "rcf": null,
+    "rf": 375
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Federal League Newark Peppers played here in 1915; the opener drew 26,032.",
+    "Only one Federal League home run cleared the fence here."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Harrison_Park_(New_Jersey)"
+   ]
+  },
+  {
+   "id": "handlans-park",
+   "name": "Handlan's Park",
+   "aka": [
+    "Federal League Park",
+    "High School Field"
+   ],
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 38.635,
+   "lon": -90.233,
+   "coord_approx": true,
+   "opened": 1914,
+   "closed": 1922,
+   "status": "Part of the Saint Louis University campus; a SABR marker stands there.",
+   "capacity": 15000,
+   "dimensions_ft": {
+    "lf": 325,
+    "lcf": null,
+    "cf": 375,
+    "rcf": null,
+    "rf": 300
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Federal League St. Louis Terriers in 1914-15.",
+    "The Negro National League St. Louis Giants played here from 1920 to 1922."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Handlan%27s_Park"
+   ]
+  }
+ ]
+}

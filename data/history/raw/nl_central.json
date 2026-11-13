@@ -1,0 +1,1360 @@
+{
+ "teams": [
+  {
+   "franchise": "CHC",
+   "name": "Chicago White Stockings",
+   "abbr": "CHC",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "NA",
+   "start": 1871,
+   "end": 1871,
+   "homes": [
+    {
+     "park": "union-base-ball-grounds",
+     "start": 1871,
+     "end": 1871
+    }
+   ],
+   "fate": "Park burned in the Great Chicago Fire; club sat out 1872-73.",
+   "note": "Original stint of the National Association's Chicago club.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chicago_Cubs"
+   ]
+  },
+  {
+   "franchise": "CHC",
+   "name": "Chicago White Stockings",
+   "abbr": "CHC",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "NA",
+   "start": 1874,
+   "end": 1875,
+   "homes": [
+    {
+     "park": "23rd-street-grounds",
+     "start": 1874,
+     "end": 1875
+    }
+   ],
+   "fate": "Became a charter member of the National League in 1876.",
+   "note": "Returned after a two-season hiatus caused by the 1871 fire.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chicago_Cubs"
+   ]
+  },
+  {
+   "franchise": "CHC",
+   "name": "Chicago White Stockings",
+   "abbr": "CHC",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "NL",
+   "start": 1876,
+   "end": 1889,
+   "homes": [
+    {
+     "park": "23rd-street-grounds",
+     "start": 1876,
+     "end": 1877
+    },
+    {
+     "park": "lakefront-park",
+     "start": 1878,
+     "end": 1884
+    },
+    {
+     "park": "west-side-park",
+     "start": 1885,
+     "end": 1889
+    }
+   ],
+   "fate": "Renamed Chicago Colts for 1890.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chicago_Cubs"
+   ]
+  },
+  {
+   "franchise": "CHC",
+   "name": "Chicago Colts",
+   "abbr": "CHC",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "NL",
+   "start": 1890,
+   "end": 1897,
+   "homes": [
+    {
+     "park": "west-side-park",
+     "start": 1890,
+     "end": 1890
+    },
+    {
+     "park": "south-side-park-1891",
+     "start": 1891,
+     "end": 1892
+    },
+    {
+     "park": "west-side-grounds",
+     "start": 1893,
+     "end": 1897
+    }
+   ],
+   "fate": "Renamed Chicago Orphans for 1898.",
+   "note": "Schedule split between parks in 1891 and 1893.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chicago_Cubs"
+   ]
+  },
+  {
+   "franchise": "CHC",
+   "name": "Chicago Orphans",
+   "abbr": "CHC",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "NL",
+   "start": 1898,
+   "end": 1902,
+   "homes": [
+    {
+     "park": "west-side-grounds",
+     "start": 1898,
+     "end": 1902
+    }
+   ],
+   "fate": "Renamed Chicago Cubs for 1903.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chicago_Cubs"
+   ]
+  },
+  {
+   "franchise": "CHC",
+   "name": "Chicago Cubs",
+   "abbr": "CHC",
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "league": "NL",
+   "start": 1903,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "west-side-grounds",
+     "start": 1903,
+     "end": 1915
+    },
+    {
+     "park": "CHC",
+     "start": 1916,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chicago_Cubs"
+   ]
+  },
+  {
+   "franchise": "CIN",
+   "name": "Cincinnati Red Stockings",
+   "abbr": "CIN",
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "AA",
+   "start": 1882,
+   "end": 1889,
+   "homes": [
+    {
+     "park": "bank-street-grounds",
+     "start": 1882,
+     "end": 1883
+    },
+    {
+     "park": "league-park-cincinnati",
+     "start": 1884,
+     "end": 1889
+    }
+   ],
+   "fate": "Left the American Association for the National League in 1890.",
+   "note": "Wikipedia's infobox gives the Red Stockings name only through 1886, then Reds.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cincinnati_Reds"
+   ]
+  },
+  {
+   "franchise": "CIN",
+   "name": "Cincinnati Reds",
+   "abbr": "CIN",
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NL",
+   "start": 1890,
+   "end": 1952,
+   "homes": [
+    {
+     "park": "league-park-cincinnati",
+     "start": 1890,
+     "end": 1901
+    },
+    {
+     "park": "palace-of-the-fans",
+     "start": 1902,
+     "end": 1911
+    },
+    {
+     "park": "crosley-field",
+     "start": 1912,
+     "end": 1952
+    }
+   ],
+   "fate": "Renamed Cincinnati Redlegs for 1953.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cincinnati_Reds"
+   ]
+  },
+  {
+   "franchise": "CIN",
+   "name": "Cincinnati Redlegs",
+   "abbr": "CIN",
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NL",
+   "start": 1953,
+   "end": 1958,
+   "homes": [
+    {
+     "park": "crosley-field",
+     "start": 1953,
+     "end": 1958
+    }
+   ],
+   "fate": "Reverted to Cincinnati Reds for 1959.",
+   "note": "Name change came during Cold War anti-communist sentiment.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cincinnati_Reds"
+   ]
+  },
+  {
+   "franchise": "CIN",
+   "name": "Cincinnati Reds",
+   "abbr": "CIN",
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "league": "NL",
+   "start": 1959,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "crosley-field",
+     "start": 1959,
+     "end": 1969
+    },
+    {
+     "park": "riverfront-stadium",
+     "start": 1970,
+     "end": 2002
+    },
+    {
+     "park": "CIN",
+     "start": 2003,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cincinnati_Reds"
+   ]
+  },
+  {
+   "franchise": "MIL",
+   "name": "Seattle Pilots",
+   "abbr": "SEP",
+   "city": "Seattle",
+   "state": "Washington",
+   "country": "USA",
+   "league": "AL",
+   "start": 1969,
+   "end": 1969,
+   "homes": [
+    {
+     "park": "sicks-stadium",
+     "start": 1969,
+     "end": 1969
+    }
+   ],
+   "fate": "Bankrupt after one season; moved to Milwaukee as the Brewers.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Milwaukee_Brewers",
+    "https://en.wikipedia.org/wiki/Seattle_Pilots"
+   ]
+  },
+  {
+   "franchise": "MIL",
+   "name": "Milwaukee Brewers",
+   "abbr": "MIL",
+   "city": "Milwaukee",
+   "state": "Wisconsin",
+   "country": "USA",
+   "league": "AL",
+   "start": 1970,
+   "end": 1997,
+   "homes": [
+    {
+     "park": "milwaukee-county-stadium",
+     "start": 1970,
+     "end": 1997
+    }
+   ],
+   "fate": "Switched to the National League for 1998.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Milwaukee_Brewers"
+   ]
+  },
+  {
+   "franchise": "MIL",
+   "name": "Milwaukee Brewers",
+   "abbr": "MIL",
+   "city": "Milwaukee",
+   "state": "Wisconsin",
+   "country": "USA",
+   "league": "NL",
+   "start": 1998,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "milwaukee-county-stadium",
+     "start": 1998,
+     "end": 2000
+    },
+    {
+     "park": "MIL",
+     "start": 2001,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Milwaukee_Brewers"
+   ]
+  },
+  {
+   "franchise": "PIT",
+   "name": "Pittsburgh Alleghenys",
+   "abbr": "PIT",
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "AA",
+   "start": 1882,
+   "end": 1886,
+   "homes": [
+    {
+     "park": "exposition-park",
+     "start": 1882,
+     "end": 1883
+    },
+    {
+     "park": "recreation-park-pittsburgh",
+     "start": 1884,
+     "end": 1886
+    }
+   ],
+   "fate": "Left the American Association for the National League in 1887.",
+   "note": "Also used a second Exposition Park briefly in 1883.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pittsburgh_Pirates"
+   ]
+  },
+  {
+   "franchise": "PIT",
+   "name": "Pittsburgh Alleghenys",
+   "abbr": "PIT",
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "NL",
+   "start": 1887,
+   "end": 1890,
+   "homes": [
+    {
+     "park": "recreation-park-pittsburgh",
+     "start": 1887,
+     "end": 1890
+    }
+   ],
+   "fate": "Renamed Pittsburgh Pirates for 1891.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pittsburgh_Pirates"
+   ]
+  },
+  {
+   "franchise": "PIT",
+   "name": "Pittsburgh Pirates",
+   "abbr": "PIT",
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "league": "NL",
+   "start": 1891,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "exposition-park",
+     "start": 1891,
+     "end": 1908
+    },
+    {
+     "park": "forbes-field",
+     "start": 1909,
+     "end": 1969
+    },
+    {
+     "park": "three-rivers-stadium",
+     "start": 1970,
+     "end": 2000
+    },
+    {
+     "park": "PIT",
+     "start": 2001,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Spelled Pittsburg from 1891 to 1911 under a federal naming rule.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pittsburgh_Pirates"
+   ]
+  },
+  {
+   "franchise": "STL",
+   "name": "St. Louis Brown Stockings",
+   "abbr": "SL",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "AA",
+   "start": 1882,
+   "end": 1882,
+   "homes": [
+    {
+     "park": "sportsmans-park",
+     "start": 1882,
+     "end": 1882
+    }
+   ],
+   "fate": "Renamed St. Louis Browns for 1883.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis_Cardinals"
+   ]
+  },
+  {
+   "franchise": "STL",
+   "name": "St. Louis Browns",
+   "abbr": "SL",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "AA",
+   "start": 1883,
+   "end": 1891,
+   "homes": [
+    {
+     "park": "sportsmans-park",
+     "start": 1883,
+     "end": 1891
+    }
+   ],
+   "fate": "Left the American Association for the National League in 1892.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis_Cardinals"
+   ]
+  },
+  {
+   "franchise": "STL",
+   "name": "St. Louis Browns",
+   "abbr": "SL",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "NL",
+   "start": 1892,
+   "end": 1898,
+   "homes": [
+    {
+     "park": "sportsmans-park",
+     "start": 1892,
+     "end": 1892
+    },
+    {
+     "park": "robison-field",
+     "start": 1893,
+     "end": 1898
+    }
+   ],
+   "fate": "Renamed St. Louis Perfectos for 1899.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis_Cardinals"
+   ]
+  },
+  {
+   "franchise": "STL",
+   "name": "St. Louis Perfectos",
+   "abbr": "SL",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "NL",
+   "start": 1899,
+   "end": 1899,
+   "homes": [
+    {
+     "park": "robison-field",
+     "start": 1899,
+     "end": 1899
+    }
+   ],
+   "fate": "Renamed St. Louis Cardinals for 1900.",
+   "note": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis_Cardinals"
+   ]
+  },
+  {
+   "franchise": "STL",
+   "name": "St. Louis Cardinals",
+   "abbr": "STL",
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "league": "NL",
+   "start": 1900,
+   "end": 2026,
+   "homes": [
+    {
+     "park": "robison-field",
+     "start": 1900,
+     "end": 1919
+    },
+    {
+     "park": "sportsmans-park",
+     "start": 1920,
+     "end": 1965
+    },
+    {
+     "park": "busch-memorial-stadium",
+     "start": 1966,
+     "end": 2005
+    },
+    {
+     "park": "STL",
+     "start": 2006,
+     "end": 2026
+    }
+   ],
+   "fate": "Still active.",
+   "note": "Moved from Robison Field to Sportsman's Park in mid-1920.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._Louis_Cardinals"
+   ]
+  }
+ ],
+ "parks": [
+  {
+   "id": "union-base-ball-grounds",
+   "name": "Union Base-Ball Grounds",
+   "aka": [
+    "White-Stocking Park",
+    "Lake Park"
+   ],
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "lat": 41.8836,
+   "lon": -87.624,
+   "coord_approx": true,
+   "opened": 1871,
+   "closed": 1871,
+   "status": "Site lies within Millennium Park, in the area now called Wrigley Square.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Chicago White Stockings in 1871 before the Great Chicago Fire destroyed it.",
+    "The club lost its equipment and records in the fire and did not play in 1872-73."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Base-Ball_Grounds"
+   ]
+  },
+  {
+   "id": "23rd-street-grounds",
+   "name": "23rd Street Grounds",
+   "aka": [],
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "lat": 41.8531,
+   "lon": -87.6283,
+   "coord_approx": false,
+   "opened": 1872,
+   "closed": 1877,
+   "status": "Site is in Chicago's Chinatown neighborhood; the grounds are gone.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Chicago White Stockings played here 1874-77, covering the end of the National Association and the first NL seasons.",
+    "The final game there was a 4-0 Chicago win over Louisville on October 6, 1877."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/23rd_Street_Grounds"
+   ]
+  },
+  {
+   "id": "lakefront-park",
+   "name": "Lakefront Park",
+   "aka": [
+    "Lake-Shore Park",
+    "Lake Park"
+   ],
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "lat": 41.8836,
+   "lon": -87.624,
+   "coord_approx": true,
+   "opened": 1878,
+   "closed": 1884,
+   "status": "Site lies within Millennium Park; the ballpark is long gone.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Rebuilt on the old Lake Park site; the club hit 142 home runs here in 1884 after the fence became home run territory.",
+    "Right field was very short, under 200 feet, which fed the 1884 home run surge."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Base-Ball_Grounds"
+   ]
+  },
+  {
+   "id": "west-side-park",
+   "name": "West Side Park",
+   "aka": [
+    "West Side Park I"
+   ],
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "lat": 41.8747,
+   "lon": -87.6606,
+   "coord_approx": false,
+   "opened": 1885,
+   "closed": 1891,
+   "status": "Site is now occupied by Chicago World Language Academy on West Harrison Street.",
+   "capacity": 10000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": 560,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Mostly wooden park that opened June 6, 1885; the club left after the 1891 season.",
+    "Right field distance is disputed in sources, reported between 216 and 225 feet."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Side_Park"
+   ]
+  },
+  {
+   "id": "south-side-park-1891",
+   "name": "South Side Park (1891)",
+   "aka": [
+    "South Side Park II",
+    "Brotherhood Park"
+   ],
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "lat": 41.8318,
+   "lon": -87.632,
+   "coord_approx": true,
+   "opened": 1890,
+   "closed": 1893,
+   "status": "Armour Square Park and a parking lot for the White Sox ballpark cover the site.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Used by the NL club for a partial 1891 schedule and the full 1892 season; Sunday ball was barred by its lease.",
+    "Later Comiskey Park was built on the same footprint."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/South_Side_Park"
+   ]
+  },
+  {
+   "id": "west-side-grounds",
+   "name": "West Side Grounds",
+   "aka": [
+    "West Side Park II"
+   ],
+   "city": "Chicago",
+   "state": "Illinois",
+   "country": "USA",
+   "lat": 41.8703,
+   "lon": -87.6725,
+   "coord_approx": false,
+   "opened": 1893,
+   "closed": 1915,
+   "status": "Torn down in 1920; the University of Illinois Medical Center occupies the site.",
+   "capacity": 16000,
+   "dimensions_ft": {
+    "lf": 340,
+    "lcf": null,
+    "cf": 560,
+    "rcf": null,
+    "rf": 340
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Cubs won the 1907 and 1908 World Series here, their last titles until 2016.",
+    "Hosted the 1906 World Series, the first Series between two teams from the same city."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Side_Park"
+   ]
+  },
+  {
+   "id": "bank-street-grounds",
+   "name": "Bank Street Grounds",
+   "aka": [],
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 39.1203,
+   "lon": -84.5355,
+   "coord_approx": true,
+   "opened": 1880,
+   "closed": 1883,
+   "status": "Site is now a parking lot for a transit authority and a rail company.",
+   "capacity": null,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Reds in the 1882-83 American Association seasons.",
+    "In 1882 the Reds and the NL champion White Stockings split two exhibition games here."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bank_Street_Grounds"
+   ]
+  },
+  {
+   "id": "league-park-cincinnati",
+   "name": "League Park (Cincinnati)",
+   "aka": [
+    "American Park",
+    "League Park I",
+    "League Park II"
+   ],
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 39.1169,
+   "lon": -84.5367,
+   "coord_approx": false,
+   "opened": 1884,
+   "closed": 1901,
+   "status": "Palace of the Fans replaced it on the same block; the site no longer has a ballpark.",
+   "capacity": 9000,
+   "dimensions_ft": {
+    "lf": 253,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Opening day 1884 saw a grandstand collapse that killed one spectator.",
+    "Center field fence painted black in 1895, sometimes called the first batter's eye."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/League_Park_(Cincinnati)"
+   ]
+  },
+  {
+   "id": "palace-of-the-fans",
+   "name": "Palace of the Fans",
+   "aka": [],
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 39.1169,
+   "lon": -84.5367,
+   "coord_approx": false,
+   "opened": 1902,
+   "closed": 1911,
+   "status": "Demolished after 1911 and replaced by Redland Field on the same site.",
+   "capacity": 12000,
+   "dimensions_ft": {
+    "lf": 360,
+    "lcf": 418,
+    "cf": 400,
+    "rcf": 375,
+    "rf": 450
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Ornate facade with 22 Corinthian columns; fans could drive carriages to stalls beneath the grandstand.",
+    "Among the earliest parks built largely of concrete."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Palace_of_the_Fans"
+   ]
+  },
+  {
+   "id": "crosley-field",
+   "name": "Crosley Field",
+   "aka": [
+    "Redland Field"
+   ],
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 39.1167,
+   "lon": -84.5353,
+   "coord_approx": false,
+   "opened": 1912,
+   "closed": 1970,
+   "status": "Demolished in 1972; buildings and a street now cover the site.",
+   "capacity": 30322,
+   "dimensions_ft": {
+    "lf": 328,
+    "lcf": 380,
+    "cf": 387,
+    "rcf": 383,
+    "rf": 366
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "Harry Hake Sr.",
+   "notable": [
+    "Hosted the first major league night game in 1935.",
+    "Known for its sloping left field terrace in front of the wall."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Crosley_Field"
+   ]
+  },
+  {
+   "id": "riverfront-stadium",
+   "name": "Riverfront Stadium",
+   "aka": [
+    "Cinergy Field"
+   ],
+   "city": "Cincinnati",
+   "state": "Ohio",
+   "country": "USA",
+   "lat": 39.0967,
+   "lon": -84.5083,
+   "coord_approx": false,
+   "opened": 1970,
+   "closed": 2002,
+   "status": "Imploded in 2002; Great American Ball Park and other developments now occupy the site.",
+   "capacity": 52952,
+   "dimensions_ft": {
+    "lf": 330,
+    "lcf": 375,
+    "cf": 404,
+    "rcf": 375,
+    "rf": 330
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "AstroTurf 1970-2000, grass 2001-02",
+   "roof": "open",
+   "architect": "Heery & Heery; FABRAP",
+   "notable": [
+    "First stadium to use AstroTurf across the whole field except the bases and mound.",
+    "Hosted the 1970 and 1988 All-Star Games."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Riverfront_Stadium"
+   ]
+  },
+  {
+   "id": "recreation-park-pittsburgh",
+   "name": "Recreation Park (Pittsburgh)",
+   "aka": [
+    "Allegheny Recreation Park"
+   ],
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 40.4547,
+   "lon": -80.0186,
+   "coord_approx": false,
+   "opened": 1867,
+   "closed": 1890,
+   "status": "Industrial buildings covered the site starting in the early 1900s.",
+   "capacity": 17000,
+   "dimensions_ft": {
+    "lf": null,
+    "lcf": null,
+    "cf": null,
+    "rcf": null,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Hosted the Alleghenys' first officially recognized NL game, a 6-2 win over Chicago on April 30, 1887.",
+    "Also the site of an 1892 football game with a paid player, Pudge Heffelfinger."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Recreation_Park_(Pittsburgh)"
+   ]
+  },
+  {
+   "id": "exposition-park",
+   "name": "Exposition Park",
+   "aka": [],
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 40.4469,
+   "lon": -80.0108,
+   "coord_approx": false,
+   "opened": 1882,
+   "closed": 1909,
+   "status": "Interstate 279 and parking lots cover the site; a state historical marker commemorates it.",
+   "capacity": 16000,
+   "dimensions_ft": {
+    "lf": 400,
+    "lcf": null,
+    "cf": 450,
+    "rcf": null,
+    "rf": 400
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "First NL park to host a World Series game, on October 6, 1903.",
+    "Pirates were first to cover the field with a tarp in wet weather, in 1906."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Exposition_Park_(Pittsburgh)"
+   ]
+  },
+  {
+   "id": "forbes-field",
+   "name": "Forbes Field",
+   "aka": [],
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 40.4447,
+   "lon": -79.9578,
+   "coord_approx": true,
+   "opened": 1909,
+   "closed": 1970,
+   "status": "Demolished in 1971; a surviving piece of the outfield wall stands on the University of Pittsburgh campus.",
+   "capacity": 41000,
+   "dimensions_ft": {
+    "lf": 365,
+    "lcf": 406,
+    "cf": 457,
+    "rcf": null,
+    "rf": 300
+   },
+   "wall_ft": {
+    "lf": 12,
+    "cf": 12,
+    "rf": 9.5
+   },
+   "surface": "Natural grass",
+   "roof": "open",
+   "architect": "Charles Wellford Leavitt Jr.",
+   "notable": [
+    "First concrete and steel stadium in the National League.",
+    "Hosted the first live radio broadcast of a major league game, on August 5, 1921."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Forbes_Field"
+   ]
+  },
+  {
+   "id": "three-rivers-stadium",
+   "name": "Three Rivers Stadium",
+   "aka": [],
+   "city": "Pittsburgh",
+   "state": "Pennsylvania",
+   "country": "USA",
+   "lat": 40.4467,
+   "lon": -80.0128,
+   "coord_approx": false,
+   "opened": 1970,
+   "closed": 2000,
+   "status": "Demolished in 2001; the site is mostly parking with offices and commemorative markers.",
+   "capacity": 47971,
+   "dimensions_ft": {
+    "lf": 335,
+    "lcf": 375,
+    "cf": 400,
+    "rcf": 375,
+    "rf": 335
+   },
+   "wall_ft": {
+    "lf": 10,
+    "cf": 10,
+    "rf": 10
+   },
+   "surface": "Tartan Turf 1970-82, AstroTurf 1983-2000",
+   "roof": "open",
+   "architect": "Deeter Ritchey Sipple; Michael Baker Jr.",
+   "notable": [
+    "Hosted the first night game in World Series history, Game 4 in 1971.",
+    "Also the site of the Immaculate Reception in 1972."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Three_Rivers_Stadium"
+   ]
+  },
+  {
+   "id": "sicks-stadium",
+   "name": "Sick's Stadium",
+   "aka": [
+    "Sicks' Seattle Stadium"
+   ],
+   "city": "Seattle",
+   "state": "Washington",
+   "country": "USA",
+   "lat": 47.58,
+   "lon": -122.298,
+   "coord_approx": false,
+   "opened": 1938,
+   "closed": 1976,
+   "status": "A Lowe's store now stands on the site, with markers showing the old diamond.",
+   "capacity": 25420,
+   "dimensions_ft": {
+    "lf": 305,
+    "lcf": null,
+    "cf": 402,
+    "rcf": null,
+    "rf": 325
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Natural grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Home of the Seattle Pilots in their lone 1969 season; seating, plumbing and upkeep problems plagued it.",
+    "Named for brewery owner Emil Sick; it replaced Dugdale Field, destroyed by arson in 1932."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sick%27s_Stadium"
+   ]
+  },
+  {
+   "id": "milwaukee-county-stadium",
+   "name": "Milwaukee County Stadium",
+   "aka": [
+    "County Stadium"
+   ],
+   "city": "Milwaukee",
+   "state": "Wisconsin",
+   "country": "USA",
+   "lat": 43.03,
+   "lon": -87.9739,
+   "coord_approx": false,
+   "opened": 1953,
+   "closed": 2000,
+   "status": "Demolished in 2001; the site is Miller Park parking, plus Helfaer Field and a memorial sculpture.",
+   "capacity": 53192,
+   "dimensions_ft": {
+    "lf": 315,
+    "lcf": 382,
+    "cf": 402,
+    "rcf": 382,
+    "rf": 315
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Natural grass",
+   "roof": "open",
+   "architect": "Osborn Engineering",
+   "notable": [
+    "First U.S. ballpark financed with public funds.",
+    "Hank Aaron hit his final home run, number 755, here in 1976."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Milwaukee_County_Stadium"
+   ]
+  },
+  {
+   "id": "sportsmans-park",
+   "name": "Sportsman's Park",
+   "aka": [
+    "Busch Stadium (1953-66)",
+    "Grand Avenue Park"
+   ],
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 38.658,
+   "lon": -90.22,
+   "coord_approx": false,
+   "opened": 1866,
+   "closed": 1966,
+   "status": "Boys and Girls Club of Greater St. Louis occupies the site; the grandstand was razed in 1966.",
+   "capacity": 34000,
+   "dimensions_ft": {
+    "lf": 351,
+    "lcf": 379,
+    "cf": 422,
+    "rcf": 354,
+    "rf": 310
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Natural grass",
+   "roof": "open",
+   "architect": "Osborn Engineering",
+   "notable": [
+    "Cardinals shared it with the Browns from 1920 until 1953, then bought the park, renamed Busch Stadium.",
+    "Hosted the 1926 World Series Game 7, won by St. Louis over the Yankees."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sportsman%27s_Park"
+   ]
+  },
+  {
+   "id": "robison-field",
+   "name": "Robison Field",
+   "aka": [
+    "League Park",
+    "New Sportsman's Park"
+   ],
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 38.6628,
+   "lon": -90.2222,
+   "coord_approx": false,
+   "opened": 1893,
+   "closed": 1920,
+   "status": "Beaumont High School was built on the site in 1926 and closed in 2014.",
+   "capacity": 21000,
+   "dimensions_ft": {
+    "lf": 380,
+    "lcf": 400,
+    "cf": 435,
+    "rcf": 320,
+    "rf": null
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass",
+   "roof": "open",
+   "architect": "",
+   "notable": [
+    "Last major league ballpark built mainly of wood; fires burned the grandstand in 1898 and 1901.",
+    "Renamed Robison Field in 1911 for the former club owners Frank and Stanley Robison."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Robison_Field"
+   ]
+  },
+  {
+   "id": "busch-memorial-stadium",
+   "name": "Busch Memorial Stadium",
+   "aka": [
+    "Busch Stadium II"
+   ],
+   "city": "St. Louis",
+   "state": "Missouri",
+   "country": "USA",
+   "lat": 38.6239,
+   "lon": -90.1925,
+   "coord_approx": false,
+   "opened": 1966,
+   "closed": 2005,
+   "status": "Demolished in 2005; part of its footprint became the outfield of the current ballpark.",
+   "capacity": 49676,
+   "dimensions_ft": {
+    "lf": 330,
+    "lcf": 372,
+    "cf": 402,
+    "rcf": 372,
+    "rf": 330
+   },
+   "wall_ft": {
+    "lf": null,
+    "cf": null,
+    "rf": null
+   },
+   "surface": "Grass 1966-69, AstroTurf 1970-95, grass 1996-2005",
+   "roof": "open",
+   "architect": "Sverdrup & Parcel",
+   "notable": [
+    "Cardinals won the 1967 and 1982 World Series here.",
+    "Mark McGwire hit his 62nd and 70th home runs of 1998 here."
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Busch_Memorial_Stadium"
+   ]
+  }
+ ]
+}

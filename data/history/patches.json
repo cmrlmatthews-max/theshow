@@ -1,0 +1,113 @@
+{
+ "drop_teams": [],
+ "park_fix": {
+  "forbes-field": {
+   "lat": 40.4419,
+   "lon": -79.9542,
+   "coord_approx": false
+  },
+  "washington-park-ii": {
+   "opened": 1898
+  },
+  "greenlee-field": {
+   "lat": 40.4506,
+   "lon": -79.973,
+   "coord_approx": false
+  }
+ },
+ "team_fix": [
+  {
+   "match": {
+    "name": "Toronto Blue Jays",
+    "league": "AL",
+    "start": 1977
+   },
+   "set": {
+    "homes": [
+     {
+      "park": "exhibition-stadium",
+      "start": 1977,
+      "end": 1989
+     },
+     {
+      "park": "TOR",
+      "start": 1989,
+      "end": 2019
+     },
+     {
+      "park": "sahlen-field",
+      "start": 2020,
+      "end": 2020
+     },
+     {
+      "park": "td-ballpark",
+      "start": 2021,
+      "end": 2021
+     },
+     {
+      "park": "sahlen-field",
+      "start": 2021,
+      "end": 2021
+     },
+     {
+      "park": "TOR",
+      "start": 2021,
+      "end": 2026
+     }
+    ]
+   },
+   "why": "In 2021 the Blue Jays played at Dunedin through May, then Buffalo from June 1, then returned to Toronto July 30, so the homes were out of time order.",
+   "source": "https://www.mlb.com/amp/news/blue-jays-returning-to-toronto-on-july-30.html"
+  },
+  {
+   "match": {
+    "name": "Cleveland Indians",
+    "league": "AL",
+    "start": 1915
+   },
+   "set": {
+    "homes": [
+     {
+      "park": "league-park",
+      "start": 1915,
+      "end": 1932
+     },
+     {
+      "park": "cleveland-stadium",
+      "start": 1933,
+      "end": 1933
+     },
+     {
+      "park": "league-park",
+      "start": 1934,
+      "end": 1946
+     },
+     {
+      "park": "cleveland-stadium",
+      "start": 1947,
+      "end": 1993
+     },
+     {
+      "park": "CLE",
+      "start": 1994,
+      "end": 2021
+     }
+    ]
+   },
+   "why": "The Indians played the entire 1933 season at Cleveland Municipal Stadium before returning to League Park for 1934.",
+   "source": "https://baseballheritagemuseum.org/league-park-timeline/"
+  },
+  {
+   "match": {
+    "name": "Indianapolis ABCs",
+    "league": "NAL",
+    "start": 1939
+   },
+   "set": {
+    "franchise": "atlanta-black-crackers"
+   },
+   "why": "The 1939 Indianapolis ABCs were the relocated Atlanta Black Crackers, not the 1938 ABCs club (which became the St. Louis Stars).",
+   "source": "https://en.wikipedia.org/wiki/Atlanta_Black_Crackers"
+  }
+ ]
+}

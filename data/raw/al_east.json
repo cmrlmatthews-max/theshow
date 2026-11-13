@@ -1,0 +1,218 @@
+[
+  {
+    "id": "BAL",
+    "team": "Baltimore Orioles",
+    "league": "AL",
+    "division": "East",
+    "stadium": "Oriole Park at Camden Yards",
+    "former_names": [],
+    "city": "Baltimore",
+    "state": "Maryland",
+    "country": "USA",
+    "lat": 39.2839,
+    "lon": -76.6217,
+    "opened": 1992,
+    "capacity": 42455,
+    "surface": "Kentucky Bluegrass",
+    "roof": "open",
+    "architect": "HOK Sport (now Populous)",
+    "cost": "$110 million",
+    "dimensions_ft": {"lf": 333, "lcf": 376, "cf": 400, "rcf": 373, "rf": 318},
+    "wall_ft": {"lf": 13, "cf": null, "rf": 21},
+    "team_founded": 1901,
+    "franchise_history": [
+      {"years": "1894–1901", "name": "Milwaukee Brewers", "city": "Milwaukee"},
+      {"years": "1902–1953", "name": "St. Louis Browns", "city": "St. Louis"},
+      {"years": "1954–present", "name": "Baltimore Orioles", "city": "Baltimore"}
+    ],
+    "previous_stadium": "Memorial Stadium (1954–1991)",
+    "world_series_titles": [1966, 1970, 1983],
+    "pennants": 7,
+    "colors": ["#DF4601", "#000000"],
+    "notable": [
+      "Opened in 1992 as one of the first retro-style ballparks and sparked a wave of neotraditional parks.",
+      "Replaced Memorial Stadium, the Orioles' home from 1954 until 1991.",
+      "The playing field sits 16 feet below street level.",
+      "Hosted the 1993 MLB All-Star Game."
+    ],
+    "note": "",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Oriole_Park_at_Camden_Yards",
+      "https://en.wikipedia.org/wiki/Baltimore_Orioles",
+      "https://www.mlb.com/news/featured/camden-yards-guide-capacity-seating-chart-parking-and-more",
+      "https://teamcolorcodes.com/baltimore-orioles-color-codes"
+    ]
+  },
+  {
+    "id": "BOS",
+    "team": "Boston Red Sox",
+    "league": "AL",
+    "division": "East",
+    "stadium": "Fenway Park",
+    "former_names": [],
+    "city": "Boston",
+    "state": "Massachusetts",
+    "country": "USA",
+    "lat": 42.3464,
+    "lon": -71.0978,
+    "opened": 1912,
+    "capacity": 37755,
+    "surface": "Kentucky Bluegrass",
+    "roof": "open",
+    "architect": "James E. McLaughlin",
+    "cost": "$650,000 (1912 cost)",
+    "dimensions_ft": {"lf": 310, "lcf": 379, "cf": 390, "rcf": 380, "rf": 302},
+    "wall_ft": {"lf": 37, "cf": null, "rf": null},
+    "team_founded": 1901,
+    "franchise_history": [
+      {"years": "1901–1907", "name": "Boston Americans", "city": "Boston"},
+      {"years": "1908–present", "name": "Boston Red Sox", "city": "Boston"}
+    ],
+    "previous_stadium": "Huntington Avenue Grounds (1901–1911)",
+    "world_series_titles": [1903, 1912, 1915, 1916, 1918, 2004, 2007, 2013, 2018],
+    "pennants": 14,
+    "colors": ["#BD3039", "#0C2340"],
+    "notable": [
+      "The oldest active ballpark in Major League Baseball, opened April 20, 1912.",
+      "The left-field Green Monster wall stands about 37 feet tall.",
+      "Pesky's Pole in right field sits 302 feet from home plate.",
+      "Ted Williams's 1946 home run, measured at 502 feet, is the official longest at Fenway."
+    ],
+    "note": "",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fenway_Park",
+      "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+      "https://www.mlb.com/news/fenway-park-guide-capacity-seating-chart-parking-and-more",
+      "https://teamcolorcodes.com/boston-red-sox-color-codes/"
+    ]
+  },
+  {
+    "id": "NYY",
+    "team": "New York Yankees",
+    "league": "AL",
+    "division": "East",
+    "stadium": "Yankee Stadium",
+    "former_names": [],
+    "city": "Bronx, New York City",
+    "state": "New York",
+    "country": "USA",
+    "lat": 40.8292,
+    "lon": -73.9264,
+    "opened": 2009,
+    "capacity": 46537,
+    "surface": "Kentucky bluegrass",
+    "roof": "open",
+    "architect": "Populous",
+    "cost": "$2.3 billion",
+    "dimensions_ft": {"lf": 318, "lcf": 399, "cf": 408, "rcf": 385, "rf": 314},
+    "wall_ft": {"lf": 8, "cf": null, "rf": 8},
+    "team_founded": 1903,
+    "franchise_history": [
+      {"years": "1901–1902", "name": "Baltimore Orioles", "city": "Baltimore"},
+      {"years": "1903–1912", "name": "New York Highlanders", "city": "New York"},
+      {"years": "1913–present", "name": "New York Yankees", "city": "New York"}
+    ],
+    "previous_stadium": "Yankee Stadium (1923–2008)",
+    "world_series_titles": [1923, 1927, 1928, 1932, 1936, 1937, 1938, 1939, 1941, 1943, 1947, 1949, 1950, 1951, 1952, 1953, 1956, 1958, 1961, 1962, 1977, 1978, 1996, 1998, 1999, 2000, 2009],
+    "pennants": 41,
+    "colors": ["#0C2340", "#C4CED3"],
+    "notable": [
+      "Hosted the 2009 and 2024 World Series, and the Yankees won the 2009 title there.",
+      "Its exterior and frieze copy the design of the original 1923 stadium next door.",
+      "Built with about 11,000 pieces of Indiana limestone.",
+      "New York City FC has used it as an interim home since 2015, until Etihad Park opens in 2027."
+    ],
+    "note": "",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yankee_Stadium",
+      "https://en.wikipedia.org/wiki/New_York_Yankees",
+      "https://teamcolorcodes.com/new-york-yankees-color-codes"
+    ]
+  },
+  {
+    "id": "TBR",
+    "team": "Tampa Bay Rays",
+    "league": "AL",
+    "division": "East",
+    "stadium": "Tropicana Field",
+    "former_names": ["Florida Suncoast Dome (1990–1993)", "ThunderDome (1993–1996)"],
+    "city": "St. Petersburg",
+    "state": "Florida",
+    "country": "USA",
+    "lat": 27.7683,
+    "lon": -82.6533,
+    "opened": 1990,
+    "capacity": 25025,
+    "surface": "Shaw Sports Turf",
+    "roof": "fixed",
+    "architect": "HOK Sport, Lescher & Mahoney Sports, and Criswell, Blizzard & Blouin Architects",
+    "cost": "$130 million",
+    "dimensions_ft": {"lf": 315, "lcf": 370, "cf": 404, "rcf": 370, "rf": 322},
+    "wall_ft": {"lf": null, "cf": null, "rf": null},
+    "team_founded": 1998,
+    "franchise_history": [
+      {"years": "1998–2007", "name": "Tampa Bay Devil Rays", "city": "Tampa Bay"},
+      {"years": "2008–present", "name": "Tampa Bay Rays", "city": "Tampa Bay"}
+    ],
+    "previous_stadium": "George M. Steinbrenner Field (2025)",
+    "world_series_titles": [],
+    "pennants": 3,
+    "colors": ["#092C5C", "#8FBCE6"],
+    "notable": [
+      "The only nonretractable domed stadium in MLB, built on the former Gas Plant district site.",
+      "Hosted the first instant-replay use in MLB history, in September 2008.",
+      "Hurricane Milton destroyed much of the roof on October 9, 2024, and repairs finished in April 2026.",
+      "Has a cownose ray tank behind center field."
+    ],
+    "note": "The Rays played the 2025 season at George M. Steinbrenner Field and returned to Tropicana Field on April 6, 2026. A planned roughly $2.3 billion stadium on the Hillsborough College Dale Mabry campus targets a 2029 opening but is not yet built. The city lease runs through 2027.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tropicana_Field",
+      "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+      "https://teamcolorcodes.com/tampa-bay-rays-color-codes/",
+      "https://www.nbcsports.com/mlb/news/brewers-earn-first-world-series-title-in-franchise-history-with-4-1-win-over-rays-in-game-5"
+    ]
+  },
+  {
+    "id": "TOR",
+    "team": "Toronto Blue Jays",
+    "league": "AL",
+    "division": "East",
+    "stadium": "Rogers Centre",
+    "former_names": ["SkyDome (1989–2005)"],
+    "city": "Toronto",
+    "state": "Ontario",
+    "country": "Canada",
+    "lat": 43.6414,
+    "lon": -79.3892,
+    "opened": 1989,
+    "capacity": 39150,
+    "surface": "AstroTurf 3D Xtreme with dirt infield",
+    "roof": "retractable",
+    "architect": "Rod Robbie and Robbie Adjeleian (NORR Consortium); Populous (2024 renovation)",
+    "cost": "C$570 million",
+    "dimensions_ft": {"lf": 328, "lcf": 368, "cf": 400, "rcf": 359, "rf": 328},
+    "wall_ft": {"lf": null, "cf": null, "rf": null},
+    "team_founded": 1977,
+    "franchise_history": [
+      {"years": "1977–present", "name": "Toronto Blue Jays", "city": "Toronto"}
+    ],
+    "previous_stadium": "Exhibition Stadium (1977–1989)",
+    "world_series_titles": [1992, 1993],
+    "pennants": 3,
+    "colors": ["#134A8E", "#1D2D5C"],
+    "notable": [
+      "The first major league stadium with a functional, fully retractable motorized roof.",
+      "An attached 348-room hotel, with 70 rooms overlooking the field.",
+      "Hosted games of both the 1992 and 1993 World Series, which the Blue Jays won.",
+      "Hosted games 1, 2, 6 and 7 of the 2025 World Series, which the Dodgers won."
+    ],
+    "note": "",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rogers_Centre",
+      "https://en.wikipedia.org/wiki/Toronto_Blue_Jays",
+      "https://en.wikipedia.org/wiki/Exhibition_Stadium",
+      "https://www.mlb.com/news/featured/rogers-centre-guide-capacity-seating-chart-parking-and-more",
+      "https://teamcolorcodes.com/toronto-blue-jays-color-codes/"
+    ]
+  }
+]

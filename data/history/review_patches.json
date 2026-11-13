@@ -1,0 +1,36 @@
+{
+  "team_fix": [
+    {"match": {"name": "Toronto Blue Jays", "league": "AL", "start": 1977},
+     "set": {"homes": [{"park": "exhibition-stadium", "start": 1977, "end": 1989}, {"park": "TOR", "start": 1989, "end": 2019}, {"park": "sahlen-field", "start": 2020, "end": 2020}, {"park": "td-ballpark", "start": 2021, "end": 2021}, {"park": "sahlen-field", "start": 2021, "end": 2021}, {"park": "TOR", "start": 2021, "end": 2026}]},
+     "why": "In 2021 the Blue Jays played at Dunedin through May, then Buffalo from June 1, then returned to Toronto July 30, so the homes were out of time order.",
+     "source": "https://www.mlb.com/amp/news/blue-jays-returning-to-toronto-on-july-30.html"},
+    {"match": {"name": "Cleveland Indians", "league": "AL", "start": 1915},
+     "set": {"homes": [{"park": "league-park", "start": 1915, "end": 1932}, {"park": "cleveland-stadium", "start": 1933, "end": 1933}, {"park": "league-park", "start": 1934, "end": 1946}, {"park": "cleveland-stadium", "start": 1947, "end": 1993}, {"park": "CLE", "start": 1994, "end": 2021}]},
+     "why": "The Indians played the entire 1933 season at Cleveland Municipal Stadium before returning to League Park for 1934.",
+     "source": "https://baseballheritagemuseum.org/league-park-timeline/"},
+    {"match": {"name": "Indianapolis ABCs", "league": "NAL", "start": 1939},
+     "set": {"franchise": "atlanta-black-crackers"},
+     "why": "The 1939 Indianapolis ABCs were the relocated Atlanta Black Crackers, not the 1938 ABCs club (which became the St. Louis Stars).",
+     "source": "https://en.wikipedia.org/wiki/Atlanta_Black_Crackers"}
+  ],
+  "park_fix": {
+    "washington-park-ii": {"set": {"opened": 1898}, "why": "Washington Park II opened April 30, 1898; 1883 is the opening of the first Washington Park.", "source": "https://en.wikipedia.org/wiki/Washington_Park_(baseball)"},
+    "forbes-field": {"set": {"lat": 40.4419, "lon": -79.9542, "coord_approx": false}, "why": "Listed point is downtown Pittsburgh, about 3 km from the known Forbes Field site in Oakland on Roberto Clemente Drive.", "source": "https://www.hmdb.org/m.asp?m=40877"},
+    "greenlee-field": {"set": {"lat": 40.4506, "lon": -79.973, "coord_approx": false}, "why": "Listed point is the city center; the site is on Bedford Avenue in the Hill District, marked by a historical marker.", "source": "https://www.hmdb.org/m.asp?m=52129"}
+  },
+  "missing": [
+    "All 1920-1932 Negro league seasons (NNL1, ECL, ANL, EWL, NSL) are absent from the listing, although data/history/raw/negro_1920_1932.json holds 64 team stints and 47 parks; it appears to have been dropped in the merge.",
+    "Kansas City Monarchs, NNL1 1920-1931 (associate in 1931) (https://en.wikipedia.org/wiki/Negro_National_League_(1920%E2%80%931931)).",
+    "Chicago American Giants, NNL1 1920-1931, and as Cole's American Giants in the NSL 1932.",
+    "Detroit Stars, NNL1 1920-1931; St. Louis Stars, NNL1 1922-1931; St. Louis Giants, NNL1 1920-1921; Chicago Giants, NNL1 1920-1921; Dayton Marcos, NNL1 1920 and 1926.",
+    "Cuban Stars (West), NNL1 1920-1930; Indianapolis ABCs, NNL1 1920-1926 (out mid-1924) and a second ABCs club in 1931.",
+    "Birmingham Black Barons and Memphis Red Sox, NNL1 1924-1925 and 1927-1930; Nashville Elite Giants, NNL1 1930; Columbus Buckeyes 1921; Cleveland Tate Stars 1922-1923; Toledo Tigers 1923; Pittsburgh Keystones 1922; Milwaukee Bears 1923; Cleveland Browns 1924; Cleveland Elites 1926; Cleveland Hornets 1927; Cleveland Tigers 1928; Cleveland Cubs and Louisville White Sox 1931 (all NNL1).",
+    "ECL clubs: Bacharach Giants, Baltimore Black Sox, Brooklyn Royal Giants, Cuban Stars (East), Lincoln Giants 1923-1928; Hilldale 1923-1927; Harrisburg Giants 1924-1927; Washington/Wilmington Potomacs 1924-1925; Newark Stars 1926; Philadelphia Tigers 1928 (https://en.wikipedia.org/wiki/Eastern_Colored_League).",
+    "ANL 1929: Bacharach Giants, Baltimore Black Sox, Cuban Stars (East), Hilldale, Lincoln Giants, Homestead Grays (https://en.wikipedia.org/wiki/American_Negro_League).",
+    "EWL 1932: Detroit Wolves, Homestead Grays, Baltimore Black Sox, Cuban Stars, Hilldale, Washington Pilots, Cleveland Stars, Newark Browns (https://en.wikipedia.org/wiki/East%E2%80%93West_League).",
+    "NSL 1932: Atlanta Black Crackers, Cole's American Giants, Columbus Turf Club, Indianapolis ABCs, Louisville Black Caps, Memphis Red Sox, Monroe Monarchs, Montgomery Grey Sox, Nashville Elite Giants (https://en.wikipedia.org/wiki/Negro_Southern_League_(1920%E2%80%931936)).",
+    "Homestead Grays, NNL2 1933: Wikipedia lists the Grays in the Negro National League in 1933 (1934 disputed), but the listing starts them in 1935 (https://en.wikipedia.org/wiki/Homestead_Grays).",
+    "Akron's 1933 home park is known: the Columbus Blue Birds/Akron Grays/Cleveland Giants club played at League Park II in Akron, so akron-unknown-grounds should be replaced by a real park record (https://en.wikipedia.org/wiki/Akron_Grays)."
+  ],
+  "checked_ok": 120
+}
