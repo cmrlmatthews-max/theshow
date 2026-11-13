@@ -25,7 +25,15 @@ Phases 1, 2, and 3 are complete. Data is current to November 2026.
 
 ### Detailed 3D models (Phase 3)
 
-Truist Park, Yankee Stadium, and Oracle Park have a detail module on top of the generated model. Each one uses surveyed wall corners, the real deck layout, and the main features of the park. Each has three more camera views.
+Truist Park, Yankee Stadium, and Oracle Park have a detail module on top of the generated model. Each has three more camera views.
+
+The second version of these models (November 2026) uses reference images:
+
+- A satellite image of each park, rotated and scaled so that home plate is the origin and center field is up, with a grid in feet. The roof outline, the facade line, and the outfield wall corners are point tables read from this sheet.
+- Five or six photographs of each park from Wikimedia Commons, for the facade composition, the roof structure, and the colors.
+- Heights are estimates from the photographs. No source gives them.
+- The reference images are not in this folder. The satellite images are from Esri World Imagery, and the photographs belong to their authors.
+- `briefs/refine.md` describes the method. A new park needs one satellite sheet, a few photographs, and one file in `src/details/`.
 
 ## Files
 
@@ -50,7 +58,7 @@ To rebuild after a data change: run `npm install`, then `python3 build-data.py`,
 - The outfield wall uses the posted wall heights at left, center, and right.
 - The roof type (open, retractable, fixed) and the seat count set the roof and the size of the stands.
 - The seating bowl, scoreboard, and light towers are generic, except in the three detailed ballparks.
-- In the three detailed ballparks, the posted distances and the main wall heights are from sources. The positions of the wall corners between them, the deck sizes, and the buildings around the park are estimates.
+- In the three detailed ballparks, the posted distances and the main wall heights are from sources. The roof outline, the facade line, and the wall corners are measured from a satellite image (accuracy about 5 to 10 ft). Heights, gate positions, and deck depths are estimates.
 
 ## History data: scope and limits
 

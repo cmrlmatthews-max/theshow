@@ -202,8 +202,8 @@ export class ParkView {
       for (const [x, y, bw, bh] of [[10, 10, 108, 108], [138, 10, 108, 50], [138, 76, 50, 42], [204, 76, 42, 42], [10, 138, 50, 108], [76, 138, 170, 108]]) g.fillRect(x, y, bw, bh);
     }, 256, 256);
     blockTex.wrapS = blockTex.wrapT = THREE.RepeatWrapping; blockTex.repeat.set(26, 26);
-    add(new THREE.CircleGeometry(6000, 64).rotateX(-Math.PI / 2), new THREE.MeshLambertMaterial({ map: blockTex })).position.y = -0.25;
-    const apron = add(new THREE.CircleGeometry(maxR * 0.5 + 330, 64).rotateX(-Math.PI / 2), lam(C.concrete)); apron.position.set(0, -0.12, -cf * 0.42);
+    add(new THREE.CircleGeometry(6000, 64).rotateX(-Math.PI / 2), new THREE.MeshLambertMaterial({ map: blockTex })).position.y = -3;
+    const apron = add(new THREE.CircleGeometry(maxR * 0.5 + 330, 64).rotateX(-Math.PI / 2), lam(C.concrete)); apron.position.set(0, -1.5, -cf * 0.42);
     const fld = paintField(spec, fieldPoly, rec, this.renderer.capabilities.maxTextureSize);
     const plane = (parts.field = add(new THREE.PlaneGeometry(fld.size, fld.size).rotateX(-Math.PI / 2), new THREE.MeshLambertMaterial({ map: fld.tex })));
     plane.position.set(fld.cx, 0, fld.cz);
