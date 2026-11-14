@@ -35,6 +35,27 @@ The second version of these models (November 2026) uses reference images:
 - The reference images are not in this folder. The satellite images are from Esri World Imagery, and the photographs belong to their authors.
 - `briefs/refine.md` describes the method. A new park needs one satellite sheet, a few photographs, and one file in `src/details/`.
 
+The third version (November 2026, "level 2") adds parts in three areas. The satellite sheets for this version have a scale of about 0.7 ft for each pixel.
+
+- **Seating bowl:** deck tiers with a cross-aisle, section aisles, tunnels, glass bands for suites and the press level, and a deck depth that changes along the bowl.
+- **Field level:** dugouts, a backstop net, bullpens, a batter's eye, foul poles, and blank panels on the outfield wall.
+- **Facade:** window panes and frames, cornices, stair and ramp towers, gate doors, and fences.
+
+| Ballpark | Parts (meshes) | Triangles |
+|---|---|---|
+| Truist Park | 101 | 47,240 |
+| Yankee Stadium | 123 | 74,815 |
+| Oracle Park | 172 | 37,985 |
+
+Limits of the level 2 parts:
+
+- All heights are estimates from photographs.
+- The aisle spacing and the tunnel positions are typical values. They are not a count of the real sections.
+- The bullpen positions at Oracle Park come from a press release, because the satellite sheet does not show them clearly. The bullpen position at Truist Park is read from the sheet.
+- The stair and ramp tower positions are approximate.
+- The models have no team marks, sponsor names, player names, or numbers. Boards and wall panels are blank.
+- `briefs/detail2.md` describes the level 2 method.
+
 ## Files
 
 | File | Purpose |
@@ -58,7 +79,7 @@ To rebuild after a data change: run `npm install`, then `python3 build-data.py`,
 - The outfield wall uses the posted wall heights at left, center, and right.
 - The roof type (open, retractable, fixed) and the seat count set the roof and the size of the stands.
 - The seating bowl, scoreboard, and light towers are generic, except in the three detailed ballparks.
-- In the three detailed ballparks, the posted distances and the main wall heights are from sources. The roof outline, the facade line, and the wall corners are measured from a satellite image (accuracy about 5 to 10 ft). Heights, gate positions, and deck depths are estimates.
+- In the three detailed ballparks, the posted distances and the main wall heights are from sources. The roof outline, the facade line, and the wall corners are measured from a satellite image (accuracy about 5 to 10 ft). Heights, gate positions, and tower positions are estimates. Deck depths and dugout positions are read from the level 2 satellite sheets (accuracy about 3 to 5 ft).
 
 ## History data: scope and limits
 

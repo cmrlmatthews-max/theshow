@@ -15,6 +15,16 @@
 // FROM PHOTOS: red brick piers and tall dark multi-pane windows, cream stone base and bands, dark green steel above the brick,
 //  cream arcade with 27 arches (13 ft bays), thin roof band over the back rows of the upper deck with a press-level strip,
 //  clock towers (square brick shaft, round clock, dark green pyramid roof), tall dark lattice light towers, scoreboard tower pair.
+// SECOND PASS (detail level 2):
+//  MEASURED from zone_home / zone_center: dugout roofs (~52 x 9 ft, centered ~68 ft out on each foul line), bullpen pits and
+//   bleacher blocks behind the center-field wall (left pen x -84..-50, right pen x 72..104, z about -444..-398), batter's eye
+//   width (~55 ft), section-aisle spacing (~30 ft lower bowl, ~40 ft upper deck).
+//  FROM PHOTOS: three levels (lower bowl with a cross-aisle, club/suite glass band, upper deck; Clem's page: 36/12/25 rows),
+//   thin roof band, press glass behind home, net behind the plate, RF wall 20 ft (Clem, andrewclem.com/Baseball/OraclePark.html),
+//   bullpens behind the CF wall either side of the open garden (mlb.com press release on the relocated bullpens),
+//   window grids with transoms, stepped cornice, steel X-bracing above the brick, stair and ramp towers, gate grilles, flags.
+//  ESTIMATED: cross-aisle position (58% of the lower depth), riser 7 ft, suite band ~10 ft, tunnel size, net height (36 ft),
+//   dugout height, pen wall height, bleacher heights, panel colors, stair/ramp tower positions, flag count, foul pole height (75 ft).
 // STILL ESTIMATED: all heights (brick 74 ft, steel top 108 ft, arcade 34 ft, upper-deck top ~80-100 ft), the second
 //  (small) tower position, gate pavilion positions, the LF corner block shape, seawall ends beyond z -254 / +115, boat/palm placement,
 //  glove position, bay rhythm (16 ft), roof depth (26 ft band).  No bottle slide, no logos; the name is plain text only.
@@ -34,7 +44,7 @@ export default {
       lower: { depth: 70, extent: [0, 1] },
       hasUpper: true,
       upper: { overhang: 22, rise: 22, depth: 66, slope: 0.6, extent: [0.2, 1] },
-      outfield: { depth: 60, slope: 0.4, spans: [[-45, -16, 62, 0.4]], eye: [-7, 7], eyeHeight: 26, eyeDepth: 20 },
+      outfield: { depth: 60, slope: 0.4, spans: [[-45, -16, 62, 0.4]], eye: [-4.4, 4.4], eyeHeight: 26, eyeDepth: 14 },
       skip: { upperDeck: true, canopy: true, scoreboard: true, lights: true },
       colors: { seat: '#254a38', facade: '#9a5a42', wall: '#2c4636', cream: '#e8dcbc' },
     };
@@ -134,10 +144,12 @@ export default {
       const gap = lerp(14, 40, arcW[i]);
       const dEnd = Math.max(95, T[i] - gap);
       const dl = Math.min(105, Math.max(66, 0.4 * (T[i] - gap)));
-      const d0 = dl - 22, h0 = 3.5 + 0.3 * d0 + 22;
+      const d0 = dl - 22, h0 = 3.5 + 0.3 * d0 + 28;   // 28 ft: club/suite glass band between the decks
       const hTop = Math.min(102, h0 + 0.62 * (dEnd - d0));
       const sU = (hTop - h0) / Math.max(10, dEnd - d0);
-      prof.push({ dl, d0, h0, dEnd, hTop, sU, lowTop: 3.5 + 0.3 * dl, gap });
+      const dm = 0.58 * dl, hm = 3.5 + 0.28 * dm;            // cross-aisle: flat walk with a 7 ft riser (tunnel wall) behind it
+      const lowTop = hm + 7 + 0.3 * (dl - dm - 5);
+      prof.push({ dl, d0, h0, dEnd, hTop, sU, lowTop, gap, dm, hm });
     }
     // upper deck range: starts where the ray meets the facade at z >= -150 on the 1B side
     let iR = 0;
@@ -145,7 +157,7 @@ export default {
     const iL = N1;
     const deckY = (i, d) => {                              // seat surface height at offset d
       const p = prof[i];
-      if (d < p.d0) return 3.5 + 0.3 * d;
+      if (d < p.d0) return d < p.dm ? 3.5 + 0.28 * d : p.hm + 7 + 0.3 * (d - p.dm - 5);
       return p.h0 + p.sU * (Math.min(d, p.dEnd) - p.d0);
     };
     const at3 = (i, d, y) => new THREE.Vector3(bPts[i][0] + bN[i][0] * d, y, bPts[i][1] + bN[i][1] * d);
@@ -153,13 +165,78 @@ export default {
     // ============================ decks (rebuild) ============================
     ctx.remove(parts.lowerDeck); ctx.remove(parts.upperDeck); ctx.remove(parts.canopy);
     {
-      add(sweepSolid(bPts.slice(), bN.slice(), (i) => { const p = prof[i]; return [[0, 0], [0, 3.5], [p.dl, p.lowTop], [p.dl, 0]]; }, [MAT.WALL, MAT.SEAT, MAT.WALL, -1], MAT.WALL), M);
+      add(sweepSolid(bPts.slice(), bN.slice(), (i) => { const p = prof[i]; return [[0, 0], [0, 3.5], [p.dm, p.hm], [p.dm + 5, p.hm], [p.dm + 5, p.hm + 7], [p.dl, p.lowTop], [p.dl, 0]]; },
+        [MAT.WALL, MAT.SEAT, MAT.CREAM, MAT.CREAM, MAT.SEAT, MAT.WALL, -1], MAT.WALL), M);
       add(sweepSolid(bPts.slice(iR, iL + 1), bN.slice(iR, iL + 1), (j) => { const p = prof[j + iR]; return [[p.d0, p.h0 - 7], [p.d0, p.h0], [p.dEnd, p.hTop], [p.dEnd, 0], [p.dl, 0], [p.dl, p.h0 - 7]]; },
         [MAT.CREAM, MAT.SEAT, MAT.WALL, -1, MAT.SHADE, MAT.SHADE], MAT.WALL), M);
       // press level: dark glazed strip on the back of the upper deck behind home
       const ia = Math.round(0.4 * N1), ib2 = Math.round(0.6 * N1);
       add(sweepSolid(bPts.slice(ia, ib2 + 1), bN.slice(ia, ib2 + 1), (j) => { const p = prof[j + ia]; return [[p.dEnd - 30, p.hTop], [p.dEnd - 30, p.hTop + 14], [p.dEnd, p.hTop + 14], [p.dEnd, p.hTop]]; },
         [MAT.SHADE, MAT.WALL, MAT.WALL, -1], MAT.WALL), M);
+    }
+
+    // ============================ bowl detail: aisles, tunnels, suite glass, press glass ============================
+    const cum = [0]; for (let i = 1; i <= N1; i++) cum.push(cum[i - 1] + Math.hypot(bPts[i][0] - bPts[i - 1][0], bPts[i][1] - bPts[i - 1][1]));
+    const stations = (i0, i1, sp, off = 0) => { const r = []; let nx = cum[i0] + off; for (let i = i0; i <= i1; i++) if (cum[i] >= nx) { r.push(i); nx += sp; } return r; };
+    const upV = new THREE.Vector3(0, 1, 0);
+    const orient = (pos, zdir, sx, sy, sz) => {          // matrix for a unit box whose z axis follows zdir
+      const z = zdir.clone().normalize(), x = new THREE.Vector3().crossVectors(upV, z); if (x.lengthSq() < 1e-6) x.set(1, 0, 0);
+      x.normalize(); const y = new THREE.Vector3().crossVectors(z, x);
+      q.setFromRotationMatrix(m4.makeBasis(x, y, z)); return m4.compose(pos, q, sc.set(sx, sy, sz));
+    };
+    {
+      const aisles = [], tunnels = [], portals = [];
+      const lowSt = stations(2, N1 - 2, 30, 14);          // lower-bowl section aisles, ~30 ft apart (counted on the sheets)
+      lowSt.forEach((i, n) => {
+        const p = prof[i], hasU = i >= iR;
+        const yA = (d) => 3.5 + 0.28 * d + 0.18, yB = (d) => p.hm + 7 + 0.3 * (d - p.dm - 5) + 0.18;
+        aisles.push([at3(i, 1.5, yA(1.5)), at3(i, p.dm - 0.5, yA(p.dm - 0.5))]);
+        const e2 = hasU ? Math.min(p.dl, p.d0) - 0.5 : p.dl - 0.5;
+        if (e2 > p.dm + 8) aisles.push([at3(i, p.dm + 5.5, yB(p.dm + 5.5)), at3(i, e2, yB(e2))]);
+        if (n % 2 === 0) tunnels.push(i);
+      });
+      const upSt = stations(iR, iL - 1, 40, 6);           // upper-deck aisles, ~40 ft apart
+      upSt.forEach((i, n) => {
+        const p = prof[i];
+        aisles.push([at3(i, p.d0 + 1.2, p.h0 + 0.18), at3(i, p.dEnd - 0.5, p.hTop + 0.18)]);
+        if (n % 2 === 0) portals.push(i);
+      });
+      const aMesh = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), lam('#d9cfae'), aisles.length);
+      aisles.forEach(([a, b], k) => { orient(v3.addVectors(a, b).multiplyScalar(0.5), new THREE.Vector3().subVectors(b, a), 1.7, 0.3, a.distanceTo(b)); aMesh.setMatrixAt(k, m4); });
+      G.add(aMesh);
+      // entry tunnels: dark openings in the cross-aisle riser (lower bowl) and under the roof band (upper deck)
+      const tMesh = new THREE.InstancedMesh(new THREE.BoxGeometry(6.5, 6.4, 1.3), lam('#14100d'), tunnels.length + portals.length);
+      let tk = 0;
+      tunnels.forEach((i) => { const p = prof[i], c = at3(i, p.dm + 4.6, p.hm + 3.4); q.setFromEuler(e.set(0, Math.atan2(bN[i][0], bN[i][1]), 0)); m4.compose(c, q, sc.set(1, 1, 1)); tMesh.setMatrixAt(tk++, m4); });
+      portals.forEach((i) => { const p = prof[i], c = at3(i, p.dEnd - 0.7, p.hTop + 3.4); q.setFromEuler(e.set(0, Math.atan2(bN[i][0], bN[i][1]), 0)); m4.compose(c, q, sc.set(1, 1, 1)); tMesh.setMatrixAt(tk++, m4); });
+      G.add(tMesh);
+      // lintels above the lower tunnels
+      const lMesh = new THREE.InstancedMesh(new THREE.BoxGeometry(8.4, 0.9, 1.6), lam(cream), tunnels.length);
+      tunnels.forEach((i, k) => { const p = prof[i], c = at3(i, p.dm + 4.5, p.hm + 6.9); q.setFromEuler(e.set(0, Math.atan2(bN[i][0], bN[i][1]), 0)); m4.compose(c, q, sc.set(1, 1, 1)); lMesh.setMatrixAt(k, m4); });
+      G.add(lMesh);
+
+      // club / suite level: glass band between the lower bowl and the upper deck, with cream mullions
+      const glass = lam('#3d5963');
+      const A = [], B = [];
+      for (let i = iR; i <= iL; i++) { const p = prof[i]; A.push(at3(i, p.dl - 0.3, p.lowTop + 0.6)); B.push(at3(i, p.dl - 0.3, p.h0 - 7.2)); }
+      strip(A, B, glass);
+      const mulSt = stations(iR, iL, 7, 0);
+      const mul = new THREE.InstancedMesh(new THREE.BoxGeometry(0.7, 1, 0.7), lam(cream), mulSt.length);
+      mulSt.forEach((i, k) => { const p = prof[i], y0 = p.lowTop + 0.6, y1 = p.h0 - 7.2; m4.compose(at3(i, p.dl - 0.6, (y0 + y1) / 2), q.identity(), sc.set(1, y1 - y0, 1)); mul.setMatrixAt(k, m4); });
+      sc.set(1, 1, 1); G.add(mul);
+      // sill and header bands
+      const S0 = [], S1 = [];
+      for (let i = iR; i <= iL; i++) { const p = prof[i]; S0.push(at3(i, p.dl - 0.6, p.lowTop + 0.5)); S1.push(at3(i, p.dl - 0.6, p.lowTop + 1.9)); }
+      strip(S0, S1, lam(cream));
+      // press level: glass front on the dark box behind home, with mullions
+      const ia = Math.round(0.4 * N1), ib2 = Math.round(0.6 * N1);
+      const P0 = [], P1 = [];
+      for (let i = ia; i <= ib2; i++) { const p = prof[i]; P0.push(at3(i, p.dEnd - 30.3, p.hTop + 1.2)); P1.push(at3(i, p.dEnd - 30.3, p.hTop + 12.6)); }
+      strip(P0, P1, glass);
+      const pst = stations(ia, ib2, 6, 0);
+      const pm = new THREE.InstancedMesh(new THREE.BoxGeometry(0.6, 11.4, 0.6), lam(cream), pst.length);
+      pst.forEach((i, k) => { const p = prof[i]; m4.compose(at3(i, p.dEnd - 30.6, p.hTop + 6.9), q.identity(), sc.set(1, 1, 1)); pm.setMatrixAt(k, m4); });
+      G.add(pm);
     }
 
     // LF corner block: stands behind the left-field pole out to the facade corner
@@ -180,9 +257,13 @@ export default {
     band(0, kArc, 0, 9, 0.6, 0.6, matStone);
     band(0, kArc, 9, 74, 0, 0, matBrick);
     band(0, kArc, 38, 41, 0, 1.0, matCream);
-    band(0, kArc, 71, 77, 1.5, 2.8, matCream);
+    // profiled cornice: stepped cream bands (soffit, cyma, fascia, drip cap)
+    const pband = (k0, k1, pts, mat) => { for (let j = 0; j + 1 < pts.length; j++) band(k0, k1, pts[j][0], pts[j + 1][0], pts[j][1], pts[j + 1][1], mat); };
+    pband(0, kArc, [[70.2, 0.0], [71.2, 0.7], [72.4, 0.7], [72.4, 2.1], [75.4, 2.1], [75.9, 2.9], [77, 2.9], [77, 0]], matCream);
+    pband(0, kArc, [[8.6, 0.6], [9.6, 1.5], [11.0, 1.5], [11.0, 0.6]], matStone);     // base string course
+    pband(0, kArc, [[55.5, 0], [56.3, 0.8], [57.4, 0.8], [57.4, 0]], matCream);       // upper string course
     band(0, kArc, 77, 108, -2, -2, matSteel);
-    band(0, kArc, 106, 109, -2, 1, matCream);
+    pband(0, kArc, [[104.5, -2], [105.5, 0.2], [107.5, 0.2], [108.2, 1.4], [109.2, 1.4], [109.2, -2]], matCream);
     // cove-side arcade: cream, 34 ft, with plinth, cornice and flat roof
     band(kArc, Pf.length - 1, 0, 3, 0.6, 0.6, matStone);
     band(kArc, Pf.length - 1, 3, 34, 0, 0, matCream);
@@ -198,12 +279,15 @@ export default {
     const bayS = (k) => (k + 0.5) * (sArc / nBays);
     {
       const piers = new THREE.InstancedMesh(new THREE.BoxGeometry(3.4, 66, 2.4), lam(brickDk), nBays + 1);
+      // tall window: dark glass, 3 columns of small panes, mullions, a heavier transom at 1/5 height and a cream sill/head
       const wtex = textTexture((g, w, h) => {
-        g.fillStyle = '#1b2528'; g.fillRect(0, 0, w, h); g.strokeStyle = '#4b5b5a'; g.lineWidth = 3;
-        for (let i = 1; i < 3; i++) { g.beginPath(); g.moveTo(i * w / 3, 0); g.lineTo(i * w / 3, h); g.stroke(); }
-        for (let j = 1; j < 8; j++) { g.beginPath(); g.moveTo(0, j * h / 8); g.lineTo(w, j * h / 8); g.stroke(); }
-        g.strokeStyle = '#b7a67e'; g.lineWidth = 6; g.strokeRect(1, 1, w - 2, h - 2);
-      }, 64, 256);
+        g.fillStyle = '#1b2528'; g.fillRect(0, 0, w, h); g.strokeStyle = '#51625f'; g.lineWidth = 2;
+        for (let i = 1; i < 6; i++) { g.beginPath(); g.moveTo(i * w / 6, 0); g.lineTo(i * w / 6, h); g.stroke(); }
+        for (let j = 1; j < 24; j++) { g.beginPath(); g.moveTo(0, j * h / 24); g.lineTo(w, j * h / 24); g.stroke(); }
+        g.strokeStyle = '#b7a67e'; g.lineWidth = 5; for (const x of [w / 3, 2 * w / 3]) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, h); g.stroke(); }
+        g.lineWidth = 7; g.beginPath(); g.moveTo(0, h * 0.2); g.lineTo(w, h * 0.2); g.stroke(); g.beginPath(); g.moveTo(0, h * 0.62); g.lineTo(w, h * 0.62); g.stroke();
+        g.lineWidth = 8; g.strokeRect(1, 1, w - 2, h - 2);
+      }, 128, 512);
       const wins = new THREE.InstancedMesh(new THREE.PlaneGeometry(8.5, 46), new THREE.MeshBasicMaterial({ map: wtex, side: THREE.DoubleSide }), nBays);
       for (let k = 0; k <= nBays; k++) {
         const p = at(k * (sArc / nBays));
@@ -238,7 +322,66 @@ export default {
         m4.compose(v3.set(p.x + p.nx * o, 86, p.z + p.nz * o), q, sc); cap.setMatrixAt(k, m4);
         m4.compose(v3.set(p.x + p.nx * (o + 6.2), 11, p.z + p.nz * (o + 6.2)), q, sc); door.setMatrixAt(k, m4);
       });
-      G.add(pav); G.add(cap); G.add(door);
+      G.add(pav); G.add(cap);
+    }
+
+    // ---- facade parts: dentils, steel bracing, stair and ramp towers, gate doors and fences
+    {
+      const nD = Math.floor(sArc / 4.5), dent = new THREE.InstancedMesh(new THREE.BoxGeometry(1.8, 1.6, 1.6), matCream, nD);
+      for (let k = 0; k < nD; k++) { const p = at((k + 0.5) * sArc / nD); m4.compose(v3.set(p.x + p.nx * 0.9, 70.9, p.z + p.nz * 0.9), q.setFromEuler(e.set(0, p.yaw, 0)), sc); dent.setMatrixAt(k, m4); }
+      G.add(dent);
+      // dark green steel above the brick: portal frame with X bracing, one panel per bay
+      const xt = textTexture((g, w, h) => {
+        g.clearRect(0, 0, w, h); g.strokeStyle = '#4e6a58'; g.lineWidth = 5; g.strokeRect(2, 2, w - 4, h - 4);
+        g.beginPath(); g.moveTo(0, 0); g.lineTo(w, h); g.moveTo(w, 0); g.lineTo(0, h); g.stroke();
+        g.fillStyle = '#10181a'; g.fillRect(w * 0.22, h * 0.34, w * 0.56, h * 0.3);
+      }, 128, 128);
+      const xb = new THREE.InstancedMesh(new THREE.PlaneGeometry(15.4, 29), new THREE.MeshBasicMaterial({ map: xt, transparent: true, side: THREE.DoubleSide }), nBays);
+      for (let k = 0; k < nBays; k++) { const c = at(bayS(k)); m4.compose(v3.set(c.x - c.nx * 1.4, 92.5, c.z - c.nz * 1.4), q.setFromEuler(e.set(0, c.yaw, 0)), sc); xb.setMatrixAt(k, m4); }
+      G.add(xb);
+      // stair towers: brick box, glazed stair slot, cream cap (positions on the 3B / home-plate side, read from photo1)
+      const stairS = [0.2 * sArc, 0.58 * sArc];
+      const stTex = textTexture((g, w, h) => {
+        g.fillStyle = '#1b2528'; g.fillRect(0, 0, w, h); g.strokeStyle = '#6d8279'; g.lineWidth = 3;
+        for (let y = 0; y < h; y += 28) { g.beginPath(); g.moveTo(0, y + 22); g.lineTo(w, y); g.stroke(); }
+        g.beginPath(); g.moveTo(w / 2, 0); g.lineTo(w / 2, h); g.stroke();
+      }, 64, 256);
+      stairS.forEach((s0) => {
+        const p = at(s0), tw = new THREE.Group(); G.add(tw); tw.position.set(p.x + p.nx * 9, 0, p.z + p.nz * 9); tw.rotation.y = p.yaw;
+        const bx = add(new THREE.BoxGeometry(17, 70, 15), matBrick, tw); bx.position.y = 35;
+        const slot = add(new THREE.PlaneGeometry(9, 56), new THREE.MeshBasicMaterial({ map: stTex }), tw); slot.position.set(0, 36, 7.6);
+        const cp = add(new THREE.BoxGeometry(19, 2.4, 17), matCream, tw); cp.position.y = 71.2;
+        const bs = add(new THREE.BoxGeometry(19, 8, 17), matStone, tw); bs.position.y = 4;
+      });
+      // ramp tower: round brick drum with cream bands (photo1, west side)
+      {
+        const p = at(0.31 * sArc), dr = new THREE.Group(); G.add(dr); dr.position.set(p.x + p.nx * 14, 0, p.z + p.nz * 14);
+        const body = add(new THREE.CylinderGeometry(15, 15, 62, 24), matBrick, dr); body.position.y = 31;
+        [14, 30, 46].forEach((y) => { const b = add(new THREE.CylinderGeometry(15.8, 15.8, 1.6, 24), matCream, dr); b.position.y = y; });
+        const cap = add(new THREE.CylinderGeometry(16.6, 16.6, 2.4, 24), matCream, dr); cap.position.y = 63;
+        const rf = add(new THREE.ConeGeometry(14, 6, 24), lam('#2e4a3b'), dr); rf.position.y = 67;
+      }
+      // gate doors (iron grille in an arch) and gate fences in front of each pavilion
+      const gTex = textTexture((g, w, h) => {
+        g.fillStyle = '#181210'; g.fillRect(0, 0, w, h); g.strokeStyle = '#8a8168'; g.lineWidth = 3;
+        for (let x = 6; x < w; x += 10) { g.beginPath(); g.moveTo(x, h * 0.18); g.lineTo(x, h); g.stroke(); }
+        g.lineWidth = 5; g.beginPath(); g.moveTo(0, h * 0.5); g.lineTo(w, h * 0.5); g.stroke(); g.beginPath(); g.arc(w / 2, h * 0.3, w / 2 - 2, Math.PI, 0); g.stroke();
+      }, 128, 192);
+      const fTex = textTexture((g, w, h) => {
+        g.clearRect(0, 0, w, h); g.strokeStyle = '#25302a'; g.lineWidth = 3;
+        for (let x = 4; x < w; x += 8) { g.beginPath(); g.moveTo(x, 6); g.lineTo(x, h); g.stroke(); }
+        g.lineWidth = 5; g.beginPath(); g.moveTo(0, 8); g.lineTo(w, 8); g.stroke(); g.beginPath(); g.moveTo(0, h - 6); g.lineTo(w, h - 6); g.stroke();
+      }, 256, 64);
+      const gd = new THREE.InstancedMesh(new THREE.PlaneGeometry(13, 22), new THREE.MeshBasicMaterial({ map: gTex, side: THREE.DoubleSide }), gates.length);
+      const gf = new THREE.InstancedMesh(new THREE.PlaneGeometry(40, 8), new THREE.MeshBasicMaterial({ map: fTex, transparent: true, side: THREE.DoubleSide }), gates.length * 2);
+      gates.forEach((s0, k) => {
+        const p = at(s0); q.setFromEuler(e.set(0, p.yaw, 0));
+        m4.compose(v3.set(p.x + p.nx * 11.3, 11.2, p.z + p.nz * 11.3), q, sc); gd.setMatrixAt(k, m4);
+        m4.compose(v3.set(p.x + p.nx * 20, 4, p.z + p.nz * 20), q, sc); gf.setMatrixAt(k, m4);
+        const q2 = new THREE.Quaternion().setFromEuler(new THREE.Euler(0, p.yaw + Math.PI / 2, 0));
+        m4.compose(v3.set(p.x + p.nx * 20 + p.nz * 20, 4, p.z + p.nz * 20 - p.nx * 20), q2, sc.set(0.5, 1, 1)); gf.setMatrixAt(gates.length + k, m4); sc.set(1, 1, 1);
+      });
+      G.add(gd); G.add(gf);
     }
 
     // clock towers: square brick shaft, round clock, dark green pyramid roof
@@ -407,6 +550,8 @@ export default {
       const posts = new THREE.InstancedMesh(new THREE.BoxGeometry(0.4, 3.4, 0.4), lam('#2b2723'), pts.length);
       pts.forEach(([x, z], k) => { m4.compose(v3.set(x - 1, 2.1, z), q.identity(), sc); posts.setMatrixAt(k, m4); });
       G.add(posts);
+      { const R0 = [], R1 = []; for (const [x, z] of S) { R0.push(new THREE.Vector3(x - 1, 3.5, z)); R1.push(new THREE.Vector3(x - 1, 3.9, z)); } strip(R0, R1, lam('#2b2723'));
+        const R2 = [], R3 = []; for (const [x, z] of S) { R2.push(new THREE.Vector3(x - 1, 2.2, z)); R3.push(new THREE.Vector3(x - 1, 2.5, z)); } strip(R2, R3, lam('#2b2723')); }
       // water: polygon east of the seawall
       const wtex = textTexture((g, w, h) => {
         g.fillStyle = '#58808c'; g.fillRect(0, 0, w, h); g.strokeStyle = 'rgba(232,220,188,0.22)'; g.lineWidth = 2;
@@ -499,6 +644,119 @@ export default {
       const th = add(new THREE.CylinderGeometry(2.1, 2.7, 12, 10), leather, gl); th.position.set(-11.5, 11, 0); th.rotation.z = -0.9;
       const web = add(new THREE.BoxGeometry(8, 7, 0.8), lace, gl); web.position.set(-8.8, 17, -0.4); web.rotation.z = 0.25;
       const strap = add(new THREE.BoxGeometry(10, 1.2, 4.2), lace, gl); strap.position.set(0, 8, 0.4);
+    }
+
+    // ============================ field level ============================
+    // taller yellow foul poles (photo6: well above the RF arcade roof)
+    parts.poles.forEach((pl) => { pl.scale.y = 1.25; pl.position.y = 37.5; });
+    // -- dugouts: low roofed boxes at the seat edge, dark opening toward the field.
+    //    Position along the foul line from zone_home: roofs centered ~65-70 ft out from the plate on both lines, ~52 ft long, ~9 ft wide.
+    {
+      const roofM = lam('#3a4a40'), faceM = basic('#120e0b');
+      [-1, 1].forEach((sg) => {
+        let bi = 2, bd = 1e9;
+        for (let i = 2; i < N1 - 2; i++) {
+          const [x, z] = bPts[i]; if (x * sg < 0) continue;
+          const u = sg < 0 ? -(x + z) / 1.414 : (x - z) / 1.414, dd = Math.abs(u - 68) + Math.abs(Math.abs(x) - Math.abs(z)) * 0.0;
+          if (dd < bd) { bd = dd; bi = i; }
+        }
+        const [px, pz] = bPts[bi], [nx, nz] = bN[bi];
+        let tx = bPts[bi + 2][0] - bPts[bi - 2][0], tz = bPts[bi + 2][1] - bPts[bi - 2][1]; const tl = Math.hypot(tx, tz); tx /= tl; tz /= tl;
+        if (tz * -nx + -tx * -nz < 0) { tx = -tx; tz = -tz; }       // local +x must point toward the field (-normal)
+        const g = new THREE.Group(); G.add(g);
+        g.position.set(px + nx * 3.2, 0, pz + nz * 3.2); g.rotation.y = Math.atan2(tx, tz);
+        const body = add(new THREE.BoxGeometry(9, 5.4, 52), lam('#c8bd9c'), g); body.position.y = 2.7;
+        const roof = add(new THREE.BoxGeometry(10.2, 0.8, 53.2), roofM, g); roof.position.y = 5.6;
+        const hole = add(new THREE.PlaneGeometry(46, 2.6), faceM, g); hole.rotation.y = Math.PI / 2; hole.position.set(4.6, 2.5, 0);
+        const rail = add(new THREE.BoxGeometry(0.4, 0.4, 50), lam('#d8cfae'), g); rail.position.set(4.8, 4.6, 0);
+      });
+    }
+    // -- backstop net: transparent mesh on an arc behind the plate, with posts
+    {
+      const R = 57, a0 = -1.0, a1 = 1.0, nA = 24, y0 = 4, y1 = 36;
+      const netTex = textTexture((g, w, h) => {
+        g.clearRect(0, 0, w, h); g.strokeStyle = 'rgba(40,44,40,0.5)'; g.lineWidth = 1.5;
+        for (let i = 0; i <= 8; i++) { g.beginPath(); g.moveTo(i * w / 8, 0); g.lineTo(i * w / 8, h); g.stroke(); g.beginPath(); g.moveTo(0, i * h / 8); g.lineTo(w, i * h / 8); g.stroke(); }
+      }, 64, 64);
+      netTex.wrapS = netTex.wrapT = THREE.RepeatWrapping; netTex.repeat.set(24, 5);
+      const pos = [], uv = [], idx = [];
+      for (let k = 0; k <= nA; k++) { const a = a0 + (a1 - a0) * k / nA, x = R * Math.sin(a), z = R * Math.cos(a); pos.push(x, y0, z, x, y1, z); uv.push(k / nA, 0, k / nA, 1); if (k) { const b = (k - 1) * 2; idx.push(b, b + 2, b + 1, b + 1, b + 2, b + 3); } }
+      const ng = new THREE.BufferGeometry(); ng.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3)); ng.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2)); ng.setIndex(idx);
+      add(ng, new THREE.MeshBasicMaterial({ map: netTex, transparent: true, depthWrite: false, side: THREE.DoubleSide }));
+      const npost = 9, posts = new THREE.InstancedMesh(new THREE.CylinderGeometry(0.3, 0.3, 38, 6), lam('#3a423d'), npost);
+      for (let k = 0; k < npost; k++) { const a = a0 + (a1 - a0) * k / (npost - 1); m4.compose(v3.set((R + 0.6) * Math.sin(a), 19, (R + 0.6) * Math.cos(a)), q.identity(), sc.set(1, 1, 1)); posts.setMatrixAt(k, m4); }
+      G.add(posts);
+      // top cable
+      const top = [], top2 = [];
+      for (let k = 0; k <= nA; k++) { const a = a0 + (a1 - a0) * k / nA; top.push(new THREE.Vector3(R * Math.sin(a), 36.2, R * Math.cos(a))); top2.push(new THREE.Vector3(R * Math.sin(a), 36.8, R * Math.cos(a))); }
+      strip(top, top2, lam('#1e2723'));
+    }
+    // -- bullpens beyond the center-field wall, either side of the open garden (zone_center: gray pens with mound clumps)
+    {
+      const pens = [{ x0: -84, x1: -50, z0: -444, z1: -398 }, { x0: 72, x1: 104, z0: -446, z1: -400 }];
+      const wallBox = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), lam('#2c4636'), pens.length * 3);
+      const moundM = new THREE.InstancedMesh(new THREE.CylinderGeometry(3.2, 4.4, 1, 12), lam('#a8745a'), pens.length * 2);
+      const plateM = new THREE.InstancedMesh(new THREE.BoxGeometry(1.3, 0.12, 1.3), lam('#f2ecd8'), pens.length * 2);
+      let wk = 0, mk = 0;
+      pens.forEach(({ x0, x1, z0, z1 }) => {
+        const cx = (x0 + x1) / 2, cz = (z0 + z1) / 2, w = x1 - x0, d = z1 - z0;
+        const floor = add(new THREE.BoxGeometry(w, 0.4, d), lam('#8b6a50')); floor.position.set(cx, 0.2, cz);
+        // fence/wall: back and both sides, 4.5 ft; the field-side wall is the outfield wall itself
+        [[cx, z0, w, 0.8], [x0, cz, 0.8, d], [x1, cz, 0.8, d]].forEach(([x, z, sx, sz]) => { m4.compose(v3.set(x, 2.5, z), q.identity(), sc.set(sx, 4.6, sz)); wallBox.setMatrixAt(wk++, m4); });
+        // two pitching mounds with plates, side by side along the width
+        for (let k = 0; k < 2; k++) {
+          const mx = x0 + w * (0.3 + 0.4 * k), mz = z0 + d * 0.55;
+          m4.compose(v3.set(mx, 0.7, mz), q.identity(), sc.set(1, 0.7, 1)); moundM.setMatrixAt(mk, m4);
+          m4.compose(v3.set(mx, 0.5, mz + 3), q.identity(), sc.set(1, 1, 1)); plateM.setMatrixAt(mk++, m4);
+        }
+        // bench with a small roof along the back wall
+        const bench = add(new THREE.BoxGeometry(w * 0.6, 0.6, 1.6), lam('#5b4a38')); bench.position.set(cx, 1.7, z0 + 1.6);
+        const bro = add(new THREE.BoxGeometry(w * 0.7, 0.4, 5), lam('#3a4a40')); bro.position.set(cx, 6.6, z0 + 2.4);
+      });
+      sc.set(1, 1, 1);
+      G.add(wallBox); G.add(moundM); G.add(plateM);
+      // bleacher terraces overlooking the pens (the white striped blocks on the sheet)
+      [[-98, -48, -470, -445], [40, 70, -486, -426], [72, 104, -490, -448]].forEach(([x0, x1, z0, z1]) => {
+        const sh = new THREE.Shape(); sh.moveTo(0, 0); sh.lineTo(0, 4); sh.lineTo(z1 - z0, 14); sh.lineTo(z1 - z0, 0);
+        const g = new THREE.ExtrudeGeometry(sh, { depth: x1 - x0, bevelEnabled: false });
+        g.rotateY(Math.PI / 2); g.translate(x0, 0, 0);                // profile runs along -z (shape x -> -z)
+        const bl = add(g, M[MAT.SEAT]); bl.position.set(0, 0, z1); bl.scale.z = 1;
+      });
+    }
+    // -- boards in the walls: plain muted panels with blank slots (no names)
+    {
+      const tex = textTexture((g, w, h) => {
+        g.fillStyle = '#ffffff'; g.fillRect(0, 0, w, h); g.strokeStyle = '#d8d0b8'; g.lineWidth = 6; g.strokeRect(3, 3, w - 6, h - 6);
+        g.fillStyle = '#e2dcc6'; for (let i = 0; i < 3; i++) g.fillRect(14 + i * 82, 18, 66, h - 36);
+      }, 256, 64);
+      const cols = ['#4b6d5a', '#7b5a46', '#55697a', '#8a7a52', '#5e6b52', '#7a4e44'];
+      const list = [];
+      for (let k = 0; k < 9; k++) list.push(-41 + k * 3.7);              // left-field wall
+      for (let k = 0; k < 7; k++) list.push(-11.2 + k * 3.7);            // center / right-center wall (skips the batter's eye)
+      const keep = list.filter((dg) => Math.abs(dg) > 5.2 && dg < 15);
+      const bp = new THREE.InstancedMesh(new THREE.PlaneGeometry(14, 3.6), new THREE.MeshBasicMaterial({ map: tex, side: THREE.DoubleSide }), keep.length);
+      keep.forEach((dg, k) => {
+        const [x, z] = wallXZ(spec, dg), [x1, z1] = wallXZ(spec, dg - 0.4), [x2, z2] = wallXZ(spec, dg + 0.4);
+        let nx2 = z2 - z1, nz2 = -(x2 - x1); const l = Math.hypot(nx2, nz2); nx2 /= l; nz2 /= l; if (nx2 * x + nz2 * z > 0) { nx2 = -nx2; nz2 = -nz2; }
+        const hw = wallH(spec, dg);
+        m4.compose(v3.set(x + nx2 * 0.5, Math.max(2.2, hw * 0.55), z + nz2 * 0.5), q.setFromEuler(e.set(0, Math.atan2(nx2, nz2), 0)), sc.set(1, hw < 5 ? 0.7 : 1, 1)); bp.setMatrixAt(k, m4);
+        bp.setColorAt(k, new THREE.Color(cols[k % cols.length]));
+      });
+      sc.set(1, 1, 1); G.add(bp);
+    }
+    // -- flags: poles with plain pennants on the RF arcade roof and the scoreboard top
+    {
+      const poles = [];
+      for (let k = 0; k < 6; k++) { const pp = P(18 + k * ((L - 36) / 5), 1.2, wallH(spec, 30) + 3.2); poles.push([pp.x, pp.y, pp.z, 24]); }
+      for (let k = 0; k < 5; k++) { const x = bcx + (k - 2) * 14, z = bcz + (k - 2) * 0; poles.push([x, 98, z, 12 + (k % 2) * 4]); }
+      const pm2 = new THREE.InstancedMesh(new THREE.CylinderGeometry(0.22, 0.28, 1, 5), lam('#cfc9b4'), poles.length);
+      const fl = new THREE.InstancedMesh(new THREE.PlaneGeometry(6, 3.4), basic('#fff', {}), poles.length);
+      const fc = ['#b0573a', '#e8dcbc', '#2f5a45', '#c99a58', '#55697a'];
+      poles.forEach(([x, y, z, h], k) => {
+        m4.compose(v3.set(x, y + h / 2, z), q.identity(), sc.set(1, h, 1)); pm2.setMatrixAt(k, m4);
+        m4.compose(v3.set(x + 3.1, y + h - 1.9, z), q.setFromEuler(e.set(0, 0.3 * (k % 3 - 1), 0)), sc.set(1, 1, 1)); fl.setMatrixAt(k, m4); fl.setColorAt(k, new THREE.Color(fc[k % fc.length]));
+      });
+      G.add(pm2); G.add(fl);
     }
 
     // ============================ camera stops ============================

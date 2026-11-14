@@ -1,6 +1,6 @@
 // The Show: map, roster, stadium cards, and the door into the 3D ballpark.
 import { geoAlbers, geoPath, geoGraticule10 } from 'd3-geo';
-import { select } from 'd3-selection';
+import { select, pointer } from 'd3-selection';
 import { zoom, zoomIdentity } from 'd3-zoom';
 import 'd3-transition';
 import { STATES, NEIGHBORS } from './geo.js';
@@ -64,6 +64,7 @@ let nodes = nowNodes, mk, lead, dots;
 function renderMarks() {
   mk = marks.selectAll('g.mk').data(nodes, (d) => d.key).join((en) => {
     const g = en.append('g').attr('class', 'mk').attr('tabindex', 0).attr('role', 'button');
+    g.append('circle').attr('class', 'mk-hit').attr('r', 11);
     g.append('circle').attr('class', 'mk-disc').attr('r', 11);
     g.append('circle').attr('class', 'mk-approx').attr('r', 16.6);
     g.append('circle').attr('r', 13.6).attr('class', 'mk-ring');
@@ -84,8 +85,19 @@ function renderMarks() {
 }
 
 let tf = zoomIdentity;
+// Screen scale. The map is W x H units; a phone shows it at about 0.3 px per unit, a desktop at about 0.8.
+// u keeps markers, dots, and labels at a readable size in screen pixels; g(k) grows them a little as the map zooms in.
+let px = 1, u = 1, m = 1;
+function measure() {
+  const r = svg.node().getBoundingClientRect();
+  px = r.width && r.height ? Math.min(r.width / W, r.height / H) : 1;
+  const pxR = 11 * px + Math.max(0, 0.8 - px) * 15.3;   // marker radius in screen px: 11 on a phone, unchanged on a desktop
+  u = Math.max(1, pxR / (11 * px));
+  m = u * (1 + 0.35 * Math.min(1, Math.log2(Math.max(1, tf.k)) / 3));
+}
 function layout() {
-  const R = 13.5;
+  measure();
+  const R = 13.5 * m;
   for (const n of nodes) { [n.ax, n.ay] = tf.apply([n.x0, n.y0]); n.x = n.ax; n.y = n.ay; }
   for (let it = 0; it < 60; it++) {
     let moved = false;
@@ -100,19 +112,20 @@ function layout() {
     for (const n of nodes) { n.x += (n.ax - n.x) * 0.04; n.y += (n.ay - n.y) * 0.04; }
     if (!moved) break;
   }
-  mk.attr('transform', (d) => `translate(${d.x.toFixed(1)},${d.y.toFixed(1)})`);
+  mk.attr('transform', (d) => `translate(${d.x.toFixed(1)},${d.y.toFixed(1)}) scale(${m.toFixed(3)})`);
+  mk.select('.mk-hit').attr('r', Math.max(11, Math.min(13.5, 22 / (px * m))));
   lead.attr('x1', (d) => d.ax).attr('y1', (d) => d.ay).attr('x2', (d) => d.x).attr('y2', (d) => d.y)
-    .attr('opacity', (d) => (Math.hypot(d.x - d.ax, d.y - d.ay) > 6 ? 1 : 0));
-  dots.attr('cx', (d) => d.ax).attr('cy', (d) => d.ay).attr('opacity', (d) => (Math.hypot(d.x - d.ax, d.y - d.ay) > 6 ? 1 : 0));
+    .attr('stroke-width', 0.8 * u).attr('opacity', (d) => (Math.hypot(d.x - d.ax, d.y - d.ay) > 6 * m ? 1 : 0));
+  dots.attr('r', 1.8 * u).attr('cx', (d) => d.ax).attr('cy', (d) => d.ay).attr('opacity', (d) => (Math.hypot(d.x - d.ax, d.y - d.ay) > 6 * m ? 1 : 0));
   for (const n of nodes) {
-    let best = null, bd = 90;
+    let best = null, bd = 90 * m;
     for (const o of nodes) { if (o === n) continue; const d = Math.hypot(o.x - n.x, o.y - n.y); if (d < bd) { bd = d; best = o; } }
     n.up = !!best && n.y < best.y;
   }
   mk.select('.mk-name').attr('y', (d) => (d.up ? -19 : 26));
   marks.classed('show-names', tf.k >= 3.2);
-  world.select('.state-labels').style('font-size', (6.6 / Math.pow(tf.k, 0.8)).toFixed(2) + 'px');
-  world.select('.country-labels').style('font-size', (13 / Math.pow(tf.k, 0.8)).toFixed(2) + 'px');
+  world.select('.state-labels').style('font-size', (6.6 * Math.min(u, 2.2) / Math.pow(tf.k, 0.8)).toFixed(2) + 'px');
+  world.select('.country-labels').style('font-size', (13 * Math.min(u, 2.2) / Math.pow(tf.k, 0.8)).toFixed(2) + 'px');
   world.select('.state-labels').attr('opacity', tf.k > 6 ? 0.25 : 1);
   scaleBar();
   drawOverlays();
@@ -120,6 +133,15 @@ function layout() {
 const zoomer = zoom().scaleExtent([1, 40]).translateExtent([[-260, -220], [W + 260, H + 220]])
   .on('zoom', (e) => { tf = e.transform; world.attr('transform', tf); layout(); });
 svg.call(zoomer).on('dblclick.zoom', null);
+svg.on('click.near', (e) => {
+  if (e.target.closest && e.target.closest('.mk, .pk-dot')) return;
+  const [x, y] = pointer(e, svg.node());
+  let best = null, bd = 24 / px;
+  for (const n of nodes) { const d = Math.hypot(n.x - x, n.y - y); if (d < bd) { bd = d; best = n; } }
+  if (best) best.pick();
+});
+let rzT = 0;
+window.addEventListener('resize', () => { clearTimeout(rzT); rzT = setTimeout(layout, 120); });
 $('#zin').onclick = () => svg.transition().duration(350).call(zoomer.scaleBy, 1.8);
 $('#zout').onclick = () => svg.transition().duration(350).call(zoomer.scaleBy, 1 / 1.8);
 $('#zreset').onclick = () => svg.transition().duration(600).call(zoomer.transform, zoomIdentity);
@@ -198,14 +220,15 @@ function setSelPath(f) {
 function drawOverlays() {
   gAll.attr('display', showReloc ? null : 'none'); gParks.attr('display', showParks ? null : 'none');
   ensureAll();
-  if (showReloc && allLines) allLines.attr('d', (d) => curve(scr(d.from), scr(d.to), 3, 6).d);
-  if (showParks && parkDots) parkDots.attr('cx', (d) => scr(d)[0]).attr('cy', (d) => scr(d)[1]);
+  if (showReloc && allLines) allLines.style('stroke-width', u).attr('d', (d) => curve(scr(d.from), scr(d.to), 3 * u, 6 * u).d);
+  const pr = (u > 1.3 ? 3.8 : 3) * u * (m / u), hit = Math.max(9, 22 / px);
+  if (showParks && parkDots) parkDots.attr('r', pr).style('stroke-width', hit).attr('cx', (d) => scr(d)[0]).attr('cy', (d) => scr(d)[1]);
   if (selLines) {
-    const geo = selLines.data().map((d) => curve(scr(d.from), scr(d.to), 5, 9));
-    selLines.attr('d', (d, i) => geo[i].d);
-    selLabels.attr('x', (d, i) => geo[i].mid[0]).attr('y', (d, i) => geo[i].mid[1] - 4);
+    const geo = selLines.data().map((d) => curve(scr(d.from), scr(d.to), 5 * u, 9 * u));
+    selLines.style('stroke-width', 2.4 * u).attr('d', (d, i) => geo[i].d);
+    selLabels.style('font-size', 11 * u + 'px').style('stroke-width', 3.5 * u + 'px').attr('x', (d, i) => geo[i].mid[0]).attr('y', (d, i) => geo[i].mid[1] - 4 * u);
   }
-  if (selDots) selDots.attr('cx', (d) => scr(d)[0]).attr('cy', (d) => scr(d)[1]);
+  if (selDots) selDots.attr('r', pr * 1.2).style('stroke-width', hit).attr('cx', (d) => scr(d)[0]).attr('cy', (d) => scr(d)[1]);
 }
 
 // ---------- the year and the league switches

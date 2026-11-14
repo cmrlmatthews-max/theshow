@@ -11,6 +11,18 @@
 // FROM PHOTOS: red-brown brick towers with cream caps/bands and arched tall windows, steel arch bridge and truss between
 //  the twin towers of each gate, low dark entry canopy, cream precast wing panels, dark steel lattice towers, brick-over-metal
 //  outfield wall, light-gray metal roof on dark columns/girders, lamp banks on the roof front edge, green seats.
+// SECOND DETAIL PASS (seating bowl, field level, facade parts):
+//  MEASURED on the zone sheets: dugouts (x +/-93, z -23, ~62 ft long, on the front row of the seats), batter's eye footprint
+//    (x -40..+67, front on the wall line), seat end behind home (z~+105), upper-deck front line behind home (z~+105), section
+//    aisle spacing (~22 ft of arc), facade distance for the upper-deck depth (ray to the measured facade line).
+//  FROM PHOTOS: bowl layers (lower bowl with cross-aisle, club glass band, cream spandrel, suite glass band, upper deck in two
+//    tiers), window grid and arched heads, stair-flight glazing, black gate fences, black perimeter fence on the brick outfield
+//    wall, yellow foul poles, muted wall panels, red board in the wall right of the eye, dark-green eye with a planter ledge.
+//  FROM LOOKUPS: Clem's Baseball (rows 33 / 19 / 13+12, field ~20 ft below street level), atlanta.com (bullpens in right-center,
+//    beyond the wall).
+//  ESTIMATES: all level heights (lower top 22-33 ft, club glass +4..+16, suite glass +19..+29, upper deck front 58-70, back 98),
+//    bowl depths (52 ft behind home, 102 ft on the baselines, upper 46-90 ft), bullpen layout and mounds, net height (29 ft),
+//    tunnel and aisle positions, stair/ramp tower positions, gate fence extent, eye height 38 ft, flag poles.
 // STILL ESTIMATED: all heights (roof 112 ft outer / 127 ft inner, facade 72 ft, towers 100 ft, boards, lattice towers), gate
 //  positions (five pavilions, spaced by arc length), tower count and positions, deck depths (the real bowl is deeper on the
 //  sides than behind home; uniform here), Chop House mass, batter's eye details, Battery Atlanta blocks, video board faces.
@@ -53,13 +65,13 @@ export default {
     return {
       wall: [
         { deg: -45, r: 335, h: 6 }, { deg: -36, r: rL, h: 6 }, { deg: -35.95, r: rL, h: 8.7 },
-        { deg: -22, r: 385, h: 8.7 }, { deg: -9, r: 402, h: 8.7 }, { deg: 0, r: 400, h: 8.7 }, { deg: 9, r: 402, h: 8.7 },
+        { deg: -22, r: 385, h: 8.7 }, { deg: -5.5, r: 401, h: 8.7 }, { deg: 0, r: 400, h: 8.7 }, { deg: 9.5, r: 402, h: 8.7 },
         { deg: 22, r: 375, h: 8.7 }, { deg: 33, r: rR, h: 8.7 }, { deg: 33.05, r: rR, h: 16 }, { deg: 45, r: 325, h: 16 },
       ],
       lower: { depth: LOWER_D, slope: 0.3, extent: [0, 1] },
       hasUpper: true,
       upper: { overhang: 34, rise: 26, depth: UPPER_D, slope: 0.52, extent: [0.03, 0.97] },
-      outfield: { depth: 68, slope: 0.42, spans: [[-45, -9], [9, 33]], eye: [-9, 9], eyeHeight: 36, eyeDepth: 44 },
+      outfield: { depth: 68, slope: 0.42, spans: [[-45, -5.5], [9.5, 33]], eye: [-5.5, 9.5], eyeHeight: 36, eyeDepth: 44 },
       skip: { canopy: true, scoreboard: true, lights: true },
       colors: { seat: '#3b5d4d', facade: '#9b5a45', wall: '#2b4034', cream: '#e4d9bc' },
     };
@@ -86,6 +98,7 @@ export default {
     const tmp = new THREE.Object3D();
     const mat4 = (x, y, z, sx, sy, sz, ry = 0) => { tmp.position.set(x, y, z); tmp.rotation.set(0, ry, 0); tmp.scale.set(sx, sy, sz); tmp.updateMatrix(); return tmp.matrix.clone(); };
     const idx = (t) => Math.round(clamp(t, 0, 1) * N1);
+    const rep0 = (t) => { t.wrapS = t.wrapT = THREE.RepeatWrapping; return t; };
 
     // ---------- 1. Wall: brick facing on the tall right-field wall, short padded strip on the low left corner
     {
@@ -120,37 +133,49 @@ export default {
       inst(new THREE.ConeGeometry(1, 1.4, 8), lam('#d8c9a0'), um);
     }
 
-    // ---------- 3. Batter's eye: rocks, evergreens, pond, waterfall, fountain
+    // ---------- 3. Batter's eye (measured: x -40..+67, front on the wall line, ~80 ft deep with its shadow; photo10:
+    //            flat dark-green panel wall, a planter ledge with evergreens in front, a brick block to the left)
     {
-      const eh = 36;
-      const W = (deg, out, y) => tools.wallAt(deg, out, y);
-      // rocks scattered over the eye top and front slope
-      const rocks = [];
-      for (let k = 0; k < 34; k++) {
-        const deg = (rnd() - 0.5) * 17, out = 3 + rnd() * 38, front = out < 12;
-        const y = front ? 12 + rnd() * (eh - 12) : eh;
-        const q = W(deg, out, y), s = 2.6 + rnd() * 4.2;
-        rocks.push(mat4(q.x, q.y + s * 0.3, q.z, s * 1.3, s * 0.8, s, rnd() * 3));
-      }
-      inst(new THREE.DodecahedronGeometry(1, 0), lam('#7b7466'), rocks);
-      // evergreens: 3 big (3 tiers each) and 12 small ones
+      if (parts.batterEye) ctx.remove(parts.batterEye);
+      const EH = 38, EDEP = 46;
+      const [p, n, dg] = tools.span(-5.5, 9.5);
+      const panelTex = rep0(textTexture((g, w, h) => {
+        g.fillStyle = '#243d2f'; g.fillRect(0, 0, w, h); g.fillStyle = '#1b3126'; g.fillRect(0, 0, 3, h);
+        g.fillStyle = '#2c4838'; for (let y = 8; y < h; y += 32) g.fillRect(3, y, w - 3, 2);   // horizontal reveals
+      }, 64, 64));
+      const mPanel = new THREE.MeshLambertMaterial({ map: panelTex, side: THREE.DoubleSide });
+      const mTop = lam('#1d3025'), mCap = lam('#d9cfae');
+      ctx.add(sweepSolid(p, n, () => [[1.2, 0], [1.2, EH], [EDEP, EH], [EDEP, 0]], [0, 1, 1, -1], 1), [mPanel, mTop]);
+      ctx.add(sweepSolid(p, n, () => [[1.0, EH - 0.2], [1.0, EH + 1.4], [2.4, EH + 1.4], [2.4, EH - 0.2]], [0, 0, 0, 0], 0), [mCap]);
+      // planter ledge halfway up the face, with a row of evergreens (small cones, instanced)
+      ctx.add(sweepSolid(p, n, () => [[1.2, 11], [1.2, 12.2], [8, 12.2], [8, 11]], [0, 0, 0, 0], 0), [lam('#6f6a5a')]);
       const cones = [];
-      const tree = (deg, out, base, sc) => {
-        const q = W(deg, out, base);
-        [[0, 7.5, 16], [11, 5.8, 15], [22, 4.1, 14]].forEach(([dy, r, h]) => cones.push(mat4(q.x, base + dy * sc + h * sc / 2, q.z, r * sc, h * sc, r * sc)));
-      };
-      [[-4.5, 24], [0.5, 32], [5, 22]].forEach(([d, o]) => tree(d, o, eh + 3, 1.25));
-      for (let k = 0; k < 12; k++) tree((rnd() - 0.5) * 20, 14 + rnd() * 26, eh + 1.5, 0.45 + rnd() * 0.3);
+      for (let k = 0; k < p.length; k += 2) {
+        const sc = 0.8 + rnd() * 0.5, o = 3.5 + rnd() * 2;
+        const x = p[k][0] + n[k][0] * o, z = p[k][1] + n[k][1] * o;
+        cones.push(mat4(x, 12.2 + 7 * sc, z, 3.6 * sc, 14 * sc, 3.6 * sc));
+      }
+      for (let k = 1; k < p.length; k += 3) {          // a few taller trees on the roof of the eye
+        const sc = 1.1 + rnd() * 0.5, o = 8 + rnd() * 30;
+        cones.push(mat4(p[k][0] + n[k][0] * o, EH + 9 * sc, p[k][1] + n[k][1] * o, 4.5 * sc, 18 * sc, 4.5 * sc));
+      }
       inst(new THREE.ConeGeometry(1, 1, 9), lam('#2d4a33'), cones);
-      // pond on the ledge and fountain jet (50 ft)
-      const pc = W(-1, 14, eh + 1.2);
-      const pond = ctx.add(new THREE.CylinderGeometry(9, 9, 0.6, 24), lam('#6f9ba6')); pond.position.copy(pc);
-      const jet = ctx.add(new THREE.CylinderGeometry(0.3, 1.4, 50, 8), new THREE.MeshBasicMaterial({ color: '#e5f1f0', transparent: true, opacity: 0.55 }));
-      jet.position.set(pc.x, pc.y + 25, pc.z);
-      // waterfall ribbon down the front face
-      const wf = W(-1, 1.7, 22);
-      const fall = ctx.add(new THREE.PlaneGeometry(9, 26), new THREE.MeshBasicMaterial({ color: '#cfe4e6', transparent: true, opacity: 0.7, side: THREE.DoubleSide }));
-      fall.position.set(wf.x, 22, wf.z);
+      // brick block to the left of the eye, under the board stack (photo10)
+      const bw = tools.wallAt(-8.2, EDEP + 8, 0);
+      const bb = ctx.add(new THREE.BoxGeometry(34, 62, 40), lam('#8e5642')); bb.position.set(bw.x - 3, 31, bw.z - 18);
+      const bc = ctx.add(new THREE.BoxGeometry(38, 3, 44), lam('#e0d5b5')); bc.position.set(bb.position.x, 63.5, bb.position.z);
+      const bwin = [];
+      for (let r = 0; r < 4; r++) for (let c = -1; c <= 1; c++) bwin.push(mat4(bb.position.x + c * 9, 18 + r * 12, bb.position.z + 20.2, 5, 6, 1));
+      inst(new THREE.PlaneGeometry(1, 1), basic('#2b363d', { side: THREE.DoubleSide }), bwin);
+      // flag poles on the eye roof: three plain pennant flags in muted colors (no marks)
+      const poles = [], flags = [];
+      [[-26, 0], [-2, 1], [22, 2]].forEach(([dx, c], k) => {
+        const q = tools.wallAt(dx / 400 / D2R, 30, EH + 1.4);
+        poles.push(mat4(q.x, EH + 1.4 + 17, q.z, 0.5, 34, 0.5));
+        flags.push(mat4(q.x + 5.6, EH + 1.4 + 29.5, q.z, 11, 6, 1));
+      });
+      inst(new THREE.CylinderGeometry(1, 1, 1, 6), lam('#d9d4c4'), poles);
+      inst(new THREE.PlaneGeometry(1, 1), lam('#7b3b34'), flags);
     }
 
     const { d0, h0, dEnd, hTop } = dims;
@@ -271,7 +296,8 @@ export default {
       let nx = F.nr[i - 1][0] * (1 - f) + F.nr[i][0] * f, nz = F.nr[i - 1][1] * (1 - f) + F.nr[i][1] * f; const l = Math.hypot(nx, nz); nx /= l; nz /= l;
       return { x: a[0] + (b[0] - a[0]) * f, z: a[1] + (b[1] - a[1]) * f, nx, nz, ry: Math.atan2(nx, nz) };
     };
-    const brickB = [], creamB = [], glassP = [], archP = [], torusM = [];
+    const brickB = [], creamB = [], glassBay = [], glassTwr = [], glassSm = [], glassPortal = [], glassStair = [], archP = [], torusM = [], fenceB = [];
+    const rampBody = [], rampCap = [];
     // local-frame helper: lx along the wall, lz outward from the wall plane
     const loc = (fr, lx, lz) => [fr.x + lx * fr.nz + lz * fr.nx, fr.z - lx * fr.nx + lz * fr.nz];
     const put = (list, fr, lx, ly, lz, sx, sy, sz) => { const [x, z] = loc(fr, lx, lz); list.push(mat4(x, ly, z, sx, sy, sz, fr.ry)); };
@@ -284,17 +310,39 @@ export default {
       ctx.add(sweepSolid(FAC.pts, FAC.nr, prof, [-1, 1, 1, 0, 1, 1, 1, 0], 1), [mBrick, mCream]);
       // second precast band (mid height) and base string course
       const band = (y0, y1, o) => ctx.add(sweepSolid(FAC.pts, FAC.nr, () => [[-0.2, y0], [-0.2, y1], [o, y1], [o, y0]], [1, 1, 1, 1], 1), [mBrick, mCream]);
-      band(34, 36.5, 0.9);
+      // real profile bands: sill course, string course with drip, stepped cornice under the roof
+      const course = (pts) => ctx.add(sweepSolid(FAC.pts, FAC.nr, () => pts, pts.map(() => 1), 1), [mBrick, mCream]);
+      course([[-0.2, 33.2], [-0.2, 34], [1.7, 34], [1.7, 35.1], [0.9, 35.6], [0.9, 36.6], [-0.2, 36.6]]);
+      course([[-0.2, 21.4], [1.3, 21.4], [1.3, 22.6], [-0.2, 22.6]]);
+      course([[-0.2, FAC_H - 7], [2.4, FAC_H - 7], [2.4, FAC_H - 5.6], [3.4, FAC_H - 5.6], [3.4, FAC_H - 3.4], [4.6, FAC_H - 3.4], [4.6, FAC_H - 0.6], [3, FAC_H - 0.6], [3, FAC_H + 0.8], [-0.2, FAC_H + 0.8]]);
     }
     const gates = GATE_S.map((f) => f * FAC.L);
     const nearGate = (s, pad) => gates.some((g) => Math.abs(s - g) < pad);
+    // stair towers (between the gates, glazed face with stair flights) and ramp towers at both roof ends
+    const stairs = [0.16, 0.385, 0.615, 0.84].map((f) => f * FAC.L);
+    stairs.forEach((ss) => {
+      const fr = frameAt(FAC, ss);
+      put(brickB, fr, 0, 46, 9, 22, 92, 18);
+      put(creamB, fr, 0, 94.2, 9, 26, 4.4, 22);
+      put(creamB, fr, 0, 90, 9, 23.4, 2, 19.4);
+      put(creamB, fr, 0, 38, 9, 23.2, 2.2, 19.2);
+      put(glassStair, fr, 0, 52, 18.15, 12, 62, 1);
+      for (const sx of [-1, 1]) put(creamB, fr, sx * 9.8, 44, 18.1, 2.2, 88, 0.8);
+    });
+    for (const k of [0, FAC.pts.length - 1]) {
+      const pt = FAC.pts[k], nr = FAC.nr[k], q = FAC.pts[k === 0 ? 1 : k - 1];
+      let tx = pt[0] - q[0], tz = pt[1] - q[1]; const tl = Math.hypot(tx, tz) || 1; tx /= tl; tz /= tl;   // beyond the end of the wall
+      const x = pt[0] + nr[0] * 4 + tx * 20, z = pt[1] + nr[1] * 4 + tz * 20;
+      rampBody.push(mat4(x, 47, z, 18, 94, 18));
+      rampCap.push(mat4(x, 95.5, z, 20.5, 4, 20.5), mat4(x, 62, z, 19.4, 3, 19.4), mat4(x, 30, z, 19.4, 3, 19.4));
+    }
     // window bays: tall dark windows with arched heads, cream piers between
     {
       const piers = [];
       for (let s = 14; s < FAC.L - 10; s += 20) {
-        if (nearGate(s, 82)) continue;
+        if (nearGate(s, 82) || stairs.some((q) => Math.abs(s - q) < 17)) continue;
         const fr = frameAt(FAC, s);
-        put(glassP, fr, 0, 36, 0.45, 8.4, 30, 1);
+        put(glassBay, fr, 0, 36, 0.45, 8.4, 30, 1);
         put(archP, fr, 0, 51, 0.45, 8.4, 8.4, 1);
         put(piers, fr, 10, 31, 0.5, 2.8, 56, 2.2);
         put(creamB, fr, 0, 22.5, 0.5, 9.6, 1.2, 1.4);              // sill band under each window
@@ -310,14 +358,28 @@ export default {
         put(creamB, fr, sx * 31, 96, 6, 24.5, 2.4, 22.5);
         put(creamB, fr, sx * 31, 27, 6, 23.2, 2.4, 21.2);            // bands
         put(creamB, fr, sx * 31, 62, 6, 23.2, 2.4, 21.2);
-        put(glassP, fr, sx * 31, 62, 16.2, 8.2, 30, 1);              // tall arched window
+        put(glassTwr, fr, sx * 31, 62, 16.2, 8.2, 30, 1);              // tall arched window
         put(archP, fr, sx * 31, 77, 16.2, 8.2, 8.2, 1);
-        put(glassP, fr, sx * 31, 36, 16.2, 6, 14, 1);
+        put(glassSm, fr, sx * 31, 36, 16.2, 6, 14, 1);
         put(creamB, fr, sx * 31 + sx * 12.5, 33, 6, 3, 66, 21);      // pilaster edge
         put(creamB, fr, sx * 62, 33, 1.2, 38, 66, 2.6);              // cream wall panel beside the tower
         put(creamB, fr, sx * 62, 68, 1.2, 40, 4, 3.4);
       }
-      put(glassP, fr, 0, 21, 0.8, 38, 40, 1);                        // dark portal
+      put(glassPortal, fr, 0, 21, 0.8, 38, 40, 1);                        // dark portal
+      for (let k = -2; k <= 2; k++) { put(creamB, fr, k * 8.6, 7.4, 1.4, 7.8, 14.8, 0.7); put(glassPortal, fr, k * 8.6, 7, 1.9, 6.4, 13.4, 1); }   // entry doors
+      // gate fence under the canopy front: pickets, rails, turnstile blocks in the middle opening
+      for (let lx = -50; lx <= 50; lx += 3.4) if (Math.abs(lx) > 8) put(fenceB, fr, lx, 4.2, 30, 0.4, 8.4, 0.4);
+      for (const sx of [-1, 1]) for (const y of [1.2, 7.6]) put(fenceB, fr, sx * 29, y, 30, 42, 0.5, 0.5);
+      for (const k of [-1, 0, 1]) put(steelBoxes, fr, k * 4.5, 2.3, 29, 1.2, 4.6, 5);
+      {
+        const names = ['RIGHT FIELD GATE', '1ST BASE GATE', 'HOME GATE', '3RD BASE GATE', 'LEFT FIELD GATE'];
+        const ptex = textTexture((g, w, h) => {
+          g.fillStyle = '#2a3036'; g.fillRect(0, 0, w, h); g.strokeStyle = '#cfc4a3'; g.lineWidth = 4; g.strokeRect(4, 4, w - 8, h - 8);
+          g.fillStyle = '#e4d9bc'; g.font = 'bold 40px Georgia, serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(names[gi], w / 2, h / 2 + 2);
+        }, 512, 64);
+        const pl = ctx.add(new THREE.PlaneGeometry(36, 4.5), new THREE.MeshBasicMaterial({ map: ptex, side: THREE.DoubleSide }));
+        const [qx, qz] = loc(fr, 0, 27.3); pl.position.set(qx, 19.6, qz); pl.rotation.y = fr.ry;
+      }
       // bridge: steel truss between the towers, arch beneath it
       for (const y of [58, 78]) putBeam(fr, [-20, y, 4], [20, y, 4], 1.8);
       for (let k = -3; k <= 3; k++) putBeam(fr, [k * 6.4, 58, 4], [k * 6.4, 78, 4], 0.9);
@@ -340,8 +402,33 @@ export default {
     });
     inst(new THREE.BoxGeometry(1, 1, 1), mBrick, brickB);
     inst(new THREE.BoxGeometry(1, 1, 1), mCream, creamB);
-    inst(new THREE.PlaneGeometry(1, 1), basic(glassCol, { side: THREE.DoubleSide }), glassP);
-    inst(new THREE.CircleGeometry(0.5, 14, 0, Math.PI), basic(glassCol, { side: THREE.DoubleSide }), archP);
+    {
+      const paneTex = (cols, rows, w, h) => textTexture((g, W, H) => {
+        const gr = g.createLinearGradient(0, 0, 0, H); gr.addColorStop(0, '#4a6470'); gr.addColorStop(1, '#202b32'); g.fillStyle = gr; g.fillRect(0, 0, W, H);
+        g.fillStyle = '#d5ccb0';                                         // mullions and transoms
+        for (let c = 0; c <= cols; c++) g.fillRect(Math.min(W - 4, c * W / cols - 2), 0, 4, H);
+        for (let r = 0; r <= rows; r++) g.fillRect(0, Math.min(H - 3, r * H / rows - 1.5), W, 3);
+      }, w, h);
+      const pm = (t) => new THREE.MeshBasicMaterial({ map: t, side: THREE.DoubleSide });
+      const quad = new THREE.PlaneGeometry(1, 1);
+      inst(quad, pm(paneTex(3, 9, 96, 256)), glassBay);
+      inst(quad, pm(paneTex(3, 9, 96, 256)), glassTwr);
+      inst(quad, pm(paneTex(2, 4, 64, 128)), glassSm);
+      inst(quad, basic('#1d252a', { side: THREE.DoubleSide }), glassPortal);
+      inst(quad, pm(textTexture((g, W, H) => {                          // stair tower glazing: dark glass with stair flights
+        g.fillStyle = '#26323a'; g.fillRect(0, 0, W, H); g.strokeStyle = '#a9a28b'; g.lineWidth = 3;
+        for (let k = 0; k < 6; k++) { const y0 = k * H / 6, up = k % 2 === 0; g.beginPath(); g.moveTo(up ? 6 : W - 6, y0 + H / 6); g.lineTo(up ? W - 6 : 6, y0); g.stroke(); g.fillStyle = '#cfc4a3'; g.fillRect(0, y0, W, 3); }
+      }, 64, 192)), glassStair);
+      const archTex = textTexture((g, W, H) => {
+        g.fillStyle = '#26323a'; g.fillRect(0, 0, W, H); g.strokeStyle = '#d5ccb0'; g.lineWidth = 4;
+        for (let k = 0; k <= 4; k++) { const an = Math.PI * k / 4; g.beginPath(); g.moveTo(W / 2, H / 2); g.lineTo(W / 2 - Math.cos(an) * W / 2, H / 2 - Math.sin(an) * H / 2); g.stroke(); }
+        g.beginPath(); g.arc(W / 2, H / 2, W * 0.27, Math.PI, 0); g.stroke(); g.beginPath(); g.arc(W / 2, H / 2, W / 2 - 2, Math.PI, 0); g.stroke();
+      }, 128, 128);
+      inst(new THREE.CircleGeometry(0.5, 14, 0, Math.PI), pm(archTex), archP);
+      inst(new THREE.CylinderGeometry(1, 1, 1, 24), mBrick, rampBody);
+      inst(new THREE.CylinderGeometry(1, 1, 1, 24), mCream, rampCap);
+      inst(new THREE.BoxGeometry(1, 1, 1), basic('#15191b'), fenceB);
+    }
     inst(new THREE.TorusGeometry(1, 0.075, 6, 20, Math.PI), mSteel, torusM);
     // ======================================================================================================
     // 7b. Facade returns at the roof ends, then the low outfield wall (brick over a metal base) that runs
@@ -355,6 +442,15 @@ export default {
     const LOW = resample(LOW_WALL, 6);
     ctx.add(sweepSolid(LOW.pts, LOW.nr, () => [[-3, 0], [0.6, 0], [0.6, 14], [0, 14], [0, LOW_H - 3], [1.4, LOW_H - 3], [1.4, LOW_H], [-3, LOW_H]],
       [-1, 2, 1, 0, 1, 1, 1, 0], 0), [mBrick, mCream, mMetal]);
+    {
+      // black perimeter fence along the street side of the low brick wall (photo3), vertical bars on a transparent texture
+      const fenceTex = rep(textTexture((g, w, h) => {
+        g.fillStyle = '#14181a'; for (let x = 0; x < w; x += 8) g.fillRect(x, 0, 2, h); g.fillRect(0, 0, w, 3); g.fillRect(0, h - 3, w, 3);
+      }, 384, 24));
+      fenceTex.repeat.set(1, 0.375);
+      ctx.add(sweepSolid(LOW.pts, LOW.nr, () => [[27, 0], [27, 8], [27.2, 8], [27.2, 0]], [0, 0, 0, 0], 0),
+        [new THREE.MeshLambertMaterial({ map: fenceTex, transparent: true, alphaTest: 0.4, side: THREE.DoubleSide })]);
+    }
     {
       // pilasters every 40 ft on the long brick run
       const pil = [];
@@ -437,13 +533,125 @@ export default {
       post(SB.x - SB.w * 0.38, SB.z - 3, LOW_H, SB.y0); post(SB.x + SB.w * 0.38, SB.z - 3, LOW_H, SB.y0);
     }
 
-    // ---------- 6. Club level: a terrace of seats and a glass suite band between the lower and upper decks
+    // ======================================================================================================
+    // 6. SEATING BOWL (rebuilt). Depth changes around the bowl: lower bowl 52 ft deep behind home, 102 ft on the
+    //    baselines (sheet: seats end at z~+105 behind home; ~115 ft to the roof edge on the sides). Lower bowl has a
+    //    cross-aisle; behind it a club tier and glass band, a cream spandrel, a suite glass band (a wider press-level
+    //    glass box behind home), then the upper deck in two tiers split by a cross-aisle. Upper deck depth follows the
+    //    distance to the measured facade line. Heights/levels: Clem's Baseball (33 / 19 / 13+12 rows).
+    // ======================================================================================================
+    const BOWL = {};
     {
-      const [p, n] = tools.cut(0.06, 0.94);
-      const { dL, lowTop } = dims;
-      ctx.add(sweepSolid(p, n, () => [[d0 + 2, lowTop], [d0 + 2, lowTop + 3], [dL, lowTop + 12], [dL, lowTop]], [MAT.WALL, MAT.SEAT, MAT.SHADE, -1], MAT.WALL), M);
-      const glass = new THREE.MeshLambertMaterial({ color: '#4d6a7a', side: THREE.DoubleSide });
-      ctx.add(sweepSolid(p, n, () => [[dL - 1, lowTop + 12], [dL - 1, h0 - 8], [dL - 0.4, h0 - 8], [dL - 0.4, lowTop + 12]], [0, 0, 0, 0], 0), [glass]);
+      if (parts.lowerDeck) ctx.remove(parts.lowerDeck);
+      if (parts.upperDeck) ctx.remove(parts.upperDeck);
+      const sm = (a, b, x) => { const u = clamp((x - a) / (b - a), 0, 1); return u * u * (3 - 2 * u); };
+      const rayHit = (p, nn, poly) => {
+        let best = Infinity;
+        for (let k = 0; k < poly.length - 1; k++) {
+          const a = poly[k], b = poly[k + 1], ex = b[0] - a[0], ez = b[1] - a[1], den = nn[0] * ez - nn[1] * ex;
+          if (Math.abs(den) < 1e-9) continue;
+          const wx = a[0] - p[0], wz = a[1] - p[1], u = (wx * ez - wz * ex) / den, v = (wx * nn[1] - wz * nn[0]) / den;
+          if (u > 0 && v >= 0 && v <= 1 && u < best) best = u;
+        }
+        return best;
+      };
+      const raw = bPts.map((p, i) => { const h = rayHit(p, bN[i], FAC_TALL); return isFinite(h) ? h : 215; });
+      const dFac = raw.map((_, i) => { let s = 0, c = 0; for (let k = -4; k <= 4; k++) if (raw[i + k] != null) { s += raw[i + k]; c++; } return s / c; });
+      const P = bPts.map((_, i) => {
+        const e = sm(0.05, 0.5, Math.abs(2 * (i / N1) - 1));
+        const dLow = 52 + 50 * e, lowTop = 22 + 11.5 * e;
+        const dA = 0.56 * dLow, hA = 3.5 + (lowTop - 3.5) * 0.5;
+        const d0U = dLow - 6, dG = dLow + 5, h0U = lowTop + 36;
+        const hCap = 98, dUp = clamp(Math.min(dFac[i] - 24 - d0U, (hCap - h0U) / 0.5), 46, 90);
+        const hTop = Math.min(hCap, h0U + 0.5 * dUp), t1 = 0.52 * dUp, r1 = (hTop - h0U) * 0.44;
+        return { dLow, lowTop, dA, hA, d0U, dG, h0U, dUp, hTop, t1, r1, aw: 6 };
+      });
+      BOWL.P = P;
+      const glassTex = (base, top, mull, bays) => {
+        const t = textTexture((g, w, h) => {
+          const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, top); gr.addColorStop(1, base);
+          g.fillStyle = gr; g.fillRect(0, 0, w, h); g.fillStyle = mull;
+          for (let k = 0; k < bays; k++) g.fillRect(k * w / bays, 0, 3, h);
+          g.fillRect(0, 0, w, 4); g.fillRect(0, h - 4, w, 4);
+        }, 128, 64);
+        t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(1, 0.3); return t;
+      };
+      const gm = (tex) => new THREE.MeshLambertMaterial({ map: tex, side: THREE.DoubleSide });
+      const mats = [M[MAT.SEAT], M[MAT.CREAM], M[MAT.SHADE], M[MAT.FACADE],
+        gm(glassTex('#4b6978', '#7fa0ad', '#d5ccb0', 4)),    // 4 club glass
+        gm(glassTex('#27363f', '#3f5764', '#b9b196', 3)),    // 5 suite glass
+        gm(glassTex('#566f7c', '#8aa6b0', '#e0d7bb', 6)),    // 6 press glass
+        M[MAT.WALL]];
+      const SEATi = 0, CREAMi = 1, SHADEi = 2, FACi = 3, GC = 4, GS = 5, GP = 6, WALLi = 7;
+      // lower bowl with cross-aisle (all the way round)
+      const [lp, ln] = tools.cut(0, 1);
+      ctx.add(sweepSolid(lp, ln, (i) => { const q = P[i]; return [[0, 0], [0, 3.5], [q.dA, q.hA], [q.dA + 7, q.hA], [q.dLow, q.lowTop], [q.dLow, 0]]; },
+        [WALLi, SEATi, CREAMi, SEATi, FACi, -1], FACi), mats);
+      // club tier, glass bands, upper deck in one solid (t 0.03 .. 0.97)
+      const [up, un, ua] = tools.cut(0.03, 0.97);
+      ctx.add(sweepSolid(up, un, (k) => {
+        const q = P[ua + k], dB = q.d0U + q.dUp, dT1 = q.d0U + q.t1;
+        return [[q.dLow - 2, 0], [dB, 0], [dB, q.hTop], [dT1 + q.aw, q.h0U + q.r1], [dT1, q.h0U + q.r1], [q.d0U, q.h0U], [q.d0U, q.h0U - 7],
+          [q.dG, q.h0U - 7], [q.dG, q.lowTop + 19], [q.dG, q.lowTop + 16], [q.dG, q.lowTop + 4], [q.dLow - 2, q.lowTop - 1]];
+      }, [-1, FACi, SEATi, CREAMi, SEATi, CREAMi, SHADEi, GS, CREAMi, GC, SEATi, -1], FACi), mats);
+      // press level: wider glass box in front of the suite band, behind home plate
+      const [pp, pn, pa] = tools.cut(0.4, 0.6);
+      ctx.add(sweepSolid(pp, pn, (k) => { const q = P[pa + k]; return [[q.dG - 7, q.lowTop + 17], [q.dG - 7, q.lowTop + 28], [q.dG + 0.5, q.lowTop + 28], [q.dG + 0.5, q.lowTop + 17]]; },
+        [GP, CREAMi, -1, -1], CREAMi), mats);
+
+      // surface height of the bowl at offset d (lower bowl and upper deck), station q
+      const hLow = (q, d) => d <= q.dA ? 3.5 + (q.hA - 3.5) * d / q.dA : d <= q.dA + 7 ? q.hA : q.hA + (q.lowTop - q.hA) * (d - q.dA - 7) / (q.dLow - q.dA - 7);
+      BOWL.hLow = hLow;
+      // section aisles: light strips every ~22 ft of arc, in each tier (instanced). Spacing counted on the sheets.
+      const aisleM = [], tunM = [];
+      const stripM = (pt, nn, d0, d1, h0, h1, w) => {
+        const dd = d1 - d0, dh = h1 - h0, L = Math.hypot(dd, dh);
+        const S = new THREE.Vector3(nn[0] * dd / L, dh / L, nn[1] * dd / L), T = new THREE.Vector3(nn[1], 0, -nn[0]);
+        const Y = new THREE.Vector3().crossVectors(S, T);
+        const q = new THREE.Quaternion().setFromRotationMatrix(new THREE.Matrix4().makeBasis(T, Y, S));
+        const dm = (d0 + d1) / 2, hm = (h0 + h1) / 2 + 0.18;
+        return new THREE.Matrix4().compose(new THREE.Vector3(pt[0] + nn[0] * dm, hm, pt[1] + nn[1] * dm), q, new THREE.Vector3(w, 0.3, L));
+      };
+      let run = 11, a = 0;
+      for (let i = 1; i <= N1; i++) {
+        run += Math.hypot(bPts[i][0] - bPts[i - 1][0], bPts[i][1] - bPts[i - 1][1]);
+        if (run < 22) continue; run -= 22; a++;
+        const q = P[i], pt = bPts[i], nn = bN[i];
+        aisleM.push(stripM(pt, nn, 3, q.dA - 1, hLow(q, 3), hLow(q, q.dA - 1), 1.7));
+        aisleM.push(stripM(pt, nn, q.dA + 8, q.dLow - 1, hLow(q, q.dA + 8), hLow(q, q.dLow - 1), 1.7));
+        if (i / N1 > 0.035 && i / N1 < 0.965) {
+          const dT1 = q.d0U + q.t1;
+          aisleM.push(stripM(pt, nn, q.d0U + 1.5, dT1 - 1, q.h0U + 0.4 * 1.5, q.h0U + q.r1 - 0.2, 1.7));
+          aisleM.push(stripM(pt, nn, dT1 + q.aw + 1, q.d0U + q.dUp - 1, q.h0U + q.r1 + 0.3, q.hTop - 0.3, 1.7));
+          if (a % 2 === 0) {                                  // entry tunnels at the cross-aisles
+            tunM.push(mat4(pt[0] + nn[0] * (q.dA + 8.4), q.hA + 3.2, pt[1] + nn[1] * (q.dA + 8.4), 7, 6.6, 3, Math.atan2(nn[0], nn[1])));
+            tunM.push(mat4(pt[0] + nn[0] * (dT1 + q.aw + 1.2), q.h0U + q.r1 + 3.2, pt[1] + nn[1] * (dT1 + q.aw + 1.2), 7, 6.6, 3, Math.atan2(nn[0], nn[1])));
+          }
+        }
+      }
+      // outfield seat aisles (left span full, right span up to the bullpens)
+      const ofAisle = (a0, a1) => {
+        const [wp, wn, wd] = tools.span(a0, a1); let r2 = 8;
+        for (let k = 1; k < wp.length; k++) {
+          r2 += Math.hypot(wp[k][0] - wp[k - 1][0], wp[k][1] - wp[k - 1][1]);
+          if (r2 < 21) continue; r2 -= 21;
+          const hw = wallH(spec, wd[k]);
+          aisleM.push(stripM(wp[k], wn[k], 6, 4 + 66, hw + 3 + 0.42 * 2, hw + 3 + 0.42 * 66, 1.7));
+        }
+      };
+      ofAisle(-44.5, -6); ofAisle(10, 19.5);
+      inst(new THREE.BoxGeometry(1, 1, 1), basic('#d9cfae'), aisleM);
+      inst(new THREE.BoxGeometry(1, 1, 1), basic('#161b1d'), tunM);
+      BOWL.aisles = a;
+
+      // stock camera stops that sat inside the old generic deck
+      const dirTo = (pos, look) => new THREE.Vector3(...look).sub(new THREE.Vector3(...pos)).normalize();
+      const ib = Math.round(0.5 * N1), iu = Math.round(0.6 * N1), qb = P[ib], qu = P[iu];
+      views.pressbox.pos = [bPts[ib][0] + bN[ib][0] * (qb.d0U + 5), qb.h0U + 0.42 * 5 + 5.5, bPts[ib][1] + bN[ib][1] * (qb.d0U + 5)];
+      views.pressbox.dir = dirTo(views.pressbox.pos, views.pressbox.look);
+      const du = qu.d0U + qu.t1 * 0.6;
+      views.upper.pos = [bPts[iu][0] + bN[iu][0] * du, qu.h0U + qu.r1 * 0.6 + 5.5, bPts[iu][1] + bN[iu][1] * du];
+      views.upper.dir = dirTo(views.upper.pos, views.upper.look);
     }
 
     // ---------- 8. The Battery Atlanta: simple muted blocks beyond right and center field
@@ -464,6 +672,120 @@ export default {
       bld(2, 575, 70, 40, 30, '#9c9382', '#4a3c33', [4, 2]);       // low block behind center field
     }
 
+
+    // ======================================================================================================
+    // 9. FIELD LEVEL: dugouts, backstop net, bullpens (right-center, beyond the wall), wall panels and boards, poles
+    // ======================================================================================================
+    {
+      const nearest = (x, z) => { let bi = 0, bd = 1e9; bPts.forEach((p, i) => { const d = Math.hypot(p[0] - x, p[1] - z); if (d < bd) { bd = d; bi = i; } }); return bi; };
+      // ---- dugouts: measured on zone_home at (+93,-23) first-base (home) side and (-94,-23) third-base side, ~62 ft long
+      const dBox = [], dSlab = [], dOpen = [];
+      let dugI = [];
+      for (const sx of [1, -1]) {
+        const i = nearest(sx * 93, -23); dugI.push(i);
+        const pt = bPts[i], nn = bN[i], ry = Math.atan2(nn[0], nn[1]);
+        const cd = 4.25, cx = pt[0] + nn[0] * cd, cz = pt[1] + nn[1] * cd;
+        dBox.push(mat4(cx, 3.7, cz, 62, 7.4, 13.5, ry));
+        dSlab.push(mat4(cx, 7.6, cz, 64, 0.9, 15.5, ry));
+        const fx = pt[0] - nn[0] * 2.6, fz = pt[1] - nn[1] * 2.6;
+        dOpen.push(mat4(fx, 2.5, fz, 55, 4, 1, Math.atan2(-nn[0], -nn[1])));
+      }
+      inst(new THREE.BoxGeometry(1, 1, 1), lam('#c9bf9f'), dBox);
+      inst(new THREE.BoxGeometry(1, 1, 1), lam('#8d6a52'), dSlab);
+      inst(new THREE.PlaneGeometry(1, 1), basic('#12171a', { side: THREE.DoubleSide }), dOpen);
+
+      // ---- backstop net between the dugouts, with posts every ~13 ft (outside the foul lines)
+      {
+        const i0n = Math.min(dugI[0], dugI[1]), i1n = Math.max(dugI[0], dugI[1]);
+        const [np, nn2] = [bPts.slice(i0n, i1n + 1), bN.slice(i0n, i1n + 1)];
+        const netTex = textTexture((g, w, h) => {
+          g.clearRect(0, 0, w, h); g.strokeStyle = 'rgba(30,34,36,0.85)'; g.lineWidth = 2;
+          for (let x = 0; x < w; x += w / 6) { g.beginPath(); g.moveTo(x + 1, 0); g.lineTo(x + 1, h); g.stroke(); }
+          g.beginPath(); g.moveTo(0, 1); g.lineTo(w, 1); g.stroke();
+        }, 96, 24);
+        netTex.wrapS = netTex.wrapT = THREE.RepeatWrapping; netTex.repeat.set(1, 0.2);
+        const mNet = new THREE.MeshBasicMaterial({ map: netTex, transparent: true, alphaTest: 0.2, side: THREE.DoubleSide });
+        ctx.add(sweepSolid(np, nn2, () => [[1, 5], [1, 29], [1.15, 29], [1.15, 5]], [0, 0, 0, 0], 0), [mNet]);
+        const posts = []; let run = 0;
+        for (let k = 0; k < np.length; k++) {
+          if (k) run += Math.hypot(np[k][0] - np[k - 1][0], np[k][1] - np[k - 1][1]);
+          if (k === 0 || k === np.length - 1 || run >= 13) { if (k && k < np.length - 1) run = 0; posts.push(mat4(np[k][0] + nn2[k][0] * 1.2, 16, np[k][1] + nn2[k][1] * 1.2, 0.9, 32, 0.9)); }
+        }
+        inst(new THREE.BoxGeometry(1, 1, 1), lam('#2b3237'), posts);
+      }
+
+      // ---- foul poles: yellow, taller (photos 1 and 11 show them clearing the upper seats)
+      parts.poles.forEach((pl) => { pl.scale.y = 1.35; pl.position.y = 40.5; pl.material = lam('#d6bb45'); });
+
+      // ---- right-center bullpens beyond the wall (atlanta.com: "right-center field area, beyond the outfield wall")
+      {
+        const A0 = 19.5, A1 = 32.5, AM = 26;
+        const degIdx = (d) => Math.round((d + 45) / 0.5);
+        if (parts.outfieldSeats[1]) ctx.remove(parts.outfieldSeats[1]);
+        const [sp, sn, sd] = tools.span(9.5, A0);
+        ctx.add(sweepSolid(sp, sn, (i) => { const hw = wallH(spec, sd[i]); return [[1.2, 0], [1.2, hw + 3], [4, hw + 3], [4 + 68, hw + 3 + 0.42 * 68], [4 + 68, 0]]; }, [MAT.WALL, MAT.CREAM, MAT.SEAT, MAT.FACADE, -1], MAT.FACADE), M);
+        const [p, n, dg] = tools.span(A0, A1);
+        ctx.add(sweepSolid(p, n, () => [[1.2, 0], [1.2, 0.4], [30, 0.4], [30, 0]], [0, 0, 0, -1], 0), [lam('#78854f')]);          // pen floor
+        ctx.add(sweepSolid(p, n, () => [[29.5, 0], [29.5, 9], [31, 9], [31, 0]], [MAT.FACADE, MAT.CREAM, MAT.FACADE, -1], MAT.FACADE), M);  // rear wall
+        ctx.add(sweepSolid(p, n, () => [[30.5, 0], [30.5, 13], [33, 13], [33 + 42, 13 + 0.45 * 42], [75, 0]], [MAT.WALL, MAT.CREAM, MAT.SEAT, MAT.FACADE, -1], MAT.FACADE), M); // seats behind the pens
+        // dividing walls at both ends and between the two pens
+        const divs = [], mounds = [], plates = [], benches = [];
+        for (const dd of [A0, AM, A1]) {
+          const k = degIdx(dd), q = wallPts[k], nn = wallN[k], ry = Math.atan2(nn[0], nn[1]);
+          divs.push(mat4(q[0] + nn[0] * 15.6, 3.6, q[1] + nn[1] * 15.6, 1.2, 7.2, 28.8, ry));
+        }
+        for (const [dc, dl] of [[22.75, 1], [29.25, 1]]) {
+          for (const off of [-1.6, 1.6]) {
+            const k = degIdx(dc + off), q = wallPts[k], nn = wallN[k];
+            mounds.push(mat4(q[0] + nn[0] * 21, 0.7, q[1] + nn[1] * 21, 2.4, 1, 2.4, 0));
+            plates.push(mat4(q[0] + nn[0] * 3.4, 0.5, q[1] + nn[1] * 3.4, 1.3, 0.2, 1.3, Math.atan2(nn[0], nn[1])));
+          }
+          const kb = degIdx(dc), qb = wallPts[kb], nb = wallN[kb];
+          benches.push(mat4(qb[0] + nb[0] * 26.5, 1.4, qb[1] + nb[1] * 26.5, 14, 2.8, 2.4, Math.atan2(nb[1], -nb[0])));
+        }
+        inst(new THREE.BoxGeometry(1, 1, 1), lam('#c9bf9f'), divs);
+        inst(new THREE.CylinderGeometry(1, 1.9, 1, 14), lam('#a98660'), mounds);
+        inst(new THREE.BoxGeometry(1, 1, 1), basic('#f2ecd8'), plates);
+        inst(new THREE.BoxGeometry(1, 1, 1), lam('#5d4a38'), benches);
+      }
+
+      // ---- wall panels (muted, blank slots, no marks) along the face of the outfield wall; one board right of the eye
+      {
+        const pal = ['#6f3a33', '#2f4a5e', '#c9bf9d', '#3f5a46', '#8d7a52', '#545f69', '#4c3b5a'];
+        const geo = new THREE.PlaneGeometry(1, 1), panels = [], slots = [], cols = [];
+        const wallFace = (k0, k1, color, hFrac) => {
+          const a = wallPts[k0], b = wallPts[k1], ex = b[0] - a[0], ez = b[1] - a[1], len = Math.hypot(ex, ez);
+          let nx = ez / len, nz = -ex / len; if (nx * a[0] + nz * (a[1] + 170) > 0) { nx = -nx; nz = -nz; }   // face the field
+          const mx = (a[0] + b[0]) / 2 + nx * 0.2, mz = (a[1] + b[1]) / 2 + nz * 0.2, hw = Math.min(wallH(spec, wallDeg[k0]), wallH(spec, wallDeg[k1]));
+          const h = Math.max(2.4, hw * hFrac), ry = Math.atan2(nx, nz);
+          return { mx, mz, h, len, ry, hw };
+        };
+        let ci = 0;
+        for (const [d0g, d1g] of [[-44.5, -6.5], [10.5, 32.5]]) {
+          const ka = Math.round((d0g + 45) / 0.5), kb = Math.round((d1g + 45) / 0.5);
+          for (let k = ka; k + 6 <= kb; k += 7) {
+            const f = wallFace(k, k + 7, 0, 0.78); const c = new THREE.Color(pal[ci++ % pal.length]);
+            panels.push(mat4(f.mx, f.hw * 0.5 + 0.2, f.mz, f.len - 1.2, f.h, 1, f.ry)); cols.push(c);
+            slots.push(mat4(f.mx, f.hw * 0.5 + 0.2, f.mz, (f.len - 1.2) * 0.62, f.h * 0.42, 1, f.ry));
+          }
+        }
+        const im = new THREE.InstancedMesh(geo, new THREE.MeshLambertMaterial({ side: THREE.DoubleSide }), panels.length);
+        panels.forEach((m, i) => { im.setMatrixAt(i, m); im.setColorAt(i, cols[i]); }); G.add(im);
+        inst(geo, basic('#1c2328', { side: THREE.DoubleSide }), slots.map((m) => m.clone().multiply(new THREE.Matrix4().makeTranslation(0, 0, 0.12))));
+        // board in the wall right of the batter's eye (photo10): muted brick-red panel with blank slots and a small dark display
+        const k0 = Math.round((10.6 + 45) / 0.5), k1 = Math.round((19 + 45) / 0.5);
+        const f = wallFace(k0, k1, 0, 1);
+        const bt = textTexture((g, w, h) => {
+          g.fillStyle = '#7a3d34'; g.fillRect(0, 0, w, h); g.strokeStyle = '#e0d5b5'; g.lineWidth = 6; g.strokeRect(5, 5, w - 10, h - 10);
+          g.fillStyle = '#1c2328'; g.fillRect(w * 0.06, h * 0.2, w * 0.5, h * 0.6); g.fillRect(w * 0.6, h * 0.2, w * 0.15, h * 0.6); g.fillRect(w * 0.79, h * 0.2, w * 0.15, h * 0.6);
+          g.strokeStyle = '#8f8a78'; g.lineWidth = 3; g.strokeRect(w * 0.06, h * 0.2, w * 0.5, h * 0.6);
+        }, 512, 96);
+        const bd = ctx.add(new THREE.PlaneGeometry(f.len - 2, 8.2), new THREE.MeshBasicMaterial({ map: bt, side: THREE.DoubleSide }));
+        bd.position.set(f.mx, 4.9, f.mz); bd.rotation.y = f.ry;
+        const strip2 = ctx.add(new THREE.PlaneGeometry(f.len - 2, 2.2), new THREE.MeshBasicMaterial({ color: '#141a1e', side: THREE.DoubleSide }));
+        strip2.position.set(f.mx + Math.sin(f.ry) * 0.05, 9.6, f.mz + Math.cos(f.ry) * 0.05); strip2.rotation.y = f.ry;
+      }
+    }
 
     // ---------- instanced steel frame, lamp banks
     inst(new THREE.BoxGeometry(1, 1, 1), lam('#3b4147'), steelBoxes);
