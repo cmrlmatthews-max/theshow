@@ -26,7 +26,7 @@ Your working copy of the project is the folder named in your task. Work only the
 // src/details/XXX.js
 export default {
   // Optional. Changes the generic build. Every key is optional.
-  config(rec) {
+  config(rec, { lod }) {            // lod is 'low' (phone) or 'high'; the second argument may be ignored
     return {
       // Surveyed outfield wall: corner points from the LF pole (-45) to the RF pole (+45). Walls run straight between
       // corners. h = wall height. Repeat a corner with deg + 0.05 to make a height step.
@@ -34,11 +34,14 @@ export default {
       foulScale: 1,          // 1 = default foul territory; smaller = seats closer to the lines
       backstop: 58,          // feet from home plate to the backstop
       lower: { depth: 110, slope: 0.3, extent: [0, 1] },                  // lower deck: depth outward, rise per foot, t range
+      // depth (lower and upper), upper.overhang and upper.rise also accept a table [[t, value], ...] (t 0 = right-field end
+      // of the bowl, 0.5 = behind home plate, 1 = left-field end; linear between rows). Example of a bowl that is deeper on
+      // the third-base side: lower: { depth: [[0, 60], [0.5, 85], [1, 120]] }. Seat rows, aisles, rails, canopy and lights follow.
       hasUpper: true,
       upper: { overhang: 30, rise: 24, depth: 95, slope: 0.58, extent: [0.1, 0.9] },   // extent may also be one number e (0.5-e .. 0.5+e)
       outfield: { depth: 80, slope: 0.45, spans: [[-45, -9], [9, 45, 60, 0.4]],       // [fromDeg, toDeg, depth?, slope?]
                   eye: [-9, 9], eyeHeight: 44, eyeDepth: 26 },                         // eye: null removes the batter's eye
-      skip: { upperDeck: false, canopy: false, scoreboard: false, lights: false },     // true = do not build the generic part
+      skip: { upperDeck: false, canopy: false, scoreboard: false, lights: false, dugouts: false, tarp: false },   // true = do not build the generic part
       colors: { seat: '#2f4b7c', facade: '#9a5c44', wall: '#2c4636', cream: '#e8dcbc' },
     };
   },
@@ -51,14 +54,20 @@ export default {
 
 - `ctx.THREE` three.js. `ctx.G` the scene group for this park: add your meshes to it (or use `ctx.add`).
 - `ctx.add(geometry, material, parent = G)` returns the mesh. `ctx.lam(color, extra)` returns a double-sided Lambert material. `ctx.remove(meshOrArray)` removes generic parts.
+- `ctx.lod`: `'low'` on phones (the short screen side under 600 px) and `'high'` otherwise (iPads and desktops); `window.__lod` overrides it for tests. Build fewer and simpler small parts on `'low'`. `config(rec, { lod })` gets the same value.
 - `ctx.parts`: generic meshes you can remove or move: `field, wall, lowerDeck, upperDeck, canopy, outfieldSeats[], batterEye, scoreboard, lights[], poles[], signs[], bases[]`.
+  Added by the generic build: `aisles[]` and `rails[]` (Groups; each is a child of the deck it sits on, so `ctx.remove(parts.lowerDeck)` removes its aisles and rails too; remove only these with `ctx.remove(parts.aisles)` / `ctx.remove(parts.rails)`), `dugouts` (a child of `lowerDeck`; `cfg.skip.dugouts` leaves it out), `tarp` (`cfg.skip.tarp` leaves it out), `plate`, `canopyRibs` (a child of `canopy`). `lights[]` holds one Group with the instanced masts and lamp banks of all towers. The mound, rubber and home plate are not in `parts`.
+- Seat material: `ctx.M[ctx.MAT.SEAT]` carries a seat-row texture (one repeat across = 24 ft, one repeat up the slope = 3 ft = one row) tinted by the material colour, so any `sweepSolid` deck that uses it gets rows.
 - `ctx.M` material array and `ctx.MAT` indices `{WALL, SEAT, CREAM, FACADE, SHADE}` for `sweepSolid`. `ctx.C` palette.
 - `ctx.paths`: `{ wallPts, wallDeg, wallN, bPts, bN, fieldPoly }` (arrays of `[x, z]`; `wallN`/`bN` are outward normals).
-- `ctx.dims`: `{ f, maxR, cf, dL, sL, lowTop, d0, h0, dU, sU, dEnd, hTop, D, ofSlope, i0, i1, halfW, zBack, zFront, roofY }`. `dL` = lower deck depth, `lowTop` = its top height, `d0,h0` = front of the upper deck (offset, height), `dEnd,hTop` = back top of the upper deck, `D` = outfield seat depth.
+- `ctx.park`: the ParkView object (for example `ctx.park.roof` for custom retractable roof panels).
+- `ctx.dims`: `{ f, maxR, cf, dL, sL, lowTop, d0, h0, dU, sU, dEnd, hTop, D, ofSlope, i0, i1, halfW, zBack, zFront, roofY, N1, deckAt }`. The scalar values are the values behind home plate. `deckAt` holds the same values as functions of the bowl path index g (0 to N1): `deckAt.dL(g)`, `lowTop(g)`, `d0(g)`, `h0(g)`, `dU(g)`, `dEnd(g)`, `hTop(g)`. `dL` = lower deck depth, `lowTop` = its top height, `d0,h0` = front of the upper deck (offset, height), `dEnd,hTop` = back top of the upper deck, `D` = outfield seat depth.
 - `ctx.tools`:
   - `foulAt(t, d, y)` -> Vector3 on the foul side. `wallAt(deg, out, y)` -> Vector3 at the outfield wall plus `out` feet outward.
   - `wallR(spec, deg)`, `wallH(spec, deg)`, `wallXZ(spec, deg)` with `ctx.spec`.
   - `sweepSolid(pts, normals, polyFn, edgeMats, capMat)`: sweeps a closed cross-section `[[d, h], ...]` along a path. `polyFn(i)` returns the cross-section at sample `i`. `edgeMats[j]` = material index for edge `j` (-1 = open). Use it with `ctx.M`. `tools.span(fromDeg, toDeg)` returns `[pts, normals, degs]` along the outfield wall; `tools.cut(t0, t1)` returns `[pts, normals]` along the foul side.
+  - `rail(pts, yAt, opts)`: posts and a top rail along a polyline of `[x, z]`; `yAt(i)` is the base height at point `i`; `opts = { height: 3.5, spacing: 6, color, glass: false, lod }`. `glass: true` adds pale transparent panes. Returns one Group (instanced, 1 to 2 draw calls). On `'low'` the post spacing doubles.
+  - `aisles(pathPts, pathN, profile, opts)`: concrete aisle strips with a centre handrail on a sloped deck. `pathPts` is a polyline of `[x, z]` with outward normals `pathN`; `profile = { d0, h0, d1, h1 }` is the offset and height at the front and back of the deck (each of the four may be a function of the fractional path index); `opts = { every: 24, from: 0, to: 1, width: 4, handrail: true, lod }`. Returns one Group (one draw call). On `'low'` the spacing doubles and there are no handrails.
   - `textTexture((g, w, h) => {...}, w, h)` makes a canvas texture (for scoreboards and signs).
   - `mixHex(a, b, t)`, `clamp`, `D2R`, `insidePoly`.
 - `ctx.views`: camera stops. Add up to three: `ctx.views.myKey = { pos: [x, y, z], look: [x, y, z], label: 'Short Label' }`. Add `orbit: true` for a far view, `walk: true` only for a point on the field.

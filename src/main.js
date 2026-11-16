@@ -490,7 +490,8 @@ function openPark(s) {
 function setViewUI(name) {
   $('#views').querySelectorAll('button[data-v]').forEach((b) => b.classList.toggle('on', b.dataset.v === name));
   const v = park.views[name];
-  $('#hint').textContent = v.orbit ? 'Drag to orbit. Scroll to zoom.' : v.walk ? 'Drag to look. Use W A S D or the arrow keys to walk on the field. Hold Shift to run.' : 'Drag to look around from this seat.';
+  const touch = matchMedia('(pointer: coarse)').matches;
+  $('#hint').textContent = v.orbit ? (touch ? 'Drag to orbit. Pinch to zoom.' : 'Drag to orbit. Scroll to zoom.') : v.walk ? (touch ? 'Drag to look around on the field.' : 'Drag to look. Use W A S D or the arrow keys to walk on the field. Hold Shift to run.') : 'Drag to look around from this seat.';
 }
 $('#views').addEventListener('click', (e) => {
   const b = e.target.closest('button'); if (!b || !park) return;

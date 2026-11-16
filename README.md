@@ -56,6 +56,40 @@ Limits of the level 2 parts:
 - The models have no team marks, sponsor names, player names, or numbers. Boards and wall panels are blank.
 - `briefs/detail2.md` describes the level 2 method.
 
+### Level 3: all 30 ballparks (November 2026)
+
+All 30 current ballparks now have a detail module. Each module uses a satellite sheet at about 0.9 ft for each pixel (Esri World Imagery), text sources, and the generic generator.
+
+- **Massing:** the facade line, the roof or canopy outline, the outfield wall corners, the deck depths, and the signature features are measured from the sheet. Examples: the B&O Warehouse, the Green Monster, the Crawford Boxes and train, the fountains at Kauffman Stadium, the rock pile at Angel Stadium, the Western Metal Supply building, and McCovey Cove.
+- **Roof, canopy, and light structure (area A):** trusses or ribs under each roof, support columns, and lattice light towers or roof light banks with lamps. The retractable roofs follow the real panel layout and open in the real direction. Use "Close the roof" in the view menu.
+- **Seats (area B):** a seat-row texture on every deck, section aisles with handrails, front railings, and glass rails at the upper deck and suite level.
+- **Field (area C):** a mowing pattern, chalk lines, batter's boxes, coaches' boxes, on-deck circles, a raised mound with a rubber, a five-sided home plate, dugouts, and a rolled tarp.
+
+Level of detail:
+
+- A phone (a screen whose short side is under 600 px) gets a lighter model: fewer small parts, a smaller field texture, and a lower pixel ratio. An iPad or a computer gets the full model.
+- Limits for each park: 600 draw calls and 300,000 triangles on an iPad or a computer, and 250 draw calls and 90,000 triangles on a phone. All 30 parks are well within both limits. The largest is Yankee Stadium (169 calls and 113,317 triangles on a computer; 168 and 75,147 on a phone). Most parks use 40,000 to 60,000 triangles on a computer.
+- On a narrow screen, the 3D view menu is one row that scrolls sideways.
+
+### Level 4: photographs, heights, seating shape, scoreboards (November 2026)
+
+Each park was checked against 7 to 11 photographs from Wikimedia Commons, together with its satellite sheet.
+
+- **Facade (a):** materials, levels, bay rhythm, window and arch shapes, gates, and towers now follow the photographs. Many facades changed a lot. Examples: Great American Ball Park is white steel and glass, not brick; Progressive Field has an open white steel frame; Busch Stadium has three gates with brick tower pairs and freestanding light towers; Oracle Park's facade line moved 60 to 100 ft inward (the earlier line followed the building's shadow).
+- **Heights (b):** heights come from photographs (a known size in the same plane: a door, a person, the outfield wall, seat-row counts), from published sizes (for example scoreboard dimensions on MLB.com), and in a few parks from satellite shadows. Each module lists every height and its method in its top comment. Shadows were rarely usable, because most shadows fall on stands or roofs.
+- **Seating shape (c):** the deck depth now changes along the bowl, measured on the satellite sheet. The shared generator accepts a depth table (`lower.depth`, `upper.depth`, `upper.overhang`, `upper.rise`; see `briefs/detail-api.md`). Examples: Truist Park's lower deck is 105 ft deep at the right-field end, 66 ft behind home, and 104 ft at the left-field end; Tropicana Field is deeper on the third-base side.
+- **Scoreboards (d):** each main and secondary board is at its measured position and size, with its frame, support columns or truss, catwalks, and back structure. Flagpoles where the photographs show them. All board faces are blank.
+
+Limits of levels 3 and 4:
+
+- Heights from photographs have an accuracy of about 10 to 20 percent.
+- At four parks the roof was closed in the satellite image: loanDepot park, Rogers Centre, Chase Field, and Globe Life Field. There, home plate and the seating shape come from the roof, the facade, and photographs (accuracy about 20 to 30 ft).
+- Where one side of the bowl is in shadow on the satellite image, that side is a mirror of the other side. This applies to Dodger Stadium, Rate Field, Kauffman Stadium, Nationals Park, and loanDepot park.
+- The satellite image of Globe Life Field cuts off the south edge of the building. That edge comes from text sources.
+- Sutter Health Park shows only the 2025 board in right-center. The old center-field board was taken down in 2025.
+- No team marks, sponsor names, statues, mascots, or brand shapes. Boards are blank. Some parks show the ballpark name as plain text where the real facade has it. Two park features stay in simple form: the apple at Citi Field (a plain red sphere) and the crown on Kauffman Stadium's scoreboard (a plain crown with no letters).
+- `briefs/level3/` holds the worker briefs (`brief_level4.md` and `brief_photos.md` for level 4). `tools/level3/` holds the scripts for tiles, sheets, and stats. The scripts use the paths of the work session; change the paths before you use them again. The photographs are not in the project folder or the repository.
+
 ## Files
 
 | File | Purpose |
@@ -66,7 +100,7 @@ Limits of the level 2 parts:
 | `data/history/raw/` | The twelve first-pass history files, one per worker group. |
 | `data/history/*.json` | Merge rules: duplicate ballpark names, joined franchises, and fact-check corrections. |
 | `data/raw/` | The six first-pass files for the current ballparks. |
-| `src/` | The source code. `main.js` is the map and cards. `history.js` is the timeline logic. `park.js` is the 3D generator. `field.js` is the field geometry. `details/` holds the three detailed ballparks. |
+| `src/` | The source code. `main.js` is the map and cards. `history.js` is the timeline logic. `park.js` is the 3D generator. `field.js` is the field geometry. `details/` holds the detail module of each ballpark. |
 | `build-data.py`, `build-history.py` | Apply corrections and write the data files. `build-history.py` also checks the club count of each league season. |
 | `build-geo.mjs`, `build.mjs` | Build the map shapes and the final `index.html`. |
 | `briefs/` | The instructions and the data format that the workers used. |
@@ -78,8 +112,8 @@ To rebuild after a data change: run `npm install`, then `python3 build-data.py`,
 - The field shape uses the five posted outfield distances of each ballpark.
 - The outfield wall uses the posted wall heights at left, center, and right.
 - The roof type (open, retractable, fixed) and the seat count set the roof and the size of the stands.
-- The seating bowl, scoreboard, and light towers are generic, except in the three detailed ballparks.
-- In the three detailed ballparks, the posted distances and the main wall heights are from sources. The roof outline, the facade line, and the wall corners are measured from a satellite image (accuracy about 5 to 10 ft). Heights, gate positions, and tower positions are estimates. Deck depths and dugout positions are read from the level 2 satellite sheets (accuracy about 3 to 5 ft).
+- Each ballpark has a detail module (level 3). The generic generator still makes the base of the seating bowl.
+- In Truist Park, Yankee Stadium, and Oracle Park, the posted distances and the main wall heights are from sources. The roof outline, the facade line, and the wall corners are measured from a satellite image (accuracy about 5 to 10 ft). Heights, gate positions, and tower positions are estimates. Deck depths and dugout positions are read from the level 2 satellite sheets (accuracy about 3 to 5 ft).
 
 ## History data: scope and limits
 

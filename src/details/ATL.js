@@ -26,6 +26,26 @@
 // STILL ESTIMATED: all heights (roof 112 ft outer / 127 ft inner, facade 72 ft, towers 100 ft, boards, lattice towers), gate
 //  positions (five pavilions, spaced by arc length), tower count and positions, deck depths (the real bowl is deeper on the
 //  sides than behind home; uniform here), Chop House mass, batter's eye details, Battery Atlanta blocks, video board faces.
+// LEVEL 3 ADDED: secondary roof trusses between the main frames (bottom chord + zig-zag web; every second frame and a
+//  simpler web on phones), lamp rows (2 x 5 bright lamps on dark housings per bank; phones keep plain bright banks),
+//  rails (front of the lower bowl except in front of the dugouts and net, cross-aisle edge, glass rail on the upper front
+//  lip, plain rail on the upper tier edge), aisle handrails on the section aisles (desktop only), seat rows from the seat
+//  material texture on the custom decks, own dugouts kept (generic ones skipped), single-material meshes without
+//  geometry groups to cut draw calls.
+//  ESTIMATED at level 3: truss depth (6 ft) and web spacing, lamp counts and sizes, rail heights, handrail height (3 ft).
+// LEVEL 4 (photographs, heights, seating shape, boards):
+//  PARALLAX: the satellite sheets lean ~0.41 ft per ft of height toward -z (roof inner edge 127 ft appears ~52 ft north of its
+//   true place; this is why ROOF_IN/OUT sit 50 ft behind the white roof edge seen behind home). Used to correct deck edges.
+//  SHADOWS: the main board's shadow ends at z=-294 (letters to -267): with letter height 8.3 ft (photo10) the ratio is ~1.75
+//   (sun ~30 deg). Board top ~114 ft, bottom ~50 ft; board x centre +13 (shadow x -52..+75, eye x -38..+66).
+//  PUBLISHED SIZES (SNA Displays): main board 64'7" x 120'8"; left-field out-of-town board 27'7" x 90'4".
+//  PHOTO HEIGHTS: eye ~29 ft (22 ft between eye top and board bottom, photo10), brick block under the board 48 ft, towers ~150 ft
+//   (photos 7, 11 against the 64.6 ft board), facade 72 ft and gate towers ~98 ft (people at the fences in photos 2, 6; four levels).
+//  SEATING (C): DLOW table per side from the unrolled sheets (lower cross-aisle, parallax-corrected): behind home 66 ft deep,
+//   right side 105 (t<0.05) -> 98 (0.15) -> 89 (0.26) -> 68 (0.375); left side 68 (0.64) -> 80 (0.77) -> 98 (0.86) -> 104 (1.0).
+//   First row behind home at z=+48 (backstop 48.5). Lower top = 3.5 + 0.3 * depth. Ribbon boards on the upper-deck lip.
+//  STILL ESTIMATED: tower positions on the right (one per pair), upper deck depth/heights, left-side first row (real front is
+//   5-18 ft further out than the generic edge), second-board base (82 ft), roof heights, outfield seat depth.
 const D2R = Math.PI / 180;
 const LOWER_D = 100, UPPER_D = 92;
 // Roof outer and inner edge, from the survey sheet. Order: right-field end -> behind home -> left-field end. [x, z]
@@ -38,9 +58,12 @@ const GATE_S = [0.05, 0.27, 0.5, 0.73, 0.95];            // gate pavilions as fr
 // Low outfield back wall, left end to right end.
 const LOW_WALL = [[-383, -250], [-388, -330], [-340, -398], [-270, -446], [-190, -478], [-100, -494], [0, -498], [100, -494],
   [190, -470], [260, -425], [320, -355], [352, -255], [373, -153]];
-const TOWERS = [[-84, -482, 150], [72, -482, 150], [-176, -466, 104], [-94, -484, 104], [-222, -345, 118], [192, -362, 118]];
-const MAIN_BOARD = { x: -6, z: -470, y0: 84, w: 128, h: 56 };
-const SECOND_BOARD = { x: -135, z: -466, y0: 50, w: 66, h: 30 };
+// Lattice light towers [x, z, height]; heights ~150 ft from photos 7 and 11 (tower top vs. the 64.6 ft board), the two outer ones lower.
+const TOWERS = [[-84, -482, 150], [72, -482, 150], [-176, -466, 150], [-94, -484, 150], [-222, -345, 130], [192, -362, 130]];
+// Boards: published sizes (64'7" x 120'8" main; 27'7" x 90'4" left-field out-of-town board). x of the main board from the
+// shadow (x -52..+75 on the sheet) and the eye (x -38..+66). Bottom height from the shadow: top edge shadow z=-294, ratio 1.75.
+const MAIN_BOARD = { x: 13, z: -482, y0: 50, w: 120.7, h: 64.6 };
+const SECOND_BOARD = { x: -135, z: -466, y0: 82, w: 90.3, h: 27.6 };
 // pull a polyline inward by d (outward normals point away from the field center)
 const shiftIn = (poly, d) => poly.map((p, i) => {
   const a = poly[Math.max(i - 1, 0)], b = poly[Math.min(i + 1, poly.length - 1)];
@@ -68,11 +91,12 @@ export default {
         { deg: -22, r: 385, h: 8.7 }, { deg: -5.5, r: 401, h: 8.7 }, { deg: 0, r: 400, h: 8.7 }, { deg: 9.5, r: 402, h: 8.7 },
         { deg: 22, r: 375, h: 8.7 }, { deg: 33, r: rR, h: 8.7 }, { deg: 33.05, r: rR, h: 16 }, { deg: 45, r: 325, h: 16 },
       ],
+      backstop: 48.5,              // first row behind home measured at z = +48 (sheet), generic default is 58
       lower: { depth: LOWER_D, slope: 0.3, extent: [0, 1] },
       hasUpper: true,
       upper: { overhang: 34, rise: 26, depth: UPPER_D, slope: 0.52, extent: [0.03, 0.97] },
       outfield: { depth: 68, slope: 0.42, spans: [[-45, -5.5], [9.5, 33]], eye: [-5.5, 9.5], eyeHeight: 36, eyeDepth: 44 },
-      skip: { canopy: true, scoreboard: true, lights: true },
+      skip: { canopy: true, scoreboard: true, lights: true, dugouts: true },
       colors: { seat: '#3b5d4d', facade: '#9b5a45', wall: '#2b4034', cream: '#e4d9bc' },
     };
   },
@@ -83,6 +107,9 @@ export default {
     const { bPts, bN, wallPts, wallDeg, wallN } = paths;
     const N1 = bPts.length - 1;
     const lam = ctx.lam;
+    const low = ctx.lod === 'low';
+    // single-material meshes: drop the per-face geometry groups (they would only inflate the draw-call count)
+    const add = (g, m, par) => { if (!Array.isArray(m) && g.groups && g.groups.length) g.clearGroups(); return ctx.add(g, m, par); };
     const basic = (c, extra = {}) => new THREE.MeshBasicMaterial({ color: c, ...extra });
     const spec = ctx.spec;
 
@@ -91,6 +118,7 @@ export default {
 
     // Instanced helper: mats = array of Matrix4
     const inst = (geo, mat, mats) => {
+      if (!Array.isArray(mat) && geo.groups.length) geo.clearGroups();
       const m = new THREE.InstancedMesh(geo, mat, mats.length);
       mats.forEach((mx, i) => m.setMatrixAt(i, mx));
       m.instanceMatrix.needsUpdate = true; G.add(m); return m;
@@ -104,19 +132,19 @@ export default {
     {
       const [p, n, dg] = tools.span(33.5, 45);
       const h = (i) => wallH(spec, dg[i]);
-      ctx.add(sweepSolid(p, n, (i) => [[-0.5, 0], [-0.5, h(i)], [0.3, h(i)], [0.3, 0]], [MAT.FACADE, MAT.FACADE, MAT.FACADE, -1], MAT.FACADE), M);
+      add(sweepSolid(p, n, (i) => [[-0.5, 0], [-0.5, h(i)], [0.3, h(i)], [0.3, 0]], [MAT.FACADE, MAT.FACADE, MAT.FACADE, -1], MAT.FACADE), M);
     }
 
     // ---------- 2. Chop House: stepped restaurant mass above the right-field wall, with terraces
     {
       const [p, n, dg] = tools.span(33.5, 44.5);
       const prof = () => [[1.2, 0], [1.2, 28], [12, 28], [12, 42], [28, 42], [28, 58], [46, 58], [46, 0]];
-      ctx.add(sweepSolid(p, n, prof, [MAT.FACADE, MAT.CREAM, MAT.FACADE, MAT.CREAM, MAT.FACADE, MAT.SHADE, MAT.FACADE, -1], MAT.FACADE), M);
+      add(sweepSolid(p, n, prof, [MAT.FACADE, MAT.CREAM, MAT.FACADE, MAT.CREAM, MAT.FACADE, MAT.SHADE, MAT.FACADE, -1], MAT.FACADE), M);
       // railings on both terraces and the rooftop plaza
-      const rail = (d, y) => ctx.add(sweepSolid(p, n, () => [[d - 0.2, y], [d - 0.2, y + 3.6], [d + 0.2, y + 3.6], [d + 0.2, y]], [MAT.CREAM, MAT.CREAM, MAT.CREAM, MAT.CREAM], MAT.CREAM), M);
+      const rail = (d, y) => add(sweepSolid(p, n, () => [[d - 0.2, y], [d - 0.2, y + 3.6], [d + 0.2, y + 3.6], [d + 0.2, y]], [MAT.CREAM, MAT.CREAM, MAT.CREAM, MAT.CREAM], MAT.CREAM), M);
       rail(2.2, 28); rail(13, 42);
       // roof cap over the top block
-      ctx.add(sweepSolid(p, n, () => [[27, 58], [27, 60], [47, 60], [47, 58]], [MAT.CREAM, MAT.CREAM, MAT.CREAM, MAT.CREAM], MAT.CREAM), M);
+      add(sweepSolid(p, n, () => [[27, 58], [27, 60], [47, 60], [47, 58]], [MAT.CREAM, MAT.CREAM, MAT.CREAM, MAT.CREAM], MAT.CREAM), M);
       // window blocks on three faces (instanced dark panels)
       const win = [];
       const faces = [[1.0, 18, 3.4, 7.5, 2], [11.8, 34.5, 3.4, 7, 2], [27.8, 50, 3.6, 7.5, 2]];
@@ -137,7 +165,7 @@ export default {
     //            flat dark-green panel wall, a planter ledge with evergreens in front, a brick block to the left)
     {
       if (parts.batterEye) ctx.remove(parts.batterEye);
-      const EH = 38, EDEP = 46;
+      const EH = 29, EDEP = 46;   // eye height: board bottom (50 ft, shadow) minus ~22 ft seen between eye top and board bottom in photo10
       const [p, n, dg] = tools.span(-5.5, 9.5);
       const panelTex = rep0(textTexture((g, w, h) => {
         g.fillStyle = '#243d2f'; g.fillRect(0, 0, w, h); g.fillStyle = '#1b3126'; g.fillRect(0, 0, 3, h);
@@ -145,10 +173,10 @@ export default {
       }, 64, 64));
       const mPanel = new THREE.MeshLambertMaterial({ map: panelTex, side: THREE.DoubleSide });
       const mTop = lam('#1d3025'), mCap = lam('#d9cfae');
-      ctx.add(sweepSolid(p, n, () => [[1.2, 0], [1.2, EH], [EDEP, EH], [EDEP, 0]], [0, 1, 1, -1], 1), [mPanel, mTop]);
-      ctx.add(sweepSolid(p, n, () => [[1.0, EH - 0.2], [1.0, EH + 1.4], [2.4, EH + 1.4], [2.4, EH - 0.2]], [0, 0, 0, 0], 0), [mCap]);
+      add(sweepSolid(p, n, () => [[1.2, 0], [1.2, EH], [EDEP, EH], [EDEP, 0]], [0, 1, 1, -1], 1), [mPanel, mTop]);
+      add(sweepSolid(p, n, () => [[1.0, EH - 0.2], [1.0, EH + 1.4], [2.4, EH + 1.4], [2.4, EH - 0.2]], [0, 0, 0, 0], 0), [mCap]);
       // planter ledge halfway up the face, with a row of evergreens (small cones, instanced)
-      ctx.add(sweepSolid(p, n, () => [[1.2, 11], [1.2, 12.2], [8, 12.2], [8, 11]], [0, 0, 0, 0], 0), [lam('#6f6a5a')]);
+      add(sweepSolid(p, n, () => [[1.2, 11], [1.2, 12.2], [8, 12.2], [8, 11]], [0, 0, 0, 0], 0), [lam('#6f6a5a')]);
       const cones = [];
       for (let k = 0; k < p.length; k += 2) {
         const sc = 0.8 + rnd() * 0.5, o = 3.5 + rnd() * 2;
@@ -162,14 +190,14 @@ export default {
       inst(new THREE.ConeGeometry(1, 1, 9), lam('#2d4a33'), cones);
       // brick block to the left of the eye, under the board stack (photo10)
       const bw = tools.wallAt(-8.2, EDEP + 8, 0);
-      const bb = ctx.add(new THREE.BoxGeometry(34, 62, 40), lam('#8e5642')); bb.position.set(bw.x - 3, 31, bw.z - 18);
-      const bc = ctx.add(new THREE.BoxGeometry(38, 3, 44), lam('#e0d5b5')); bc.position.set(bb.position.x, 63.5, bb.position.z);
+      const bb = add(new THREE.BoxGeometry(34, 48, 40), lam('#8e5642')); bb.position.set(bw.x - 3, 24, bw.z - 18);   // top = board bottom (photo10)
+      const bc = add(new THREE.BoxGeometry(38, 3, 44), lam('#e0d5b5')); bc.position.set(bb.position.x, 49.5, bb.position.z);
       const bwin = [];
-      for (let r = 0; r < 4; r++) for (let c = -1; c <= 1; c++) bwin.push(mat4(bb.position.x + c * 9, 18 + r * 12, bb.position.z + 20.2, 5, 6, 1));
+      for (let r = 0; r < 3; r++) for (let c = -1; c <= 1; c++) bwin.push(mat4(bb.position.x + c * 9, 16 + r * 12, bb.position.z + 20.2, 5, 6, 1));
       inst(new THREE.PlaneGeometry(1, 1), basic('#2b363d', { side: THREE.DoubleSide }), bwin);
       // flag poles on the eye roof: three plain pennant flags in muted colors (no marks)
       const poles = [], flags = [];
-      [[-26, 0], [-2, 1], [22, 2]].forEach(([dx, c], k) => {
+      [[40, 0], [52, 1], [64, 2]].forEach(([dx, c], k) => {
         const q = tools.wallAt(dx / 400 / D2R, 30, EH + 1.4);
         poles.push(mat4(q.x, EH + 1.4 + 17, q.z, 0.5, 34, 0.5));
         flags.push(mat4(q.x + 5.6, EH + 1.4 + 29.5, q.z, 11, 6, 1));
@@ -236,13 +264,13 @@ export default {
       const width = (i) => Math.hypot(roofSt[i].A[0] - roofSt[i].B[0], roofSt[i].A[1] - roofSt[i].B[1]);
       const wAvg = roofSt.reduce((a, _, i) => a + width(i), 0) / roofSt.length;
       const dbl = (m) => { m.side = THREE.DoubleSide; return m; };
-      ctx.add(strip(Atop, Btop, 24, wAvg / 24), dbl(new THREE.MeshLambertMaterial({ map: topTex })));
-      ctx.add(strip(Abot, Bbot, 24, wAvg / 24), dbl(new THREE.MeshLambertMaterial({ map: underTex })));
-      ctx.add(strip(Abot, Atop, 40, 1), lam('#8d969b'));               // outer fascia
-      ctx.add(strip(Bfr, Btop, 16, 1), dbl(new THREE.MeshBasicMaterial({ map: lampTex })));   // inner frieze with lamps
+      add(strip(Atop, Btop, 24, wAvg / 24), dbl(new THREE.MeshLambertMaterial({ map: topTex })));
+      add(strip(Abot, Bbot, 24, wAvg / 24), dbl(new THREE.MeshLambertMaterial({ map: underTex })));
+      add(strip(Abot, Atop, 40, 1), lam('#8d969b'));               // outer fascia
+      add(strip(Bfr, Btop, 16, 1), dbl(new THREE.MeshBasicMaterial({ map: lampTex })));   // inner frieze with lamps
       // end faces where the roof stops (right end is shorter than left end)
       for (const k of [0, roofSt.length - 1]) {
-        ctx.add(strip([Abot[k], Bbot[k]], [Atop[k], Btop[k]], 40, 1), lam('#8d969b'));
+        add(strip([Abot[k], Bbot[k]], [Atop[k], Btop[k]], 40, 1), lam('#8d969b'));
       }
       // frame: column over the facade, girder under the deck, raker brace down to the facade top
       roofSt.forEach((s, i) => {
@@ -307,11 +335,11 @@ export default {
     const FAC = resample(FAC_TALL, 6);
     {
       const prof = () => [[-3, 0], [1.2, 0], [1.2, 7], [0, 7], [0, FAC_H - 8], [1.6, FAC_H - 8], [1.6, FAC_H], [-3, FAC_H]];
-      ctx.add(sweepSolid(FAC.pts, FAC.nr, prof, [-1, 1, 1, 0, 1, 1, 1, 0], 1), [mBrick, mCream]);
+      add(sweepSolid(FAC.pts, FAC.nr, prof, [-1, 1, 1, 0, 1, 1, 1, 0], 1), [mBrick, mCream]);
       // second precast band (mid height) and base string course
-      const band = (y0, y1, o) => ctx.add(sweepSolid(FAC.pts, FAC.nr, () => [[-0.2, y0], [-0.2, y1], [o, y1], [o, y0]], [1, 1, 1, 1], 1), [mBrick, mCream]);
+      const band = (y0, y1, o) => add(sweepSolid(FAC.pts, FAC.nr, () => [[-0.2, y0], [-0.2, y1], [o, y1], [o, y0]], [1, 1, 1, 1], 1), [mBrick, mCream]);
       // real profile bands: sill course, string course with drip, stepped cornice under the roof
-      const course = (pts) => ctx.add(sweepSolid(FAC.pts, FAC.nr, () => pts, pts.map(() => 1), 1), [mBrick, mCream]);
+      const course = (pts) => add(sweepSolid(FAC.pts, FAC.nr, () => pts, pts.map(() => 1), 1), [mBrick, mCream]);
       course([[-0.2, 33.2], [-0.2, 34], [1.7, 34], [1.7, 35.1], [0.9, 35.6], [0.9, 36.6], [-0.2, 36.6]]);
       course([[-0.2, 21.4], [1.3, 21.4], [1.3, 22.6], [-0.2, 22.6]]);
       course([[-0.2, FAC_H - 7], [2.4, FAC_H - 7], [2.4, FAC_H - 5.6], [3.4, FAC_H - 5.6], [3.4, FAC_H - 3.4], [4.6, FAC_H - 3.4], [4.6, FAC_H - 0.6], [3, FAC_H - 0.6], [3, FAC_H + 0.8], [-0.2, FAC_H + 0.8]]);
@@ -377,7 +405,7 @@ export default {
           g.fillStyle = '#2a3036'; g.fillRect(0, 0, w, h); g.strokeStyle = '#cfc4a3'; g.lineWidth = 4; g.strokeRect(4, 4, w - 8, h - 8);
           g.fillStyle = '#e4d9bc'; g.font = 'bold 40px Georgia, serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(names[gi], w / 2, h / 2 + 2);
         }, 512, 64);
-        const pl = ctx.add(new THREE.PlaneGeometry(36, 4.5), new THREE.MeshBasicMaterial({ map: ptex, side: THREE.DoubleSide }));
+        const pl = add(new THREE.PlaneGeometry(36, 4.5), new THREE.MeshBasicMaterial({ map: ptex, side: THREE.DoubleSide }));
         const [qx, qz] = loc(fr, 0, 27.3); pl.position.set(qx, 19.6, qz); pl.rotation.y = fr.ry;
       }
       // bridge: steel truss between the towers, arch beneath it
@@ -395,7 +423,7 @@ export default {
           g.fillStyle = '#1d2f3f'; g.fillRect(0, 0, w, h); g.strokeStyle = '#e4d9bc'; g.lineWidth = 8; g.strokeRect(6, 6, w - 12, h - 12);
           g.fillStyle = '#e4d9bc'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.font = 'bold 92px Rockwell, Georgia, serif'; g.fillText('TRUIST PARK', w / 2, h / 2 + 4);
         }, 1024, 160);
-        const sgn = ctx.add(new THREE.PlaneGeometry(88, 13.75), new THREE.MeshBasicMaterial({ map: tex, side: THREE.DoubleSide }));
+        const sgn = add(new THREE.PlaneGeometry(88, 13.75), new THREE.MeshBasicMaterial({ map: tex, side: THREE.DoubleSide }));
         sgn.position.set(x, Y_OUT + 11, z); sgn.rotation.y = fr.ry;
         for (const sx of [-30, 30]) putBeam(fr, [sx, Y_OUT - 1, -1.5], [sx, Y_OUT + 5, -1.5], 1.2);
       }
@@ -440,7 +468,7 @@ export default {
       creamB.push(mat4((A[0] + B[0]) / 2, FAC_H + 1.5, (A[1] + B[1]) / 2, len + 1, 3, 5, Math.atan2(-dz, dx)));
     }
     const LOW = resample(LOW_WALL, 6);
-    ctx.add(sweepSolid(LOW.pts, LOW.nr, () => [[-3, 0], [0.6, 0], [0.6, 14], [0, 14], [0, LOW_H - 3], [1.4, LOW_H - 3], [1.4, LOW_H], [-3, LOW_H]],
+    add(sweepSolid(LOW.pts, LOW.nr, () => [[-3, 0], [0.6, 0], [0.6, 14], [0, 14], [0, LOW_H - 3], [1.4, LOW_H - 3], [1.4, LOW_H], [-3, LOW_H]],
       [-1, 2, 1, 0, 1, 1, 1, 0], 0), [mBrick, mCream, mMetal]);
     {
       // black perimeter fence along the street side of the low brick wall (photo3), vertical bars on a transparent texture
@@ -448,7 +476,7 @@ export default {
         g.fillStyle = '#14181a'; for (let x = 0; x < w; x += 8) g.fillRect(x, 0, 2, h); g.fillRect(0, 0, w, 3); g.fillRect(0, h - 3, w, 3);
       }, 384, 24));
       fenceTex.repeat.set(1, 0.375);
-      ctx.add(sweepSolid(LOW.pts, LOW.nr, () => [[27, 0], [27, 8], [27.2, 8], [27.2, 0]], [0, 0, 0, 0], 0),
+      add(sweepSolid(LOW.pts, LOW.nr, () => [[27, 0], [27, 8], [27.2, 8], [27.2, 0]], [0, 0, 0, 0], 0),
         [new THREE.MeshLambertMaterial({ map: fenceTex, transparent: true, alphaTest: 0.4, side: THREE.DoubleSide })]);
     }
     {
@@ -477,60 +505,75 @@ export default {
     };
     for (const [x, z, h] of TOWERS) lattice(x, z, h);
 
-    // ---------- 4. Main video board (center field, above the batter's eye) and the smaller left-center board
+    // ---------- 4. Boards. Main board (64'7" x 120'8", published) above the batter's eye, and the left-field out-of-town board
+    //            (27'7" x 90'4"). Faces are blank. Structure: open steel frame (columns, X-braces, rear truss), a catwalk under
+    //            and one behind the face, rails, and the plain ballpark-name letters on top of the main board.
     {
       if (parts.scoreboard) ctx.remove(parts.scoreboard);
-      const frame = lam('#33404a');
-      const makeBoard = (x, z, yBase, bw, bh, tex) => {
-        const y = yBase + bh / 2;
-        const board = ctx.add(new THREE.BoxGeometry(bw, bh, 7), [frame, frame, frame, frame, new THREE.MeshBasicMaterial({ map: tex }), frame]);
-        board.position.set(x, y, z); board.lookAt(0, y, 0);
-        const crown = ctx.add(new THREE.BoxGeometry(bw + 6, 3.5, 9), lam('#e6dcc0'), board); crown.position.y = bh / 2 + 1.8;
-        return board;
+      const frameM = lam('#2f3a42');
+      // blank face: dark panel inside a bezel with a faint line grid; optional strip of three blank panels along the bottom
+      const faceTex = (w, h, strip) => textTexture((g, W, H) => {
+        g.fillStyle = '#323d45'; g.fillRect(0, 0, W, H);
+        const sh = strip ? H * 0.15 : 0, b = 10;
+        g.fillStyle = '#0e171d'; g.fillRect(b, b, W - 2 * b, H - 2 * b - sh);
+        g.strokeStyle = '#1a2831'; g.lineWidth = 1;
+        for (let x = b; x < W - b; x += 32) { g.beginPath(); g.moveTo(x, b); g.lineTo(x, H - b - sh); g.stroke(); }
+        for (let y = b; y < H - b - sh; y += 32) { g.beginPath(); g.moveTo(b, y); g.lineTo(W - b, y); g.stroke(); }
+        if (strip) {
+          const cols = ['#2f4c63', '#b9b199', '#7a3b34'], pw = (W - 2 * b) / 3;
+          cols.forEach((c, k) => { g.fillStyle = c; g.fillRect(b + k * pw + 2, H - b - sh + 4, pw - 4, sh - 6); g.strokeStyle = '#e4d9bc'; g.lineWidth = 3; g.strokeRect(b + k * pw + 8, H - b - sh + 10, pw - 16, sh - 18); });
+        }
+      }, w, h);
+      const mkBoard = (B, tex, depth, strip) => {
+        const l = Math.hypot(B.x, B.z), fx = -B.x / l, fz = -B.z / l, ry = Math.atan2(fx, fz);
+        const Wd = (a, c) => [B.x + a * fz + c * fx, B.z - a * fx + c * fz];       // local (right, outward) -> world x, z
+        const put3 = (a, y, c, sx, sy, sz) => { const [x, z] = Wd(a, c); steelBoxes.push(mat4(x, y, z, sx, sy, sz, ry)); };
+        const beam3 = (a1, y1, c1, a2, y2, c2, th) => { const p = Wd(a1, c1), q = Wd(a2, c2); steelBoxes.push(beam([p[0], y1, p[1]], [q[0], y2, q[1]], th)); };
+        const top = B.y0 + B.h;
+        const geo = new THREE.BoxGeometry(B.w, B.h, depth);
+        const face = add(geo, [frameM, frameM, frameM, frameM, new THREE.MeshBasicMaterial({ map: tex }), frameM]);
+        const [cx, cz] = Wd(0, 0); face.position.set(cx, B.y0 + B.h / 2, cz); face.rotation.y = ry;
+        // frame: columns from the base to just above the face, X-braces in the open lower part, rear truss, catwalks, rails
+        const base = B.base, nb = B.cols, aa = (k) => -B.w * 0.47 + k * (B.w * 0.94) / (nb - 1);
+        for (let k = 0; k < nb; k++) put3(aa(k), (base + top) / 2, -depth / 2 - 1.5, 2.2, top - base, 2.2);
+        for (let k = 0; k < nb - 1; k++) {
+          beam3(aa(k), base, -depth / 2 - 1.5, aa(k + 1), B.y0 - 2, -depth / 2 - 1.5, 0.8);
+          beam3(aa(k + 1), base, -depth / 2 - 1.5, aa(k), B.y0 - 2, -depth / 2 - 1.5, 0.8);
+        }
+        put3(0, B.y0 - 2.2, -depth / 2 - 1.5, B.w * 0.96, 1.6, 1.6);                      // lower chord of the back truss
+        put3(0, top - 2, -depth / 2 - 1.5, B.w * 0.96, 1.4, 1.4);
+        const mid = B.y0 + B.h * 0.5; put3(0, mid, -depth / 2 - 1.5, B.w * 0.96, 1.0, 1.0);
+        // catwalk under the face (in front) and one behind the top edge, with rails and posts
+        const ck = (y, c0, c1, rw) => { put3(0, y, (c0 + c1) / 2, B.w + 4, 0.6, Math.abs(c1 - c0)); put3(0, y + 3.4, c1, B.w + 4, 0.3, 0.3); put3(0, y + 1.7, c1, B.w + 4, 0.25, 0.25);
+          for (let a = -B.w / 2 - 2; a <= B.w / 2 + 2.1; a += (low ? 16 : 8)) put3(a, y + 1.7, c1, 0.3, 3.4, 0.3); };
+        ck(B.y0 - 3.2, depth / 2, depth / 2 + 5.5);
+        ck(top + 0.4, -depth / 2 - 5, -depth / 2 - 0.5);
+        return { Wd, ry, top };
       };
-      const tex = textTexture((g, w, h) => {
-        g.fillStyle = '#1d2f3f'; g.fillRect(0, 0, w, h);
-        g.strokeStyle = '#e6dcc0'; g.lineWidth = 10; g.strokeRect(10, 10, w - 20, h - 20);
-        g.lineWidth = 3; g.strokeRect(28, 28, w - 56, h - 56);
-        g.fillStyle = '#e6dcc0'; g.textAlign = 'center'; g.textBaseline = 'middle';
-        g.font = 'bold 78px Rockwell, Georgia, serif'; g.fillText('TRUIST PARK', w * 0.5, 82);
-        g.fillStyle = '#98533f'; g.fillRect(60, 130, w - 120, 6);
-        const sx = 70, sy = 160, sw = w * 0.56, sh = h - 160 - 150;
-        g.fillStyle = '#0f1a24'; g.fillRect(sx, sy, sw, sh);
-        g.strokeStyle = '#6f8c8c'; g.lineWidth = 3; g.strokeRect(sx, sy, sw, sh);
-        g.strokeStyle = 'rgba(230,220,192,0.55)'; g.lineWidth = 4;
-        const cx = sx + sw / 2, cy = sy + sh * 0.5, dd = Math.min(sw, sh) * 0.32;
-        g.beginPath(); g.moveTo(cx, cy + dd); g.lineTo(cx + dd, cy); g.lineTo(cx, cy - dd); g.lineTo(cx - dd, cy); g.closePath(); g.stroke();
-        const lx = sx + sw + 40, cols = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'R', 'H', 'E'], cw = (w - lx - 60) / cols.length;
-        g.fillStyle = '#e6dcc0'; g.font = 'bold 30px Rockwell, Georgia, serif';
-        cols.forEach((c, i) => g.fillText(c, lx + cw * (i + 0.5), 190));
-        ['AWAY', 'HOME'].forEach((t, row) => {
-          const yy = 270 + row * 100; g.textAlign = 'left'; g.fillText(t, lx - 2, yy - 56); g.textAlign = 'center';
-          cols.forEach((_, i) => { g.strokeStyle = '#e6dcc0'; g.lineWidth = 2; g.strokeRect(lx + cw * i + 4, yy - 34, cw - 8, 62); });
-        });
-        g.textAlign = 'center'; g.font = 'italic 30px Baskerville, Georgia, serif'; g.fillStyle = '#e6dcc0';
-        g.fillText('Cobb County  ·  Opened 2017', w * 0.5, h - 70);
-      }, 1536, 672);
-      const MB = MAIN_BOARD;
-      makeBoard(MB.x, MB.z, MB.y0, MB.w, MB.h, tex);
-      // dark service stack under the board (floors seen from the street)
-      const stackTex = rep(textTexture((g, w, h) => {
-        g.fillStyle = '#434b51'; g.fillRect(0, 0, w, h); g.fillStyle = '#2a3035'; g.fillRect(0, h - 5, w, 5); g.fillStyle = '#566068'; g.fillRect(0, 0, w, 3);
-        g.fillStyle = '#242a2e'; for (let x = 4; x < w; x += 14) g.fillRect(x, 10, 9, 14);
-      }, 64, 32));
-      stackTex.repeat.set(10, 3);
-      const stack = ctx.add(new THREE.BoxGeometry(MB.w - 10, MB.y0 - LOW_H + 4, 14), new THREE.MeshLambertMaterial({ map: stackTex }));
-      stack.position.set(MB.x, (MB.y0 + LOW_H - 4) / 2, MB.z - 4);
-      // second, smaller board in left-center: dark LED face
-      const SB = SECOND_BOARD;
-      const tex2 = textTexture((g, w, h) => {
-        g.fillStyle = '#1a2128'; g.fillRect(0, 0, w, h); g.strokeStyle = '#6f8c8c'; g.lineWidth = 6; g.strokeRect(8, 8, w - 16, h - 16);
-        g.fillStyle = '#26333b'; g.fillRect(24, 24, w * 0.62, h - 48);
-        g.fillStyle = '#c9bd9f'; for (let i = 0; i < 5; i++) g.fillRect(w * 0.68 + 20, 34 + i * ((h - 68) / 5), w * 0.3 - 40, 8);
-      }, 768, 352);
-      makeBoard(SB.x, SB.z, SB.y0, SB.w, SB.h, tex2);
-      const post = (x, z, y0, y1) => steelBoxes.push(mat4(x, (y0 + y1) / 2, z, 4, y1 - y0, 4));
-      post(SB.x - SB.w * 0.38, SB.z - 3, LOW_H, SB.y0); post(SB.x + SB.w * 0.38, SB.z - 3, LOW_H, SB.y0);
+      // main board
+      const MB = MAIN_BOARD; MB.base = 29; MB.cols = 7;
+      const mb = mkBoard(MB, faceTex(1600, 856, true), 4.2, true);
+      {   // plain ballpark-name letters on a rail above the face (name text only, no marks)
+        const lt = textTexture((g, w, h) => {
+          g.clearRect(0, 0, w, h); g.font = 'bold 118px Georgia, serif'; g.textAlign = 'left'; g.textBaseline = 'middle';
+          g.lineWidth = 7; g.strokeStyle = '#e4d9bc'; g.strokeText('TRUIST PARK', 10, h / 2); g.fillStyle = '#2d4a66'; g.fillText('TRUIST PARK', 10, h / 2);
+        }, 1024, 128);
+        const sg = add(new THREE.PlaneGeometry(82, 10.25), new THREE.MeshBasicMaterial({ map: lt, transparent: true, alphaTest: 0.35, side: THREE.DoubleSide }));
+        const [sx, sz] = mb.Wd(-14, -2); sg.position.set(sx, mb.top + 8.2, sz); sg.rotation.y = mb.ry;
+      }
+      // second board, left-center: stack of service floors behind and below it, light towers stand at its two ends
+      const SB = SECOND_BOARD; SB.base = LOW_H; SB.cols = 5;
+      mkBoard(SB, faceTex(1024, 336, false), 3, false);
+      {
+        const stackTex = rep(textTexture((g, w, h) => {
+          g.fillStyle = '#434b51'; g.fillRect(0, 0, w, h); g.fillStyle = '#2a3035'; g.fillRect(0, h - 5, w, 5); g.fillStyle = '#566068'; g.fillRect(0, 0, w, 3);
+          g.fillStyle = '#242a2e'; for (let x = 4; x < w; x += 14) g.fillRect(x, 10, 9, 14);
+        }, 64, 32));
+        stackTex.repeat.set(7, 2.5);
+        const l = Math.hypot(SB.x, SB.z), fx = -SB.x / l, fz = -SB.z / l;
+        const stack = add(new THREE.BoxGeometry(SB.w + 6, SB.y0 - 3.2 - LOW_H, 18), new THREE.MeshLambertMaterial({ map: stackTex }));
+        stack.position.set(SB.x - fx * 12, (SB.y0 - 3.2 + LOW_H) / 2, SB.z - fz * 12); stack.rotation.y = Math.atan2(fx, fz);
+      }
     }
 
     // ======================================================================================================
@@ -557,9 +600,16 @@ export default {
       };
       const raw = bPts.map((p, i) => { const h = rayHit(p, bN[i], FAC_TALL); return isFinite(h) ? h : 215; });
       const dFac = raw.map((_, i) => { let s = 0, c = 0; for (let k = -4; k <= 4; k++) if (raw[i + k] != null) { s += raw[i + k]; c++; } return s / c; });
+      // Lower-bowl depth (offset of the back of the lower deck from the front edge), per side. Measured on the unrolled
+      // sheets (zone_home/left/right sampled along the bowl normals): the lower cross-aisle sits at an apparent
+      // 53 / 45 / 33 / 32 ft (right side t 0.09 / 0.26 / 0.375 / behind home) and 32 / 33 / 40 / 46 / 52 (left side t 0.5 / 0.64 /
+      // 0.77 / 0.82 / 0.95), +5 ft for the parallax of a ~14 ft high aisle, divided by the 0.56 aisle ratio of this bowl. The
+      // upper-deck front line (apparent 76 / 64 / 55 ft at t 0.09 / 0.2 / 0.33) then agrees with d0 = depth - 6 after parallax.
+      const DLOW = [[0, 105], [0.05, 105], [0.15, 98], [0.26, 89], [0.30, 80], [0.375, 68], [0.45, 66], [0.55, 66], [0.6, 66], [0.64, 68],
+        [0.7, 73], [0.77, 80], [0.82, 91], [0.86, 98], [0.95, 102], [1, 104]];
+      const tabAt = (T, t) => { if (t <= T[0][0]) return T[0][1]; for (let k = 1; k < T.length; k++) if (t <= T[k][0]) { const [ta, a] = T[k - 1], [tb, b] = T[k]; return a + (b - a) * (t - ta) / (tb - ta); } return T[T.length - 1][1]; };
       const P = bPts.map((_, i) => {
-        const e = sm(0.05, 0.5, Math.abs(2 * (i / N1) - 1));
-        const dLow = 52 + 50 * e, lowTop = 22 + 11.5 * e;
+        const dLow = tabAt(DLOW, i / N1), lowTop = 3.5 + 0.3 * dLow;
         const dA = 0.56 * dLow, hA = 3.5 + (lowTop - 3.5) * 0.5;
         const d0U = dLow - 6, dG = dLow + 5, h0U = lowTop + 36;
         const hCap = 98, dUp = clamp(Math.min(dFac[i] - 24 - d0U, (hCap - h0U) / 0.5), 46, 90);
@@ -585,18 +635,18 @@ export default {
       const SEATi = 0, CREAMi = 1, SHADEi = 2, FACi = 3, GC = 4, GS = 5, GP = 6, WALLi = 7;
       // lower bowl with cross-aisle (all the way round)
       const [lp, ln] = tools.cut(0, 1);
-      ctx.add(sweepSolid(lp, ln, (i) => { const q = P[i]; return [[0, 0], [0, 3.5], [q.dA, q.hA], [q.dA + 7, q.hA], [q.dLow, q.lowTop], [q.dLow, 0]]; },
+      add(sweepSolid(lp, ln, (i) => { const q = P[i]; return [[0, 0], [0, 3.5], [q.dA, q.hA], [q.dA + 7, q.hA], [q.dLow, q.lowTop], [q.dLow, 0]]; },
         [WALLi, SEATi, CREAMi, SEATi, FACi, -1], FACi), mats);
       // club tier, glass bands, upper deck in one solid (t 0.03 .. 0.97)
       const [up, un, ua] = tools.cut(0.03, 0.97);
-      ctx.add(sweepSolid(up, un, (k) => {
+      add(sweepSolid(up, un, (k) => {
         const q = P[ua + k], dB = q.d0U + q.dUp, dT1 = q.d0U + q.t1;
         return [[q.dLow - 2, 0], [dB, 0], [dB, q.hTop], [dT1 + q.aw, q.h0U + q.r1], [dT1, q.h0U + q.r1], [q.d0U, q.h0U], [q.d0U, q.h0U - 7],
           [q.dG, q.h0U - 7], [q.dG, q.lowTop + 19], [q.dG, q.lowTop + 16], [q.dG, q.lowTop + 4], [q.dLow - 2, q.lowTop - 1]];
       }, [-1, FACi, SEATi, CREAMi, SEATi, CREAMi, SHADEi, GS, CREAMi, GC, SEATi, -1], FACi), mats);
       // press level: wider glass box in front of the suite band, behind home plate
       const [pp, pn, pa] = tools.cut(0.4, 0.6);
-      ctx.add(sweepSolid(pp, pn, (k) => { const q = P[pa + k]; return [[q.dG - 7, q.lowTop + 17], [q.dG - 7, q.lowTop + 28], [q.dG + 0.5, q.lowTop + 28], [q.dG + 0.5, q.lowTop + 17]]; },
+      add(sweepSolid(pp, pn, (k) => { const q = P[pa + k]; return [[q.dG - 7, q.lowTop + 17], [q.dG - 7, q.lowTop + 28], [q.dG + 0.5, q.lowTop + 28], [q.dG + 0.5, q.lowTop + 17]]; },
         [GP, CREAMi, -1, -1], CREAMi), mats);
 
       // surface height of the bowl at offset d (lower bowl and upper deck), station q
@@ -612,17 +662,19 @@ export default {
         const dm = (d0 + d1) / 2, hm = (h0 + h1) / 2 + 0.18;
         return new THREE.Matrix4().compose(new THREE.Vector3(pt[0] + nn[0] * dm, hm, pt[1] + nn[1] * dm), q, new THREE.Vector3(w, 0.3, L));
       };
+      const handM = [];                                  // aisle handrails (desktop): thin bar 3 ft over each strip
+      const hand = (m) => { if (low) return m; const h = m.clone(), e = h.elements; e[13] += 2.9; for (let k = 0; k < 3; k++) { e[k] *= 0.15 / 1.7; e[4 + k] *= 0.8; } handM.push(h); return m; };
       let run = 11, a = 0;
       for (let i = 1; i <= N1; i++) {
         run += Math.hypot(bPts[i][0] - bPts[i - 1][0], bPts[i][1] - bPts[i - 1][1]);
         if (run < 22) continue; run -= 22; a++;
         const q = P[i], pt = bPts[i], nn = bN[i];
-        aisleM.push(stripM(pt, nn, 3, q.dA - 1, hLow(q, 3), hLow(q, q.dA - 1), 1.7));
-        aisleM.push(stripM(pt, nn, q.dA + 8, q.dLow - 1, hLow(q, q.dA + 8), hLow(q, q.dLow - 1), 1.7));
+        aisleM.push(hand(stripM(pt, nn, 3, q.dA - 1, hLow(q, 3), hLow(q, q.dA - 1), 1.7)));
+        aisleM.push(hand(stripM(pt, nn, q.dA + 8, q.dLow - 1, hLow(q, q.dA + 8), hLow(q, q.dLow - 1), 1.7)));
         if (i / N1 > 0.035 && i / N1 < 0.965) {
           const dT1 = q.d0U + q.t1;
-          aisleM.push(stripM(pt, nn, q.d0U + 1.5, dT1 - 1, q.h0U + 0.4 * 1.5, q.h0U + q.r1 - 0.2, 1.7));
-          aisleM.push(stripM(pt, nn, dT1 + q.aw + 1, q.d0U + q.dUp - 1, q.h0U + q.r1 + 0.3, q.hTop - 0.3, 1.7));
+          aisleM.push(hand(stripM(pt, nn, q.d0U + 1.5, dT1 - 1, q.h0U + 0.4 * 1.5, q.h0U + q.r1 - 0.2, 1.7)));
+          aisleM.push(hand(stripM(pt, nn, dT1 + q.aw + 1, q.d0U + q.dUp - 1, q.h0U + q.r1 + 0.3, q.hTop - 0.3, 1.7)));
           if (a % 2 === 0) {                                  // entry tunnels at the cross-aisles
             tunM.push(mat4(pt[0] + nn[0] * (q.dA + 8.4), q.hA + 3.2, pt[1] + nn[1] * (q.dA + 8.4), 7, 6.6, 3, Math.atan2(nn[0], nn[1])));
             tunM.push(mat4(pt[0] + nn[0] * (dT1 + q.aw + 1.2), q.h0U + q.r1 + 3.2, pt[1] + nn[1] * (dT1 + q.aw + 1.2), 7, 6.6, 3, Math.atan2(nn[0], nn[1])));
@@ -641,8 +693,19 @@ export default {
       };
       ofAisle(-44.5, -6); ofAisle(10, 19.5);
       inst(new THREE.BoxGeometry(1, 1, 1), basic('#d9cfae'), aisleM);
+      if (handM.length) inst(new THREE.BoxGeometry(1, 1, 1), lam('#2b3237'), handM);
       inst(new THREE.BoxGeometry(1, 1, 1), basic('#161b1d'), tunM);
       BOWL.aisles = a;
+
+      // ribbon boards on the front lip of the upper deck (photos 5, 9: long blank LED ribbons along the 200/300-level fascia)
+      {
+        const ribTex = (c) => rep(textTexture((g, w, h) => { g.fillStyle = '#10181d'; g.fillRect(0, 0, w, h); g.fillStyle = c; g.fillRect(0, h * 0.42, w, h * 0.16); g.fillStyle = 'rgba(228,217,188,0.3)'; g.fillRect(0, 0, w, 2); }, 64, 64));
+        for (const [t0, t1, col] of [[0.07, 0.44, '#2f6b52'], [0.56, 0.93, '#8a4a40']]) {
+          const [rp, rn, ra] = tools.cut(t0, t1);
+          add(sweepSolid(rp, rn, (k) => { const q = P[ra + k], h = q.h0U - 5.4; return [[q.d0U - 0.25, h], [q.d0U - 0.25, h + 3.6], [q.d0U - 0.4, h + 3.6], [q.d0U - 0.4, h]]; }, [0, 0, 0, 0], 0),
+            [new THREE.MeshBasicMaterial({ map: ribTex(col), side: THREE.DoubleSide })]);
+        }
+      }
 
       // stock camera stops that sat inside the old generic deck
       const dirTo = (pos, look) => new THREE.Vector3(...look).sub(new THREE.Vector3(...pos)).normalize();
@@ -660,7 +723,7 @@ export default {
       const bld = (deg, rOut, w, d, h, base, win, rep) => {
         const a = deg * D2R, r = rOut;
         const mat = new THREE.MeshLambertMaterial({ map: winTex(rep, base, win) });
-        const m = ctx.add(new THREE.BoxGeometry(w, h, d), mat);
+        const m = add(new THREE.BoxGeometry(w, h, d), mat);
         m.position.set(r * Math.sin(a), h / 2, -r * Math.cos(a)); m.rotation.y = -a; return m;
       };
       bld(33, 530, 64, 96, 150, '#8f9ba3', '#4f5f69', [4, 9]);     // hotel tower
@@ -705,7 +768,7 @@ export default {
         }, 96, 24);
         netTex.wrapS = netTex.wrapT = THREE.RepeatWrapping; netTex.repeat.set(1, 0.2);
         const mNet = new THREE.MeshBasicMaterial({ map: netTex, transparent: true, alphaTest: 0.2, side: THREE.DoubleSide });
-        ctx.add(sweepSolid(np, nn2, () => [[1, 5], [1, 29], [1.15, 29], [1.15, 5]], [0, 0, 0, 0], 0), [mNet]);
+        add(sweepSolid(np, nn2, () => [[1, 5], [1, 29], [1.15, 29], [1.15, 5]], [0, 0, 0, 0], 0), [mNet]);
         const posts = []; let run = 0;
         for (let k = 0; k < np.length; k++) {
           if (k) run += Math.hypot(np[k][0] - np[k - 1][0], np[k][1] - np[k - 1][1]);
@@ -723,11 +786,11 @@ export default {
         const degIdx = (d) => Math.round((d + 45) / 0.5);
         if (parts.outfieldSeats[1]) ctx.remove(parts.outfieldSeats[1]);
         const [sp, sn, sd] = tools.span(9.5, A0);
-        ctx.add(sweepSolid(sp, sn, (i) => { const hw = wallH(spec, sd[i]); return [[1.2, 0], [1.2, hw + 3], [4, hw + 3], [4 + 68, hw + 3 + 0.42 * 68], [4 + 68, 0]]; }, [MAT.WALL, MAT.CREAM, MAT.SEAT, MAT.FACADE, -1], MAT.FACADE), M);
+        add(sweepSolid(sp, sn, (i) => { const hw = wallH(spec, sd[i]); return [[1.2, 0], [1.2, hw + 3], [4, hw + 3], [4 + 68, hw + 3 + 0.42 * 68], [4 + 68, 0]]; }, [MAT.WALL, MAT.CREAM, MAT.SEAT, MAT.FACADE, -1], MAT.FACADE), M);
         const [p, n, dg] = tools.span(A0, A1);
-        ctx.add(sweepSolid(p, n, () => [[1.2, 0], [1.2, 0.4], [30, 0.4], [30, 0]], [0, 0, 0, -1], 0), [lam('#78854f')]);          // pen floor
-        ctx.add(sweepSolid(p, n, () => [[29.5, 0], [29.5, 9], [31, 9], [31, 0]], [MAT.FACADE, MAT.CREAM, MAT.FACADE, -1], MAT.FACADE), M);  // rear wall
-        ctx.add(sweepSolid(p, n, () => [[30.5, 0], [30.5, 13], [33, 13], [33 + 42, 13 + 0.45 * 42], [75, 0]], [MAT.WALL, MAT.CREAM, MAT.SEAT, MAT.FACADE, -1], MAT.FACADE), M); // seats behind the pens
+        add(sweepSolid(p, n, () => [[1.2, 0], [1.2, 0.4], [30, 0.4], [30, 0]], [0, 0, 0, -1], 0), [lam('#78854f')]);          // pen floor
+        add(sweepSolid(p, n, () => [[29.5, 0], [29.5, 9], [31, 9], [31, 0]], [MAT.FACADE, MAT.CREAM, MAT.FACADE, -1], MAT.FACADE), M);  // rear wall
+        add(sweepSolid(p, n, () => [[30.5, 0], [30.5, 13], [33, 13], [33 + 42, 13 + 0.45 * 42], [75, 0]], [MAT.WALL, MAT.CREAM, MAT.SEAT, MAT.FACADE, -1], MAT.FACADE), M); // seats behind the pens
         // dividing walls at both ends and between the two pens
         const divs = [], mounds = [], plates = [], benches = [];
         for (const dd of [A0, AM, A1]) {
@@ -780,16 +843,74 @@ export default {
           g.fillStyle = '#1c2328'; g.fillRect(w * 0.06, h * 0.2, w * 0.5, h * 0.6); g.fillRect(w * 0.6, h * 0.2, w * 0.15, h * 0.6); g.fillRect(w * 0.79, h * 0.2, w * 0.15, h * 0.6);
           g.strokeStyle = '#8f8a78'; g.lineWidth = 3; g.strokeRect(w * 0.06, h * 0.2, w * 0.5, h * 0.6);
         }, 512, 96);
-        const bd = ctx.add(new THREE.PlaneGeometry(f.len - 2, 8.2), new THREE.MeshBasicMaterial({ map: bt, side: THREE.DoubleSide }));
+        const bd = add(new THREE.PlaneGeometry(f.len - 2, 8.2), new THREE.MeshBasicMaterial({ map: bt, side: THREE.DoubleSide }));
         bd.position.set(f.mx, 4.9, f.mz); bd.rotation.y = f.ry;
-        const strip2 = ctx.add(new THREE.PlaneGeometry(f.len - 2, 2.2), new THREE.MeshBasicMaterial({ color: '#141a1e', side: THREE.DoubleSide }));
+        const strip2 = add(new THREE.PlaneGeometry(f.len - 2, 2.2), new THREE.MeshBasicMaterial({ color: '#141a1e', side: THREE.DoubleSide }));
         strip2.position.set(f.mx + Math.sin(f.ry) * 0.05, 9.6, f.mz + Math.cos(f.ry) * 0.05); strip2.rotation.y = f.ry;
       }
     }
 
+    // ======================================================================================================
+    // LEVEL 3 -- roof trusses, lamp rows, seat-edge rails, aisle handrails
+    // ======================================================================================================
+    {
+      // (A) roof underside: a secondary truss between the main frames (bottom chord, web diagonals, purlin)
+      const lerpSt = (a, b, f) => ({ A: [a.A[0] + (b.A[0] - a.A[0]) * f, a.A[1] + (b.A[1] - a.A[1]) * f], B: [a.B[0] + (b.B[0] - a.B[0]) * f, a.B[1] + (b.B[1] - a.B[1]) * f] });
+      const web = low ? 4 : 8, fr = low ? [0] : [0, 0.5];
+      for (let i = 0; i < roofSt.length - 1; i++) {
+        for (const f of fr) {
+          if (low && i % 2) continue;                                   // phone: every other station only
+          const s = f ? lerpSt(roofSt[i], roofSt[i + 1], f) : roofSt[i];
+          const at = (w, dy) => [s.A[0] + (s.B[0] - s.A[0]) * w, Y_OUT - ROOF_T + (Y_IN - Y_OUT) * w + dy, s.A[1] + (s.B[1] - s.A[1]) * w];
+          if (f) { steelBoxes.push(beam(at(0.02, -5), at(0.97, -5), 1.1)); }            // top chord of the added truss
+          steelBoxes.push(beam(at(0.02, -11), at(0.97, -11), 1.0));                      // bottom chord
+          for (let k = 0; k < web; k++) {                                              // zig-zag web between the chords
+            const w0 = 0.02 + 0.95 * k / web, w1 = 0.02 + 0.95 * (k + 1) / web;
+            steelBoxes.push(beam(at(w0, k % 2 ? -11 : -5), at(w1, k % 2 ? -5 : -11), 0.55));
+          }
+        }
+      }
+      // lamp rows: dark housings (bright lamps on desktop) on the front-edge banks; phone keeps the plain bright banks
+      if (!low) {
+        const lamps = [];
+        for (const m of lightBoxes) {
+          const e = m.elements, hx = [e[0], e[1], e[2]], w = Math.hypot(...hx);
+          const ux = e[0] / w, uy = e[1] / w, uz = e[2] / w, cx = e[12], cy = e[13], cz = e[14];
+          const hh = Math.hypot(e[4], e[5], e[6]), dpt = Math.hypot(e[8], e[9], e[10]);
+          const fx = e[8] / dpt, fy = e[9] / dpt, fz = e[10] / dpt;               // local z axis (toward the lamp face)
+          for (let r = 0; r < 2; r++) for (let c = 0; c < 5; c++) {
+            const lu = (c - 2) * w / 5.3, lv = (r - 0.5) * hh / 2.2;
+            const sg = (fx * (0 - cx) + fz * (-100 - cz)) >= 0 ? 1 : -1;            // face toward the field
+            const q = new THREE.Vector3(cx + ux * lu + sg * fx * (dpt / 2 + 0.2), cy + lv, cz + uz * lu + sg * fz * (dpt / 2 + 0.2));
+            const ang = Math.atan2(fx, fz);
+            lamps.push(mat4(q.x, q.y, q.z, 1.5, 1.3, 0.5, ang));
+          }
+        }
+        inst(new THREE.BoxGeometry(1, 1, 1), basic('#fffbe6'), lamps);
+      }
+    }
+    {
+      // (B) rails: front of the lower bowl (not in front of the dugouts or the net), cross-aisle edge, upper decks
+      const P = BOWL.P, [lp, ln] = tools.cut(0, 1), N = lp.length;
+      const at = (d) => lp.map((q, i) => [q[0] + ln[i][0] * (typeof d === 'function' ? d(P[i]) : d), q[1] + ln[i][1] * (typeof d === 'function' ? d(P[i]) : d)]);
+      const nearDug = (q) => Math.abs(Math.abs(q[0]) - 93) < 38 && q[1] < 10 && q[1] > -60;   // dugout zone
+      const runs = [];                                                              // index runs outside the dugout / net zone
+      let cur = [];
+      for (let i = 0; i < N; i++) { const q = lp[i]; const skip = nearDug(q) || (Math.abs(q[0]) < 100 && q[1] > 5 && q[1] < 52); if (skip) { if (cur.length > 1) runs.push(cur); cur = []; } else cur.push(i); }
+      if (cur.length > 1) runs.push(cur);
+      const frontPts = at(0.4);
+      for (const r of runs) G.add(tools.rail(r.map((i) => frontPts[i]), () => 3.5, { height: 3.4, lod: ctx.lod, color: '#2b3237' }));
+      const mid = at((q) => q.dA + 0.3);
+      G.add(tools.rail(mid, (i) => P[i].hA, { height: 3.2, lod: ctx.lod, color: '#2b3237' }));
+      // upper deck: glass rail on the front lip, plain rail on the tier cross-aisle (t 0.03 .. 0.97)
+      const [up, un, ua] = tools.cut(0.03, 0.97);
+      const upAt = (fn) => up.map((q, k) => [q[0] + un[k][0] * fn(P[ua + k]), q[1] + un[k][1] * fn(P[ua + k])]);
+      G.add(tools.rail(upAt((q) => q.d0U + 0.4), (k) => P[ua + k].h0U, { height: 3.5, glass: true, lod: ctx.lod, color: '#7d7a6c' }));
+      G.add(tools.rail(upAt((q) => q.d0U + q.t1 + 0.4), (k) => P[ua + k].h0U + P[ua + k].r1, { height: 3.2, lod: ctx.lod, color: '#2b3237' }));
+    }
     // ---------- instanced steel frame, lamp banks
     inst(new THREE.BoxGeometry(1, 1, 1), lam('#3b4147'), steelBoxes);
-    inst(new THREE.BoxGeometry(1, 1, 1), basic('#fff1bd'), lightBoxes);
+    inst(new THREE.BoxGeometry(1, 1, 1), low ? basic('#fff1bd') : lam('#4a5157'), lightBoxes);
 
     // ---------- camera stops
     {
