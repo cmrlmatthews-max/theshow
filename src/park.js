@@ -273,6 +273,8 @@ function paintField(spec, fieldPoly, rec, maxTex, lod, aniso) {
   return { tex, size, cx, cz };
 }
 
+const RM = typeof matchMedia === 'function' ? matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
+
 export class ParkView {
   constructor(host) {
     this.host = host;
@@ -627,7 +629,7 @@ export class ParkView {
     const t = this.roofT, s = t * t * (3 - 2 * t);
     for (const r of this.roof) r.panel.position.set(0, r.openY + (r.closedY - r.openY) * s, r.openZ + (r.closedZ - r.openZ) * s);
   }
-  toggleRoof() { if (!this.roof) return null; this.roofGoal = this.roofGoal ? 0 : 1; return this.roofGoal === 1; }
+  toggleRoof() { if (!this.roof) return null; this.roofGoal = this.roofGoal ? 0 : 1; if (RM.matches) { this.roofT = this.roofGoal; this._placeRoof(); } return this.roofGoal === 1; }
 
   setView(name, instant = false) {
     const v = this.views[name]; if (!v) return;
@@ -641,7 +643,7 @@ export class ParkView {
       c.minDistance = v.orbit ? 80 : 1; c.maxDistance = v.orbit ? 3000 : 1;
       c.minPolarAngle = v.orbit ? 0.05 : 0.5; c.maxPolarAngle = v.orbit ? 1.5 : 2.5;
     };
-    if (instant) { this.camera.position.copy(pos); c.target.copy(target); apply(); c.update(); this.tween = null; return; }
+    if (instant || RM.matches) { this.camera.position.copy(pos); c.target.copy(target); apply(); c.update(); this.tween = null; return; }
     c.enabled = false; c.minDistance = 0; c.maxDistance = Infinity; c.minPolarAngle = 0; c.maxPolarAngle = Math.PI;
     this.tween = { t: 0, p0: this.camera.position.clone(), t0: c.target.clone(), p1: pos, t1: target, done: apply };
   }
@@ -651,6 +653,8 @@ export class ParkView {
 
   frame() {
     const dt = Math.min(0.05, this.clock.getDelta()), c = this.controls;
+    c.enableDamping = !RM.matches;
+    if (this.tween && RM.matches) this.tween.t = 1;
     if (this.tween) {
       const tw = this.tween; tw.t = Math.min(1, tw.t + dt / 1.1);
       const s = tw.t * tw.t * (3 - 2 * tw.t);
@@ -671,6 +675,7 @@ export class ParkView {
       }
       c.update();
     }
+    if (this.roof && RM.matches) this.roofT = this.roofGoal;
     if (this.roof && this.roofT !== this.roofGoal) { this.roofT = clamp(this.roofT + Math.sign(this.roofGoal - this.roofT) * dt / 3, 0, 1); this._placeRoof(); }
     this.renderer.render(this.scene, this.camera);
   }
